@@ -143,9 +143,11 @@
   },
   "footer": {
     "importantLinks": "Important Links",
+    "legal": "Legal",
     "sitemap": "Sitemap",
     "license": "License",
     "socialLinks": "Connect",
+    "donate": "Donate",
     "blog": "Blog",
     "privacy" : "Privacy & Terms",
     "communityProjects": "Community Projects",
