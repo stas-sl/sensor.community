@@ -50,5 +50,6 @@ Soporte para múltiples sistemas operativos: Windows, MacOS and Linux.
 
 Conecta el NodeMCU a tu ordenador con un cable micro-USB  (elige un cable que no sea más largo de 1 metro, si no, la instalación podría fallar). Selecciona latest_en.bin (o el lenguaje que prefieras) y haz click en “Upload”.
 Espera hasta que finalice el proceso. Ahora puedes conectar el sensor.
+
 <br>
 ¡Muchas gracias a [Piotr, from Poland](https://dropbox.inf.re/), por su ayuda! 🙋‍♂️ 
