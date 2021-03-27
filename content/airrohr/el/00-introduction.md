@@ -17,8 +17,8 @@ title: Εισαγωγή
   - [via Aliexpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V)
   - [μέσω Nettgio](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280)
   - [μέσω Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
-* [Καλώδιο] (http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+καλώδιο+20cm+θηλυκό-θηλυκό)
-* [Καλώδιο USB π.χ.: επίπεδο 2m Micro-USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+επίπεδο+καλώδιο+2m)
+* [Καλώδιο](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=Dupont+cable+20cm+female-female)
+* [Καλώδιο USB π.χ.: επίπεδο 2m Micro-USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040708&SearchText=micro+usb+flat+cable+2m)
 * [Τροφοδοτικό USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040834&SearchText=single+micro+usb+eu+power+supply)
 * [ιμάντες καλωδίων](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040852&amp;SearchText=cable+ ιμάντες)
 * Εύκαμπτος σωλήνας, ει δυνατόν **όχι** διαφανής, διάμετρος 6 mm, μήκος περίπου 20cm κατάστημα DIY
