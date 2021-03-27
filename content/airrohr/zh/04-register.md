@@ -1,13 +1,12 @@
 ---
-title: 注册
+title: Register
 ---
 
-### 创建一个账户
-
+### Create an account
 前往[devices.sensor.community](https://devices.sensor.community)创建一个账户，成为开放数据网络的一部分。
 
 
-### 注册您的设备
+### Register your device
 创建账户并登录后，您就可以注册您的设备。填写表格来注册您的设备。导航到主页-&gt;（登录）-&gt;传感器-&gt;注册新的传感器。
 
 * 传感器ID是您之前记下的ESP8266(NodeMCU)的芯片ID。

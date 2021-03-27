@@ -46,7 +46,7 @@ Questo repository contiene diverse configurazioni per costruire il sensore con d
 ### Lista della spesa
 
 ##### Componenti singoli
-* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=nodemcu+v3+esp8266+ch340)
+* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Scheda di sviluppo Teensy 4.0](https://www.pjrc.comstoreteensy40.html). Altri venditori: EXPTECH](https://www.exp-tech.deplattformenteensy9596teensy-4.0-development-board), [Antratek](https://www.antratek.deteensy-4-0), [PIMORONI](https://shop.pimoroni.comproductsteensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.comproductsonehorseics43434-i2s-digital-microphone)
 * cavi in silicone ultra flessibili con un diametro di 0,15mm² (AWG 26) in 6 colori diversi
@@ -54,10 +54,10 @@ Questo repository contiene diverse configurazioni per costruire il sensore con d
 Il DNMS (Digital Noise Measuring Sensor) può essere combinato con un airRohr PM-Sensor:
 
 * Sensore di polvere fine SPS30](https://www.sparkfun.comproducts15103). Altri venditori: TME](https://www.tme.eudedetailssps30gassensorensensirion1-101638-10?brutto=1), [SOS electronic](https://www.soselectronic.deproductssensirionsps30-2-304234). Si può usare anche il solito [SDS011 PM sensor](https://de.aliexpress.comwholesale?catId=0&amp;initiative_id=AS_20200813122806&amp;SearchText=sds011).
-* [Versione BME280 6-PIN, temperatura e umidità] (https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3.3V). Altri venditori: Nettigo](https://nettigo.euproductsmodule-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.debauelementesensoren-modulefeuchtigkeitbme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
+* [Versione BME280 6-PIN, temperatura e umidità] (https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V). Altri venditori: Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
 * [Cavo](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+cavo+20cm+femmina-femmina)
 * [Cavo USB per esempio: piatto 2m Micro-USB] (https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+piatto+cavo+2m)
-* [Alimentazione USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040834&amp;SearchText=single+micro+usb+eu+power+supply)
+* [Alimentazione USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040834&SearchText=single+micro+usb+eu+power+supply)
 * [Cinghie per cavi](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040852&amp;SearchText=cable+straps)
 
 I PCB e la protezione dalle intemperie saranno descritti di seguito.

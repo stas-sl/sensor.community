@@ -13,11 +13,11 @@ Alegeți legătura care corespunde sistemului de operare al computerului dumneav
 ### Windows
 
 ##### Drivere pentru NodeMCU (ESP8266) V2 (CP2102) pentru Windows
-* [Windows 10](https://www.silabs.comdocumentspublicsoftwareCP210x_Universal_Windows_Driver.zip) - Windows 10 ar trebui să fie capabil să descarce automat acestea
-* [Windows 788.1](https://www.silabs.comdocumentspublicsoftwareCP210x_Windows_Drivers.zip) - versiune pe 32 de biți - **nu** suportă versiunea pe 64 de biți OS
+* [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 ar trebui să fie capabil să descarce automat acestea
+* [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - versiune pe 32 de biți - **nu** suportă versiunea pe 64 de biți OS
 
 ##### Driver pentru NodeMCU (ESP8266) V3 (CH341) pentru Windows
-* [Windows](http://www.wch.cndownloadsfile5.html) - Windows 10 ar trebui să fie capabil să le descarce automat.
+* [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 ar trebui să fie capabil să le descarce automat.
 
 ##### Extrageți fișierul descărcat pentru Windows:
 * pentru NodeMCU (ESP8266) V2: Deschideți folderul CP210x și faceți dublu clic pe aplicația CP210xVCPInstaller_x64 (sau x86)
@@ -29,7 +29,7 @@ Alegeți legătura care corespunde sistemului de operare al computerului dumneav
 
 ##### Drivere MacOS
 * [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
-* [NodeMCU V3](http://www.wch.cndownloadsfile178.html)
+* [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Extrageți fișierul descărcat pentru MacOS.
 * pentru V2: Descompuneți folderul CP210x și faceți dublu clic pe aplicația CP210xVCPInstaller_x64 (sau x86).
@@ -46,7 +46,7 @@ Nu este necesară instalarea niciunui driver. Cipul ar trebui să fie suportat d
 Suport pentru mai multe sisteme de operare: Windows, MacOS și Linux.
 
 * [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
-* [Cod sursă](https://github.comopendata-stuttgartairrohr-firmware-flasher)
+* [Cod sursă](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Conectați NodeMCU la computerul dumneavoastră cu un cablu micro-USB scurt (alegeți unul mai scurt de 1 metru, altfel instalarea poate eșua). Selectați `latest_en.bin` (sau o altă versiune lingvistică) și faceți clic pe "Upload".
 Așteptați până când procesul se termină. Acum putem asambla senzorul.

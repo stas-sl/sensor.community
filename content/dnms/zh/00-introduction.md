@@ -47,7 +47,7 @@ title: 介紹
 ###购物清单
 
 ##### 单个组件
-* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=nodemcu+v3+esp8266+ch340)
+* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Teensy 4.0开发板](https://www.pjrc.comstoreteensy40.html)。其他卖家。[EXPTECH](https://www.exp-tech.deplattformenteensy9596teensy-4.0-development-board)、[Antratek](https://www.antratek.deteensy-4-0)、[PIMORONI](https://shop.pimoroni.comproductsteensy-4-0-development-board)。
 * [数字式麦克风ICS-43434](https://www.tindie.comproductsonehorseics43434-i2s-digital-microphone)
 * 直径0.15mm²(AWG 26)的超柔韧硅胶电缆，有6种不同颜色。
@@ -55,11 +55,11 @@ title: 介紹
 DNMS（数字噪声测量传感器）可与airRohr PM传感器结合使用。
 
 * SPS30微尘传感器](https://www.sparkfun.comproducts15103)。其他卖家。[TME](https://www.tme.eudedetailssps30gassensorensensirion1-101638-10?brutto=1)、[SOS电子](https://www.soselectronic.deproductssensirionsps30-2-304234)。通常的[SDS011 PM传感器](https://de.aliexpress.comwholesale?catId=0&amp;initiative_id=AS_20200813122806&amp;SearchText=sds011)也可以使用。
-*【BME280 6针版，温湿度】(https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3.3V)。其他卖家。[Nettigo](https://nettigo.euproductsmodule-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.debauelementesensoren-modulefeuchtigkeitbme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
+*【BME280 6针版，温湿度】(https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V)。其他卖家。[Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
 * [电缆](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+电缆+20厘米+雌性-雌性)
-* [USB电缆，例如：扁平的2m Micro-USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+flat+cable+2m)
-* [电源USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040834&amp;SearchText=single+micro+usb+eu+power+supply)
-* [电缆带](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040852&amp;SearchText=cable+带子)
+* [USB电缆，例如：扁平的2m Micro-USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040708&SearchText=micro+usb+flat+cable+2m)
+* [电源USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040834&SearchText=single+micro+usb+eu+power+supply)
+* [电缆带](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040852&SearchText=cable+straps)
 
 下面将介绍PCB和天气保护的情况。
 

@@ -32,7 +32,7 @@ SDS011 Pin 7 -> neuporabljen
 
 <br>
 
-💡 Našli boste seznam [senzorjev, ki jih podpira naša vdelana programska oprema](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md)
+💡 Našli boste seznam [senzorjev, ki jih podpira naša vdelana programska oprema](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md)
 
 
 

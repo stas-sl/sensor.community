@@ -32,7 +32,7 @@ SDS011 Pin 7 -> nefolosit
 
 <br>
 
-💡 Puteți găsi o listă de [senzori suportați de firmware-ul nostru](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md)
+💡 Puteți găsi o listă de [senzori suportați de firmware-ul nostru](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md)
 
 
 ### Lipiți împreună BME280

@@ -46,7 +46,7 @@ Ta shramba vsebuje različne nastavitve za izdelavo senzorja z različnimi vrsta
 ### Nakupovalni seznam
 
 ##### Posamezni sestavni deli
-* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=nodemcu+v3+esp8266+ch340)
+* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Razvojna plošča Teensy 4.0](https://www.pjrc.comstoreteensy40.html). Drugi prodajalci: [EXPTECH](https://www.exp-tech.deplattformenteensy9596teensy-4.0-development-board), [Antratek](https://www.antratek.deteensy-4-0), [PIMORONI](https://shop.pimoroni.comproductsteensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.comproductsonehorseics43434-i2s-digital-microphone)
 * izjemno prožni silikonski kabli s premerom 0,15 mm² (AWG 26) v 6 različnih barvah
@@ -54,10 +54,10 @@ Ta shramba vsebuje različne nastavitve za izdelavo senzorja z različnimi vrsta
 DNMS (digitalni senzor za merjenje hrupa) je mogoče kombinirati s senzorjem PM airRohr:
 
 * Senzor finega prahu SPS30] (https://www.sparkfun.comproducts15103). Drugi prodajalci: [TME](https://www.tme.eudedetailssps30gassensorensensirion1-101638-10?brutto=1), [SOS electronic](https://www.soselectronic.deproductssensirionsps30-2-304234). Uporablja se lahko tudi običajni senzor PM [SDS011](https://de.aliexpress.comwholesale?catId=0&amp;initiative_id=AS_20200813122806&amp;SearchText=sds011).
-* [BME280 6-PIN Različica, temperatura in vlažnost] (https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3,3V). Drugi prodajalci: [Nettigo](https://nettigo.euproductsmodule-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.debauelementesensoren-modulefeuchtigkeitbme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
+* [BME280 6-PIN Različica, temperatura in vlažnost] (https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3,3V). Drugi prodajalci: [Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
 * [Kabel] (http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+kabel+20cm+ženska-ženska)
 * [Kabel USB, npr.: ploščati 2m Micro-USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+ploščati+kabel+2m)
-* [Napajalnik USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040834&amp;SearchText=single+micro+usb+eu+power+supply)
+* [Napajalnik USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040834&SearchText=single+micro+usb+eu+power+supply)
 * [Kabelski trakovi](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040852&amp;SearchText=cable+trakovi)
 
 PCB-ji in zaščita pred vremenskimi vplivi so opisani v nadaljevanju.

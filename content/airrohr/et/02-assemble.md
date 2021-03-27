@@ -32,7 +32,7 @@ SDS011 Pin 7 -> unused
 
 <br>
 
-💡 Siit leiate nimekirja [meie püsivara poolt toetatud anduritest](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md)
+💡 Siit leiate nimekirja [meie püsivara poolt toetatud anduritest](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md)
 
 
 

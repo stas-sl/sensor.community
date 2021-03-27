@@ -46,7 +46,7 @@ Acest depozit conține diferite configurații pentru a construi senzorul cu dife
 ### Lista de cumpărături
 
 ##### Componente unice
-* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=nodemcu+v3+esp8266+ch340)
+* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Placa de dezvoltare Teensy 4.0](https://www.pjrc.comstoreteensy40.html). Alți vânzători: [EXPTECH](https://www.exp-tech.deplattformenteensy9596teensy-4.0-development-board), [Antratek](https://www.antratek.deteensy-4-0), [PIMORONI](https://shop.pimoroni.comproductsteensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.comproductsonehorseics43434-i2s-digital-microphone)
 * cabluri ultra flexibile din silicon cu un diametru de 0,15mm² (AWG 26) în 6 culori diferite
@@ -54,10 +54,10 @@ Acest depozit conține diferite configurații pentru a construi senzorul cu dife
 Senzorul DNMS (Digital Noise Measuring Sensor) poate fi combinat cu un senzor PM de la airRohr:
 
 * Senzor de praf fin SPS30](https://www.sparkfun.comproducts15103). Alți vânzători: [TME](https://www.tme.eudedetailssps30gassensorensensirion1-101638-10?brutto=1), [SOS electronic](https://www.soselectronic.deproductssensirionsps30-2-304234). Se poate utiliza și senzorul obișnuit [SDS011 PM sensor](https://de.aliexpress.comwholesale?catId=0&amp;initiative_id=AS_20200813122806&amp;SearchText=sds011).
-* [Versiunea BME280 6-PIN, temperatură și umiditate] (https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3.3V). Alți vânzători: [Nettigo](https://nettigo.euproductsmodule-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.debauelementesensoren-modulefeuchtigkeitbme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
+* [Versiunea BME280 6-PIN, temperatură și umiditate] (https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V). Alți vânzători: [Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
 * [Cablu](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+cablu+20cm+femelă-femelă)
 * [Cablu USB, de exemplu: plat 2m Micro-USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+bucată+cablu+2m)
-* [Sursă de alimentare USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040834&amp;SearchText=single+micro+usb+eu+power+supply)
+* [Sursă de alimentare USB](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040834&SearchText=single+micro+usb+eu+power+supply)
 * [Curele de cablu](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040852&amp;SearchText=cable+curele)
 
 PCB-urile și protecția împotriva intemperiilor vor fi descrise mai jos.

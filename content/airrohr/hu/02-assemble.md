@@ -32,7 +32,7 @@ SDS011 Pin 7 -> nem használt
 
 <br>
 
-💡 Megtalálhatja a [firmware által támogatott érzékelők listáját](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md)
+💡 Megtalálhatja a [firmware által támogatott érzékelők listáját](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md)
 
 ### Forraszd össze a BME280-at
 

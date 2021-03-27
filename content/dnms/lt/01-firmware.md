@@ -11,11 +11,11 @@ Norint palaikyti ryšį su ESP8266, reikia usb2serial tvarkyklių jūsų operaci
 #### Windows
 
 ##### V2 (CP2102) modelio tvarkyklės Windows
-* [Windows 10](https://www.silabs.comdocumentspublicsoftwareCP210x_Universal_Windows_Driver.zip) - "Windows 10" turėtų galėti automatiškai atsisiųsti šiuos
-* [Windows 788.1](https://www.silabs.comdocumentspublicsoftwareCP210x_Windows_Drivers.zip) - 32 bitų versija - **nepalaiko** 64 bitų versijos OS
+* [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - "Windows 10" turėtų galėti automatiškai atsisiųsti šiuos
+* [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32 bitų versija - **nepalaiko** 64 bitų versijos OS
 
 ##### V3 modelio (CH341) tvarkyklė "Windows
-* [Windows](http://www.wch.cndownloadsfile5.html) - "Windows 10" turėtų galėti automatiškai atsisiųsti šiuos
+* [Windows](http://www.wch.cn/downloads/file/5.html) - "Windows 10" turėtų galėti automatiškai atsisiųsti šiuos
 
 ##### Ištraukite atsisiųstą "Windows" failą:
 * V2: Atidarykite aplanką CP210x ir dukart spustelėkite programą CP210xVCPInstaller_x64 (arba x86)
@@ -26,7 +26,7 @@ Norint palaikyti ryšį su ESP8266, reikia usb2serial tvarkyklių jūsų operaci
 
 ##### MacOS tvarkyklės
 * [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
-* [NodeMCU V3](http://www.wch.cndownloadsfile178.html)
+* [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Ištraukite atsisiųstą "MacOS" failą.
 * V2: Išpakuokite aplanką CP210x ir dukart spustelėkite programą CP210xVCPInstaller_x64 (arba x86)
@@ -42,7 +42,7 @@ Jokių tvarkyklių diegti nereikia. Mikroschema turėtų būti palaikoma tiesiog
 Kelių operacinių sistemų palaikymas: "Windows", "MacOS" ir "Linux".
 
 * [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
-* [Šaltinio kodas](https://github.comopendata-stuttgartairrohr-firmware-flasher)
+* [Šaltinio kodas](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Prijunkite "NodeMCU" prie kompiuterio trumpu micro-USB kabeliu (pasirinkite trumpesnį nei 1 m, kitaip diegimas gali nepavykti). Pasirinkite `latest_en.bin` (arba kitą kalbinę versiją) ir spustelėkite "Įkelti".
 Palaukite, kol procesas bus baigtas. Dabar galime surinkti jutiklį.

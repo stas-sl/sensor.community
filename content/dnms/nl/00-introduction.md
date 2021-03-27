@@ -46,7 +46,7 @@ Die repository bevat verschillende setups om de sensor te bouwen met verschillen
 ### Boodschappenlijstje
 
 ##### Afzonderlijke onderdelen
-* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=nodemcu+v3+esp8266+ch340)
+* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Teensy 4.0 ontwikkelingsbord](https://www.pjrc.comstoreteensy40.html). Andere verkopers: [EXPTECH](https://www.exp-tech.deplattformenteensy9596teensy-4.0-development-board), [Antratek](https://www.antratek.deteensy-4-0), [PIMORONI](https://shop.pimoroni.comproductsteensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.comproductsonehorseics43434-i2s-digital-microphone)
 * ultra soepele siliconen kabels met een diameter van 0,15mm² (AWG 26) in 6 verschillende kleuren
@@ -54,7 +54,7 @@ Die repository bevat verschillende setups om de sensor te bouwen met verschillen
 De DNMS (Digitale Ruis Meet Sensor) kan gecombineerd worden met een airRohr PM-Sensor:
 
 * SPS30 fijnstof sensor](https://www.sparkfun.comproducts15103). Andere verkopers: [TME](https://www.tme.eudedetailssps30gassensorensensirion1-101638-10?brutto=1), [SOS electronic](https://www.soselectronic.deproductssensirionsps30-2-304234). De gebruikelijke [SDS011 PM sensor](https://de.aliexpress.comwholesale?catId=0&amp;initiative_id=AS_20200813122806&amp;SearchText=sds011) kan ook worden gebruikt.
-* [BME280 6-PIN Versie, temperatuur &amp; vochtigheid](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3.3V). Andere verkopers: [Nettigo](https://nettigo.euproductsmodule-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.debauelementesensoren-modulefeuchtigkeitbme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
+* [BME280 6-PIN Versie, temperatuur &amp; vochtigheid](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V). Andere verkopers: [Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
 * [Kabel](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+kabel+20cm+vrouwtje-vrouwtje)
 * [USB-kabel bijv.: 2m Micro-USB plat](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+plat+kabel+2m)
 * [Voeding USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040834&amp;SearchText=single+micro+usb+eu+voeding+toevoer)

@@ -32,7 +32,7 @@ SDS011 Nasta 7 -> ei käytössä
 
 <br>
 
-💡 Löydät luettelon [firmware-ohjelmistomme tukemista antureista](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md).
+💡 Löydät luettelon [firmware-ohjelmistomme tukemista antureista](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md).
 
 
 

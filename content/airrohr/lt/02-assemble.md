@@ -32,7 +32,7 @@ SDS011 7 kaištis -> nenaudojamas
 
 <br>
 
-💡 Galite rasti [jutiklių, kuriuos palaiko mūsų programinė įranga, sąrašą](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md)
+💡 Galite rasti [jutiklių, kuriuos palaiko mūsų programinė įranga, sąrašą](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md)
 
 
 

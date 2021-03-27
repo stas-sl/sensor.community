@@ -32,7 +32,7 @@ SDS011 Pin 7 -> neizmantots
 
 <br>
 
-💡 Jūs varat atrast [sensoru, kurus atbalsta mūsu programmaparatūra, sarakstu](https://github.comopendata-stuttgartsensors-softwareblobmasterairrohr-firmwareReadme.md).
+💡 Jūs varat atrast [sensoru, kurus atbalsta mūsu programmaparatūra, sarakstu](https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md).
 
 
 

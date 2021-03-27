@@ -46,7 +46,7 @@ Sākotnējās instrukcijas un iepriekšējās trokšņu sensora versijas skatiet
 ### Iepirkumu saraksts
 
 ##### Atsevišķas sastāvdaļas
-* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=nodemcu+v3+esp8266+ch340)
+* [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Teensy 4.0 izstrādes plate](https://www.pjrc.comstoreteensy40.html). Citi pārdevēji: [EXPTECH](https://www.exp-tech.deplattformenteensy9596teensy-4.0-development-board), [Antratek](https://www.antratek.deteensy-4-0), [PIMORONI](https://shop.pimoroni.comproductsteensy-4-0-development-board).
 * [Digitales Mikrofon ICS-43434](https://www.tindie.comproductsonehorseics43434-i2s-digital-microphone)
 * īpaši elastīgi silikona kabeļi ar diametru 0,15 mm² (AWG 26) 6 dažādās krāsās.
@@ -54,10 +54,10 @@ Sākotnējās instrukcijas un iepriekšējās trokšņu sensora versijas skatiet
 DNMS (digitālo trokšņa mērīšanas sensoru) var kombinēt ar airRohr PM sensoru:
 
 * SPS30 smalko putekļu sensors](https://www.sparkfun.comproducts15103). Citi pārdevēji: [TME](https://www.tme.eudedetailssps30gassensorensensirion1-101638-10?brutto=1), [SOS electronic](https://www.soselectronic.deproductssensirionsps30-2-304234). Var izmantot arī parasto [SDS011 PM sensoru](https://de.aliexpress.comwholesale?catId=0&amp;initiative_id=AS_20200813122806&amp;SearchText=sds011).
-* [BME280 6-PIN versija, temperatūra un mitrums] (https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040440&amp;SearchText=bme280+-5V++3.3V). Citi pārdevēji: [Nettigo](https://nettigo.euproductsmodule-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.debauelementesensoren-modulefeuchtigkeitbme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t).
+* [BME280 6-PIN versija, temperatūra un mitrums] (https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V). Citi pārdevēji: [Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t).
 * [Cable] (http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=Dupont+cable+20cm+female-female)
 * [USB kabelis, piemēram: plakans 2 m Micro-USB](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040708&amp;SearchText=micro+usb+plakans+kabeļš+2m)
-* [USB barošanas bloks](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040834&amp;SearchText=single+micro+usb+eu+power+supply)
+* [USB barošanas bloks](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040834&SearchText=single+micro+usb+eu+power+supply)
 * [Kabeļu siksnas](https://www.aliexpress.comwholesale?catId=0&amp;initiative_id=SB_20200308040852&amp;SearchText=cable+siksnas)
 
 

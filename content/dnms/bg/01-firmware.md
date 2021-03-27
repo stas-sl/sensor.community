@@ -11,11 +11,11 @@ title: Драйвер и фърмуер
 ### Windows
 
 ##### Драйвери за model V2 (CP2102) за Windows
-* [Windows 10](https://www.silabs.comdocumentspublicsoftwareCP210x_Universal_Windows_Driver.zip) - Windows 10 трябва да може автоматично да изтегли тези
-* [Windows 788.1](https://www.silabs.comdocumentspublicsoftwareCP210x_Windows_Drivers.zip) - 32-битова версия - **не поддържа** 64-битова версия на операционната система
+* [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 трябва да може автоматично да изтегли тези
+* [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-битова версия - **не поддържа** 64-битова версия на операционната система
 
 ##### Драйвер за модел V3 (CH341) за Windows
-* [Windows](http://www.wch.cndownloadsfile5.html) - Windows 10 трябва да може да ги изтегли автоматично
+* [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 трябва да може да ги изтегли автоматично
 
 ##### Изтеглете изтегления файл за Windows:
 * за V2: Отворете папката CP210x и кликнете два пъти върху приложението CP210xVCPInstaller_x64 (или x86)
@@ -27,7 +27,7 @@ title: Драйвер и фърмуер
 
 ##### MacOS драйвери
 * [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
-* [NodeMCU V3](http://www.wch.cndownloadsfile178.html)
+* [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Извлечете изтегления файл за MacOS.
 * за V2: Разопаковайте папката CP210x и кликнете два пъти върху приложението CP210xVCPInstaller_x64 (или x86)
@@ -44,7 +44,7 @@ title: Драйвер и фърмуер
 Поддръжка на множество операционни системи: Windows, MacOS и Linux.
 
 * [AirRohr Flashing Tool] (http://firmware.sensor.communityairrohrflashing-tool)
-* [Изходен код](https://github.comopendata-stuttgartairrohr-firmware-flasher)
+* [Изходен код](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Свържете NodeMCU към компютъра си с къс микро USB кабел (изберете по-къс от 1 метър, в противен случай инсталацията може да се провали). Изберете `latest_en.bin` (или друга езикова версия) и щракнете върху "Upload".
 Изчакайте, докато процесът приключи. Сега можем да сглобим сензора.
