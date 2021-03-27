@@ -4,7 +4,7 @@ title: Johdanto
 > 🚧 Rakenna DIY-anturi ja tule osaksi maailmanlaajuista opendata &amp; civictech -verkostoa. <br> airRohrilla voit mitata ilmansaasteita itse.
 
 
-<img src="..docsairrohrparticulate-matter-air-quality-sensor-kit.jpeg" loading="lazy">
+<img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Ostoslista
 ##### Anturisarja

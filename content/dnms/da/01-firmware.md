@@ -26,7 +26,7 @@ Chipsættet til NocdeMCU'er v3 er normalt CH341, du skal bare se på bagsiden af
 #### MacOS
 
 ##### MacOS-drivere
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Udpak den downloadede fil til MacOS.
@@ -43,7 +43,7 @@ Der skal ikke installeres nogen drivere. Chip bør understøttes direkte (kan ko
 #### Firmware-flasher NodeMCU
 Understøttelse af flere operativsystemer: Windows, MacOS og Linux.
 
-* [airRohr Flashing Tool] (http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool] (http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Source Code] (https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Tilslut NodeMCU til din computer med et kort mikro-USB-kabel (vælg et kortere end 1 meter, ellers kan installationen mislykkes). Vælg `latest_en.bin` (eller en anden sprogversion), og klik på "Upload".

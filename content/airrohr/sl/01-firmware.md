@@ -28,7 +28,7 @@ Izberite povezavo, ki ustreza operacijskemu sistemu vašega računalnika.
 ### MacOS
 
 ##### Gonilniki za MacOS
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Izvleček prenesene datoteke za MacOS.
@@ -45,7 +45,7 @@ Gonilnikov ni treba namestiti. Čip mora biti podprt neposredno (preveri se z dm
 #### Firmware Flasher
 Podpora za več operacijskih sistemov: Windows, MacOS in Linux.
 
-* [AirRohr Flashing Tool] (http://firmware.sensor.communityairrohrflashing-tool)
+* [AirRohr Flashing Tool] (http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Izvorna koda](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Povežite NodeMCU z računalnikom s kratkim kablom micro-USB (izberite kabel, ki je krajši od 1 metra, sicer namestitev morda ne bo uspešna). Izberite `latest_en.bin` (ali drugo jezikovno različico) in kliknite "Upload".
@@ -59,7 +59,7 @@ Velika zahvala gre [Piotru iz Poljske](https://dropbox.inf.re) za pomoč! 🙋�
 #### MacOS: kako zagnati nepreverjeno aplikacijo
 Z desno tipko miške večkrat kliknite in odprite aplikacijo ter jo vedno potrdite z "Odpri".
 
-Tukaj je kratek video na YouTubu 👉 https://youtu.be1KZiP94TYjw
+Tukaj je kratek video na YouTubu 👉 https://youtu.be/1KZiP94TYjw
 
 
 

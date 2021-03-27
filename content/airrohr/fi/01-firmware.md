@@ -28,7 +28,7 @@ Valitse tietokoneen käyttöjärjestelmää vastaava linkki.
 ### MacOS
 
 ##### MacOS -ajurit
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Pura ladattu tiedosto MacOS:lle.
@@ -45,7 +45,7 @@ Ajureita ei tarvitse asentaa. Piirin pitäisi olla suoraan tuettu (todennettavis
 ### Firmware Flasher
 Tuki useille käyttöjärjestelmille: Windows, MacOS ja Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Lähdekoodi](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Liitä NodeMCU tietokoneeseen lyhyellä mikro-USB-kaapelilla (valitse alle 1 metrin pituinen kaapeli, muuten asennus voi epäonnistua). Valitse `latest_en.bin` (tai jokin muu kieliversio) ja napsauta "Upload".
@@ -59,7 +59,7 @@ Suuret kiitokset [Piotrille, Puolasta](https://dropbox.inf.re), hänen avustaan!
 #### MacOS: miten suorittaa tarkistamaton sovellus?
 Napsauta hiiren kakkospainikkeella ja avaa sovellus useita kertoja ja vahvista aina "Avaa".
 
-Tässä on lyhyt video Youtubessa 👉 https://youtu.be1KZiP94TYjw.
+Tässä on lyhyt video Youtubessa 👉 https://youtu.be/1KZiP94TYjw.
 
 
 

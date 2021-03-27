@@ -28,7 +28,7 @@ Alegeți legătura care corespunde sistemului de operare al computerului dumneav
 ### MacOS
 
 ##### Drivere MacOS
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Extrageți fișierul descărcat pentru MacOS.
@@ -45,7 +45,7 @@ Nu este necesară instalarea niciunui driver. Cipul ar trebui să fie suportat d
 ### Firmware Flasher
 Suport pentru mai multe sisteme de operare: Windows, MacOS și Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Cod sursă](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Conectați NodeMCU la computerul dumneavoastră cu un cablu micro-USB scurt (alegeți unul mai scurt de 1 metru, altfel instalarea poate eșua). Selectați `latest_en.bin` (sau o altă versiune lingvistică) și faceți clic pe "Upload".
@@ -59,7 +59,7 @@ După descărcare, este posibil să trebuiască să setați permisiunea la execu
 #### MacOS: cum să rulați o aplicație neverificată
 Faceți clic dreapta și deschideți aplicația de mai multe ori și confirmați întotdeauna cu "Open".
 
-Iată un scurt video pe Youtube 👉 https://youtu.be1KZiP94TYjw
+Iată un scurt video pe Youtube 👉 https://youtu.be/1KZiP94TYjw
 
 
 

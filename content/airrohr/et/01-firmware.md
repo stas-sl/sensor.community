@@ -28,7 +28,7 @@ Valige link, mis vastab teie arvuti operatsioonisüsteemile.
 ### MacOS
 
 ##### MacOS draiverid
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Laaditud faili ekstraheerimine MacOS-i jaoks.
@@ -45,7 +45,7 @@ Juhtseadmeid ei ole vaja paigaldada. Kiip peaks olema otse toetatud (kontrollita
 ### Firmware Flasher
 Mitme operatsioonisüsteemi tugi: Windows, MacOS ja Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [lähtekood](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Ühendage NodeMCU arvutiga lühikese micro-USB-kaabli abil (valige lühike kaabel, mis on lühem kui 1 meeter, muidu võib paigaldus ebaõnnestuda). Valige `latest_en.bin` (või mõni muu keeleversioon) ja klõpsake nuppu "Upload".
@@ -59,7 +59,7 @@ Suur tänu [Piotrile, Poolast](https://dropbox.inf.re), tema abi eest! 🙋♂�
 #### MacOS: kuidas käivitada kontrollimata rakendust
 Tehke paremklõps ja avage rakendus mitu korda ning kinnitage alati "Ava".
 
-Siin on lühike video Youtube'is 👉 https://youtu.be1KZiP94TYjw.
+Siin on lühike video Youtube'is 👉 https://youtu.be/1KZiP94TYjw.
 
 
 

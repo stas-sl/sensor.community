@@ -13,7 +13,7 @@ Märkus: Meie juhised viitavad NodeMCU versioonile 3. Seda on võimalik ära tun
 <small>Copyright: roman-minyaylov, MIT License<small>
 
 
-<img src="..docsairrohrnodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy">
+<img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
 ##### Kui olete lõpetanud, peaks see välja nägema selline.
 
@@ -69,14 +69,14 @@ SCL -> Pin D4
 * USB-kaabel, painduv toru ja BME280 peaksid vaatama toru otsast välja
 * Lükake teine toru esimesele peale.
 
-<img src="..docsairrohrsds011-jammed-into-tube.jpeg" loading="lazy">
+<img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
 ##### Viimistlemine
 * Asetage temperatuuriandur painduvale torule nii, et see oleks toru servas.
 * Lõigake painduv toru toru otsast ära.
 * Valikuline: võite katta toru lahtised otsad peene võrguga. Nii saab õhk ringlema, kuid putukad jäävad välja.
 
-<img src="..docsairrohrposition-bme280.jpeg" loading="lazy">
+<img src="../docs/airrohr/position-bme280.jpeg" loading="lazy"/>
 
 ### Paigutamine
 Ideaalne koht oleks 1,5 kuni 3,5 meetri kõrgusel tänavast ja hästi ventileeritud. See ei ole aga kõigi inimeste puhul võimalik, sest seetõttu küsitakse registreerimisel teavet, nagu kõrgus maapinnast ja asend tänava suhtes.

@@ -4,7 +4,7 @@ title: Εισαγωγή
 > 🚧 Κατασκευάστε τον DIY αισθητήρα σας και γίνετε μέρος του παγκόσμιου δικτύου opendata &amp; civictech. <br> Με το airRohr μπορείτε να μετρήσετε μόνοι σας την ατμοσφαιρική ρύπανση.
 
 
-<img src="..docsairrohrparticulate-matter-air-quality-sensor-kit.jpeg" loading="lazy">
+<img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Λίστα αγορών
 ##### Κιτ αισθητήρων

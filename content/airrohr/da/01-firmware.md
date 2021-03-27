@@ -28,7 +28,7 @@ Vælg det link, der svarer til din computers styresystem.
 #### MacOS
 
 ##### MacOS-drivere
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Udpak den downloadede fil til MacOS.
@@ -45,7 +45,7 @@ Der skal ikke installeres nogen drivere. Chip bør understøttes direkte (kan ko
 #### Firmware-flasher
 Understøttelse af flere operativsystemer: Windows, MacOS og Linux.
 
-* [airRohr Flashing Tool] (http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool] (http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Source Code] (https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Tilslut NodeMCU til din computer med et kort mikro-USB-kabel (vælg et kortere end 1 meter, ellers kan installationen mislykkes). Vælg `latest_en.bin` (eller en anden sprogversion), og klik på "Upload".
@@ -59,7 +59,7 @@ En stor tak til [Piotr, fra Polen](https://dropbox.inf.re), for hans hjælp! �
 #### MacOS: Sådan kører du en ubekræftet app
 Højreklik og åbn programmet flere gange, og bekræft altid med "Open".
 
-Her er en kort video på Youtube 👉 https://youtu.be1KZiP94TYjw
+Her er en kort video på Youtube 👉 https://youtu.be/1KZiP94TYjw
 
 
 

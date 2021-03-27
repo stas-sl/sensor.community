@@ -28,7 +28,7 @@ title: Πρόγραμμα οδήγησης &amp; υλικολογισμικό
 ### MacOS
 
 ##### Οδηγούς MacOS
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Εξαγάγετε το αρχείο που κατεβάσατε για MacOS.
@@ -45,7 +45,7 @@ title: Πρόγραμμα οδήγησης &amp; υλικολογισμικό
 ### Firmware Flasher
 Υποστήριξη πολλαπλών λειτουργικών συστημάτων: Windows, MacOS και Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Πηγαίος κώδικας](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Συνδέστε το NodeMCU στον υπολογιστή σας με ένα κοντό καλώδιο micro-USB (επιλέξτε ένα καλώδιο μικρότερο από 1 μέτρο, διαφορετικά η εγκατάσταση μπορεί να αποτύχει). Επιλέξτε `latest_en.bin` (ή μια άλλη γλωσσική έκδοση) και κάντε κλικ στο "Upload".
@@ -59,7 +59,7 @@ title: Πρόγραμμα οδήγησης &amp; υλικολογισμικό
 #### MacOS: πώς να εκτελέσετε μια ανεπιβεβαίωτη εφαρμογή
 Κάντε δεξί κλικ και ανοίξτε την εφαρμογή αρκετές φορές και επιβεβαιώστε πάντα με "Άνοιγμα".
 
-Εδώ είναι ένα σύντομο βίντεο στο Youtube 👉 https://youtu.be1KZiP94TYjw
+Εδώ είναι ένα σύντομο βίντεο στο Youtube 👉 https://youtu.be/1KZiP94TYjw
 
 
 

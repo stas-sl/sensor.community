@@ -13,7 +13,7 @@ Megjegyzés: Utasításaink a NodeMCU 3. verziójára vonatkoznak. Ezt a VU és 
 <small>Copyright: roman-minyaylov, MIT License<small>
 
 
-<img src="..docsairrohrnodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy">
+<img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
 ##### Ha kész van, így kell kinéznie
 
@@ -54,7 +54,7 @@ SCL -> D4 csatlakozó
 ### Kösd össze az egészet
 
  ##### A NodeMCU és az SDS011 összekapcsolása
-<img src="..docsairrohrtie-air-quality-sensor-together.jpeg" loading="lazy">
+<img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Egy kábelkötegelővel kösse össze a NodeMCU-t (ESP8266) és az SDS011 érzékelőt úgy, hogy a Wifi antenna az érzékelőtől távolabb mutasson.
 
  ##### Connect hajlékony cső
@@ -67,14 +67,14 @@ Egy kábelkötegelővel kösse össze a NodeMCU-t (ESP8266) és az SDS011 érzé
 * Az USB-kábel, a hajlékony cső és a BME280 nézzen ki a cső végéből.
 * Nyomja a másik csövet az elsőre.
 
-<img src="..docsairrohrsds011-jammed-into-tube.jpeg" loading="lazy">
+<img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
 ##### Befejezés
 * Helyezze a hőmérséklet-érzékelőt a hajlékony csőre úgy, hogy az a cső szélén legyen.
 * Vágja le a flexibilis csövet a cső végénél
 * Választható: a cső nyitott végeit finom hálóval fedheti le. Így a levegő keringhet, de a rovarok kint maradnak.
 * Választható: a cső nyitott végeit finom hálóval fedheti le. Így a levegő keringhet, de a rovarok kint maradnak.
-<img src="..docsairrohrposition-bme280.jpeg" loading="lazy">
+<img src="../docs/airrohr/position-bme280.jpeg" loading="lazy"/>
 
 ### Placement
 Az ideális hely 1,5-3,5 méterrel az utca felett van, és jól szellőzik. Ez azonban nem minden ember esetében lehetséges, ezért a regisztráció során olyan információkat kérnek, mint a föld feletti magasság és az utcához viszonyított helyzet.

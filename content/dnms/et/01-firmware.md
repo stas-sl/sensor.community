@@ -26,7 +26,7 @@ NocdeMCU-de v3 kiibistik on tavaliselt CH341, vaadake oma NodeMCU tagaküljelt, 
 ### MacOS
 
 ##### MacOS draiverid
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Laaditud faili ekstraheerimine MacOS-i jaoks.
@@ -43,7 +43,7 @@ Juhtseadmeid ei ole vaja paigaldada. Kiip peaks olema otse toetatud (kontrollita
 ### Firmware Flasher NodeMCU
 Mitme operatsioonisüsteemi tugi: Windows, MacOS ja Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [lähtekood](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Ühendage NodeMCU arvutiga lühikese micro-USB-kaabli abil (valige lühike kaabel, mis on lühem kui 1 meeter, muidu võib paigaldus ebaõnnestuda). Valige `latest_en.bin` (või mõni muu keeleversioon) ja klõpsake nuppu "Upload".

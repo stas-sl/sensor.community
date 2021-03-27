@@ -13,7 +13,7 @@ Bemærk: Vores instruktioner henviser til version 3 af NodeMCU. Dette kan genken
 <small>Copyright: roman-minyaylov, MIT-licens<small>
 
 
-<img src="..docsairrohrnodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy">
+<img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
 ##### Når du er færdig, skal det se sådan her ud
 
@@ -58,7 +58,7 @@ SCL -> Pin D4
 ### Bind det hele sammen
 
  ##### Binder NodeMCU og SDS011 sammen
-<img src="..docsairrohrtie-air-quality-sensor-together.jpeg" loading="lazy">
+<img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Brug et kabelbånd til at forbinde NodeMCU'en (ESP8266) og SDS011-sensoren, så Wifi-antennen peger væk fra sensoren
 
  ##### Connect fleksibelt rør
@@ -74,14 +74,14 @@ Brug et kabelbånd til at forbinde NodeMCU'en (ESP8266) og SDS011-sensoren, så 
 * USB-kabel, fleksibelt rør og BME280 skal kigge ud af rørets ende
 * Skub det andet rør på det første.
 
-<img src="..docsairrohrsds011-jammed-into-tube.jpeg" loading="lazy">
+<img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
 ##### Efterbehandling
 * Placer temperaturføleren på det fleksible rør, så den er på kanten af røret.
 * Skær det fleksible rør af i enden af røret
 * Valgfrit: Du kan dække de åbne ender af røret med et fint net. Så kan luften cirkulere, men insekterne bliver udenfor.
 * Valgfrit: Du kan dække de åbne ender af røret med et fint net. Så kan luften cirkulere, men insekterne bliver udenfor.
-<img src="..docsairrohrposition-bme280.jpeg" loading="lazy">
+<img src="../docs/airrohr/position-bme280.jpeg" loading="lazy"/>
 
 #### Placering
 Det ideelle sted ville være 1,5 til 3,5 meter over gaden og godt ventileret. Dette kan dog ikke lade sig gøre for alle mennesker, og derfor anmodes der om oplysninger som højde over jorden og beliggenhed i forhold til gaden ved registreringen.

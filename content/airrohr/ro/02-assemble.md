@@ -13,7 +13,7 @@ Notă: Instrucțiunile noastre se referă la versiunea 3 a NodeMCU. Aceasta poat
 <small>Copyright: roman-minyaylov, MIT License<small>.
 
 
-<img src="..docsairrohrnodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy">
+<img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
 ##### Când ați terminat, iată cum ar trebui să arate
 
@@ -55,7 +55,7 @@ SCL -> Pin D4
 ### Tie everything together
 
  ##### Legați NodeMCU și SDS011 împreună
-<img src="..docsairrohrtie-air-quality-sensor-together.jpeg" loading="lazy">
+<img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Folosiți o cravată de cablu pentru a lega NodeMCU (ESP8266) și senzorul SDS011, astfel încât antena Wifi să fie îndreptată în direcția opusă senzorului.
 
  ##### Conectați tubul flexibil
@@ -68,13 +68,13 @@ Folosiți o cravată de cablu pentru a lega NodeMCU (ESP8266) și senzorul SDS01
 * Cablul USB, tubul flexibil și BME280 trebuie să iasă din capătul tubului.
 * Împingeți cealaltă țeavă pe prima.
 
-<img src="..docsairrohrsds011-jammed-into-tube.jpeg" loading="lazy">
+<img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
 ##### Finisare
 * Poziționați senzorul de temperatură pe tubul flexibil, astfel încât să se afle pe marginea țevii.
 * Tăiați tubul flexibil de la capătul țevii.
 * Opțional: se pot acoperi capetele deschise ale tubului cu o plasă fină. Astfel, aerul poate circula, dar insectele rămân afară
-<img src="..docsairrohrposition-bme280.jpeg" loading="lazy">
+<img src="../docs/airrohr/position-bme280.jpeg" loading="lazy"/>
 
 ### Plasament
 Locul ideal ar fi între 1,5 și 3,5 metri deasupra străzii și bine ventilat. Cu toate acestea, acest lucru nu se poate face pentru toate persoanele, deoarece, prin urmare, în timpul înregistrării se cer informații precum înălțimea deasupra solului și poziția față de stradă.

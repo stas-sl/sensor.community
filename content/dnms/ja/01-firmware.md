@@ -26,7 +26,7 @@ NocdeMCU v3のチップセットは通常CH341で、NodeMCUの背面に技術情
 ### MacOS
 
 ##### MacOS用ドライバー
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### ダウンロードしたMacOS用のファイルを解凍します。
@@ -43,7 +43,7 @@ NocdeMCU v3のチップセットは通常CH341で、NodeMCUの背面に技術情
 ### ファームウェア フラッシャー NodeMCU
 複数のオペレーティング・システムに対応。Windows、MacOS、Linuxに対応しています。
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [ソースコード](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 NodeMCUとコンピュータを短いマイクロUSBケーブルで接続します（1メートル以上の短いケーブルを選ぶと、インストールに失敗することがあります）。「latest_en.bin」（または他の言語バージョン）を選択し、「アップロード」をクリックします。

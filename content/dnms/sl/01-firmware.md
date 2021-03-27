@@ -26,7 +26,7 @@ Za komunikacijo z ESP8266 potrebujete usb2serialne gonilnike za svoj operacijski
 ### MacOS
 
 ##### Gonilniki za MacOS
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Izvleček prenesene datoteke za MacOS.
@@ -43,7 +43,7 @@ Gonilnikov ni treba namestiti. Čip mora biti podprt neposredno (preveri se z dm
 #### Firmware Flasher NodeMCU
 Podpora za več operacijskih sistemov: Windows, MacOS in Linux.
 
-* [AirRohr Flashing Tool] (http://firmware.sensor.communityairrohrflashing-tool)
+* [AirRohr Flashing Tool] (http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Izvorna koda](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Povežite NodeMCU z računalnikom s kratkim kablom micro-USB (izberite kabel, ki je krajši od 1 metra, sicer namestitev morda ne bo uspešna). Izberite `latest_en.bin` (ali drugo jezikovno različico) in kliknite "Upload".

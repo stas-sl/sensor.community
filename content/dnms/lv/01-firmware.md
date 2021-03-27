@@ -26,7 +26,7 @@ NocdeMCU v3 mikroshēmu komplekts parasti ir CH341, vienkārši pārbaudiet savu
 #### MacOS
 
 ##### MacOS draiveri
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Izņemiet lejupielādēto MacOS failu.
@@ -43,7 +43,7 @@ Draiveri nav jāinstalē. Mikroshēmai jābūt tieši atbalstītai (iespējams p
 #### Firmware Flasher NodeMCU
 Vairāku operētājsistēmu atbalsts: Windows, MacOS un Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Avota kods](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Savienojiet NodeMCU ar datoru, izmantojot īsu micro-USB kabeli (izvēlieties īsāku par 1 metru, pretējā gadījumā instalācija var neizdoties). Izvēlieties `latest_en.bin` (vai citu valodas versiju) un noklikšķiniet uz "Augšupielādēt".

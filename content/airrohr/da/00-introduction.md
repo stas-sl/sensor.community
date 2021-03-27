@@ -4,7 +4,7 @@ title: Introduktion
 > 🚧 Byg din gør-det-selv-sensor, og bliv en del af det verdensomspændende opendata- og civictech-netværk. <br> Med airRohr kan du selv måle luftforurening.
 
 
-<img src="..docsairrohrparticulate-matter-air-quality-sensor-kit.jpeg" loading="lazy">
+<img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 #### Indkøbsliste
 ##### Sensorsæt

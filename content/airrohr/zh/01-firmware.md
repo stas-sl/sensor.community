@@ -59,7 +59,7 @@ V2的*。解压CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程�
 #### MacOS: how to run a unverified app
 右键单击并多次打开应用程序，并始终以 "打开 "确认。
 
-下面是Youtube上的一个简短视频👉 https://youtu.be1KZiP94TYjw。
+下面是Youtube上的一个简短视频👉 https://youtu.be/1KZiP94TYjw。
 
 
 

@@ -4,7 +4,7 @@ title: Sissejuhatus
 > 🚧 Ehita oma DIY-sensor ja saa osa ülemaailmsest opendata &amp; civictech võrgustikust. <br> AirRohriga saate õhusaastet ise mõõta.
 
 
-<img src="..docsairrohrparticulate-matter-air-quality-sensor-kit.jpeg" loading="lazy">
+<img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Ostunimekiri
 ##### Anduri komplekt

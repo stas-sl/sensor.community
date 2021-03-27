@@ -4,7 +4,7 @@ title: Bevezetés
 > 🚧 Építsd meg barkácsérzékelődet, és légy része a világméretű opendata &amp; civictech hálózatnak. <br> Az airRohr segítségével maga is mérheti a légszennyezettséget.
 
 
-<img src="..docsairrohrparticulate-matter-air-quality-sensor-kit.jpeg" loading="lazy">
+<img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Bevásárlólista
 ##### Érzékelő készlet

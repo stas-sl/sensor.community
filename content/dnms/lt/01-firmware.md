@@ -25,7 +25,7 @@ Norint palaikyti ryšį su ESP8266, reikia usb2serial tvarkyklių jūsų operaci
 #### MacOS
 
 ##### MacOS tvarkyklės
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Ištraukite atsisiųstą "MacOS" failą.
@@ -41,7 +41,7 @@ Jokių tvarkyklių diegti nereikia. Mikroschema turėtų būti palaikoma tiesiog
 #### Firmware Flasher NodeMCU
 Kelių operacinių sistemų palaikymas: "Windows", "MacOS" ir "Linux".
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Šaltinio kodas](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Prijunkite "NodeMCU" prie kompiuterio trumpu micro-USB kabeliu (pasirinkite trumpesnį nei 1 m, kitaip diegimas gali nepavykti). Pasirinkite `latest_en.bin` (arba kitą kalbinę versiją) ir spustelėkite "Įkelti".

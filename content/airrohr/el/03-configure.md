@@ -1,6 +1,7 @@
 ---
 title: Ρύθμιση παραμέτρων
 ---
+
 ### Αποκτήστε το μοναδικό αναγνωριστικό του σταθμού
 1. Συνδέστε το σταθμό σε ένα καλώδιο USB για να ενεργοποιήσετε τον αισθητήρα.
 
@@ -21,7 +22,7 @@ title: Ρύθμιση παραμέτρων
 
 <br>
 
-<img src="..docsairrohr_config_initial.jpg" loading="lazy">
+<img src="../docs/airrohr_config_initial.jpg" loading="lazy"/>
 
 <br>
 

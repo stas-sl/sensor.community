@@ -28,7 +28,7 @@ Válassza ki a számítógép operációs rendszerének megfelelő linket.
 ### MacOS
 
 ##### MacOS illesztőprogramok
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Csomagolja ki a letöltött fájlt MacOS esetén.
@@ -45,7 +45,7 @@ Nincs szükség illesztőprogramok telepítésére. A chipnek közvetlenül tám
 ### Firmware Flasher
 Több operációs rendszer támogatása: Windows, MacOS és Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Forráskód](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Csatlakoztassa a NodeMCU-t a számítógépéhez egy rövid micro-USB kábellel (válasszon 1 méternél rövidebbet, különben a telepítés meghiúsulhat). Válassza ki a `latest_en.bin` (vagy egy másik nyelvi verziót), és kattintson a "Upload" gombra.
@@ -59,7 +59,7 @@ Nagy köszönet illeti [Piotr, Lengyelországból](https://dropbox.inf.re), a se
 #### MacOS: hogyan kell futtatni egy ellenőrizetlen alkalmazást?
 Kattintson a jobb gombbal, és nyissa meg az alkalmazást többször, és mindig erősítse meg a "Megnyitás" opcióval.
 
-Itt van egy rövid videó a Youtube-on 👉 https://youtu.be1KZiP94TYjw
+Itt van egy rövid videó a Youtube-on 👉 https://youtu.be/1KZiP94TYjw
 
 
 

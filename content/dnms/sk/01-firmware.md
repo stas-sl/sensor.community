@@ -26,7 +26,7 @@ Na komunikáciu so zariadením ESP8266 potrebujete ovládače usb2serial pre svo
 ### MacOS
 
 ##### Ovládače systému MacOS
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Rozbaľte stiahnutý súbor pre systém MacOS.
@@ -43,7 +43,7 @@ Nie je potrebné inštalovať žiadne ovládače. Čip by mal byť podporovaný 
 ### Firmware Flasher NodeMCU
 Podpora viacerých operačných systémov: Windows, MacOS a Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Zdrojový kód](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Pripojte NodeMCU k počítaču pomocou krátkeho kábla micro-USB (vyberte kratší ako 1 meter, inak môže inštalácia zlyhať). Vyberte súbor `latest_en.bin` (alebo inú jazykovú verziu) a kliknite na tlačidlo "Upload".

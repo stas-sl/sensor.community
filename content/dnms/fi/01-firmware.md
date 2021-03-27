@@ -26,7 +26,7 @@ NocdeMCU v3:n piirisarja on yleensä CH341, tarkista NodeMCU:n takaa tekniset ti
 ### MacOS
 
 ##### MacOS -ajurit
-* [NodeMCU V2](https://www.silabs.comdocumentspublicsoftwareMac_OSX_VCP_Driver.zip )
+* [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
 ##### Pura ladattu tiedosto MacOS:lle.
@@ -43,7 +43,7 @@ Ajureita ei tarvitse asentaa. Piirin pitäisi olla suoraan tuettu (todennettavis
 ### Firmware Flasher NodeMCU
 Tuki useille käyttöjärjestelmille: Windows, MacOS ja Linux.
 
-* [airRohr Flashing Tool](http://firmware.sensor.communityairrohrflashing-tool)
+* [airRohr Flashing Tool](http://firmware.sensor.community/airrohr/flashing-tool/)
 * [Lähdekoodi](https://github.com/opendata-stuttgart/airrohr-firmware-flasher)
 
 Liitä NodeMCU tietokoneeseen lyhyellä mikro-USB-kaapelilla (valitse alle 1 metrin pituinen kaapeli, muuten asennus voi epäonnistua). Valitse `latest_en.bin` (tai jokin muu kieliversio) ja napsauta "Upload".
