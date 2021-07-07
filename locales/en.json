@@ -2,8 +2,7 @@
   "nav": {
     "home": "Home",
     "docs": "Guides",
-    "blog": "Blog",
-    "projects": "Projects",
+    "knowledge": "Knowledge",
     "forum": "Forum",
     "sensor": "Guides",
     "donate": "Donate",
@@ -18,8 +17,8 @@
     "submitError": "If the error persists, please drop by <a href=\"forum.sensor.community\">our forum</a> and let us know, or raise an issue on <a href=\"https://github.com/opendata-stuttgart/\">GitHub</a>. Thanks!"
   },
   "index": {
-    "metaDescription": "Build your DIY sensor and become part of the worldwide citizen science, open data, civic tech network. Supported by a lot of contributors \uD83D\uDC95",
-    "metaTitle": "Sensor.Community \uD83C\uDF10 Build your own sensor and join the worldwide civic tech network",
+    "metaDescription": "Build your own Air Quality sensor and become part of the worldwide citizen science, open data, civic tech network. Supported by a lot of contributors",
+    "metaTitle": "Build your own Air Quality sensor - Sensor.Community",
     "h1-build": "Build your own sensor",
     "h1-become": "and become part of the ",
     "h1-civic-tech": "worldwide Civic Tech network \uD83C\uDF10",
@@ -39,10 +38,10 @@
     "message-hubs": "Sensor.Community has global hubs in Stuttgart, Sofía and Warsaw."
   },
   "sensor": {
-    "metaDescription": "",
-    "metaTitle": "Find your sensor and building instructions for your DYI fine dust sensor",
+    "metaDescription": "Building instructions for your DYI fine dust sensor (PM2.5, PM10, temp and humidity) or noise measurement sensor",
+    "metaTitle": "Building instructions for your DYI fine dust sensor or noise measurement sensor - Sensor.Community",
     "h1": "Sensor Kits",
-    "subtitle": "Choose an assembly guide and build your sensor.",
+    "subtitle": "Find your sensor and building instructions for your DYI fine dust sensor",
     "airSensorTitle": "Air",
     "noiseSensorTitle": "Noise"
   },
@@ -50,23 +49,16 @@
     "editOnGithub": "edit on Github"
   },
   "airrohr": {
-    "metaTitle": "Build your own particulate matter sensor.",
-    "metaDescription": ""
+    "metaTitle": "Build your own Air Quality Monitor – measure PM2.5, PM10, Temp & Humidity - Sensor.Community",
+    "metaDescription": "In this guide you will learn how to build your own Air Quality Monitor to measuring PM2.5, PM10, as well as temperature and humidity."
   },
   "dnms": {
-    "metaTitle": "Build your own noise measuring sensor.",
-    "metaDescription": ""
-  },
-  "forum": {
-    "metaDescription": "",
-    "metaTitle": "Forum",
-    "h1": "Forum",
-    "subtitle": "Coming soon",
-    "getNotified": "\uD83D\uDC8C Subscribe"
+    "metaTitle": "Build your own Noise Measuring Monitor - Sensor.Community",
+    "metaDescription": "In this guide you will learn how to build your own Noise Measuring Sensor."
   },
   "donate": {
     "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
-    "metaTitle": "Donate - help us by showing your love",
+    "metaTitle": "Donate - help us by showing your love - Sensor.Community",
     "h1": "Show your support",
     "description": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
     "section": "Ways to support",
@@ -81,34 +73,59 @@
   },
   "blog": {
     "metaDescription": "News",
-    "metaTitle": "News",
+    "metaTitle": "News - Sensor.Community",
+    "h1": "Recent posts",
+    "description": " Find news or other interesting information"
+  },
+  "knowledge": {
+    "metaDescription": "Knowledge Base, find scientific evaluation and troubleshoot guides for our airohr or dnms sensor",
+    "metaTitle": "Knowledge Base - Sensor.Community",
+    "h1": "Knowledge Base",
+    "description": "Find interesting scientific evaluation and information about our Air Quality (airRohr) or Noise Measurement (DNSM) sensors"
+  },
+  "helpcenter": {
+    "metaDescription": "Help Center - Sensor Community",
+    "metaTitle": "Help Center - Sensor Community",
+    "h1": "Recent posts",
+    "description": " Find news or other interesting information"
+  },
+  "evaluation": {
+    "metaDescription": "Help Center - Sensor Community",
+    "metaTitle": "Evaluation - Sensor.Community",
     "h1": "Recent posts",
     "description": " Find news or other interesting information"
   },
   "contributors": {
     "metaDescription": "The people behind the project",
-    "metaTitle": "Contributors of Sensor.Community",
+    "metaTitle": "Contributors - Sensor.Community",
     "h1": "Hello from the team \uD83D\uDC4B",
     "description": "Meet the team who is working behind the scenes to harness the power of Sensor.Community.",
     "contactBottom": "\uD83D\uDCEEPlease use the contact options at the bottom of the page.",
     "meetTeam": "Meet the team"
   },
+  "press": {
+    "metaTitle": "Press",
+    "metaDescription": "Press",
+    "title": "Press - Sensor.Community",
+    "description": "Press"
+  },
+  "pressArticles": {
+    "metaTitle": "Press",
+    "metaDescription": "Press",
+    "title": "Press review - Sensor.Community",
+    "description": "The latest press reviews, news about Sensor Community"
+  },
   "projects": {
     "metaDescription": "Find mobile apps, websites,... from our lovely community \uD83D\uDC96",
-    "metaTitle": "Community Projects",
+    "metaTitle": "Community Projects - Sensor.Community",
     "h1": "Community Projects",
     "description": "Find mobile apps, websites,... from our lovely community \uD83D\uDC96️",
     "submitIdea": "Have a great project? Share it with the community!",
     "submitProject": "Submit your project →"
   },
-  "hubs": {
-    "metaDescription": "Find communities around the world \uD83D\uDC96️",
-    "metaTitle": "Community Hubs",
-    "h1": "Community Hubs",
-    "description": "Find communities around the world \uD83D\uDC96️️"
-  },
   "campaigns": {
-    "title": "Join a campaign"
+    "title": "Current campaigns",
+    "description": "Take a look at our current campaigns and join them!"
   },
   "campaign": {
     "h1": "Campaign",
@@ -118,7 +135,7 @@
     "phase3": "Phase 3:",
     "refs": "Sensor.Community campaign to bring sensors at every reference station in this world.\n",
     "refs-metaTitle": "Sensor.Community campaign to bring sensors at every reference station in this world.\n",
-    "refs-phase1": "Display locations of reference stations.\n",
+    "refs-phase1": "Display locations of all reference stations.\n",
     "refs-phase2": "Display meta information of reference stations.\n",
     "refs-phase3": "Display measurement values of reference stations.\n",
     "sensor2school": "Sensor.Community campaign to bring sensors at every school in this world.\n",
@@ -132,15 +149,9 @@
     "zero200-metaTitle": "#zero200 campaign supports you in launching your local Sensor.Community group.\n",
     "no2": "We measure NO2 with diffusion tubes.\n",
     "no2-metaTitle": "We measure NO2 with diffusion tubes.\n",
-    "no2-phase1": "Launching on 01.10.2020 - 9 cities in Europe measure with 30 NO2 diffusion tubes each.\n",
+    "no2-phase1": "Launching on 01.10.2020 - 10 cities in Europe measure with 30 NO2 diffusion tubes each.\n",
     "no2-phase2": "New Map to display all NO2 diffusion tubes measurements.\n",
     "no2-phase3": "Adding all other NO2 diffusion tube campaigns worldwide to the Map.\n",
-    "getNotified": "\uD83D\uDC8C Subscribe",
-    "map": "Open the map in a separate tab"
-  },
-  "collaborations": {
-    "h1": "Collaborations",
-    "subtitle": "Coming soon",
     "getNotified": "\uD83D\uDC8C Subscribe"
   },
   "location": {
@@ -168,15 +179,20 @@
     "license": "License",
     "socialLinks": "Connect",
     "blog": "Blog",
+    "team": "Team",
     "donate": "Donate",
-    "privacy" : "Privacy & Terms",
+    "privacy": "Privacy & Terms",
     "communityProjects": "Community Projects",
     "communityHubs": "Community Hubs",
     "contributors": "Contributors",
-    "mission" : "Making the world a better place through community driven, open environmental data.",
+    "mission": "Making the world a better place through community driven, open environmental data.",
     "withLove": "Made with \uD83D\uDC95 in Stuttgart, Germany"
   },
   "imprint": {
+    "metaTitle": "Imprint & Privacy - Sensor.Community",
+    "metaDescription": "Imprint & Privacy - Sensor.Community",
+    "title": "Imprint & Privacy - Sensor.Community",
+    "description": "Take a look at our current campaigns and join them!",
     "h1": "Imprint & Privacy",
     "lastModified": "Last Modified: ",
     "imprint": "Imprint",

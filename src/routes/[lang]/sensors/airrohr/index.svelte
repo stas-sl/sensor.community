@@ -1,15 +1,15 @@
 <script context="module">
-     export async function preload({params}) {
-         const res = await this.fetch(`endpoints/airrohr/${params.lang}.json`);
+    export async function preload({params}) {
+        const res = await this.fetch(`endpoints/airrohr/${params.lang}.json`);
 
-         if (res.status === 200) {
-             const sections = await res.json();
-             return { sections };
-         } else {
-             const sections = await this.fetch(`endpoints/airrohr/en.json`).then(r => r.json())
-             return {sections}
-         }
-     }
+        if (res.status === 200) {
+            const sections = await res.json();
+            return {sections};
+        } else {
+            const sections = await this.fetch(`endpoints/airrohr/en.json`).then(r => r.json())
+            return {sections}
+        }
+    }
 </script>
 
 <script>
@@ -27,16 +27,23 @@
 
 <svelte:head>
     <title>{i18n.t('airrohr:metaTitle')}</title>
-    <meta property="og:title" content="{i18n.t('airrohr:metaTitle')}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content=""/>
+    <meta content="{i18n.t('airrohr:metaTitle')}" property="og:title"/>
+    <meta content="website" property="og:type"/>
+    <meta content="" property="og:url"/>
+    <meta content="" property="og:image"/>
 </svelte:head>
 
 {#await sections}
     <p>...waiting</p>
 {:then sections}
-    <Docs {sections} project="sapper" class="mt-10"/>
+    <div class="p-5 border-b border-gray-200 text-brand-funcRed">
+        <a href="{lang}/sensors/">←&nbsp Back to sensor overview</a>
+    </div>
+    <div class="relative px-4">
+        <div class="text-lg max-w-prose mx-auto">
+            <Docs {sections} class="prose prose-lg"/>
+        </div>
+    </div>
 {:catch error}
     <p>An error occurred!</p>
 {/await}
