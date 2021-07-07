@@ -44,8 +44,8 @@
     <meta content="" property="og:image"/>
 </svelte:head>
 
-<div class="relative py-16 overflow-hidden text-brand-black">
-    <div class="relative px-4 sm:px-6 lg:px-8">
+<div class="relative py-16 overflow-hidden text-brand-black ">
+    <div class="relative px-4 sm:px-6 lg:px-8 text-center">
         <div class="text-lg max-w-prose mx-auto">
             <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
                 Knowledge Base

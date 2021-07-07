@@ -120,7 +120,7 @@
 {#await fetchNumbers}
     <p>{i18n.t('index:inNumbers-fetching')}</p>
 {:then data}
-    <div class="relative bg-white overflow-hidden bg-brand-yellowLight">
+    <div class="relative overflow-hidden bg-brand-yellowLight">
         <div class="relative px-4 sm:px-6 lg:px-8">
             <div class="text-lg max-w-prose mx-auto">
                 <div class="mt-6 prose prose-lg mx-auto">
@@ -168,7 +168,7 @@
     <p>{i18n.t('index:inNumbers-error')}</p>
 {/await}
 
-<div class="relative py-16 bg-white overflow-hidden">
+<div class="relative py-16 overflow-hidden">
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <div class="mt-6 prose prose-lg mx-auto text-brand-black">

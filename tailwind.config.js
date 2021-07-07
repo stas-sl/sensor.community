@@ -53,6 +53,22 @@ module.exports = {
                         },
                     },
                 },
+            },
+            animation: {
+                heartBeat: "heartBeat 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+            },
+            keyframes: {
+                heartBeat: {
+                    "0%": {
+                        transform: "scale(0.6)",
+                    },
+                    "50%": {
+                        transform: "scale(0.8)",
+                    },
+                    "100%": {
+                        transform: "scale(0.6)",
+                    }
+                },
             }
         },
     },

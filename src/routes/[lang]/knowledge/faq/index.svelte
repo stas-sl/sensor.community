@@ -62,17 +62,17 @@
 </svelte:head>
 
 <div class="relative py-16 overflow-hidden text-brand-black">
-    <div class="text-lg max-w-prose mx-auto">
-        <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
-            Troubleshoot and FAQ
-        </h1>
-        <p class="text-lg md:mb-0 mb-10">
-            You have questions? We got you covered! Find your answers in our FAQ.
-        </p>
-        <a class="text-base font-medium text-brand-funcRed"
-           href="https://forum.sensor.community/" target="_blank">
-            Still looking for an answer? Check our forum. &rarr;
-        </a>
+    <div class="relative px-4 sm:px-6 lg:px-8 text-center">
+        <div class="text-lg max-w-prose mx-auto">
+            <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
+                Troubleshoot and FAQ
+            </h1>
+            <p class="mt-8 text-xl leading-8">You have questions? We got you covered! Find your answers in our FAQ.</p>
+            <a class="text-base font-medium text-brand-funcRed"
+               href="https://forum.sensor.community/" target="_blank">
+                Still looking for an answer? Check our forum. &rarr;
+            </a>
+        </div>
     </div>
 </div>
 

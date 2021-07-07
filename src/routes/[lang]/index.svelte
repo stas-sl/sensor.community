@@ -67,7 +67,7 @@
     <meta content="" property="og:image"/>
 </svelte:head>
 
-<div class="bg-white pb-6">
+<div class="pb-6">
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
         <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div class="mt-10">
@@ -124,7 +124,7 @@
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                     <a href="https://maps.sensor.community/#2/0.0/0.0" target="_blank">
                         <img alt=""
-                             class="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
+                             class="w-full rounded-md shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
                              src="images/maps.jpg">
                     </a>
                 </div>
@@ -331,7 +331,7 @@
             <div class="mt-12 sm:mt-16 lg:mt-0">
                 <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img alt="Air Quality Sensor Inside"
-                         class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                         class="w-full rounded-xl shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                          src="/images/air-quality-sensor-inside.jpg">
                 </div>
             </div>

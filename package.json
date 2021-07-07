@@ -1,7 +1,7 @@
 {
   "name": "sensor.community",
   "description": "new shiny website for dust and noise measuring project sensor.community based on sapper and svelte",
-  "version": "0.5.0",
+  "version": "0.8.0",
   "scripts": {
     "dev": "sapper dev --ext '.svelte .svx' start:dev autobuild watch:tailwind watch:build",
     "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
@@ -16,6 +16,8 @@
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^2.4.2",
     "@sindresorhus/slugify": "^1.1.2",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.6",
     "compression": "^1.7.4",
     "country-emoji": "^1.5.6",
     "date-fns": "^2.22.1",
@@ -28,7 +30,6 @@
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
-    "autoprefixer": "^10.2.6",
     "prismjs": "^1.24.1",
     "rollup": "^2.52.8",
     "rollup-plugin-babel": "^5.0.0-alpha.2",
@@ -37,8 +38,7 @@
     "sapper": "^0.29.1",
     "sirv": "^1.0.12",
     "svelte-i18n": "^3.3.9",
-    "tailwindcss": "^2.2.4",
-    "@tailwindcss/typography": "^0.4.1"
+    "tailwindcss": "^2.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

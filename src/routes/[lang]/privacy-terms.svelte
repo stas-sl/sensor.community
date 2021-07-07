@@ -17,7 +17,7 @@
     <meta content="" property="og:image"/>
 </svelte:head>
 
-<div class="relative py-16 bg-white overflow-hidden">
+<div class="relative py-16 overflow-hidden">
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
