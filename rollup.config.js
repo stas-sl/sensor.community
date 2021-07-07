@@ -95,7 +95,8 @@ export default {
     output: config.server.output(),
     plugins: [
       replace({
-        'process.browser': false,
+        'preventAssignment': true,
+        'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
@@ -127,6 +128,7 @@ export default {
     plugins: [
       resolve(),
       replace({
+        'preventAssignment': true,
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),

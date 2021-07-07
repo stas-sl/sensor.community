@@ -23,8 +23,8 @@
     }
 </script>
 
-<div class="relative bg-brand-green z-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-4">
+<div class="bg-brand-green sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
         <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
             <div class="lg:w-0 lg:flex-1 mr-40 justify-end">
                 <a class="block uppercase " href="{lang}/">
@@ -56,13 +56,13 @@
                 <div class="pr-40"></div>
             </nav>
             <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
-                <a href="https://github.com/opendata-stuttgart/" target="_blank"
-                   on:click={menuToggle}>
+                <a href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
+                   target="_blank">
                     GitHub
                 </a>
 
-                <a href="https://devices.sensor.community/" target="_blank"
-                   on:click={menuToggle}>
+                <a href="https://devices.sensor.community/" on:click={menuToggle}
+                   target="_blank">
                     Devices
                 </a>
                 <LanguageSwitcher class="z-50"/>
@@ -95,93 +95,95 @@
 </div>
 
 <!--Mobile menu-->
-<div class="bg-brand-green h-screen absolute z-50 inset-x-0 transition transform origin-top-right lg:hidden { menu.open ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition  duration-200">
-    <div class="divide-y-2">
-        <div class="mt-10 px-5 space-y-6 text-brand-white">
-            <nav class="grid { menu.open ? 'open' : 'closed' }">
-                <a class="flex py-4"
-                   href="{lang}/sensors/"
-                   on:click={menuToggle}>
-                    <div class="text-2xl leading-6 font-bold flex-1">
-                        {i18n.t('nav:sensor')}
-                    </div>
-                    <span class="text-2xl">&nbsp&rarr;</span>
-                </a>
+<div class="bg-brand-green sticky top-20 z-40">
+    <div class="bg-brand-green h-screen absolute -mt-10 inset-x-0 transition transform origin-top-right lg:hidden { menu.open ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition  duration-200">
+        <div class="divide-y-2">
+            <div class="mt-10 px-5 space-y-6 text-brand-white">
+                <nav class="grid { menu.open ? 'open' : 'closed' }">
+                    <a class="flex py-4"
+                       href="{lang}/sensors/"
+                       on:click={menuToggle}>
+                        <div class="text-2xl leading-6 font-bold flex-1">
+                            {i18n.t('nav:sensor')}
+                        </div>
+                        <span class="text-2xl">&nbsp&rarr;</span>
+                    </a>
 
-                <a class="flex py-2"
-                   href="{lang}/sensors/airrohr/"
-                   on:click={menuToggle}>
-                    <div class="text-base font-light">
-                        Air Quality Kit (airRohr)
-                    </div>
-                </a>
+                    <a class="flex py-2"
+                       href="{lang}/sensors/airrohr/"
+                       on:click={menuToggle}>
+                        <div class="text-base font-light">
+                            Air Quality Kit (airRohr)
+                        </div>
+                    </a>
 
-                <a class="flex py-2"
-                   href="{lang}/sensors/dnms/"
-                   on:click={menuToggle}>
-                    <div class="text-base font-light">
-                        Noise Measuring Sensor (DNMS)
-                    </div>
-                </a>
+                    <a class="flex py-2"
+                       href="{lang}/sensors/dnms/"
+                       on:click={menuToggle}>
+                        <div class="text-base font-light">
+                            Noise Measuring Sensor (DNMS)
+                        </div>
+                    </a>
 
-                <a class="flex py-4"
-                   href="{lang}/knowledge/"
-                   on:click={menuToggle}>
-                    <div class="text-2xl leading-6 font-bold flex-1">
-                        {i18n.t('nav:knowledge')}
-                    </div>
-                    <span class="text-2xl">&nbsp&rarr;</span>
-                </a>
+                    <a class="flex py-4"
+                       href="{lang}/knowledge/"
+                       on:click={menuToggle}>
+                        <div class="text-2xl leading-6 font-bold flex-1">
+                            {i18n.t('nav:knowledge')}
+                        </div>
+                        <span class="text-2xl">&nbsp&rarr;</span>
+                    </a>
 
 
-                <a class="flex py-4"
-                   href="{lang}/forum/"
-                   on:click={menuToggle}>
-                    <div class="text-2xl leading-6 font-bold flex-1">
-                        {i18n.t('nav:forum')}
-                    </div>
-                    <span class="text-2xl">&nbsp&rarr;</span>
-                </a>
-                <a class="flex py-4"
-                   href="{lang}/donate/"
-                   on:click={menuToggle}>
-                    <div class="text-2xl leading-6 font-bold flex-1">
-                        {i18n.t('nav:donate')}
-                    </div>
-                    <span class="text-2xl">&nbsp&rarr;</span>
-                </a>
+                    <a class="flex py-4"
+                       href="{lang}/forum/"
+                       on:click={menuToggle}>
+                        <div class="text-2xl leading-6 font-bold flex-1">
+                            {i18n.t('nav:forum')}
+                        </div>
+                        <span class="text-2xl">&nbsp&rarr;</span>
+                    </a>
+                    <a class="flex py-4"
+                       href="{lang}/donate/"
+                       on:click={menuToggle}>
+                        <div class="text-2xl leading-6 font-bold flex-1">
+                            {i18n.t('nav:donate')}
+                        </div>
+                        <span class="text-2xl">&nbsp&rarr;</span>
+                    </a>
 
-                <hr class="my-3">
+                    <hr class="my-3">
 
-                <a class="flex py-3"
-                   href="{lang}/sensors/"
-                   on:click={menuToggle}>
+                    <a class="flex py-3"
+                       href="{lang}/sensors/"
+                       on:click={menuToggle}>
                     <span class="text-base font-light">
                         Github
                     </span>
-                    <span class="transform -rotate-45">&rarr;</span>
+                        <span class="transform -rotate-45">&rarr;</span>
 
-                </a>
+                    </a>
 
-                <a class="flex py-3"
-                   href="{lang}/sensors/"
-                   on:click={menuToggle}>
+                    <a class="flex py-3"
+                       href="{lang}/sensors/"
+                       on:click={menuToggle}>
                     <span class="text-base font-light">
                         Devices
                     </span>
-                    <span class="transform -rotate-45">&rarr;</span>
+                        <span class="transform -rotate-45">&rarr;</span>
 
-                </a>
+                    </a>
 
-                <a class="flex py-3"
-                   href="{lang}/sensors/"
-                   on:click={menuToggle}>
+                    <a class="flex py-3"
+                       href="{lang}/sensors/"
+                       on:click={menuToggle}>
                     <span class="text-base font-light">
                         Map
                     </span>
-                    <span class="transform -rotate-45">&rarr;</span>
-                </a>
-            </nav>
+                        <span class="transform -rotate-45">&rarr;</span>
+                    </a>
+                </nav>
+            </div>
         </div>
     </div>
 </div>

@@ -96,7 +96,7 @@
 
 </style>
 
-<div bind:this={aside} class="mt-12 sticky">
+<div bind:this={aside} class="mt-12">
     <GuideContents {sections}/>
 </div>
 <div class="max-w-3xl mx-auto max-w-6xl">

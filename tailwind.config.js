@@ -34,6 +34,26 @@ module.exports = {
                     funcPurple: '#2B0849'
                 },
             },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        a: {
+                            color: '#E83559',
+                            '&:hover': {
+                                color: '#E83559',
+                            },
+                            'font-weight': '400',
+                            'text-decoration': 'none',
+                        },
+                        img: {
+                            display: 'inline',
+                        },
+                        blockquote: {
+                            'border-left-color': '#E93559'
+                        },
+                    },
+                },
+            }
         },
     },
     variants: {
@@ -42,6 +62,7 @@ module.exports = {
         },
     },
     plugins: [
+        require('@tailwindcss/typography'),
         require('tailwindcss/colors')
     ]
 }
