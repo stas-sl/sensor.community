@@ -5,56 +5,61 @@
     const {page} = stores();
     $: lang = $page.params.lang;
     $: i18n = initI18n(lang);
+
+    const contacts = [
+        {
+            title: "General Contact",
+            description: "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+            link: "mailto:Contact@Sensor.Community",
+            linkName: "Contact@Sensor.Community"
+        },
+        {
+            title: "Partnership",
+            description: "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+            link: "mailto:Partnership@Sensor.Community",
+            linkName: "Partnership@Sensor.Community"
+        },
+        {
+            title: "Technical Support",
+            description: "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+            link: "https://forum.sensor.community",
+            linkName: "Forum"
+        }
+    ]
 </script>
 
-<section class="container mx-auto mt-10">
-    <div class="flex flex-row flex-wrap mt-10">
-        <div class="w-full flex flex-wrap">
-            <h2 class="w-full py-4 md:py-8 text-gray-700 text-5xl font-bold leading-normal text-center flex-col">
-                {i18n.t('contact:title')}</h2>
-
-            <div class="mx-auto flex flex-wrap items-center justify-center text-gray-700">
-                <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-md max-w-xs shadow-md border bg-gray-200 w-full h-56 md:w-1/5">
-                    <a href="mailto:contact@Sensor.Community">
-                        <div class="relative px-6 pb-6 mt-6 hover:text-teal-700">
-                            <span class="block -mb-1 text-4xl">{i18n.t('contact:general')}</span>
-                            <div class="flex justify-between">
-                                <span class="block text-3xl"> ️🧐 {i18n.t('contact:general-subtitle')}</span>
+<div class="bg-brand-yellowLight">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div class="max-w-lg relative pt-16 pb-6 mx-auto md:max-w-none md:grid md:grid-cols-3 md:gap-8">
+            {#each contacts as contact}
+                <div class="pb-12 md:pb-6">
+                    <h2 class="text-2xl font-extrabold sm:text-3xl">
+                        {contact.title}
+                    </h2>
+                    <div class="mt-3">
+                        <p class="text-lg">
+                            {contact.description}
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="mt-6 flex">
+                            <div class="flex-shrink-0">
+                                <svg aria-hidden="true" class="h-6 w-6 text-brand-funcRed" fill="none"
+                                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                          stroke-linecap="round" stroke-linejoin="round"
+                                          stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="ml-3 text-base text-brand-funcRed">
+                                <a href="{contact.link}" target="_blank">
+                                    {contact.linkName}
+                                </a>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-md max-w-xs shadow-md border bg-gray-200 w-full h-56 md:w-1/5">
-                    <a href="mailto:partnership@Sensor.Community">
-                        <div class="relative px-6 pb-6 mt-6 hover:text-teal-700">
-                            <span class="block -mb-1 text-4xl">{i18n.t('contact:partnership')}</span>
-                            <div class="flex justify-between">
-                                <span class="block text-3xl">️💌 {i18n.t('contact:partnership-subtitle')}</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-md max-w-xs shadow-md border bg-gray-200 w-full h-56 md:w-1/5">
-                    <a href="mailto:press@Sensor.Community">
-                        <div class="relative px-6 pb-6 mt-6 hover:text-teal-700">
-                            <span class="block -mb-1 text-4xl">{i18n.t('contact:press')}</span>
-                            <div class="flex justify-between">
-                                <span class="block text-3xl">️📰 {i18n.t('contact:press-subtitle')}</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="flex-shrink-0 m-6 relative overflow-hidden rounded-md max-w-xs shadow-md border bg-gray-200 w-full h-56 md:w-1/5">
-                    <a href="mailto:tech@Sensor.Community">
-                        <div class="relative px-6 pb-6 mt-6 hover:text-teal-700">
-                            <span class="block -mb-1 text-4xl">{i18n.t('contact:tech')}</span>
-                            <div class="flex justify-between">
-                                <span class="block text-3xl">️💻 {i18n.t('contact:tech-subtitle')}</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            {/each}
         </div>
     </div>
-</section>
+</div>

@@ -11,7 +11,7 @@
 </script>
 
 <script>
-    import Nav from '../components/NavResponsive.svelte';
+    import Nav from '../components/NavMain.svelte';
     import Footer from '../components/Footer.svelte';
 
     export let segment;

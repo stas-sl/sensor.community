@@ -8,7 +8,7 @@
 </script>
 
 <div class="bg-gray-100">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-8 lg:py-24 lg:px-24">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="xl:col-span-1">
                 <img class="h-10 text-gray-500 text-2xl" src=""
@@ -50,7 +50,8 @@
              L338.213,256L482,112.212V399.787z"></path>
                         </svg>
                     </a>
-                </div>            </div>
+                </div>
+            </div>
             <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
@@ -117,7 +118,7 @@
                             <li>
                                 <a href="{lang}/contributors/"
                                    class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                    {i18n.t('footer:contributors')}
+                                    {i18n.t('footer:team')}
                                 </a>
                             </li>
                             <li class="mt-4">
@@ -131,11 +132,11 @@
                                     {i18n.t('footer:communityHubs')}
                                 </a>
                             </li>
-                            <!--                            <li class="mt-4">-->
-                            <!--                                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">-->
-                            <!--                                    Press-->
-                            <!--                                </a>-->
-                            <!--                            </li>-->
+                            <li class="mt-4">
+                                <a class="text-base leading-6 text-gray-500 hover:text-gray-900" href="{lang}/press/">
+                                    Press
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
@@ -150,17 +151,20 @@
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank"
+                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
                                     Firmware License
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://opendatacommons.org/licenses/dbcl/1-0/" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank"
+                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
                                     DB Contents License
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank"
+                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
                                     Photos License
                                 </a>
                             </li>
