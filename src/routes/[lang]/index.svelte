@@ -60,7 +60,7 @@
 </script>
 <svelte:head>
     <title>{i18n.t('index:metaTitle')}</title>
-    <meta name="description" content="{i18n.t('index:metaDescription')}">
+    <meta content="{i18n.t('index:metaDescription')}" name="description">
     <meta content={i18n.t('index:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
@@ -107,7 +107,6 @@
         <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
             <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <div class="hidden sm:block">
-                    <div class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"></div>
                     <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" fill="none" height="392"
                          viewBox="0 0 404 392"
                          width="404">
@@ -128,8 +127,8 @@
                              src="images/maps.jpg">
                     </a>
                 </div>
-                <figure>
-                    <figcaption class="text-gray-400 ml-12 mt-6">Click on the picture to open in a new browser tab
+                <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
+                    <figcaption>Click on the picture to open in a new browser tab
                     </figcaption>
                 </figure>
             </div>
@@ -142,18 +141,17 @@
     <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div class="relative sm:py-16 lg:py-0">
             <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
-                <!--                <div class="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"></div>-->
-                <!--                <svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" fill="none"-->
-                <!--                     height="392" viewBox="0 0 404 392" width="404">-->
-                <!--                    <defs>-->
-                <!--                        <pattern height="20" id="02f20b47-fd69-4224-a62a-4c9de5c763f7" patternUnits="userSpaceOnUse"-->
-                <!--                                 width="20" x="0"-->
-                <!--                                 y="0">-->
-                <!--                            <rect class="text-gray-200" fill="currentColor" height="4" width="4" x="0" y="0"/>-->
-                <!--                        </pattern>-->
-                <!--                    </defs>-->
-                <!--                    <rect fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" height="392" width="404"/>-->
-                <!--                </svg>-->
+                <svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" fill="none"
+                     height="392" viewBox="0 0 404 392" width="404">
+                    <defs>
+                        <pattern height="20" id="02f20b47-fd69-4224-a62a-4c9de5c763f7" patternUnits="userSpaceOnUse"
+                                 width="20" x="0"
+                                 y="0">
+                            <rect class="text-gray-200" fill="currentColor" height="4" width="4" x="0" y="0"/>
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" height="392" width="404"/>
+                </svg>
             </div>
             <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
                 <!-- Quote Card-->
@@ -306,27 +304,6 @@
                         </div>
                     </div>
                 </div>
-                <!--                <div class="mt-8 border-t border-gray-200 pt-6">-->
-                <!--                    <blockquote>-->
-                <!--                        <div>-->
-                <!--                            <p class="text-base text-xl text-gray-500">-->
-                <!--                                &ldquo;Don't worry: You don't have to program!.&rdquo;-->
-                <!--                            </p>-->
-                <!--                        </div>-->
-                <!--                        <footer class="mt-3">-->
-                <!--                            <div class="flex items-center space-x-3">-->
-                <!--                                <div class="flex-shrink-0">-->
-                <!--                                    <img alt=""-->
-                <!--                                         class="h-6 w-6 rounded-full"-->
-                <!--                                         src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80">-->
-                <!--                                </div>-->
-                <!--                                <div class="text-base font-medium text-gray-700">-->
-                <!--                                    Marcia Hill, Digital Marketing Manager-->
-                <!--                                </div>-->
-                <!--                            </div>-->
-                <!--                        </footer>-->
-                <!--                    </blockquote>-->
-                <!--                </div>-->
             </div>
             <div class="mt-12 sm:mt-16 lg:mt-0">
                 <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
@@ -334,50 +311,13 @@
                          class="w-full rounded-xl shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                          src="/images/air-quality-sensor-inside.jpg">
                 </div>
+                <figure class="px-4 mt-4 text-sm text-gray-600">
+                    <figcaption>A look inside our air quality sensor
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
-    <!--    <div class="mt-24">-->
-    <!--        <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">-->
-    <!--            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">-->
-    <!--                <div>-->
-    <!--                    <div>-->
-    <!--            <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">-->
-    <!--              &lt;!&ndash; Heroicon name: outline/sparkles &ndash;&gt;-->
-    <!--              <svg aria-hidden="true" class="h-6 w-6 text-brand-white" fill="none" stroke="currentColor"-->
-    <!--                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
-    <!--                <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"-->
-    <!--                      stroke-linecap="round" stroke-linejoin="round"-->
-    <!--                      stroke-width="2"/>-->
-    <!--              </svg>-->
-    <!--            </span>-->
-    <!--                    </div>-->
-    <!--                    <div class="mt-6">-->
-    <!--                        <h2 class="text-3xl font-extrabold tracking-tight">-->
-    <!--                            Better understand your customers-->
-    <!--                        </h2>-->
-    <!--                        <p class="mt-4 text-lg">-->
-    <!--                            Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada-->
-    <!--                            faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis-->
-    <!--                            sem-->
-    <!--                            arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.-->
-    <!--                        </p>-->
-    <!--                        <div class="mt-6">-->
-    <!--                            <Button link="{lang}/sensors/" linkName="Build your own DIY sensor"></Button>-->
-
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">-->
-    <!--                <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">-->
-    <!--                    <img alt="Customer profile user interface"-->
-    <!--                         class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"-->
-    <!--                         src="/images/air-quality-sensor-inside.jpg">-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 </div>
 
 <!-- Partner section -->
@@ -425,7 +365,6 @@
         </div>
     </div>
 </div>
-
 
 <Banner
         description={banner.description}

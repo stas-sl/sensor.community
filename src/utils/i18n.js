@@ -13,6 +13,14 @@ register('pl', () => import('../../locales/pl'));
 register('nl', () => import('../../locales/nl'));
 register('es', () => import('../../locales/es'));
 register('ja', () => import('../../locales/ja'));
+register('da', () => import('../../locales/da'));
+register('el', () => import('../../locales/el'));
+register('et', () => import('../../locales/et'));
+register('hu', () => import('../../locales/hu'));
+register('lt', () => import('../../locales/lt'));
+register('lv', () => import('../../locales/lv'));
+register('ro', () => import('../../locales/ro'));
+register('sl', () => import('../../locales/sl'));
 register('zh', () => import('../../locales/zh'));
 
 

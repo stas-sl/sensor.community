@@ -39,7 +39,7 @@
 
 <div class="pb-6">
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
-        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+        <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div class="mt-10">
                 <div class="inline-flex space-x-4">
                     <img alt="sensor community logo" class="h-8 w-auto"
@@ -53,24 +53,14 @@
                         <h1 class="text-5xl font-extrabold text-brand-black tracking-tight sm:text-5xl">
                             {i18n.t('knowledge:h1')}
                         </h1>
-                        <p class="mt-6 text-xl text-gray-900 antialiased">
+                        <p class="mt-6 text-xl antialiased">
                             {i18n.t('knowledge:description')}
                         </p>
                     </div>
                 </div>
-                <div class="mt-12 lg:mt-24 lg:hidden">
-                    <div class="flex items-center justify-center animate-bounce transition duration-100 ease-in-out cursor-pointer"
-                         type="button">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"
-                                  stroke-width="2"></path>
-                        </svg>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="sm:mx-auto sm:max-w-3xl sm:px-6 hidden md:block">
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6 hidden lg:block">
             <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <div class="hidden sm:block">
                     <div class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"></div>
@@ -99,14 +89,14 @@
 </div>
 
 
-<div class="relative pb-32 overflow-hidden">
+<div class="relative pb-16 overflow-hidden">
     <div class="relative">
         <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-                <div class="border-r-2 border-gray-200">
+            <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+                <div class="lg:border-r-2 border-gray-200">
                     <div class="mt-6">
-                        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Troubleshoot Guide and FAQ</h2>
-                        <p class="mt-4 text-lg text-gray-500">Semper curabitur ullamcorper posuere nunc sed. Ornare
+                        <h2 class="text-3xl font-extrabold tracking-tight">Troubleshoot Guide / FAQ</h2>
+                        <p class="mt-4 text-lg">Semper curabitur ullamcorper posuere nunc sed. Ornare
                             iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra
                             duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare
                             pharetra.</p>
@@ -115,18 +105,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-12 border-b-2 lg:border-b-0"></div>
             </div>
-            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+            <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div>
-                    <div class="mt-6">
-                        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Scientific Evaluation</h2>
+                    <div class="mt-12 lg:mt-4">
+                        <h2 class="text-3xl font-extrabold tracking-tight">Scientific Evaluation</h2>
                         <ul>
-                            <li class="mt-4 text-lg text-gray-500">What role did particulate matter play in the 2016 flu
+                            <li class="mt-2 text-lg">What role did particulate matter play in the 2016 flu
                                 epidemic?
                             </li>
-                            <li class="mt-4 text-lg text-gray-500">How accurately does the SDS011 measure?</li>
+                            <li class="mt-2 text-lg">How accurately does the SDS011 measure?</li>
                         </ul>
-                        <p class="mt-4 text-lg text-gray-500">How accurately does the SDS011 measure?</p>
+                        <p class="mt-2 text-lg">...</p>
                         <div class="mt-6">
                             <Button link="{lang}/knowledge/evaluation/" linkName="Check out the papers"/>
                         </div>

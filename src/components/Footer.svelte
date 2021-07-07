@@ -11,14 +11,17 @@
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-8 lg:py-24 lg:px-24">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="xl:col-span-1">
-                <img class="h-10 text-gray-500 text-2xl" src=""
+                <img class="h-10 text-2xl inline-flex space-x-4 filter saturate-0" src="images/logos/signet.svg"
                      alt="Sensor.Community" loading="lazy"/>
+                <span class="py-1 ml-2 font-semibold text-gray-500 tracking-wide uppercase">
+                  Sensor.Community
+                </span>
                 <p class="mt-8 text-gray-500 text-base leading-6">
                     {i18n.t('footer:mission')}
                 </p>
                 <div class="mt-8 flex">
                     <a href="https://fosstodon.org/@SensorCommunity"
-                       class="text-gray-400 hover:text-gray-500">
+                       class="text-gray-400 hover:text-brand-funcRed">
                         <span class="sr-only">Mastodon</span>
                         <svg class="w-7 mr-2" viewBox="0 0 216 232"
                              xmlns="http://www.w3.org/2000/svg"
@@ -30,16 +33,17 @@
                         </svg>
                     </a>
                     <a href="https://github.com/opendata-stuttgart/"
-                       class="ml-6 text-gray-400 hover:text-gray-500">
+                       class="ml-6 text-gray-400 hover:text-brand-funcRed">
                         <span class="sr-only">GitHub</span>
                         <svg class="h-8 w-7" fill="currentColor" viewBox="0 0 24 24"
                              xmlns="http://www.w3.org/2000/svg"
-                             height="30" width="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                             height="30" width="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                             stroke-width="2">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
                     </a>
                     <a href="mailto:contact@sensor.community"
-                       class="ml-6 text-gray-400 hover:text-gray-500">
+                       class="ml-6 text-gray-400 hover:text-brand-funcRed">
                         <span class="sr-only">Mail</span>
                         <svg class="h-8 w-7" fill="currentColor" viewBox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg" stroke-width="1" height="40" width="40"
@@ -61,25 +65,25 @@
                         <ul class="mt-4">
                             <li>
                                 <a href="https://maps.sensor.community/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Maps
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="https://api.sensor.community/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     API
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="https://archive.sensor.community/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Archive
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="https://devices.sensor.community/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Devices
                                 </a>
                             </li>
@@ -91,18 +95,26 @@
                         </h4>
                         <ul class="mt-4">
                             <li class="mt-4">
+                                <a href="{lang}/knowledge/"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                    Knowledge
+                                </a>
+                            </li>
+                            <li class="mt-4">
                                 <a href="https://forum.sensor.community/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Forum
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="{lang}/sensors/" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                    Guides
-                                </a>
                             </li>
+                            <a href="{lang}/sensors/"
+                               class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                Guides
+                            </a>
                             <li class="mt-4">
-                                <a href="{lang}/donate/" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                <a href="{lang}/donate/"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:donate')}
                                 </a>
                             </li>
@@ -117,23 +129,25 @@
                         <ul class="mt-4">
                             <li>
                                 <a href="{lang}/contributors/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:team')}
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="{lang}/projects/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:communityProjects')}
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="{lang}/hubs/" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                <a href="{lang}/hubs/"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:communityHubs')}
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a class="text-base leading-6 text-gray-500 hover:text-gray-900" href="{lang}/press/">
+                                <a class="text-base leading-6 text-gray-500 hover:text-brand-funcRed"
+                                   href="{lang}/press/">
                                     Press
                                 </a>
                             </li>
@@ -146,25 +160,25 @@
                         <ul class="mt-4">
                             <li class="mt-4">
                                 <a href="{lang}/privacy-terms/"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:privacy')}
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Firmware License
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     DB Contents License
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Photos License
                                 </a>
                             </li>
