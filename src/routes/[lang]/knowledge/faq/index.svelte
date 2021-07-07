@@ -39,6 +39,7 @@
             links: ["link1"]
         }
     ]
+    
 
     const expand = (section) => {
         faqs = faqs.map(faqSection => {
