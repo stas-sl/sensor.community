@@ -4,6 +4,7 @@ import {extract_frontmatter, extract_metadata, langs, link_renderer} from './mar
 import {make_session_slug_processor} from './slug';
 import marked from 'marked';
 import hljs from 'highlight.js';
+import PrismJS from "prismjs";
 
 export const SLUG_PRESERVE_UNICODE = false;
 export const SLUG_SEPARATOR = '_';
@@ -32,7 +33,7 @@ export default function generate_docs(dir) {
         .filter(file => file[0] !== '.' && path.extname(file) === '.md')
         .map(file => {
             const markdown = fs.readFileSync(`content/${dir}/${file}`, 'utf-8');
-            const { content, metadata } = extract_frontmatter(markdown);
+            const {content, metadata} = extract_frontmatter(markdown);
             const path = dir;
             const section_slug = make_slug(metadata.title);
             const subsections = [];
@@ -73,12 +74,8 @@ export default function generate_docs(dir) {
                 }
 
                 const plang = langs[lang];
-                const { value: highlighted } = hljs.highlight(lang, source);
-                // const highlighted = PrismJS.highlight(
-                // 	source,
-                // 	PrismJS.languages[plang],
-                // 	lang
-                // );
+                const {value: highlighted} = hljs.highlight(lang, source);
+                //const highlighted = PrismJS.highlight(source, PrismJS.languages[plang],lang);
 
                 const html = `<div class='${class_name}'>${prefix}<pre class='language-${plang}'><code>${highlighted}</code></pre></div>`;
 
@@ -102,7 +99,7 @@ export default function generate_docs(dir) {
                             return `.${$1}`;
                         });
 
-                    subsections.push({ slug, title, level });
+                    subsections.push({slug, title, level});
                 }
 
                 return `
@@ -115,12 +112,12 @@ export default function generate_docs(dir) {
 
             block_types.forEach(type => {
                 const fn = renderer[type];
-                renderer[type] = function() {
+                renderer[type] = function () {
                     return fn.apply(this, arguments);
                 };
             });
 
-            const html = marked(content, { renderer });
+            const html = marked(content, {renderer});
 
             const hashes = {};
 
