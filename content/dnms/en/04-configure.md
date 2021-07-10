@@ -32,7 +32,7 @@ title: Configure
 
 > ⚠️ **Please note**  It may take a few tries for the NodeMCU to connect to the home WiFi network. Please do not get impatient and try until it works. The sensor can also be configured via a smartphone. If the configuration of the sensor has worked, the configuration page is no longer accessible under this IP 192.168.4.1
 
-### Configure the station
+#### Configure the station
 1. Under 'Configure' enter SSID (name of your home WiFi network), the network security key (under Windows) or WiFi password.
 
 2. For noise sensors (DNMS) according to this manual, no further changes are necessary

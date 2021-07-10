@@ -39,17 +39,5 @@ The [ID] can also be searched for in input field in the upper left corner [https
     * Teensy: red LED flashing after reboot?
     * check/replace the cables to the sensors again
 
-<div class="relative bg-brand-yellowLight">
-  <div class="max-w-7xl mx-auto py-1 px-3 sm:px-6 lg:px-4">
-    <div class="pr-16 sm:text-center sm:px-16 ">
-        <p class="text-brand-black">
-          Noise is in beta. Send questions to
-            <span aria-hidden="true">&rarr;</span>
-        <span class="block sm:ml-2 sm:inline-block">
-          <a href="mailto:Noise@Sensor.Community" class="text-white font-bold underline"> Noise@Sensor.Community</a>
-        </span>
-        </p>
-    </div>
-  </div>
-</div>
+
 

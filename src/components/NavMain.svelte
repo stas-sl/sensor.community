@@ -161,7 +161,6 @@
                         Github
                     </span>
                         <span class="transform -rotate-45">&rarr;</span>
-
                     </a>
 
                     <a class="flex py-3"

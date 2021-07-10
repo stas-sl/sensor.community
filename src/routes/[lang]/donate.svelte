@@ -14,13 +14,12 @@
 
 <svelte:head>
     <title>{i18n.t('donate:metaTitle')}</title>
-    <meta name="description" content="{i18n.t('donate:metaDescription')}">
+    <meta content="{i18n.t('donate:metaDescription')}" name="description">
     <meta content={i18n.t('donate:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
 </svelte:head>
-
 
 <div class="pb-6">
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
@@ -73,8 +72,9 @@
                         <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
                     </svg>
                 </div>
-                <div class="animate-heartBeat relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-                    <img alt=""
+                <!-- Todo: fix rotation -->
+                <div class="animate-heartBeat relative pl-4 -mr-40 sm:mx-auto sm:max-w-2xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
+                    <img alt="Support Sensor.Community by donating and keep the network alive"
                          class="w-full lg:h-full lg:w-auto lg:max-w-none"
                          src="icons/heart.svg">
                 </div>
@@ -93,8 +93,8 @@
                     <div class="flex-1 flex flex-col">
                         <div id="betterplace_donation_iframe"
                              style="background: transparent url('https://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;">
-                            <iframe frameborder="0" id="iFrameResizer0" scrolling="no"
-                                    src="https://www.betterplace.org/de/projects/38071/iframe_donations/new?background_color=ffffff&amp;color=4ecac2&amp;donation_amount=100&amp;bottom_logo=true&amp;recurring_interval=single&amp;utm_campaign=external_donation_forms&amp;utm_source=domain: luftdaten.info&amp;utm_medium=project_38071&amp;utm_content=luftdaten.info&amp;"
+                            <iframe id="iFrameResizer0"
+                                    src="https://www.betterplace.org/de/projects/38071/iframe_donations/new?utm_campaign=external_donation_forms&amp;utm_source=domain:luftdaten.info&amp;utm_medium=project_38071&amp;utm_content=luftdaten.info;"
                                     style="max-width: 600px; max-height: none; width: 100%; background-color: transparent; overflow: hidden; height: 1024px;"></iframe>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                             <div class="">
                                 <p class="block text-sm text-gray-600">
                                     {i18n.t('donate:holder')}</p>
-                                <p class="w-full px-5  py-4 text-gray-700 bg-gray-200 rounded">
+                                <p class="w-full px-5 py-4 text-gray-700 bg-gray-200 rounded">
                                     Open Knowledge
                                     Foundation
                                     Germany e.V.</p>
@@ -116,7 +116,7 @@
                             <div class="mt-2">
                                 <p class="block text-sm text-gray-600">
                                     {i18n.t('donate:iban')}</p>
-                                <p class="w-full px-5  py-4 text-gray-700 bg-gray-200 rounded">
+                                <p class="w-full px-5 py-4 text-gray-700 bg-gray-200 rounded">
                                     DE 36 4306 0967
                                     1173 8932
                                     00</p>
@@ -124,26 +124,30 @@
                             <div class="mt-2">
                                 <p class=" block text-sm text-gray-600">
                                     {i18n.t('donate:bic')}</p>
-                                <p class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded">
+                                <p class="w-full px-5 py-4 text-gray-700 bg-gray-200 rounded">
                                     GENODEM1GLS</p>
                             </div>
                             <div class="mt-2">
                                 <p class=" block text-sm text-gray-600">
                                     {i18n.t('donate:bank')}</p>
-                                <p class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded">
+                                <p class="w-full px-5 py-4 text-gray-700 bg-gray-200 rounded">
                                     GLS Community
                                     Bank</p>
                             </div>
                             <div class="mt-2">
                                 <p class=" block text-sm text-gray-600">
                                     {i18n.t('donate:intendedUse')}</p>
-                                <p class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded">
+                                <p class="w-full px-5 py-4 text-gray-700 bg-gray-200 rounded">
                                     OK Lab
                                     Stuttgart</p>
                             </div>
-                            <div class="mt-2">
-                                <p class=" block text-sm text-gray-600">
-                                    {i18n.t('donate:donationDescription')}</p>
+                            <div class="mt-4">
+                                <a class="block text-sm text-gray-600" href="https://okfn.org/" target="_blank">
+                                    {i18n.t('donate:donationDescription')}
+                                    <span class="transform -rotate-45">&rarr;</span>
+                                </a>
+                                <!-- Todo: fix rotation -->
+                                <span class="transform -rotate-45">&rarr;</span>
                             </div>
                         </div>
                     </div>
