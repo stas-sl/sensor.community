@@ -1,42 +1,59 @@
 <script>
-	export let status;
-	export let error;
+    import Button from "../components/Button.svelte";
+    import {stores} from "@sapper/app";
+    import initI18n from "../utils/initI18n";
 
-	const dev = process.env.NODE_ENV === 'development';
+    const {page} = stores();
+    $: lang = $page.params.lang;
+    $: path = $page.path;
+    $: i18n = initI18n(lang);
+
+    export let status;
+    export let error;
+    const dev = process.env.NODE_ENV === 'development';
 </script>
 
-
 <svelte:head>
-	<title>{status}</title>
-
-	<meta property="og:title" content="error"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content=""/>
-	<meta property="og:image" content=""/>
+    <title>{status} - Sensor.Community</title>
 </svelte:head>
 
-<div class="bg-white">
-	<section class="container mx-auto mt-10">
-		<div class="container mx-auto text-center">
-			<div class="md:w-4/5 px-4 md:px-16 mx-auto md:py-24 my-12 md:my-14">
-				<h1 class="font-black text-3xl md:text-6xl">
-					{status}
-				</h1>
-				<h2 class="leading-normal text-base md:text-xl mt-6 opacity-75 md:px-10">{error.message}</h2>
-			</div>
-		</div>
 
-		<div class="container mx-auto mb-48">
-			<div class="container mx-auto text-center">
-				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-				<lottie-player
-						src="https://assets9.lottiefiles.com/packages/lf20_73jq34.json" background="transparent"
-						speed="1" style="width: 300px; height: 300px;" loop autoplay>
-				</lottie-player>
-			</div>
-			{#if dev && error.stack}
-				<pre>{error.stack}</pre>
-			{/if}
-		</div>
-	</section>
+<div class="py-16 lg:py-24">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-brand-green">
+        <div class="relative py-24 px-8 bg-brand-greenPastel rounded-xl shadow-2xl overflow-hidden lg:px-16 lg:gap-x-8">
+            <div class="relative lg:col-span-1">
+                <div class="inline-flex space-x-4">
+                    <img alt="sensor community logo" class="h-8 w-auto"
+                         src="images/logos/signet-green.svg">
+                    <span class="py-1 font-semibold text-brand-green tracking-wide uppercase">
+                      Sensor.Community
+                    </span>
+                </div>
+                <h2 class="text-8xl font-bold mt-5">{status} - {error.message}</h2>
+                <div class="mt-10">
+                    <p class="text-xl font-medium sm:text-2xl"> {i18n.t('error:errorMessage')}</p>
+                    <p class="text-xl font-medium sm:text-2xl"> {i18n.t('error:submitError')} <a
+                            class="text-brand-funcRed"
+                            href="mailto:Contact@Sensor.Community?subject=Error%20on%20Page">{i18n.t('error:contact')} </a> {i18n.t('error:or')}
+                        <a class="text-brand-funcRed" href="forum.sensor.community"
+                           target="_blank">{i18n.t('error:forum')} <span
+                                class="transform -rotate-45">&rarr;</span></a>{i18n.t('error:thanks')}
+                    </p>
+                    <footer class="mt-6">
+                        {i18n.t('error:sc-team')}
+                    </footer>
+
+                    <div class="my-10">
+                        <Button link="{lang}/" linkName="{i18n.t('error:home')}"/>
+
+                    </div>
+                    <div class="container">
+                        {#if dev && error.stack}
+                            <pre>{error.stack}</pre>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

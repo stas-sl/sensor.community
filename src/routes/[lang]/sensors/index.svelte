@@ -13,7 +13,7 @@
         {
             hashtag: "#AirQuality",
             title: "airRohr Sensor Kit #1",
-            imageURL: "images/nodemcu-sds011.jpg",
+            imageURL: "/images/air-quality-sensor-inside.jpg",
             linkURL: "/sensors/airrohr",
             description: "Our basic and approved sensor kit"
         },
@@ -36,17 +36,42 @@
     <meta content="" property="og:image"/>
 </svelte:head>
 
-<div class="relative px-4 py-16 overflow-hidden">
-    <div class="relative sm:px-6 lg:px-8">
-        <div class="text-lg max-w-prose mx-auto">
-            <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
-                {i18n.t('sensor:h1')}
-            </h1>
-            <p class="mt-8 text-xl leading-8">
-                {i18n.t('sensor:subtitle')}
-            </p>
 
-            <div class="mt-10 grid lg:grid-cols-2">
+<div class="pb-6">
+    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
+        <div
+                class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+            <div class="mt-10">
+                <div class="inline-flex space-x-4">
+                    <img alt="sensor community logo" class="h-8 w-auto" src="images/logos/signet.svg">
+                    <span class="py-1 font-semibold text-brand-yellow tracking-wide uppercase">
+                        Sensor.Community
+                    </span>
+                </div>
+                <div class="mt-6">
+                    <div class="mt-6 sm:max-w-xl">
+                        <h1 class="text-5xl font-extrabold text-brand-black tracking-tight sm:text-5xl">
+                            {i18n.t('sensor:h1')}
+                        </h1>
+                        <p class="mt-6 text-xl text-gray-900 antialiased">
+                            {i18n.t('sensor:subtitle')}
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-12 lg:hidden">
+                    <div class="flex items-center justify-center animate-bounce transition duration-100 ease-in-out cursor-pointer"
+                         type="button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-16 mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl lg:max-w-7xl">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-24">
                 {#each sensors as sensor}
                     <Cards
                             description={sensor.description}
@@ -60,4 +85,6 @@
         </div>
     </div>
 </div>
+
+
 <Contact/>

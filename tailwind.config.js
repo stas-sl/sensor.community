@@ -79,6 +79,7 @@ module.exports = {
     },
     plugins: [
         require('@tailwindcss/typography'),
-        require('tailwindcss/colors')
+        require('tailwindcss/colors'),
+        require('@tailwindcss/aspect-ratio')
     ]
 }

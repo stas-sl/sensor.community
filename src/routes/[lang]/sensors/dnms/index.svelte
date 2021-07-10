@@ -23,20 +23,20 @@
     export let sections;
 </script>
 
-
 <svelte:head>
     <title>{i18n.t('dnms:metaTitle')}</title>
-    <meta content="{i18n.t('dnms:metaTitle')}" property="og:title"/>
+    <meta content="{i18n.t('dnms:metaDescription')}" name="description">
+    <meta content={i18n.t('dnms:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
 </svelte:head>
 
 {#await sections}
-    <p>...waiting</p>
-{:then sections}
+    <p>{i18n.t('index:inNumbers-fetching')}</p>
+{:then data}
     <div class="p-5 border-b border-gray-200 text-brand-funcRed">
-        <a href="{lang}/sensors/">←&nbsp Back to sensor overview</a>
+        <a href="{lang}/sensors/">←&nbsp {i18n.t('breadcrumb:toSensorOverview')}</a>
     </div>
     <div class="relative px-4">
         <div class="text-lg max-w-prose mx-auto">
@@ -44,6 +44,6 @@
         </div>
     </div>
 {:catch error}
-    <p>An error occurred!</p>
+    <p>{i18n.t('index:inNumbers-error')}</p>
 {/await}
 

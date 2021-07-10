@@ -341,7 +341,7 @@
                 {i18n.t('index:partner-description')}
             </p>
             <div class="mt-6">
-                <a class="text-base font-medium text-brand-funcRed" href="{lang}/press/">
+                <a class="text-base font-medium text-brand-funcRed" sapper:prefetch href="{lang}/press/">
                     {i18n.t('index:partner-link')} &nbsp&rarr;
                 </a>
             </div>

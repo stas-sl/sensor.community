@@ -1,7 +1,6 @@
 <script>
     import initI18n from "../../../utils/initI18n";
     import {stores} from "@sapper/app";
-    import Cards from "../../../components/Cards.svelte";
     import Button from "../../../components/Button.svelte";
 
 
@@ -90,38 +89,34 @@
 
 
 <div class="relative pb-16 overflow-hidden">
-    <div class="relative">
-        <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-            <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-                <div class="lg:border-r-2 border-gray-200">
+    <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+        <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+            <div class="lg:border-r-2 border-gray-200">
+                <div class="mt-6">
+                    <h2 class="text-3xl font-extrabold tracking-tight">Troubleshoot Guide / FAQ</h2>
+                    <p class="mt-4 text-lg">Semper curabitur ullamcorper posuere nunc sed. Ornare
+                        iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra
+                        duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare
+                        pharetra.</p>
                     <div class="mt-6">
-                        <h2 class="text-3xl font-extrabold tracking-tight">Troubleshoot Guide / FAQ</h2>
-                        <p class="mt-4 text-lg">Semper curabitur ullamcorper posuere nunc sed. Ornare
-                            iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra
-                            duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare
-                            pharetra.</p>
-                        <div class="mt-6">
-                            <Button link="{lang}/knowledge/faq/" linkName="Find your answer"/>
-                        </div>
+                        <Button link="{lang}/knowledge/faq/" linkName="Find your answer"/>
                     </div>
                 </div>
-                <div class="mt-12 border-b-2 lg:border-b-0"></div>
             </div>
-            <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-                <div>
-                    <div class="mt-12 lg:mt-4">
-                        <h2 class="text-3xl font-extrabold tracking-tight">Scientific Evaluation</h2>
-                        <ul>
-                            <li class="mt-2 text-lg">What role did particulate matter play in the 2016 flu
-                                epidemic?
-                            </li>
-                            <li class="mt-2 text-lg">How accurately does the SDS011 measure?</li>
-                        </ul>
-                        <p class="mt-2 text-lg">...</p>
-                        <div class="mt-6">
-                            <Button link="{lang}/knowledge/evaluation/" linkName="Check out the papers"/>
-                        </div>
-                    </div>
+            <div class="my-16 border-b-2 lg:border-b-0"></div>
+        </div>
+        <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 max-w-prose">
+            <div class="mt-6">
+                <h2 class="text-3xl font-extrabold tracking-tight">Scientific Evaluation</h2>
+                <ul class="mt-4 text-lg prose text-brand-black">
+                    <li class="mt-2 text-lg">What role did particulate matter play in the 2016 flu
+                        epidemic?
+                    </li>
+                    <li class="mt-2 text-lg">How accurately does the SDS011 measure?</li>
+                    <li class="mt-2 text-lg">How accurately does the SDS011 measure?</li>
+                </ul>
+                <div class="mt-6">
+                    <Button link="{lang}/knowledge/evaluation/" linkName="Check out the papers"/>
                 </div>
             </div>
         </div>

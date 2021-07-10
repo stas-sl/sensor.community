@@ -33,9 +33,9 @@
         <div class="max-w-lg relative pt-16 pb-6 mx-auto md:max-w-none md:grid md:grid-cols-3 md:gap-8">
             {#each contacts as contact}
                 <div class="pb-12 md:pb-6">
-                    <h2 class="text-2xl font-extrabold sm:text-3xl">
+                    <h4 class="text-2xl font-extrabold sm:text-3xl">
                         {contact.title}
-                    </h2>
+                    </h4>
                     <div class="mt-3">
                         <p class="text-lg">
                             {contact.description}

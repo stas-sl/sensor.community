@@ -9,11 +9,19 @@
     "langCallTo": "Missing your language?",
     "langDescription": "Provide your translation via GitHub"
   },
+  "breadcrumb": {
+    "toSensorOverview": "Back to sensor overview",
+    "toKnowledgeOverview": "Back to sensor overview"
+  },
   "error": {
-    "errorStatus": "Encountered a {status} error.",
-    "reloadPage": "Please try reloading the page.",
-    "offline": "It looks like you're offline.",
-    "submitError": "If the error persists, please drop by <a href=\"forum.sensor.community\">our forum</a> and let us know, or raise an issue on <a href=\"https://github.com/opendata-stuttgart/\">GitHub</a>. Thanks!"
+    "home": "Take me home",
+    "contact": "report the error",
+    "errorMessage": "Oops! The page you are looking for does not exist. It might have been moved or deleted.",
+    "submitError": "If the error persists,",
+    "or": "or drop by our",
+    "forum": "forum",
+    "thanks": " and let us know. Thanks!",
+    "sc-team": "Your Sensor.Community Team"
   },
   "index": {
     "metaDescription": "Build your own Air Quality sensor and become part of the worldwide citizen science, open data, civic tech network. Supported by a lot of contributors",
@@ -81,33 +89,27 @@
     "intendedUse": "Intended use",
     "donationDescription": "The Open Knowledge Foundation Germany is recognised as a non-profit organisation."
   },
-  "blog": {
-    "metaDescription": "News",
-    "metaTitle": "News - Sensor.Community",
-    "h1": "Recent posts",
-    "description": " Find news or other interesting information"
-  },
   "knowledge": {
-    "metaDescription": "Knowledge Base, find scientific evaluation and troubleshoot guides for our airohr or dnms sensor",
     "metaTitle": "Knowledge Base - Sensor.Community",
+    "metaDescription": "Knowledge Base, find scientific evaluation and troubleshoot guides for our airohr or dnms sensor",
     "h1": "Knowledge Base",
     "description": "Find interesting scientific evaluation and information about our Air Quality (airRohr) or Noise Measurement (DNSM) sensors"
   },
-  "helpcenter": {
-    "metaDescription": "Help Center - Sensor Community",
+  "faqs": {
     "metaTitle": "Help Center - Sensor Community",
+    "metaDescription": "Help Center - Sensor Community",
     "h1": "Recent posts",
     "description": " Find news or other interesting information"
   },
   "evaluation": {
-    "metaDescription": "Help Center - Sensor Community",
     "metaTitle": "Evaluation - Sensor.Community",
+    "metaDescription": "Help Center - Sensor Community",
     "h1": "Recent posts",
     "description": " Find news or other interesting information"
   },
   "contributors": {
-    "metaDescription": "The people behind the project",
     "metaTitle": "Contributors - Sensor.Community",
+    "metaDescription": "The people behind the project",
     "h1": "Hello from the team \uD83D\uDC4B",
     "description": "Meet the team who is working behind the scenes to harness the power of Sensor.Community.",
     "contactBottom": "\uD83D\uDCEEPlease use the contact options at the bottom of the page.",

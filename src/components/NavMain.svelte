@@ -32,36 +32,35 @@
                 </a>
             </div>
             <nav class="hidden lg:flex space-x-10">
-                <a class="text-base leading-6"
-                   href="{lang}/sensors/"
+                <a class="text-base leading-6" sapper:prefetch href="{lang}/sensors/"
                    on:click={menuToggle}>
                     {i18n.t('nav:guides')}
                 </a>
 
-                <a class="text-base leading-6" href="{lang}/knowledge/"
+                <a class="text-base leading-6" sapper:prefetch href="{lang}/knowledge/"
                    on:click={menuToggle}>
                     {i18n.t('nav:knowledge')}
                 </a>
 
-                <a class="text-base leading-6"
-                   href="https://forum.sensor.community/" on:click={menuToggle}
+                <a class="text-base leading-6" sapper:prefetch href="https://forum.sensor.community/"
+                   on:click={menuToggle}
                    target="_blank">
                     {i18n.t('nav:forum')}
                 </a>
 
-                <a class="whitespace-no-wrap font-semibold leading-6" href="{lang}/donate/"
+                <a class="whitespace-no-wrap font-semibold leading-6" sapper:prefetch href="{lang}/donate/"
                    on:click={menuToggle}>
                     {i18n.t('nav:donate')}
                 </a>
                 <div class="pr-40"></div>
             </nav>
             <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
-                <a href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
+                <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
                    target="_blank">
                     GitHub
                 </a>
 
-                <a href="https://devices.sensor.community/" on:click={menuToggle}
+                <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuToggle}
                    target="_blank">
                     Devices
                 </a>
@@ -104,7 +103,7 @@
                        href="{lang}/sensors/"
                        on:click={menuToggle}>
                         <div class="text-2xl leading-6 font-bold flex-1">
-                            {i18n.t('nav:sensor')}
+                            {i18n.t('nav:guides')}
                         </div>
                         <span class="text-2xl">&nbsp&rarr;</span>
                     </a>
@@ -117,7 +116,7 @@
                         </div>
                     </a>
 
-                    <a class="flex py-2"
+                    <a class="flex py-4"
                        href="{lang}/sensors/dnms/"
                        on:click={menuToggle}>
                         <div class="text-base font-light">

@@ -9,10 +9,10 @@
     const dispatch = createEventDispatcher();
 
 </script>
-<div class="relative px-4 my-6">
-    <a href="{link}">
+<div class="relative px-4 my-6 text-left">
+    <a sapper:prefetch href="{link}">
         <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
+            <div class="flex-shrink-0 aspect-w-3 aspect-h-2">
                 <img alt="{title}"
                      class="h-full w-full object-contain"
                      src="{imageUrl}">
@@ -23,9 +23,9 @@
                         {hashTag}
                     </p>
                     <div class="block mt-2">
-                        <p class="text-xl font-bold">
+                        <h3 class="text-xl font-bold">
                             {title}
-                        </p>
+                        </h3>
                         <p class="mt-3 text-base text-gray-600">
                             {description}
                         </p>

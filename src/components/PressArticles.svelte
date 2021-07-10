@@ -73,8 +73,8 @@
                             <div class="relative p-3 border-gray-400">
                                 <img src="{article.img}" class="filter saturate-0 md:flex-shrink-0 h-6">
                             </div>
-                            <blockquote class="md:flex-grow md:flex md:flex-col">
-                                <div class="mt-8 relative md:flex-grow md:flex-grow">
+                            <div class="md:flex-grow md:flex md:flex-col">
+                                <div class="mt-8 relative md:flex-grow">
                                     <h3 class="text-lg font-medium">
                                         <a href="{article.linkURL}" target="_blank">
                                             <span class="absolute inset-0" aria-hidden="true"></span>
@@ -95,7 +95,7 @@
         <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"/>
       </svg>
     </span>
-                            </blockquote>
+                            </div>
                         </div>
                     {/each}
                 </div>

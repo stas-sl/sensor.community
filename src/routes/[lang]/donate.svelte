@@ -24,7 +24,7 @@
 <div class="pb-6">
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
         <div
-                class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+                class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div class="mt-10">
                 <div class="inline-flex space-x-4">
                     <img alt="sensor community logo" class="h-8 w-auto" src="images/logos/signet.svg">

@@ -38,7 +38,7 @@
 <svelte:head>
     <title>{i18n.t('evaluation:metaTitle')}</title>
     <meta name="description" content="{i18n.t('evaluation:metaDescription')}">
-    <meta content={i18n.t('press:metaTitle')} property="og:title"/>
+    <meta content={i18n.t('evaluation:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
@@ -62,7 +62,8 @@
         <div class="text-lg max-w-prose mx-auto">
             {#each articles as article}
                 <Articles title="{article.title}" description="{article.description}"
-                          researcher="{article.researcher}" language="{article.language}" linkNames="{article.linkName}"
+                          researcher="{article.researcher}" language="{article.language}"
+                          linkNames="{article.linkNames}"
                           links="{article.links}"/>
             {/each}
         </div>
