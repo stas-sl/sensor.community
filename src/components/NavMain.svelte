@@ -35,7 +35,7 @@
                 <a class="text-base leading-6"
                    href="{lang}/sensors/"
                    on:click={menuToggle}>
-                    {i18n.t('nav:sensor')}
+                    {i18n.t('nav:guides')}
                 </a>
 
                 <a class="text-base leading-6" href="{lang}/knowledge/"

@@ -36,6 +36,7 @@
                 break;
             }
         }
+
         return (num / si[i].value).toFixed(digits).replace(rx, "$4") + si[i].symbol;
     }
 
@@ -47,16 +48,6 @@
             }, 900);
         }
     }
-
-    const banner =
-        {
-            link: "/#",
-            linkName: "To the guide",
-            title: "Be part of the movement",
-            description: "Assembly instructions for your fine dust and noise sensor. Very simple.",
-        }
-
-
 </script>
 <svelte:head>
     <title>{i18n.t('index:metaTitle')}</title>
@@ -81,13 +72,13 @@
                 <div class="mt-6">
                     <div class="mt-6 sm:max-w-xl">
                         <h1 class="text-5xl font-extrabold text-brand-black tracking-tight sm:text-5xl">
-                            Measure air quality by yourself
+                            {i18n.t('index:h1')}
                         </h1>
                         <p class="mt-6 text-xl text-gray-900 antialiased">
-                            We are a contributors driven global sensor network that creates open environmental data.
+                            {i18n.t('index:subtitle')}
                         </p>
                         <div class="mt-6">
-                            <Button link="{lang}/sensors/" linkName="Build you own sensor"/>
+                            <Button link="{lang}/sensors/" linkName="{i18n.t('index:cta')}"/>
                         </div>
                     </div>
                 </div>
@@ -128,7 +119,7 @@
                     </a>
                 </div>
                 <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
-                    <figcaption>Click on the picture to open in a new browser tab
+                    <figcaption>{i18n.t('index:imageSubtitle')}
                     </figcaption>
                 </figure>
             </div>
@@ -191,28 +182,22 @@
         <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
             <div class="pt-12 sm:pt-16 lg:pt-20">
                 <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                    What is Sensor.Community?
+                    {i18n.t('index:about-title')}
                 </h2>
                 <div class="mt-6 space-y-6">
                     <p class="text-lg">
-                        The goal of the program is to promote developments in the field of transparency, open
-                        data and citizen science.
-                        Our mission is to inspire and enrich people’s lives by offering a platform for the
-                        collective curiosity in nature that is genuine, joyful and positive.
+                        {i18n.t('index:about-section1')}
                     </p>
                     <p class="text-lg leading-7">
-                        Regional groups consisting of designers, developers, journalists and others meet
-                        regularly in labs. They develop apps that inform, positively shape and support society
-                        and make the work of administrations and authorities more transparent.
+                        {@html i18n.t('index:about-section2')}
                     </p>
                     <p class="text-lg leading-7">
-                        Sensor.Community is a contributors driven global sensor network that creates Open
-                        Environmental Data.
+                        {i18n.t('index:about-section3')}
                     </p>
                 </div>
                 <div class="mt-10">
                     <a class="text-base font-medium text-brand-funcRed" href="{lang}/sensors/">
-                        Code a difference: Use your skills to improve your city!&nbsp&rarr;
+                        {i18n.t('index:about-link')} &nbsp&rarr;
                     </a>
                 </div>
             </div>
@@ -229,15 +214,15 @@
         <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <div class="relative">
                 <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                    In numbers we trust
+                    {i18n.t('index:inNumbers-title')}
                 </h2>
                 <div class="mt-6 space-y-6">
                     <p class="text-lg md:mb-0 mb-10">
-                        We got great growth, thanks to our community and their contribution!
+                        {i18n.t('index:inNumbers-subtitle')}
                     </p>
                     <a class="text-base font-medium text-brand-funcRed"
                        href="https://sensors2ref.maps.sensor.community/#3/21.53/6.15">
-                        Take a look at the our sensors and the worldwide reference stations &rarr;
+                        {i18n.t('index:inNumbers-sensorsAtRefs')} &nbsp&rarr;
                     </a>
                 </div>
                 <div class="relative mx-auto">
@@ -245,27 +230,27 @@
                         <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.sensors, 1)}</dd>
-                                <dt class="text-base font-medium text-gray-600">Active sensors</dt>
+                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-sensorsAtRefs')}</dt>
                             </div>
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.countries)}</dd>
-                                <dt class="text-base font-medium text-gray-600">Countries</dt>
+                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-countries')}</dt>
                             </div>
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.measurements, 0)}</dd>
-                                <dt class="text-base font-medium text-gray-600">Data Points</dt>
+                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-dataPoints')}</dt>
                             </div>
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.local_labs)}</dd>
-                                <dt class="text-base font-medium text-gray-600">Community Labs</dt>
+                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-communityLabs')}</dt>
                             </div>
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.commits)}</dd>
-                                <dt class="text-base font-medium text-gray-600">GitHub Commits</dt>
+                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-commits')}</dt>
                             </div>
 
                             <div class="pt-6">
@@ -291,16 +276,13 @@
                 <div>
                     <div class="mt-6">
                         <h2 class="text-3xl font-extrabold tracking-tight">
-                            Build a sensor and become part of the global Civic Tech movement
+                            {i18n.t('index:guideSection-title')}
                         </h2>
                         <p class="mt-4 text-lg">
-                            Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada
-                            faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis
-                            sem
-                            arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
+                            {i18n.t('index:guideSection-description')}
                         </p>
                         <div class="mt-6">
-                            <Button link="{lang}/sensors/" linkName="Build your own DIY sensor"></Button>
+                            <Button link="{lang}/sensors/" linkName="{i18n.t('index:cta')}"/>
                         </div>
                     </div>
                 </div>
@@ -312,7 +294,8 @@
                          src="/images/air-quality-sensor-inside.jpg">
                 </div>
                 <figure class="px-4 mt-4 text-sm text-gray-600">
-                    <figcaption>A look inside our air quality sensor
+                    <figcaption>
+                        {i18n.t('index:guideSection-imageSubtitle')}
                     </figcaption>
                 </figure>
             </div>
@@ -351,15 +334,14 @@
         </div>
         <div>
             <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Used world-wide by our partners and contributors
+                {i18n.t('index:partner-title')}
             </h2>
             <p class="mt-6 max-w-3xl text-lg leading-7">
-                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl
-                netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.</p>
+                {i18n.t('index:partner-description')}
+            </p>
             <div class="mt-6">
                 <a class="text-base font-medium text-brand-funcRed" href="{lang}/press/">
-                    Meet our partners&nbsp&rarr;
+                    {i18n.t('index:partner-link')} &nbsp&rarr;
                 </a>
             </div>
         </div>
@@ -367,10 +349,10 @@
 </div>
 
 <Banner
-        description={banner.description}
-        link={banner.link}
-        linkName={banner.linkName}
-        title={banner.title}
+        description={i18n.t('index:banner-description')}
+        link={lang}/sensors/
+ linkName={i18n.t('index:cta')}
+        title={i18n.t('index:banner-title')}
 />
 <Campaigns/>
 <Contact/>

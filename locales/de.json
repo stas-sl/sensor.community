@@ -1,11 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "docs": "Sensor",
+    "guide": "Sensor",
     "blog": "Blog",
     "projects": "Projekt",
     "forum": "Forum",
-    "sensor": "Sensor",
     "donate": "Unterstützen"
   },
   "error": {

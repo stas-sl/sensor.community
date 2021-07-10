@@ -26,7 +26,7 @@
 </svelte:head>
 
 
-<div class="pb-6">
+<div class="pb-12">
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
         <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div class="mt-10">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="sm:mx-auto sm:max-w-3xl sm:px-6 hidden lg:block">
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6 lg:block">
             <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <div class="hidden sm:block">
                     <div class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"></div>
@@ -81,10 +81,19 @@
                     </svg>
                 </div>
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-                    <iframe class="z-10" id="map-frame" onLoad="{delayMap()}" scrolling="no"
+                    <iframe class="z-10 rounded shadow-xl ring-1 ring-brand-black ring-opacity-5" id="map-frame"
+                            onLoad="{delayMap()}" scrolling="no"
                             src=""
-                            style="width: 97%; height: 95%; margin: auto; "
-                            title="sensor.community particulate matter map"></iframe>
+                            style="width: 97%; height: 600px; margin: auto; "
+                            title="sensor.community particulate matter map">
+
+                    </iframe>
+                    <figure class="m-4 text-sm text-brand-funcRed">
+                        <a href="https://sensors2ref.maps.sensor.community/#13/51.5072/-0.1275" target="_blank">
+                            <figcaption>Click on the picture to open in a new browser tab
+                            </figcaption>
+                        </a>
+                    </figure>
                 </div>
             </div>
         </div>
