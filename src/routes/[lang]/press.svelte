@@ -96,16 +96,14 @@
         <div class="mt-6 prose prose-lg mx-auto text-brand-black">
             <h2>Our Story</h2>
             <p class="mt-8 text-xl leading-8">
-                Back in 2019, it was just an idea. Today, thanks to the team and
-                contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the
-                world.
+                Back in 2019, it was just an idea. Today, thanks to the team and contributors, it’s a leading civic tech
+                sensor network, that can be found in dozen of cities around the world.
             </p>
             <p class="mt-8 text-xl leading-8">
                 The aim of the program is to promote developments in the areas of transparency, Open Data and Citizen
                 Science. Regional groups consisting of designers, developers, journalists and others meet regularly in
-                Labs. They
-                develop apps that inform, positively shape and support society and make the work of administrations and
-                authorities more transparent.</p>
+                community labs. They develop apps that inform, positively shape and support society and make the work of
+                administrations and authorities more transparent.</p>
             <ul class="text-xl leading-8">
                 <li>How can air quality be measured and visualized in residential areas?</li>
                 <li>What effects does the traffic or other sources have on our air?</li>
@@ -173,19 +171,16 @@
         <div class="text-lg max-w-prose mx-auto">
             <div class="mt-6 prose prose-lg mx-auto text-brand-black">
                 <h2>Code a difference</h2>
-                <p class="text-xl leading-8">You and thousands of sponsors worldwide install dyi
-                    measuring devices on the outside wall of their house. From the transmitted data, Sensor.Community
-                    generates a constantly updating fine dust map. This is how fine dust becomes visible...</p>
+                <p class="text-xl leading-8">You and thousands of sponsors worldwide install dyi measuring devices on
+                    the outside wall of their house. From the transmitted data, Sensor.Community generates a constantly
+                    updating fine dust map. This is how fine dust becomes visible...</p>
                 <blockquote>
                     <p>Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque
                         tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
                 </blockquote>
                 <p class="text-xl leading-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                    Mattis
-                    mauris semper sed amet
-                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit
-                    neque
-                    erat velit.</p>
+                    Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus
+                    viverra tellus varius sit neque erat velit.</p>
                 <figure>
                     <img alt="Sensor.Community Team" class="w-full rounded-lg" height="873" src="images/team.jpg"
                          width="1310">
@@ -194,16 +189,14 @@
                     </figcaption>
                 </figure>
                 <h2>Everything you need to get up and running</h2>
-                <p class="text-xl leading-8">Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>. Amet,
-                    massa quam varius orci dapibus
-                    volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra
-                    ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor
-                    venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
+                <p class="text-xl leading-8">Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>.
+                    Amet,massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus
+                    tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget
+                    dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum
+                    convallis quam.</p>
                 <p class="text-xl leading-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
-                    Mattis mauris semper sed amet
-                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit
-                    neque
-                    erat velit.</p>
+                    Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus
+                    viverra tellus varius sit neque erat velit.</p>
             </div>
             <div class="text-lg max-w-prose mx-auto pt-12">
                 <div class="space-y-12">
@@ -261,10 +254,9 @@
         <div class="mt-6 prose prose-indigo prose-lg mx-auto text-brand-black">
             <h2>Logo</h2>
             <p class="text-xl leading-8">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in.
-                Convallis arcu ipsum urna nibh.
-                Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-                tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+                Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh.
+                Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
+                Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.
                 <a class="text-xl leading-8 font-medium text-brand-funcRed" href="{lang}/press/">
                     Download press kit!&nbsp&rarr;
                 </a>
@@ -320,7 +312,6 @@
         linkName={banner.linkName}
         title={banner.title}
 />
-
 
 <div class="relative overflow-hidden">
     <div class="relative px-4 sm:px-6 lg:px-8">
