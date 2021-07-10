@@ -49,13 +49,12 @@
 
 <div class="relative py-16 overflow-hidden">
     <div class="relative max-w-7xl mx-auto mt-10">
-        <div class="text-center">
-            <h3 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+        <div class="px-4">
+            <h3 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
                 {i18n.t('campaigns:title')}
             </h3>
-            <p class="mt-3 max-w-2xl mx-auto text-xl sm:mt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque,
-                ducimus sed.
+            <p class="mt-3 text-left sm:text-center text-xl sm:mt-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
             </p>
         </div>
 

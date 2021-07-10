@@ -73,7 +73,7 @@
                         <h1 class="text-5xl font-extrabold text-brand-black tracking-tight sm:text-5xl">
                             {i18n.t('index:h1')}
                         </h1>
-                        <p class="mt-6 text-xl text-gray-900 antialiased">
+                        <p class="mt-6 text-xl antialiased">
                             {i18n.t('index:subtitle')}
                         </p>
                         <div class="mt-6">
