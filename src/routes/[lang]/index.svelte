@@ -205,7 +205,6 @@
     </div>
 </div>
 
-
 {#await fetchNumbers}
     <p>{i18n.t('index:inNumbers-fetching')}</p>
 {:then data}
@@ -230,7 +229,7 @@
                         <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.sensors, 1)}</dd>
-                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-sensorsAtRefs')}</dt>
+                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-activeSensors')}</dt>
                             </div>
 
                             <div class="pt-6">
@@ -352,7 +351,7 @@
 <Banner
         description={i18n.t('index:banner-description')}
         link={lang}/sensors/
- linkName={i18n.t('index:cta')}
+        linkName={i18n.t('index:cta')}
         title={i18n.t('index:banner-title')}
 />
 <Campaigns/>

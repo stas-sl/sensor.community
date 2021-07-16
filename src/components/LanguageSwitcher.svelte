@@ -52,11 +52,11 @@
         {/if}
     </button>
     <div class="absolute transform leading-6 -ml-4 inset-x-0 d:max-w-md md:-translate-x-48 { menu.open ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition duration-200">
-        <div class="rounded-lg shadow-lg mt-6 md:w-64">
-            <div class="relative bg-brand-white p-6 grid grid-cols-2">
+        <div class="h-screen md:h-full rounded-lg shadow-lg mt-7 md:w-64">
+            <div class="relative bg-brand-white ml-6 md:ml-0 p-5 grid grid-cols-2">
                 {#each langauges as lang}
                     <a href="{`${lang}/${pathWithoutLang}`}" on:click={menuToggle}
-                       class="uppercase inline-block p-2 text-gray-700 font-semibold rounded hover:bg-gray-200 hover:text-gray-700">
+                       class="uppercase inline-block py-3 px-4 text-brand-black rounded font-bold hover:bg-gray-200 hover:text-gray-700">
                         {#if lang == "en"}
                             {flag("gb")}
                         {:else if lang == "ja"}

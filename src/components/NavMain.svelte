@@ -32,39 +32,57 @@
                 </a>
             </div>
             <nav class="hidden lg:flex space-x-10">
-                <a class="text-base leading-6" sapper:prefetch href="{lang}/sensors/"
+                <a class="text-base leading-6 font-bold" sapper:prefetch href="{lang}/sensors/"
                    on:click={menuToggle}>
                     {i18n.t('nav:guides')}
                 </a>
 
-                <a class="text-base leading-6" sapper:prefetch href="{lang}/knowledge/"
+                <a class="text-base leading- font-bold" sapper:prefetch href="{lang}/knowledge/"
                    on:click={menuToggle}>
                     {i18n.t('nav:knowledge')}
                 </a>
+                <a class="text-base leading-6 font-bold" sapper:prefetch href="{lang}/dashboard/"
+                   on:click={menuToggle}
+                   target="_blank">
+                    {i18n.t('nav:dashboard')}
+                </a>
 
-                <a class="text-base leading-6" sapper:prefetch href="https://forum.sensor.community/"
+                <a class="text-base leading-6 font-bold" sapper:prefetch href="https://forum.sensor.community/"
                    on:click={menuToggle}
                    target="_blank">
                     {i18n.t('nav:forum')}
+
                 </a>
 
-                <a class="whitespace-no-wrap font-semibold leading-6" sapper:prefetch href="{lang}/donate/"
+                <a class="whitespace-no-wrap leading-6 font-bold" sapper:prefetch href="{lang}/donate/"
                    on:click={menuToggle}>
                     {i18n.t('nav:donate')}
                 </a>
                 <div class="pr-40"></div>
             </nav>
             <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
-                <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
-                   target="_blank">
-                    GitHub
-                </a>
+                <div class="flex">
+                    <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
+                       target="_blank" class="mr-1 font-light">
+                        GitHub
+                    </a>
+                    <span class="transform -rotate-45">&rarr;</span>
+                </div>
+                <div class="flex">
+                    <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuToggle}
+                       target="_blank" class="mr-1 font-light">
+                        Devices
+                    </a>
+                    <span class="transform -rotate-45">&rarr;</span>
+                </div>
+                <div class="flex">
+                    <a sapper:prefetch on:click={menuToggle}
+                       class="mr-1 font-light">
+                        <LanguageSwitcher class="z-50"/>
+                    </a>
+                </div>
 
-                <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuToggle}
-                   target="_blank">
-                    Devices
-                </a>
-                <LanguageSwitcher class="z-50"/>
+
             </div>
             <div class="flex justify-between font-semibold text-brand-white lg:hidden ">
                 <div class="block z-50">
@@ -156,7 +174,7 @@
                     <a class="flex py-3"
                        href="{lang}/sensors/"
                        on:click={menuToggle}>
-                    <span class="text-base font-light">
+                    <span class="text-base font-extralight">
                         Github
                     </span>
                         <span class="transform -rotate-45">&rarr;</span>
@@ -165,17 +183,16 @@
                     <a class="flex py-3"
                        href="{lang}/sensors/"
                        on:click={menuToggle}>
-                    <span class="text-base font-light">
+                    <span class="text-base font-extralight">
                         Devices
                     </span>
                         <span class="transform -rotate-45">&rarr;</span>
-
                     </a>
 
                     <a class="flex py-3"
                        href="{lang}/sensors/"
                        on:click={menuToggle}>
-                    <span class="text-base font-light">
+                    <span class="text-base font-extralight">
                         Map
                     </span>
                         <span class="transform -rotate-45">&rarr;</span>

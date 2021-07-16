@@ -88,20 +88,19 @@
         <div class="relative lg:px-8">
             <div class="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-8">
                 <!-- running campaign -->
-                <div class="p-6">
+                <div class="p-0 md:p-6">
                     <h3 class="text-xl pb-6">{i18n.t('donate:campaign')}</h3>
                     <div class="flex-1 flex flex-col">
                         <div id="betterplace_donation_iframe"
                              style="background: transparent url('https://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;">
-                            <iframe id="iFrameResizer0"
-                                    src="https://www.betterplace.org/de/projects/38071/iframe_donations/new?utm_campaign=external_donation_forms&amp;utm_source=domain:luftdaten.info&amp;utm_medium=project_38071&amp;utm_content=luftdaten.info;"
-                                    style="max-width: 600px; max-height: none; width: 100%; background-color: transparent; overflow: hidden; height: 1024px;"></iframe>
+                            <iframe src="https://www.betterplace.org/de/projects/38071/iframe_donations/new?color=084945&amp;donation_amount=100&amp;bottom_logo=true&amp;recurring_interval=single&amp;utm_campaign=external_donation_forms&amp;utm_source=domain:luftdaten.info&amp;utm_medium=project_38071&amp;utm_content=luftdaten.info;"
+                                    style="max-width: 600px; width: 100%; background-color: transparent; overflow: hidden; height: 1111px;"></iframe>
                         </div>
                     </div>
                 </div>
 
                 <!-- direct donation -->
-                <div class="p-6">
+                <div class="p-0 md:p-6 mt-16 md:mt-0">
                     <h3 class="text-xl pb-6">{i18n.t('donate:donation')}</h3>
                     <div class="flex-1 flex flex-col">
                         <div class="max-w-xl">
@@ -142,12 +141,11 @@
                                     Stuttgart</p>
                             </div>
                             <div class="mt-4">
-                                <a class="block text-sm text-gray-600" href="https://okfn.org/" target="_blank">
-                                    {i18n.t('donate:donationDescription')}
-                                    <span class="transform -rotate-45">&rarr;</span>
-                                </a>
-                                <!-- Todo: fix rotation -->
-                                <span class="transform -rotate-45">&rarr;</span>
+                                <div class="flex">
+                                    <a class="text-sm text-gray-600" href="https://okfn.org/" target="_blank">
+                                        {i18n.t('donate:donationDescription')}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,7 @@
     "knowledge": "Knowledge",
     "forum": "Forum",
     "donate": "Donate",
+    "dashboard": "Dashboard",
     "langHelpWanted": "Help wanted",
     "langCallTo": "Missing your language?",
     "langDescription": "Provide your translation via GitHub"
@@ -74,6 +75,16 @@
     "metaTitle": "Build your own Noise Measuring Monitor - Sensor.Community",
     "metaDescription": "In this guide you will learn how to build your own Noise Measuring Sensor."
   },
+  "dashboard": {
+    "metaTitle": "Donate - help us by showing your love - Sensor.Community",
+    "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
+    "h1": "Country Dashboard",
+    "description": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission. Support the community with a donation and keep the network alive",
+    "pmSensors" : "Particulate Matter Sensors",
+    "tempSensors":  "Temperature/RH/Pressure Sensors",
+    "noiseSensors": "Noise Measurement Sensors",
+    "imageSubtitle": "Growth Rate"
+  },
   "donate": {
     "metaTitle": "Donate - help us by showing your love - Sensor.Community",
     "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
@@ -87,7 +98,7 @@
     "bic": "BIC",
     "bank": "Bank",
     "intendedUse": "Intended use",
-    "donationDescription": "The Open Knowledge Foundation Germany is recognised as a non-profit organisation."
+    "donationDescription": "Open Knowledge Foundation is recognised as a non-profit organisation."
   },
   "knowledge": {
     "metaTitle": "Knowledge Base - Sensor.Community",
