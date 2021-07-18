@@ -95,7 +95,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 Add the correct font weight in Edge and Safari.
 */
 
-b {
+b,
+strong {
   font-weight: bolder;
 }
 
@@ -456,6 +457,7 @@ code {
 img,
 svg,
 video,
+audio,
 iframe {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
@@ -539,6 +541,11 @@ video {
 .prose a {
   font-weight: 400;
   text-decoration: none;
+}
+
+.prose strong {
+  color: #111827;
+  font-weight: 600;
 }
 
 .prose ol[type="A"] {
@@ -1158,6 +1165,10 @@ video {
   visibility: visible;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1375,10 +1386,6 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.mr-40 {
-  margin-right: 10rem;
 }
 
 .-mr-2 {
@@ -1970,6 +1977,10 @@ video {
   overflow-x: auto;
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2344,6 +2355,10 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -2420,10 +2435,6 @@ video {
 
 .font-extralight {
   font-weight: 200;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-medium {

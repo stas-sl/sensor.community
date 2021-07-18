@@ -10,7 +10,7 @@ title: Register
            To register your device and become a part of the open data network. Go to 
             <span aria-hidden="true">&rarr;</span>
         <span class="block sm:ml-2 sm:inline-block">
-          <a href="https://Devices.Sensor.Community" class="text-white font-bold underline">  Devices.Sensor.Community/</a>
+          <a href="http://devices.sensor.community/sensors" class="text-white font-bold underline">  Devices.Sensor.Community/</a>
         </span>
         </p>
     </div>

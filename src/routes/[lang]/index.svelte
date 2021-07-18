@@ -2,6 +2,7 @@
     import initI18n from "../../utils/initI18n";
     import {stores} from "@sapper/app";
     import Campaigns from "../../components/Campaigns.svelte";
+    import Articles from "../../components/Articles.svelte";
     import Contact from "../../components/Contact.svelte";
     import Banner from "../../components/Banner.svelte";
     import Button from "../../components/Button.svelte";
@@ -347,12 +348,12 @@
         </div>
     </div>
 </div>
-
+<Campaigns/>
 <Banner
         description={i18n.t('index:banner-description')}
         link={lang}/sensors/
         linkName={i18n.t('index:cta')}
         title={i18n.t('index:banner-title')}
 />
-<Campaigns/>
+<Articles/>
 <Contact/>

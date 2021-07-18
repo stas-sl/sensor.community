@@ -64,13 +64,13 @@
                         </h4>
                         <ul class="mt-4">
                             <li>
-                                <a href="https://maps.sensor.community/"
+                                <a href="https://maps.sensor.community/" target="_blank"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Maps
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://api.sensor.community/"
+                                <a href="https://api.sensor.community/" target="_blank"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     API
                                 </a>
@@ -82,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://devices.sensor.community/"
+                                <a href="https://devices.sensor.community/" target="_blank"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Devices
                                 </a>

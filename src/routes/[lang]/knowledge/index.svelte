@@ -12,14 +12,12 @@
         {
             hashtag: "",
             title: "FAQ - Help Center",
-            imageURL: "images/nodemcu-sds011.jpg",
             linkURL: "/knowledge/faqs/",
             description: "Troubleshoot guide"
         },
         {
             hashtag: "",
             title: "Scientific evaluation",
-            imageURL: "images/dnms.jpg",
             linkURL: "/knowledge/evaluation/",
             description: "In beta noise measurement sensor"
         }

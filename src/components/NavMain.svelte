@@ -14,8 +14,6 @@
         .slice(2)
         .join("/");
 
-    export let segment;
-
     $: menu = {open: false};
 
     function menuToggle() {
@@ -26,8 +24,8 @@
 <div class="bg-brand-green sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
         <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
-            <div class="lg:w-0 lg:flex-1 mr-40 justify-end">
-                <a class="block uppercase " href="{lang}/">
+            <div class="lg:w-0 lg:flex-1 justify-end">
+                <a class="block uppercase flex-shrink-0" href="{lang}/">
                     <img alt="sensor community logo" class="h-8 w-auto" src="images/logos/signet.svg">
                 </a>
             </div>
@@ -47,13 +45,6 @@
                     {i18n.t('nav:dashboard')}
                 </a>
 
-                <a class="text-base leading-6 font-bold" sapper:prefetch href="https://forum.sensor.community/"
-                   on:click={menuToggle}
-                   target="_blank">
-                    {i18n.t('nav:forum')}
-
-                </a>
-
                 <a class="whitespace-no-wrap leading-6 font-bold" sapper:prefetch href="{lang}/donate/"
                    on:click={menuToggle}>
                     {i18n.t('nav:donate')}
@@ -63,21 +54,30 @@
             <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
                 <div class="flex">
                     <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
-                       target="_blank" class="mr-1 font-light">
+                       target="_blank" class="mr-1 font-extralight">
                         GitHub
                     </a>
                     <span class="transform -rotate-45">&rarr;</span>
                 </div>
+
+                <div class="flex">
+                    <a sapper:prefetch href="https://forum.sensor.community/" on:click={menuToggle}
+                       target="_blank" class="mr-1 font-extralight">
+                        {i18n.t('nav:forum')}
+                    </a>
+                    <span class="transform -rotate-45">&rarr;</span>
+                </div>
+
                 <div class="flex">
                     <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuToggle}
-                       target="_blank" class="mr-1 font-light">
+                       target="_blank" class="mr-1 font-extralight">
                         Devices
                     </a>
                     <span class="transform -rotate-45">&rarr;</span>
                 </div>
                 <div class="flex">
                     <a sapper:prefetch on:click={menuToggle}
-                       class="mr-1 font-light">
+                       class="mr-1 font-extralight">
                         <LanguageSwitcher class="z-50"/>
                     </a>
                 </div>
@@ -129,7 +129,7 @@
                     <a class="flex py-2"
                        href="{lang}/sensors/airrohr/"
                        on:click={menuToggle}>
-                        <div class="text-base font-light">
+                        <div class="text-base font-extralight">
                             Air Quality Kit (airRohr)
                         </div>
                     </a>
@@ -137,7 +137,7 @@
                     <a class="flex py-4"
                        href="{lang}/sensors/dnms/"
                        on:click={menuToggle}>
-                        <div class="text-base font-light">
+                        <div class="text-base font-extralight">
                             Noise Measuring Sensor (DNMS)
                         </div>
                     </a>
@@ -151,15 +151,15 @@
                         <span class="text-2xl">&nbsp&rarr;</span>
                     </a>
 
-
                     <a class="flex py-4"
-                       href="{lang}/forum/"
+                       href="{lang}/dashboard/"
                        on:click={menuToggle}>
                         <div class="text-2xl leading-6 font-bold flex-1">
-                            {i18n.t('nav:forum')}
+                            {i18n.t('nav:dashboard')}
                         </div>
                         <span class="text-2xl">&nbsp&rarr;</span>
                     </a>
+
                     <a class="flex py-4"
                        href="{lang}/donate/"
                        on:click={menuToggle}>
@@ -170,6 +170,15 @@
                     </a>
 
                     <hr class="my-3">
+
+                    <a class="flex py-3"
+                       href="forum.sensor.community/" target="_blank"
+                       on:click={menuToggle}>
+                    <span class="text-base font-extralight">
+                        Forum
+                    </span>
+                        <span class="transform -rotate-45">&rarr;</span>
+                    </a>
 
                     <a class="flex py-3"
                        href="{lang}/sensors/"

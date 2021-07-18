@@ -137,8 +137,8 @@
                             {i18n.t('dashboard:description')}️
                         </p>
                         <div class="mt-6">
-                            <div class="relative inline-block text-left">
-                                <div class="inline-flex justify-center w-full rounded-md border border-gray-300 p-3  bg-brand-white text-sm font-medium text-gray-700"
+                           <div class="relative inline-block text-left">
+                                <div class="inline-flex justify-center w-full rounded-md border border-gray-300 p-3 bg-brand-white text-sm font-medium text-gray-700"
                                      aria-expanded="true" aria-haspopup="true">
                                     <select id="countrySelector" name="country" onLoad="{delaySelector()}">
                                         {#each countries.array as country}

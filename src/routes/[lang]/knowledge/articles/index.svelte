@@ -1,8 +1,7 @@
 <script>
-    import initI18n from "../utils/initI18n";
+    import initI18n from "../../../../utils/initI18n";
     import {stores} from "@sapper/app";
-    import Cards from "../components/Cards.svelte"
-
+    import Cards from "../../../../components/Cards.svelte"
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -17,17 +16,17 @@
     const campaigns = [
         {
             hashtag: "#Air",
-            title: "Measuring Air Quality",
+            title: "Measuring NO2",
             imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
-            linkURL: "knowledge/articles/air-quality",
+            linkURL: "air-quality",
             description: "We've measured NO2 with diffusion tubes in 9 countries."
         },
         {
             hashtag: "#Noise",
-            title: "Prototyping noise measurement sensor",
+            title: "Start your local group!",
             imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
-            linkURL: "knowledge/articles/noise-quality",
-            description: "Our noise measurement sensor"
+            linkURL: "noise-quality",
+            description: "#evaluation supports you in launching your local group."
         }
     ]
 </script>
@@ -36,9 +35,9 @@
 <div class="relative py-16 overflow-hidden">
     <div class="relative max-w-7xl mx-auto mt-10">
         <div class="px-4">
-            <h3 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
+            <h1 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
                 Articles
-            </h3>
+            </h1>
             <p class="mt-3 text-left sm:text-center text-xl sm:mt-4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
             </p>

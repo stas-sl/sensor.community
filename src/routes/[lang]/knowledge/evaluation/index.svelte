@@ -1,7 +1,7 @@
 <script>
     import initI18n from "../../../../utils/initI18n";
     import {stores} from "@sapper/app";
-    import Articles from "../../../../components/Articles.svelte";
+    import Articles from "../../../../components/EvaluationsArticles.svelte";
     import {onMount} from "svelte";
 
     const {page} = stores();
