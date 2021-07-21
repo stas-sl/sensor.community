@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('campaign:refs-metaTitle')}</title>
+    <title>{i18n.t('campaign:refs-metaTitle')}- Sensor.Community</title>
     <meta content="{i18n.t('campaign:refs-metaDescription')}" name="description">
     <meta content={i18n.t('campaign:refs-metaTitle')} property="og:title"/>
     <meta property="og:type" content="website"/>
@@ -90,7 +90,7 @@
                     </iframe>
                     <figure class="m-4 text-sm text-brand-funcRed">
                         <a href="https://no2.maps.sensor.community/#5/52.107/15.798" target="_blank">
-                            <figcaption>Click on the picture to open in a new browser tab
+                            <figcaption>{i18n.t('campaign:refs-figcaption')}
                             </figcaption>
                         </a>
                     </figure>

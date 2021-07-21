@@ -15,18 +15,19 @@
     "toKnowledgeOverview": "Back to sensor overview"
   },
   "error": {
-    "home": "Take me home",
     "contact": "report the error",
-    "errorMessage": "Oops! The page you are looking for does not exist. It might have been moved or deleted.",
+    "errorMessage": "This page does not exist.",
     "submitError": "If the error persists,",
-    "or": "or drop by our",
-    "forum": "forum",
-    "thanks": " and let us know. Thanks!",
-    "sc-team": "Your Sensor.Community Team"
+    "knowledge": "Knowledge,",
+    "knowledge-description": "Looking for an answer or want to read a whitepaper?,",
+    "forum-description": "Read our latest news and discuss with the community",
+    "guides": "Guides",
+    "guides-description": "Guides for our popular air quality and noise measurement kits",
+    "home": "Go back home"
   },
   "index": {
     "metaDescription": "Build your own Air Quality sensor and become part of the worldwide citizen science, open data, civic tech network. Supported by a lot of contributors",
-    "metaTitle": "Build your own Air Quality sensor - Sensor.Community",
+    "metaTitle": "Build your own Air Quality sensor",
     "h1": "Measure air quality by yourself",
     "subtitle": "We are a contributors driven global sensor network that creates open environmental data.",
     "cta": "Build your own DIY sensor",
@@ -34,9 +35,11 @@
     "about-title": "What is Sensor.Community?",
     "about-section1": "The goal of the program is to promote developments in the field of transparency, open data and citizen science. Our mission is to inspire and enrich people’s lives by offering a platform for the collective curiosity in nature that is genuine, joyful and positive.",
     "about-section2": "Regional groups consisting of designers, developers, journalists and others meet regularly in <strong>community labs</strong>. They develop apps that inform, positively shape and support society  and make the work of administrations and authorities more transparent.",
-    "about-section3": "Sensor.Community is a contributors driven global sensor network that creates Open Environmental Data.",
+    "about-section3": "Sensor.Community is a contributors driven global sensor network that creates Open Environmental Data. ",
     "about-link": "Code a difference: Use your skills to improve your city",
     "h1-contributors": "contributors \uD83D\uDC95",
+    "mission-statement": "We inspire human lives by offering a platform that deliver open environmental data. Making the world a better place through community driven, open environmental data.",
+    "mission-team": "The Sensor.Community Team",
     "inNumbers-title": "In numbers we trust",
     "inNumbers-subtitle": " We got great growth, thanks to our community and their contribution!",
     "inNumbers-sensorsAtRefs": "Take a look at the our sensors and the worldwide reference stations",
@@ -48,17 +51,17 @@
     "inNumbers-fetching": "... fetching data",
     "inNumbers-error": "An error occurred!",
     "guideSection-title": "Build a sensor and become part of the global Civic Tech movement",
-    "guideSection-description": "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
+    "guideSection-description": "You and thousands of others install self-built measuring devices worldwide on the outside wall of their house. rom the transmitted data, Sensor.Community generates a constantly updating our map. This is how particulate matter becomes visible. ",
     "guideSection-imageSubtitle": "A look inside our air quality sensor",
     "partner-title": "In cooperation with regional and national partners",
-    "partner-description": "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.",
+    "partner-description": "Sensor.Community is dedicated to measuring particulate matter with the Citizen Science project. Become a partner of our Citizen Science project",
     "partner-link": "Meet our partners",
     "banner-title": "Be part of the movement",
     "banner-description": "Assembly instructions for your particulate matter and noise sensor."
   },
   "sensor": {
     "metaDescription": "Building instructions for your DYI fine dust sensor (PM2.5, PM10, temp and humidity) or noise measurement sensor",
-    "metaTitle": "Building instructions for your DYI fine dust sensor or noise measurement sensor - Sensor.Community",
+    "metaTitle": "Building instructions for your DYI fine dust sensor or noise measurement sensor",
     "h1": "Sensor Kits",
     "subtitle": "Find your sensor and building instructions for your DYI fine dust sensor",
     "airSensorTitle": "Air",
@@ -68,15 +71,15 @@
     "editOnGithub": "edit on Github"
   },
   "airrohr": {
-    "metaTitle": "Build your own Air Quality Monitor – measure PM2.5, PM10, Temp & Humidity - Sensor.Community",
+    "metaTitle": "Build your own Air Quality Monitor – measure PM2.5, PM10, Temp & Humidity",
     "metaDescription": "In this guide you will learn how to build your own Air Quality Monitor to measuring PM2.5, PM10, as well as temperature and humidity."
   },
   "dnms": {
-    "metaTitle": "Build your own Noise Measuring Monitor - Sensor.Community",
+    "metaTitle": "Build your own Noise Measuring Monitor",
     "metaDescription": "In this guide you will learn how to build your own Noise Measuring Sensor."
   },
   "dashboard": {
-    "metaTitle": "Donate - help us by showing your love - Sensor.Community",
+    "metaTitle": "Donate - help us by showing your love",
     "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
     "h1": "Country Dashboard",
     "description": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission. Support the community with a donation and keep the network alive",
@@ -86,7 +89,7 @@
     "imageSubtitle": "Growth Rate"
   },
   "donate": {
-    "metaTitle": "Donate - help us by showing your love - Sensor.Community",
+    "metaTitle": "Donate - help us by showing your love",
     "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
     "h1": "Show your support",
     "description": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission. Support the community with a donation and keep the network alive",
@@ -101,10 +104,14 @@
     "donationDescription": "Open Knowledge Foundation is recognised as a non-profit organisation."
   },
   "knowledge": {
-    "metaTitle": "Knowledge Base - Sensor.Community",
+    "metaTitle": "Knowledge Base",
     "metaDescription": "Knowledge Base, find scientific evaluation and troubleshoot guides for our airohr or dnms sensor",
     "h1": "Knowledge Base",
-    "description": "Find interesting scientific evaluation and information about our Air Quality (airRohr) or Noise Measurement (DNSM) sensors"
+    "description": "Find interesting scientific evaluation and information about our Air Quality (airRohr) or Noise Measurement (DNSM) sensors",
+    "faq": "Troubleshoot Guide / FAQ",
+    "faq-description": "Have a problem and looking for an answer? Then take a look in our FAQ! About you sensor configuration, accessing data or other often asked questions about our sensors.",
+    "publication":"Publications",
+    "publication-description": "Find interesting scientific evaluation link and information about our Air Quality (airRohr) or Noise Measurement (DNSM) sensors, e.g.'How accurately does the SDS011 measure'"
   },
   "faqs": {
     "metaTitle": "Help Center - Sensor Community",
@@ -112,35 +119,43 @@
     "h1": "Recent posts",
     "description": " Find news or other interesting information"
   },
-  "evaluation": {
-    "metaTitle": "Evaluation - Sensor.Community",
-    "metaDescription": "Help Center - Sensor Community",
+  "publications": {
+    "metaTitle": "Publications",
+    "metaDescription": "Publications - Sensor Community",
     "h1": "Recent posts",
     "description": " Find news or other interesting information"
   },
   "contributors": {
-    "metaTitle": "Contributors - Sensor.Community",
+    "metaTitle": "Contributors",
     "metaDescription": "The people behind the project",
     "h1": "Hello from the team \uD83D\uDC4B",
     "description": "Meet the team who is working behind the scenes to harness the power of Sensor.Community.",
     "contactBottom": "\uD83D\uDCEEPlease use the contact options at the bottom of the page.",
     "meetTeam": "Meet the team"
   },
-  "press": {
+  "faq": {
+    "metaTitle": "Troubleshoot and FAQ",
+    "metaDescription": "Press",
+    "h1": "Troubleshoot and FAQ",
+    "description": "You have questions? We got you covered! Find your answers in our FAQ.",
+    "forum": "Still looking for an answer? Check our forum."
+  },
+  "mission": {
     "metaTitle": "Press",
     "metaDescription": "Press",
-    "title": "Press - Sensor.Community",
-    "description": "Press"
+    "h1": "About us",
+    "paragraph-1": "Back in 2019, it was just an idea. Today, thanks to the team and contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the world.",
+    "paragraph-2": "Back in 2019, it was just an idea. Today, thanks to the team and contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the world."
   },
   "pressArticles": {
     "metaTitle": "Press",
     "metaDescription": "Press",
-    "title": "Press review - Sensor.Community",
+    "title": "Press review",
     "description": "The latest press reviews, news about Sensor Community"
   },
   "projects": {
     "metaDescription": "Find mobile apps, websites,... from our lovely community \uD83D\uDC96",
-    "metaTitle": "Community Projects - Sensor.Community",
+    "metaTitle": "Community Projects",
     "h1": "Community Projects",
     "description": "Find mobile apps, websites,... from our lovely community \uD83D\uDC96️",
     "submitIdea": "Have a great project? Share it with the community!",
@@ -156,71 +171,74 @@
     "phase1": "Phase 1:",
     "phase2": "Phase 2:",
     "phase3": "Phase 3:",
-    "refs-metaTitle": "Bring sensors at every reference station in this world - Sensor.Community",
+    "refs-metaTitle": "Bring sensors at every reference station in this world",
     "refs-metaDescription": "Sensor.Community campaign to bring sensors at every reference station in this world",
     "refs-h1": "Bring sensors at every reference station in this world",
     "refs-description": "Our campaign to bring sensors at every reference station in this world",
     "refs-phase1": "Display locations of reference stations.\n",
     "refs-phase2": "Display meta information of reference stations.\n",
     "refs-phase3": "Display measurement values of reference stations.\n",
+    "refs-figcaption": "Click here to open in a new browser tab",
     "sensor2school": "Sensor.Community campaign to bring sensors at every school in this world.\n",
-    "sensor2school-metaTitle": "Sensor.Community campaign to bring sensors at every school in this world - Sensor.Community",
+    "sensor2school-metaTitle": "Sensor.Community campaign to bring sensors at every school in this world",
     "sensor2school-phase1": "Register and become an open environmental data contributor.\n",
     "sensor2school-phase2": "Connect with the global Sensor.Community.\n",
     "sensor2school-phase3": "Become data driven citizen and support your local community.\n",
     "sensor2library": "Sensor.Community campaign to bring sensors at every library in this world.\n",
-    "sensor2library-metaTitle": "Sensor.Community campaign to bring sensors at every library in this world - Sensor.Community",
+    "sensor2library-metaTitle": "Sensor.Community campaign to bring sensors at every library in this world",
     "zero200-h1": "From 0 to 200",
-    "zero200-metaTitle": "#zero200 campaign supports you in launching your local group - Sensor.Community ",
+    "zero200-metaTitle": "#zero200 campaign supports you in launching your local group ",
     "zero200-metaDescription": "#zero200 campaign supports you in launching your local group.",
     "zero200-description": "#zero200 campaign supports you in launching your local Sensor.Community group.\n",
     "no2-h1": "We measure NO2 with diffusion tubes.",
     "no2-metaDescription": "Together with other participants in 9 other cities",
-    "no2-metaTitle": "We measure NO2 with diffusion tubes - Sensor.Community",
+    "no2-metaTitle": "We measure NO2 with diffusion tubes",
     "no2-phase1": "Launching on 01.10.2020 - 9 cities in Europe measure with 30 NO2 diffusion tubes each.\n",
     "no2-phase2": "New Map to display all NO2 diffusion tubes measurements.\n",
     "no2-phase3": "Adding all other NO2 diffusion tube campaigns worldwide to the Map.\n",
+    "no2-figcaption": "Click here to open in a new browser tab",
     "getNotified": "\uD83D\uDC8C Subscribe",
     "map": "Open the map in a separate tab"
   },
-  "location": {
-    "h1": "Location",
-    "subtitle": "Coming soon",
-    "getNotified": "\uD83D\uDC8C Subscribe"
+  "articles": {
+    "metaDescription": "Find mobile apps, websites,... from our lovely community \uD83D\uDC96",
+    "metaTitle": "Community Projects",
+    "h1": "Articles",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
   },
-  "partnership": {
-    "title": "Collaborations"
+  "publicationsArticles": {
+    "author": "Author",
+    "language": "Language",
+    "about": "About",
+    "attachments": "Attachments",
+    "download": "Download"
   },
   "contact": {
-    "title": "Contact us",
-    "general": "Contact",
-    "general-subtitle": "general questions?",
+    "general": "General Contact",
+    "general-description": "Your question is not fitting any of the other categories? ",
     "partnership": "Partnership",
-    "partnership-subtitle": "want to partner with us?",
-    "press": "Press",
-    "press-subtitle": "article ideas?",
-    "tech": "Tech",
-    "tech-subtitle": "technical questions?"
+    "partnership-description": "You're a enterprise or university and want to partner with us?",
+    "tech": "Technical Support",
+    "tech-description": "Have a problem and looking for an answer? Then take a look in our FAQ!",
+    "tech-faq": "Frequent Asked Questions"
   },
   "footer": {
     "importantLinks": "Important Links",
     "sitemap": "Sitemap",
     "license": "License",
-    "socialLinks": "Connect",
-    "blog": "Blog",
-    "team": "Team",
+    "knowledge": "Knowledge",
+    "guides": "Guides",
     "donate": "Donate",
+    "mission": "Mission",
+    "dashboard": "Dashboard",
     "privacy": "Privacy & Terms",
-    "communityProjects": "Community Projects",
-    "communityHubs": "Community Hubs",
-    "contributors": "Contributors",
-    "mission": "Making the world a better place through community driven, open environmental data.",
+    "missionStatement": "Making the world a better place through community driven, open environmental data.",
     "withLove": "Made with \uD83D\uDC95 in Stuttgart, Germany"
   },
   "imprint": {
-    "metaTitle": "Imprint & Privacy - Sensor.Community",
-    "metaDescription": "Imprint & Privacy - Sensor.Community",
-    "title": "Imprint & Privacy - Sensor.Community",
+    "metaTitle": "Imprint & Privacy",
+    "metaDescription": "Imprint & Privacy",
+    "title": "Imprint & Privacy",
     "description": "Take a look at our current campaigns and join them!",
     "h1": "Imprint & Privacy",
     "lastModified": "Last Modified: ",

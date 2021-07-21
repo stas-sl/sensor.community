@@ -68,8 +68,7 @@
     <div class="max-w-xl mx-auto py-16 sm:py-24">
         <div class="text-center">
             <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wide">{status}</p>
-            <h1 class="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">This page does not
-                exist.</h1>
+            <h1 class="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">{i18n.t('error:errorMessage')}</h1>
             <p class="mt-2 text-lg text-gray-500">{error.message} </p>
         </div>
         <div class="mt-12">
@@ -89,11 +88,11 @@
                 <span class="rounded-sm focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                   <a href="en/knowledge/" class="focus:outline-none">
                     <span class="absolute inset-0" aria-hidden="true"></span>
-                    Knowledge
+                      {i18n.t('error:knowledge')}
                   </a>
                 </span>
                         </h3>
-                        <p class="text-base text-gray-500">Looking for an answer or want to read a whitepaper?</p>
+                        <p class="text-base text-gray-500">{i18n.t('error:knowledge-description')}</p>
                     </div>
                     <div class="flex-shrink-0 self-center">
                         <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -119,11 +118,11 @@
                 <span class="rounded-sm focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
                   <a href="en/sensors/" class="focus:outline-none">
                     <span class="absolute inset-0" aria-hidden="true"></span>
-                    Guides
+                      {i18n.t('error:guides')}
                   </a>
                 </span>
                         </h3>
-                        <p class="text-base text-gray-500">Guides for our popular air quality and noise measurement kits</p>
+                        <p class="text-base text-gray-500">{i18n.t('error:guides-description')}</p>
                     </div>
                     <div class="flex-shrink-0 self-center">
                         <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -154,7 +153,7 @@
                   </a>
                 </span>
                         </h3>
-                        <p class="text-base text-gray-500">Read our latest news and discuss with the community</p>
+                        <p class="text-base text-gray-500">{i18n.t('error:forum-description')}</p>
                     </div>
                     <div class="flex-shrink-0 self-center">
                         <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -167,8 +166,8 @@
                 </li>
             </ul>
             <div class="mt-8">
-                <a href="/" class="text-base font-medium text-indigo-600 hover:text-indigo-500">Or go back home<span
-                        aria-hidden="true"> &rarr;</span></a>
+                <a href="/" class="text-base font-medium text-indigo-600 hover:text-indigo-500">{i18n.t('error:home')}<span
+                        aria-hidden="true">&nbsp;&rarr;</span></a>
             </div>
         </div>
     </div>

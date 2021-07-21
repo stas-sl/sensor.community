@@ -16,30 +16,29 @@
     const campaigns = [
         {
             hashtag: "#Air",
-            title: "Measuring NO2",
+            title: "Measuring Air Quality",
             imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
             linkURL: "air-quality",
-            description: "We've measured NO2 with diffusion tubes in 9 countries."
+            description: "Long read about our particulate matter sensor"
         },
         {
             hashtag: "#Noise",
-            title: "Start your local group!",
+            title: "Prototyping noise measurement sensor",
             imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
             linkURL: "noise-quality",
-            description: "#evaluation supports you in launching your local group."
+            description: "Find out how we tested noise measurement"
         }
     ]
 </script>
-
 
 <div class="relative py-16 overflow-hidden">
     <div class="relative max-w-7xl mx-auto mt-10">
         <div class="px-4">
             <h1 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
-                Articles
+                {i18n.t('articles:h1')}
             </h1>
             <p class="mt-3 text-left sm:text-center text-xl sm:mt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+                {i18n.t('articles:description')}
             </p>
         </div>
 

@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('airrohr:metaTitle')}</title>
+    <title>{i18n.t('airrohr:metaTitle')}- Sensor.Community</title>
     <meta content="{i18n.t('airrohr:metaDescription')}" name="description">
     <meta content={i18n.t('airrohr:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>

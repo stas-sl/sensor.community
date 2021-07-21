@@ -1,4 +1,11 @@
 <script>
+    import initI18n from "../utils/initI18n";
+    import {stores} from "@sapper/app";
+
+    const {page} = stores();
+    $: lang = $page.params.lang;
+    $: i18n = initI18n(lang);
+
     import {createEventDispatcher} from "svelte";
 
     export let links;
@@ -20,7 +27,7 @@
         <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
             <div class="sm:col-span-1">
                 <dt class="text-sm font-medium text-gray-600">
-                    Author
+                    {i18n.t('publicationsArticles:author')}
                 </dt>
                 <dd class="mt-1 text-sm">
                     {researcher}
@@ -28,7 +35,7 @@
             </div>
             <div class="sm:col-span-1">
                 <dt class="text-sm font-medium text-gray-600">
-                    Language
+                    {i18n.t('publicationsArticles:language')}
                 </dt>
                 <dd class="mt-1 text-sm">
                     {language}
@@ -36,7 +43,7 @@
             </div>
             <div class="sm:col-span-2">
                 <dt class="text-sm font-medium text-gray-600">
-                    About
+                    {i18n.t('publicationsArticles:about')}
                 </dt>
                 <dd class="mt-1 text-sm">
                     {description}
@@ -44,7 +51,7 @@
             </div>
             <div class="sm:col-span-2">
                 <dt class="text-sm font-medium text-gray-600">
-                    Attachments
+                    {i18n.t('publicationsArticles:attachments')}
                 </dt>
                 <dd class="mt-1 text-sm">
                     <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
@@ -61,7 +68,8 @@
                                 </div>
                                 <div class="ml-4 flex-shrink-0">
                                     <a href="{link}" target="_blank" class="font-medium text-brand-funcRed">
-                                        Download
+                                        {i18n.t('publicationsArticles:download')}
+
                                     </a>
                                 </div>
                             </li>

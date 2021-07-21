@@ -19,7 +19,38 @@
     function menuToggle() {
         menu.open = !menu.open;
     }
+
+    export let open = false
 </script>
+
+<style>
+    svg {
+        transition: transform 0.15s ease-in-out;
+    }
+
+    svg line {
+        stroke: currentColor;
+        stroke-width: 2;
+        transition: transform 0.15s ease-in-out
+    }
+
+    .open svg {
+        transform: scale(1)
+    }
+
+    .open #top {
+        transform: translate(5px, 3px) rotate(45deg)
+    }
+
+    .open #middle {
+        opacity: 0;
+    }
+
+    .open #bottom {
+        transform: translate(-12px, 5px) rotate(-45deg)
+    }
+</style>
+
 
 <div class="bg-brand-green sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
@@ -40,8 +71,7 @@
                     {i18n.t('nav:knowledge')}
                 </a>
                 <a class="text-base leading-6 font-bold" sapper:prefetch href="{lang}/dashboard/"
-                   on:click={menuToggle}
-                   target="_blank">
+                   on:click={menuToggle}>
                     {i18n.t('nav:dashboard')}
                 </a>
 
@@ -89,22 +119,15 @@
                     <LanguageSwitcher/>
                 </div>
                 <div class="m-1.5 mx-2 border-r-2 border-brand-white"></div>
-                <button class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2 "
-                        on:click={menuToggle}
+                <button id="mobileMenuButton"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2"
+                        class:open on:click={() => open = !open} on:click={menuToggle}
                         type="button">
-                    {#if !menu.open}
-                        <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    {:else}
-                        <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                    {/if}
+                    <svg class="h-7 w-7 mt-1 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                        <line id="top" x1="0" y1="5" x2="18" y2="5"></line>
+                        <line id="middle" x1="0" y1="12" x2="18" y2="12"></line>
+                        <line id="bottom" x1="0" y1="19" x2="18" y2="19"></line>
+                    </svg>
                 </button>
             </div>
         </div>

@@ -50,7 +50,7 @@
     }
 </script>
 <svelte:head>
-    <title>{i18n.t('index:metaTitle')}</title>
+    <title>{i18n.t('index:metaTitle')}- Sensor.Community</title>
     <meta content="{i18n.t('index:metaDescription')}" name="description">
     <meta content={i18n.t('index:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
@@ -165,15 +165,12 @@
                                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
                                 </svg>
                                 <p class="relative">
-                                    <!-- Todo: text -->
-                                    Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur
-                                    pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id
-                                    lobortis amet.
+                                    {i18n.t('index:mission-statement')}
                                 </p>
                             </div>
 
                             <footer class="mt-4">
-                                <p class="text-base font-semibold">The Sensor.Community Team</p>
+                                <p class="text-base font-semibold">{i18n.t('index:mission-team')}</p>
                             </footer>
                         </blockquote>
                     </div>
@@ -229,7 +226,7 @@
                     <div class="mt-10 text-center">
                         <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.sensors, 1)}</dd>
+                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.sensors, 1)}</dd>
                                 <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-activeSensors')}</dt>
                             </div>
 
@@ -251,12 +248,6 @@
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.commits)}</dd>
                                 <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-commits')}</dt>
-                            </div>
-
-                            <div class="pt-6">
-                                <!-- Todo: remove or find a 6th element -->
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.local_labs)}</dd>
-                                <dt class="text-base font-medium text-gray-600">Community Labs</dt>
                             </div>
                         </dl>
                     </div>
@@ -348,12 +339,13 @@
         </div>
     </div>
 </div>
-<Campaigns/>
 <Banner
         description={i18n.t('index:banner-description')}
         link={lang}/sensors/
-        linkName={i18n.t('index:cta')}
+ linkName={i18n.t('index:cta')}
         title={i18n.t('index:banner-title')}
 />
-<Articles/>
+<Campaigns/>
+
+<!--<Articles/>-->
 <Contact/>

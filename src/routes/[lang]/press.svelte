@@ -75,23 +75,24 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('press:metaTitle')}</title>
-    <meta name="description" content="{i18n.t('press:metaDescription')}">
-    <meta content={i18n.t('press:metaTitle')} property="og:title"/>
+    <title>{i18n.t('mission:metaTitle')}- Sensor.Community</title>
+    <meta name="description" content="{i18n.t('mission:metaDescription')}">
+    <meta content={i18n.t('mission:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
 </svelte:head>
+<!-- Todo: literal strings -->
 
 <div class="relative py-16 overflow-hidden text-brand-black">
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
-                Presskit
+                {i18n.t('mission:h1')}
             </h1>
-            <p class="mt-8 text-xl leading-8">Back in 2019, it was just an idea. Today, thanks to the team and
-                contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the
-                world.</p>
+            <p class="mt-8 text-xl leading-8">
+                {i18n.t('mission:paragraph-1')}
+            </p>
         </div>
         <div class="mt-6 prose prose-lg mx-auto text-brand-black">
             <h2>Our Story</h2>

@@ -1,7 +1,8 @@
 <script>
+    import Cards from "../components/Cards.svelte"
+
     import initI18n from "../utils/initI18n";
     import {stores} from "@sapper/app";
-    import Cards from "./Cards.svelte"
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -20,7 +21,7 @@
             title: "Start your local group!",
             imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
             linkURL: "/campaign/zero200",
-            description: "#evaluation supports you in launching your local group."
+            description: "#publications supports you in launching your local group."
         },
         {
             hashtag: "#Sensor@Refs",
@@ -46,7 +47,8 @@
     // }
 </script>
 
-
+<!-- Todo: literal strings -->
+<!-- Todo: replace demo texts -->
 <div class="relative pt-16 pb-24 overflow-hidden">
     <div class="relative max-w-7xl mx-auto mt-10">
         <div class="px-4">
@@ -54,7 +56,7 @@
                 {i18n.t('campaigns:title')}
             </h3>
             <p class="mt-3 text-left sm:text-center text-xl sm:mt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+                {i18n.t('campaigns:description')}
             </p>
         </div>
 

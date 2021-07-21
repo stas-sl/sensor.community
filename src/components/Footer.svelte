@@ -17,7 +17,7 @@
                   Sensor.Community
                 </span>
                 <p class="mt-8 text-gray-500 text-base leading-6">
-                    {i18n.t('footer:mission')}
+                    {i18n.t('footer:missionStatement')}
                 </p>
                 <div class="mt-8 flex">
                     <a href="https://fosstodon.org/@SensorCommunity"
@@ -97,7 +97,7 @@
                             <li class="mt-4">
                                 <a href="{lang}/knowledge/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Knowledge
+                                    {i18n.t('footer:knowledge')}
                                 </a>
                             </li>
                             <li class="mt-4">
@@ -110,7 +110,7 @@
                             </li>
                             <a href="{lang}/sensors/"
                                class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                Guides
+                                {i18n.t('footer:guides')}
                             </a>
                             <li class="mt-4">
                                 <a href="{lang}/donate/"
@@ -128,27 +128,26 @@
                         </h4>
                         <ul class="mt-4">
                             <li>
-                                <a href="{lang}/contributors/"
+                                <a href="{lang}/press/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    {i18n.t('footer:team')}
+                                    {i18n.t('footer:mission')}
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="{lang}/projects/"
+                                <a href="{lang}/dashboard/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    {i18n.t('footer:communityProjects')}
+                                    {i18n.t('footer:dashboard')}
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="{lang}/hubs/"
+                                <a href="{lang}/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    {i18n.t('footer:communityHubs')}
                                 </a>
                             </li>
                             <li class="mt-4">
                                 <a class="text-base leading-6 text-gray-500 hover:text-brand-funcRed"
-                                   href="{lang}/press/">
-                                    Press
+                                   href="{lang}/">
+
                                 </a>
                             </li>
                         </ul>

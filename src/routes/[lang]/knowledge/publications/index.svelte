@@ -36,13 +36,16 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('evaluation:metaTitle')}</title>
-    <meta name="description" content="{i18n.t('evaluation:metaDescription')}">
-    <meta content={i18n.t('evaluation:metaTitle')} property="og:title"/>
+    <title>{i18n.t('publications:metaTitle')} - Sensor.Community</title>
+    <meta name="description" content="{i18n.t('publications:metaDescription')}">
+    <meta content={i18n.t('publications:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
 </svelte:head>
+
+<!-- Todo: literal strings -->
+<!-- Todo: replace demo texts -->
 
 <div class="relative py-16 overflow-hidden text-brand-black ">
     <div class="relative px-4 sm:px-6 lg:px-8 text-center">

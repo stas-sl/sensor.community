@@ -1,8 +1,8 @@
 <script>
-    import initI18n from "../utils/initI18n";
-    import {stores} from "@sapper/app";
     import Cards from "../components/Cards.svelte"
 
+    import initI18n from "../utils/initI18n";
+    import {stores} from "@sapper/app";
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -32,15 +32,14 @@
     ]
 </script>
 
-
 <div class="relative py-16 overflow-hidden">
     <div class="relative max-w-7xl mx-auto mt-10">
         <div class="px-4">
             <h3 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
-                Articles
+                {i18n.t('error:h1')}
             </h3>
             <p class="mt-3 text-left sm:text-center text-xl sm:mt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+                {i18n.t('error:description')}
             </p>
         </div>
 
