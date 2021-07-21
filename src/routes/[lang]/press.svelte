@@ -95,24 +95,18 @@
             </p>
         </div>
         <div class="mt-6 prose prose-lg mx-auto text-brand-black">
-            <h2>Our Story</h2>
+            <h2>  {i18n.t('mission:our-story')}</h2>
             <p class="mt-8 text-xl leading-8">
-                Back in 2019, it was just an idea. Today, thanks to the team and contributors, it’s a leading civic tech
-                sensor network, that can be found in dozen of cities around the world.
+                {i18n.t('mission:our-story-paragraph-1')}
             </p>
             <p class="mt-8 text-xl leading-8">
-                The aim of the program is to promote developments in the areas of transparency, Open Data and Citizen
-                Science. Regional groups consisting of designers, developers, journalists and others meet regularly in
-                community labs. They develop apps that inform, positively shape and support society and make the work of
-                administrations and authorities more transparent.</p>
+                {i18n.t('mission:our-story-paragraph-2')}</p>
             <ul class="text-xl leading-8">
-                <li>How can air quality be measured and visualized in residential areas?</li>
-                <li>What effects does the traffic or other sources have on our air?</li>
-                <li>How high is the level of particulate matter and nitrogen oxides in residential areas?
-                </li>
+                <li>{i18n.t('mission:our-story-item-1')}</li>
+                <li>{i18n.t('mission:our-story-item-2')}</li>
+                <li>{i18n.t('mission:our-story-item-3')}</li>
             </ul>
-            <p class="text-xl leading-8">We are addressing these and other questions by building particulate matter
-                sensors and visualizing the data into an overall picture.</p>
+            <p class="text-xl leading-8">{i18n.t('mission:our-story-paragraph-3')}</p>
         </div>
     </div>
 </div>
@@ -122,7 +116,7 @@
     <div class="relative overflow-hidden bg-brand-yellowLight">
         <div class="relative px-4 sm:px-6 lg:px-8">
             <div class="text-lg max-w-prose mx-auto">
-                <div class="mt-6 prose prose-lg mx-auto">
+                <div class="mt-16 prose prose-lg mx-auto">
                     <h2>Some numbers to impress</h2>
                 </div>
                 <dl class="my-16 text-center grid grid-cols-2 md:grid-cols-4 sm:gap-8">
@@ -131,7 +125,7 @@
                             Active sensors worldwide
                         </dt>
                         <dd class="order-1 text-5xl font-extrabold">
-                            {nFormatter(data.numbers.sensors, 1)}
+                            {formatNumber(data.numbers.sensors)}
                         </dd>
                     </div>
                     <div class="flex flex-col mb-6 md:mb-0">
@@ -243,7 +237,6 @@
                                     </div>
                                 </div>
                             </li>
-
                         {/each}
                     </ul>
                 </div>

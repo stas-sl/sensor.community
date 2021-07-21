@@ -144,8 +144,15 @@
     "metaTitle": "Press",
     "metaDescription": "Press",
     "h1": "About us",
-    "paragraph-1": "Back in 2019, it was just an idea. Today, thanks to the team and contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the world.",
-    "paragraph-2": "Back in 2019, it was just an idea. Today, thanks to the team and contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the world."
+    "paragraph-1": "Back in 2019, we started to roll out globally. Today, thanks to the team and contributors, it’s a leading civic tech sensor network, that can be found in dozen of cities around the world.",
+    "our-story": "Our story",
+    "our-story-paragraph-1": "We provide the software and assembly guide for the DIY sensor kits for citizen empowerment. To participate you can build a sensor, collect open data, share it in a continuous stream with the network",
+    "our-story-paragraph-2": "The goal of the program is to promote developments in the areas of transparency, Open Data and Citizen Science. Regional groups consisting of designers, developers, journalists and others meet regularly in community labs. They develop apps that inform, positively shape and support society and make the work of administrations and authorities more transparent.",
+    "our-story-item-1": "How can air quality be measured and visualized in residential areas?",
+    "our-story-item-2": "What effects does the traffic or other sources have on our air?",
+    "our-story-item-3": "How high is the level of particulate matter and nitrogen oxides in residential areas?",
+    "our-story-paragraph-3": "We are addressing these and other questions by building particulate matter\n                sensors and visualizing the data into an overall picture."
+
   },
   "pressArticles": {
     "metaTitle": "Press",

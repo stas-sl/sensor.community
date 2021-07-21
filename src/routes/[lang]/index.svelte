@@ -226,7 +226,7 @@
                     <div class="mt-10 text-center">
                         <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.sensors, 1)}</dd>
+                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.sensors)}</dd>
                                 <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-activeSensors')}</dt>
                             </div>
 
