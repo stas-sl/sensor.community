@@ -18,6 +18,7 @@
     "@sindresorhus/slugify": "^1.1.2",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
+    "@sveltejs/pancake": "^0.0.17",
     "autoprefixer": "^10.2.6",
     "compression": "^1.7.4",
     "country-emoji": "^1.5.6",
