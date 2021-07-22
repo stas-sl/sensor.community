@@ -82,7 +82,7 @@
                     <div class="mt-6 flex">
                         <div class="text-base text-brand-funcRed">
                             <a href="{lang}/knowledge/faq/">
-                                {i18n.t('contact:tech-faq')}s
+                                {i18n.t('contact:tech-faq')}
                             </a>
                         </div>
                     </div>

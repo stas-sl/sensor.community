@@ -15,12 +15,20 @@
         .join("/");
 
     $: menu = {open: false};
+    $: open = false
 
     function menuToggle() {
         menu.open = !menu.open;
     }
 
-    export let open = false
+    function menuClose() {
+        if (menu.open === true){
+            menu.open = false;
+            open = false;
+        }
+    }
+
+
 </script>
 
 <style>
@@ -51,39 +59,39 @@
     }
 </style>
 
-
 <div class="bg-brand-green sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
         <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
             <div class="lg:w-0 lg:flex-1 justify-end">
-                <a class="block uppercase flex-shrink-0" href="{lang}/">
+                <a class="block uppercase flex-shrink-0" href="{lang}/" on:click={menuClose}>
                     <img alt="sensor community logo" class="h-8 w-auto" src="images/logos/signet.svg">
                 </a>
             </div>
             <nav class="hidden lg:flex space-x-10">
+                <a class="text-base leading-6 font-bold" sapper:prefetch href="{lang}/mission/"
+                   on:click={menuClose}>
+                    {i18n.t('nav:mission')}
+                </a>
+
                 <a class="text-base leading-6 font-bold" sapper:prefetch href="{lang}/sensors/"
-                   on:click={menuToggle}>
+                   on:click={menuClose}>
                     {i18n.t('nav:guides')}
                 </a>
 
                 <a class="text-base leading- font-bold" sapper:prefetch href="{lang}/knowledge/"
-                   on:click={menuToggle}>
+                   on:click={menuClose}>
                     {i18n.t('nav:knowledge')}
-                </a>
-                <a class="text-base leading-6 font-bold" sapper:prefetch href="{lang}/dashboard/"
-                   on:click={menuToggle}>
-                    {i18n.t('nav:dashboard')}
                 </a>
 
                 <a class="whitespace-no-wrap leading-6 font-bold" sapper:prefetch href="{lang}/donate/"
-                   on:click={menuToggle}>
+                   on:click={menuClose}>
                     {i18n.t('nav:donate')}
                 </a>
                 <div class="pr-40"></div>
             </nav>
             <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
                 <div class="flex">
-                    <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuToggle}
+                    <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         GitHub
                     </a>
@@ -91,7 +99,7 @@
                 </div>
 
                 <div class="flex">
-                    <a sapper:prefetch href="https://forum.sensor.community/" on:click={menuToggle}
+                    <a sapper:prefetch href="https://forum.sensor.community/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         {i18n.t('nav:forum')}
                     </a>
@@ -99,14 +107,14 @@
                 </div>
 
                 <div class="flex">
-                    <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuToggle}
+                    <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         Devices
                     </a>
                     <span class="transform -rotate-45">&rarr;</span>
                 </div>
                 <div class="flex">
-                    <a sapper:prefetch on:click={menuToggle}
+                    <a sapper:prefetch on:click={menuClose}
                        class="mr-1 font-extralight">
                         <LanguageSwitcher class="z-50"/>
                     </a>
@@ -141,8 +149,17 @@
             <div class="mt-10 px-5 space-y-6 text-brand-white">
                 <nav class="grid { menu.open ? 'open' : 'closed' }">
                     <a class="flex py-4"
+                       href="{lang}/mission/"
+                       on:click={menuClose}>
+                        <div class="text-2xl leading-6 font-bold flex-1">
+                            {i18n.t('nav:mission')}
+                        </div>
+                        <span class="text-2xl">&nbsp&rarr;</span>
+                    </a>
+
+                    <a class="flex py-4"
                        href="{lang}/sensors/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                         <div class="text-2xl leading-6 font-bold flex-1">
                             {i18n.t('nav:guides')}
                         </div>
@@ -151,7 +168,7 @@
 
                     <a class="flex py-2"
                        href="{lang}/sensors/airrohr/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                         <div class="text-base font-extralight">
                             Air Quality Kit (airRohr)
                         </div>
@@ -159,7 +176,7 @@
 
                     <a class="flex py-4"
                        href="{lang}/sensors/dnms/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                         <div class="text-base font-extralight">
                             Noise Measuring Sensor (DNMS)
                         </div>
@@ -167,7 +184,7 @@
 
                     <a class="flex py-4"
                        href="{lang}/knowledge/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                         <div class="text-2xl leading-6 font-bold flex-1">
                             {i18n.t('nav:knowledge')}
                         </div>
@@ -175,17 +192,8 @@
                     </a>
 
                     <a class="flex py-4"
-                       href="{lang}/dashboard/"
-                       on:click={menuToggle}>
-                        <div class="text-2xl leading-6 font-bold flex-1">
-                            {i18n.t('nav:dashboard')}
-                        </div>
-                        <span class="text-2xl">&nbsp&rarr;</span>
-                    </a>
-
-                    <a class="flex py-4"
                        href="{lang}/donate/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                         <div class="text-2xl leading-6 font-bold flex-1">
                             {i18n.t('nav:donate')}
                         </div>
@@ -196,7 +204,7 @@
 
                     <a class="flex py-3"
                        href="forum.sensor.community/" target="_blank"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                     <span class="text-base font-extralight">
                         Forum
                     </span>
@@ -205,7 +213,7 @@
 
                     <a class="flex py-3"
                        href="{lang}/sensors/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                     <span class="text-base font-extralight">
                         Github
                     </span>
@@ -214,7 +222,7 @@
 
                     <a class="flex py-3"
                        href="{lang}/sensors/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                     <span class="text-base font-extralight">
                         Devices
                     </span>
@@ -223,7 +231,7 @@
 
                     <a class="flex py-3"
                        href="{lang}/sensors/"
-                       on:click={menuToggle}>
+                       on:click={menuClose}>
                     <span class="text-base font-extralight">
                         Map
                     </span>
@@ -234,6 +242,3 @@
         </div>
     </div>
 </div>
-
-
-

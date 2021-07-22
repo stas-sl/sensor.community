@@ -21,12 +21,19 @@
         menu.open = !menu.open;
     }
 
+    function menuClose() {
+        if (menu.open === true){
+            menu.open = false;
+            open = false;
+        }
+    }
+
     const langauges = [
         "en", "de", "fr", "it", "sk", "ru", "cz", "bg", "pl", "es", "nl", "ua", "se", "pt", "ja", "zh", "da", "el", "et", "hu", "lt", "lv", "ro", "sl"
     ].sort()
 </script>
 
-<div class="md:relative z-50 bg-brand-green">
+<div class="md:relative z-50">
     <button class="text-brand-white inline-flex"
             on:click={menuToggle}
             type="button">

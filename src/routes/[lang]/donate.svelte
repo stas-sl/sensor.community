@@ -72,7 +72,6 @@
                         <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
                     </svg>
                 </div>
-                <!-- Todo: fix rotation -->
                 <div class="animate-heartBeat relative pl-4 -mr-40 sm:mx-auto sm:max-w-2xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                     <img alt="Support Sensor.Community by donating and keep the network alive"
                          class="w-full lg:h-full lg:w-auto lg:max-w-none"
