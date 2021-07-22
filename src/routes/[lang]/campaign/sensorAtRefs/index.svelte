@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('campaign:refs-metaTitle')}- Sensor.Community</title>
+    <title>{i18n.t('campaign:refs-metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('campaign:refs-metaDescription')}" name="description">
     <meta content={i18n.t('campaign:refs-metaTitle')} property="og:title"/>
     <meta property="og:type" content="website"/>

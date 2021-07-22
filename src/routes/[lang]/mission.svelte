@@ -56,9 +56,9 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('press:metaTitle')} - Sensor.Community</title>
-    <meta name="description" content="{i18n.t('press:metaDescription')}">
-    <meta content={i18n.t('press:metaTitle')} property="og:title"/>
+    <title>{i18n.t('mission:metaTitle')} - Sensor.Community</title>
+    <meta name="description" content="{i18n.t('mission:metaDescription')}">
+    <meta content={i18n.t('mission:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
@@ -68,25 +68,25 @@
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
-                {i18n.t('press:h1')}
+                {i18n.t('mission:h1')}
             </h1>
             <p class="mt-8 text-xl leading-8">
-                {i18n.t('press:paragraph-1')}
+                {i18n.t('mission:paragraph-1')}
             </p>
         </div>
         <div class="mt-6 prose prose-lg mx-auto text-brand-black">
-            <h2>  {i18n.t('press:our-story')}</h2>
+            <h2>  {i18n.t('mission:our-story')}</h2>
             <p class="mt-8 text-xl leading-8">
-                {@html i18n.t('press:our-story-paragraph-1')}
+                {@html i18n.t('mission:our-story-paragraph-1')}
             </p>
             <p class="mt-8 text-xl leading-8">
-                {i18n.t('press:our-story-paragraph-2')}</p>
+                {i18n.t('mission:our-story-paragraph-2')}</p>
             <ul class="text-xl leading-8">
-                <li>{i18n.t('press:our-story-item-1')}</li>
-                <li>{i18n.t('press:our-story-item-2')}</li>
-                <li>{i18n.t('press:our-story-item-3')}</li>
+                <li>{i18n.t('mission:our-story-item-1')}</li>
+                <li>{i18n.t('mission:our-story-item-2')}</li>
+                <li>{i18n.t('mission:our-story-item-3')}</li>
             </ul>
-            <p class="text-xl leading-8">{@html i18n.t('press:our-story-paragraph-3')}</p>
+            <p class="text-xl leading-8">{@html i18n.t('mission:our-story-paragraph-3')}</p>
         </div>
     </div>
 </div>
@@ -144,32 +144,32 @@
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <div class="mt-6 prose prose-lg mx-auto text-brand-black">
-                <h2>{i18n.t('press:code-a-difference')}</h2>
-                <p class="text-xl leading-8">{i18n.t('press:code-a-difference-paragraph-1')}</p>
+                <h2>{i18n.t('mission:code-a-difference')}</h2>
+                <p class="text-xl leading-8">{i18n.t('mission:code-a-difference-paragraph-1')}</p>
                 <blockquote>
-                    {i18n.t('press:code-a-difference-quote')}
+                    {i18n.t('mission:code-a-difference-quote')}
                 </blockquote>
-                <p class="text-xl leading-8">{i18n.t('press:code-a-difference-paragraph-2-pt1')} <span>120399</span>
-                    <span>{i18n.t('press:code-a-difference-paragraph-2-pt2')}</span> 70
-                    <span>{i18n.t('press:code-a-difference-paragraph-2-pt3')}</span>
+                <p class="text-xl leading-8">{i18n.t('mission:code-a-difference-paragraph-2-pt1')} <span>120399</span>
+                    <span>{i18n.t('mission:code-a-difference-paragraph-2-pt2')}</span> 70
+                    <span>{i18n.t('mission:code-a-difference-paragraph-2-pt3')}</span>
                 </p>
 
                 <figure>
                     <img alt="Sensor.Community Team" class="w-full rounded-lg" height="873" src="images/team.jpg"
                          width="1310">
-                    <figcaption>{i18n.t('press:code-a-difference-figcaption')}</figcaption>
+                    <figcaption>{i18n.t('mission:code-a-difference-figcaption')}</figcaption>
                 </figure>
-                <h2>{i18n.t('press:get-running')}</h2>
-                <p class="text-xl leading-8">{@html i18n.t('press:get-running-paragraph-1')}</p>
-                <p class="text-xl leading-8">{@html i18n.t('press:get-running-paragraph-2')}</p>
-                <p class="text-xl leading-8">{@html i18n.t('press:get-running-paragraph-3')}</p>
+                <h2>{i18n.t('mission:get-running')}</h2>
+                <p class="text-xl leading-8">{@html i18n.t('mission:get-running-paragraph-1')}</p>
+                <p class="text-xl leading-8">{@html i18n.t('mission:get-running-paragraph-2')}</p>
+                <p class="text-xl leading-8">{@html i18n.t('mission:get-running-paragraph-3')}</p>
             </div>
 
             <div class="text-lg max-w-prose mx-auto pt-12">
                 <div class="space-y-12">
                     <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-                        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{i18n.t('press:team')}</h2>
-                        <p class="text-xl">{i18n.t('press:team-description')}</p>
+                        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{i18n.t('mission:team')}</h2>
+                        <p class="text-xl">{i18n.t('mission:team-description')}</p>
                     </div>
                     <ul class="space-y-16 sm:grid sm:grid-cols-3 gap-8 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
                         {#each contributors as contributor}
@@ -195,18 +195,18 @@
 
     <div class="relative px-4 sm:px-6 lg:px-8 py-12">
         <div class="mt-6 prose prose-indigo prose-lg mx-auto text-brand-black">
-            <h2>{i18n.t('press:mediakit')}</h2>
-            <p class="text-xl leading-8">{i18n.t('press:mediakit-description')} <a
+            <h2>{i18n.t('mission:mediakit')}</h2>
+            <p class="text-xl leading-8">{i18n.t('mission:mediakit-description')} <a
                     class="text-xl leading-8 font-medium text-brand-funcRed"
                     href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
-                {i18n.t('press:mediakit-download')} &nbsp&rarr;
+                {i18n.t('mission:mediakit-download')} &nbsp&rarr;
             </a>
-                <!--                <br>-->
-                <!--                {i18n.t('press:mediakit-press')}<a-->
-                <!--                        class="text-xl leading-8 font-medium text-brand-funcRed"-->
-                <!--                        href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">-->
-                <!--                    {i18n.t('press:mediakit-press-page')}-->
-                <!--                </a>-->
+<!--                <br>-->
+<!--                {i18n.t('mission:mediakit-press')}<a-->
+<!--                        class="text-xl leading-8 font-medium text-brand-funcRed"-->
+<!--                        href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">-->
+<!--                    {i18n.t('mission:mediakit-press-page')}-->
+<!--                </a>-->
             </p>
             <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">
                 <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">

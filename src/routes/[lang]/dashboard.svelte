@@ -109,7 +109,7 @@
 
 </script>
 <svelte:head>
-    <title>{i18n.t('index:metaTitle')}- Sensor.Community</title>
+    <title>{i18n.t('index:metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('dashboard:metaDescription')}" name="description">
     <meta content={i18n.t('dashboard:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>

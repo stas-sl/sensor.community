@@ -128,11 +128,17 @@
                         </h4>
                         <ul class="mt-4">
                             <li>
-                                <a href="{lang}/press/"
+                                <a href="{lang}/mission/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:mission')}
                                 </a>
                             </li>
+<!--                            <li class="mt-4">-->
+<!--                                <a href="{lang}/press/"-->
+<!--                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">-->
+<!--                                    {i18n.t('footer:press')}-->
+<!--                                </a>-->
+<!--                            </li>-->
                             <li class="mt-4">
                                 <a href="{lang}/dashboard/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">

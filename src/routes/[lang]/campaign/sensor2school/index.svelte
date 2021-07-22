@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('campaign:sensor2school-metaTitle')}- Sensor.Community</title>
+    <title>{i18n.t('campaign:sensor2school-metaTitle')} - Sensor.Community</title>
     <meta property="og:title" content="{i18n.t('campaign:sensor2school-metaTitle')}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content=""/>

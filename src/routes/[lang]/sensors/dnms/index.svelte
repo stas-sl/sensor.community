@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('dnms:metaTitle')}- Sensor.Community</title>
+    <title>{i18n.t('dnms:metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('dnms:metaDescription')}" name="description">
     <meta content={i18n.t('dnms:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>

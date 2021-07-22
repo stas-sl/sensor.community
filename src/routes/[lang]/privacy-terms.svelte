@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-    <title>{i18n.t('imprint:metaTitle')}- Sensor.Community</title>
+    <title>{i18n.t('imprint:metaTitle')} - Sensor.Community</title>
     <meta name="description" content="{i18n.t('imprint:metaDescription')}">
     <meta content={i18n.t('imprint:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
