@@ -93,7 +93,7 @@
                         <div id="betterplace_donation_iframe"
                              style="background: transparent url('https://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;">
                             <iframe src="https://www.betterplace.org/de/projects/38071/iframe_donations/new?color=084945&amp;donation_amount=100&amp;bottom_logo=true&amp;recurring_interval=single&amp;utm_campaign=external_donation_forms&amp;utm_source=domain:luftdaten.info&amp;utm_medium=project_38071&amp;utm_content=luftdaten.info;"
-                                    style="max-width: 600px; width: 100%; background-color: transparent; overflow: hidden; height: 1111px;"></iframe>
+                                    style="max-width: 600px; width: 100%; background-color: transparent; overflow: hidden; height: 1111px;" title="donate form to Sensor.Community"></iframe>
                         </div>
                     </div>
                 </div>

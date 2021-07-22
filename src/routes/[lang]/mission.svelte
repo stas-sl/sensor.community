@@ -1,6 +1,7 @@
 <script>
     import initI18n from "../../utils/initI18n";
     import {stores} from "@sapper/app";
+    import PressArticles from "../../components/PressArticles.svelte";
     import {onMount} from "svelte";
 
     const {page} = stores();
@@ -79,14 +80,18 @@
             <p class="mt-8 text-xl leading-8">
                 {@html i18n.t('mission:our-story-paragraph-1')}
             </p>
-            <p class="mt-8 text-xl leading-8">
-                {i18n.t('mission:our-story-paragraph-2')}</p>
             <ul class="text-xl leading-8">
-                <li>{i18n.t('mission:our-story-item-1')}</li>
-                <li>{i18n.t('mission:our-story-item-2')}</li>
-                <li>{i18n.t('mission:our-story-item-3')}</li>
+                <li><a href="https://github.com/opendata-stuttgart/sensors-software"
+                       target="_blank">{i18n.t('press:uniqueness-item-1')}</a></li>
+                <li><a href="https://github.com/opendata-stuttgart/sensor.community"
+                       target="_blank">{i18n.t('press:uniqueness-item-2')}</a></li>
+                <li><a href="https://github.com/opendata-stuttgart/feinstaub-map-v2"
+                       target="_blank">{i18n.t('press:uniqueness-item-3')}</a></li>
+                <li><a href="https://github.com/opendata-stuttgart/devices.sensor.community"
+                       target="_blank">{i18n.t('press:uniqueness-item-4')}</a></li>
             </ul>
-            <p class="text-xl leading-8">{@html i18n.t('mission:our-story-paragraph-3')}</p>
+            <p class="mt-8 text-xl leading-8">
+                {@html i18n.t('mission:our-story-paragraph-2')}</p>
         </div>
     </div>
 </div>
@@ -94,9 +99,9 @@
     <p>{i18n.t('index:inNumbers-fetching')}</p>
 {:then data}
     <div class="relative overflow-hidden bg-brand-yellowLight">
-        <div class="relative px-4 sm:px-6 lg:px-8">
+        <div class="relative px-6">
             <div class="text-lg max-w-prose mx-auto">
-                <div class="mt-16 prose prose-lg mx-auto">
+                <div class="my-16 prose prose-lg mx-auto">
                     <h2>Some numbers to impress</h2>
                 </div>
                 <dl class="mb-16 text-center grid grid-cols-2 md:grid-cols-4 sm:gap-8">
@@ -140,10 +145,10 @@
 {:catch error}
     <p>{i18n.t('index:inNumbers-error')}</p>
 {/await}
-<div class="relative py-16 overflow-hidden">
+<div class="relative my-16 overflow-hidden">
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
-            <div class="mt-6 prose prose-lg mx-auto text-brand-black">
+            <div class="prose prose-lg mx-auto text-brand-black">
                 <h2>{i18n.t('mission:code-a-difference')}</h2>
                 <p class="text-xl leading-8">{i18n.t('mission:code-a-difference-paragraph-1')}</p>
                 <blockquote>
@@ -165,7 +170,7 @@
                 <p class="text-xl leading-8">{@html i18n.t('mission:get-running-paragraph-3')}</p>
             </div>
 
-            <div class="text-lg max-w-prose mx-auto pt-12">
+            <div class="text-lg max-w-prose mx-auto py-16">
                 <div class="space-y-12">
                     <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
                         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{i18n.t('mission:team')}</h2>
@@ -190,67 +195,70 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="relative px-4 sm:px-6 lg:px-8 py-12">
-        <div class="mt-6 prose prose-indigo prose-lg mx-auto text-brand-black">
-            <h2>{i18n.t('mission:mediakit')}</h2>
-            <p class="text-xl leading-8">{i18n.t('mission:mediakit-description')} <a
-                    class="text-xl leading-8 font-medium text-brand-funcRed"
-                    href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
-                {i18n.t('mission:mediakit-download')} &nbsp&rarr;
-            </a>
-<!--                <br>-->
-<!--                {i18n.t('mission:mediakit-press')}<a-->
-<!--                        class="text-xl leading-8 font-medium text-brand-funcRed"-->
-<!--                        href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">-->
-<!--                    {i18n.t('mission:mediakit-press-page')}-->
-<!--                </a>-->
-            </p>
-            <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">
-                <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
-                    <div class="relative p-10 flex justify-center">
-                        <img alt="Sensor.Community Logo" class="relative" loading="lazy" src="images/logos/signet.png">
+            <div class="text-lg max-w-prose mx-auto">
+                <div class="my-16 prose prose-lg mx-auto text-brand-black">
+                    <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{i18n.t('mission:mediakit')}</h2>
+                    <p class="text-xl leading-8">{i18n.t('mission:mediakit-description')} <a
+                            class="text-xl leading-8 font-medium text-brand-funcRed"
+                            href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
+                        {i18n.t('mission:mediakit-download')} &nbsp&rarr;
+                    </a>
+                    </p>
+                    <p class="text-xl leading-8">{i18n.t('mission:mediakit-press')} <a
+                            href='mailto:press@Sensor.Community'>Press@Sensor.Community</a>
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-12">
+                        <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
+                            <div class="relative p-10 flex justify-center">
+                                <img alt="Sensor.Community Logo" class="relative" loading="lazy"
+                                     src="images/logos/signet.png">
+                            </div>
+                        </div>
+                        <div class="flex-shrink m-3 relative overflow-hidden bg-brand-white rounded-lg max-w-xs shadow-lg">
+                            <div class="relative p-10 flex justify-center">
+                                <img alt="Sensor.Community Logo in Black" class="relative" loading="lazy"
+                                     src="images/logos/signet-black.png">
+                            </div>
+                        </div>
+                        <div class="flex-shrink m-3 relative overflow-hidden bg-brand-black rounded-lg max-w-xs shadow-lg">
+                            <div class="relative p-10 flex justify-center">
+                                <img alt="Sensor.Community Logo in White" class="relative" loading="lazy"
+                                     src="images/logos/signet-white.png">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex-shrink m-3 relative overflow-hidden bg-brand-white rounded-lg max-w-xs shadow-lg">
-                    <div class="relative p-10 flex justify-center">
-                        <img alt="Sensor.Community Logo in Black" class="relative" loading="lazy"
-                             src="images/logos/signet-black.png">
-                    </div>
-                </div>
-                <div class="flex-shrink m-3 relative overflow-hidden bg-brand-black rounded-lg max-w-xs shadow-lg">
-                    <div class="relative p-10 flex justify-center">
-                        <img alt="Sensor.Community Logo in White" class="relative" loading="lazy"
-                             src="images/logos/signet-white.png">
+                    <div class="my-16 prose prose-lg mx-auto text-brand-black">
+                        <h2>Colors</h2>
+                        <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">
+                            <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
+                                <div class="relative p-10 p-20 flex justify-center text-brand-white">
+                                    #084945
+                                </div>
+                            </div>
+                            <div class="flex-shrink m-3 relative overflow-hidden bg-brand-yellow rounded-lg max-w-xs shadow-lg">
+                                <div class="relative p-10 p-20 flex justify-center text-brand-white">
+                                    #E9A135
+                                </div>
+                            </div>
+                            <div class="flex-shrink m-3 relative overflow-hidden bg-brand-greenBright rounded-lg max-w-xs shadow-lg">
+                                <div class="relative p-10 p-20 flex justify-center text-brand-white">
+                                    #6FEFE6
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="relative px-4 sm:px-6 lg:px-8">
-        <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-            <h2>Colors</h2>
-            <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">
-                <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
-                    <div class="relative p-10 p-20 flex justify-center text-brand-white">
-                        #084945
-                    </div>
-                </div>
-                <div class="flex-shrink m-3 relative overflow-hidden bg-brand-yellow rounded-lg max-w-xs shadow-lg">
-                    <div class="relative p-10 p-20 flex justify-center text-brand-white">
-                        #E9A135
-                    </div>
-                </div>
-                <div class="flex-shrink m-3 relative overflow-hidden bg-brand-greenBright rounded-lg max-w-xs shadow-lg">
-                    <div class="relative p-10 p-20 flex justify-center text-brand-white">
-                        #6FEFE6
-                    </div>
+            <div class="relative overflow-hidden">
+                <div class="relative">
+                    <PressArticles/>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 

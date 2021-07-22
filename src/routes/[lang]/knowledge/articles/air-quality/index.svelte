@@ -69,7 +69,7 @@
 
             <h2>Air pollution limits</h2>
             <p>
-                Both the <a href="http://www.who.int/mediacentre/factsheets/fs313/en/">World Health Organization (WHO)</a> and the <a href="http://ec.europa.eu/environment/air/quality/standards.htm">European Union (EU)</a> have established some limit concentrations for key air pollutants above which they may pose some health risks to sensitive populations.
+                Both the <a href="http://www.who.int/mediacentre/factsheets/fs313/en/" target="_blank">World Health Organization (WHO)</a> and the <a href="http://ec.europa.eu/environment/air/quality/standards.htm">European Union (EU)</a> have established some limit concentrations for key air pollutants above which they may pose some health risks to sensitive populations.
 
             </p>
 
@@ -127,10 +127,10 @@
 
 
 <Banner
-        description={i18n.t('index:banner-description')}
+        description={i18n.t('banner:description')}
         link={lang}/sensors/
- linkName={i18n.t('index:cta')}
-        title={i18n.t('index:banner-title')}
+        linkName={i18n.t('banner:cta')}
+        title={i18n.t('banner:title')}
 />
 
 <div class="relative py-16 bg-white overflow-hidden">
@@ -164,41 +164,6 @@
                 This is some general advice on how you can limit your exposure to unhealthy pollutants. These
                 recommendations do not constitute a medical or emergency advice. Users should only use them for
                 informational purposes.
-
-
-                <p>Quis semper vulputate aliquam venenatis egestas sagittis quisque orci. Donec commodo sit viverra
-                    aliquam
-                    porttitor ultrices gravida eu. Tincidunt leo, elementum mattis elementum ut nisl, justo, amet,
-                    mattis.
-                    Nunc purus, diam commodo tincidunt turpis. Amet, duis sed elit interdum dignissim.</p>
-                <h2>From beginner to expert in 30 days</h2>
-                <p>Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna
-                    nibh.
-                    Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-                    tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed
-                    diam
-                    turpis ipsum eu a sed convallis diam.</p>
-                <blockquote>
-                    <p>Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque
-                        tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
-                </blockquote>
-                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed
-                    amet
-                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit
-                    neque
-                    erat velit.</p>
-
-                <h2>Everything you need to get up and running</h2>
-                <p>Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>. Amet, massa quam varius orci
-                    dapibus
-                    volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra
-                    ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor
-                    venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
-                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed
-                    amet
-                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit
-                    neque
-                    erat velit.</p>
             </div>
         </div>
     </div>

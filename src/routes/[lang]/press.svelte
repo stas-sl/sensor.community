@@ -1,6 +1,7 @@
 <script>
     import initI18n from "../../utils/initI18n";
     import {stores} from "@sapper/app";
+    import PressArticles from "../../components/PressArticles.svelte";
     import {onMount} from "svelte";
 
     const {page} = stores();
@@ -71,25 +72,34 @@
                 {i18n.t('press:h1')}
             </h1>
             <p class="mt-8 text-xl leading-8">
-                {i18n.t('press:paragraph-1')}
+                {@html i18n.t('press:short-description')}
+                <a class="font-medium text-brand-funcRed" href="{lang}/mission/">
+                    {i18n.t('press:short-description-more')} &nbsp&rarr;
+                </a>
             </p>
         </div>
         <div class="mt-6 prose prose-lg mx-auto text-brand-black">
-            <h2>  {i18n.t('press:our-story')}</h2>
+            <h2>  {i18n.t('press:uniqueness')}</h2>
             <p class="mt-8 text-xl leading-8">
-                {@html i18n.t('press:our-story-paragraph-1')}
-            </p>
-            <p class="mt-8 text-xl leading-8">
-                {i18n.t('press:our-story-paragraph-2')}</p>
+                {i18n.t('press:uniqueness-paragraph-1')}</p>
             <ul class="text-xl leading-8">
-                <li>{i18n.t('press:our-story-item-1')}</li>
-                <li>{i18n.t('press:our-story-item-2')}</li>
-                <li>{i18n.t('press:our-story-item-3')}</li>
+                <li><a href="https://github.com/opendata-stuttgart/sensors-software"
+                       target="_blank">{i18n.t('press:uniqueness-item-1')}</a></li>
+                <li><a href="https://github.com/opendata-stuttgart/sensor.community"
+                       target="_blank">{i18n.t('press:uniqueness-item-2')}</a></li>
+                <li><a href="https://github.com/opendata-stuttgart/feinstaub-map-v2"
+                       target="_blank">{i18n.t('press:uniqueness-item-3')}</a></li>
+                <li><a href="https://github.com/opendata-stuttgart/devices.sensor.community"
+                       target="_blank">{i18n.t('press:uniqueness-item-4')}</a></li>
             </ul>
-            <p class="text-xl leading-8">{@html i18n.t('press:our-story-paragraph-3')}</p>
+            <p class="mt-8 text-xl leading-8">
+                {@html i18n.t('press:uniqueness-paragraph-2')}
+            </p>
+            <p class="text-xl leading-8">{@html i18n.t('press:uniqueness-paragraph-3')}</p>
         </div>
     </div>
 </div>
+
 {#await fetchNumbers}
     <p>{i18n.t('index:inNumbers-fetching')}</p>
 {:then data}
@@ -140,24 +150,22 @@
 {:catch error}
     <p>{i18n.t('index:inNumbers-error')}</p>
 {/await}
+
 <div class="relative py-16 overflow-hidden">
     <div class="relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <div class="mt-6 prose prose-lg mx-auto text-brand-black">
-                <h2>{i18n.t('press:code-a-difference')}</h2>
-                <p class="text-xl leading-8">{i18n.t('press:code-a-difference-paragraph-1')}</p>
-                <blockquote>
-                    {i18n.t('press:code-a-difference-quote')}
-                </blockquote>
-                <p class="text-xl leading-8">{i18n.t('press:code-a-difference-paragraph-2-pt1')} <span>120399</span>
-                    <span>{i18n.t('press:code-a-difference-paragraph-2-pt2')}</span> 70
-                    <span>{i18n.t('press:code-a-difference-paragraph-2-pt3')}</span>
+                <h2>{i18n.t('press:local')}</h2>
+                <p class="text-xl leading-8">{i18n.t('press:local-paragraph-1')}</p>
+                <p class="text-xl leading-8">{i18n.t('press:local-paragraph-2-pt1')} <span>120399</span>
+                    <span>{i18n.t('press:local-paragraph-2-pt2')}</span> 70
+                    <span>{i18n.t('press:local-paragraph-2-pt3')}</span>
                 </p>
 
                 <figure>
-                    <img alt="Sensor.Community Team" class="w-full rounded-lg" height="873" src="images/team.jpg"
+                    <img alt="Sensor.Community Team" class="w-full rounded-lg" height="873" src="images/press.jpg"
                          width="1310">
-                    <figcaption>{i18n.t('press:code-a-difference-figcaption')}</figcaption>
+                    <figcaption>{i18n.t('press:local-figcaption')}</figcaption>
                 </figure>
                 <h2>{i18n.t('press:get-running')}</h2>
                 <p class="text-xl leading-8">{@html i18n.t('press:get-running-paragraph-1')}</p>
@@ -196,17 +204,14 @@
     <div class="relative px-4 sm:px-6 lg:px-8 py-12">
         <div class="mt-6 prose prose-indigo prose-lg mx-auto text-brand-black">
             <h2>{i18n.t('press:mediakit')}</h2>
-            <p class="text-xl leading-8">{i18n.t('press:mediakit-description')} <a
-                    class="text-xl leading-8 font-medium text-brand-funcRed"
-                    href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
-                {i18n.t('press:mediakit-download')} &nbsp&rarr;
-            </a>
-                <!--                <br>-->
-                <!--                {i18n.t('press:mediakit-press')}<a-->
-                <!--                        class="text-xl leading-8 font-medium text-brand-funcRed"-->
-                <!--                        href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">-->
-                <!--                    {i18n.t('press:mediakit-press-page')}-->
-                <!--                </a>-->
+            <p class="text-xl leading-8">{@html i18n.t('press:mediakit-description')} <a
+                    href='mailto:press@Sensor.Community'>Press@Sensor.Community</a>
+                <br>
+                {i18n.t('press:mediakit-or')}<a
+                        class="text-xl leading-8 font-medium text-brand-funcRed"
+                        href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
+                    {i18n.t('press:mediakit-download')}  &nbsp&rarr;
+                </a>
             </p>
             <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">
                 <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
@@ -253,4 +258,8 @@
     </div>
 </div>
 
-
+<div class="relative overflow-hidden">
+    <div class="relative px-4 sm:px-6 lg:px-8">
+        <PressArticles/>
+    </div>
+</div>

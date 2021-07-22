@@ -89,10 +89,10 @@
 
                     </iframe>
                     <figure class="m-4 text-sm text-brand-funcRed">
-                        <a href="https://no2.maps.sensor.community/#5/52.107/15.798" target="_blank">
-                            <figcaption>{i18n.t('campaign:refs-figcaption')}
+                            <figcaption>
+                                <a href="https://no2.maps.sensor.community/#5/52.107/15.798" target="_blank">{i18n.t('campaign:refs-figcaption')}
+                                </a>
                             </figcaption>
-                        </a>
                     </figure>
                 </div>
             </div>

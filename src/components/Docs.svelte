@@ -10,7 +10,7 @@
     export const owner = 'opendata-stuttgart';
     export const project = 'sensor.community';
     export let dir = '';
-    export let edit_title = 'edit this section';
+    export const edit_title = 'edit this section';
     export let sections;
     let active_section;
 

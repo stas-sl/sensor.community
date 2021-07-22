@@ -55,19 +55,19 @@
 
 
 <div class="relative py-16 overflow-hidden">
-    <section class="container mx-auto mt-10">
+    <section class="container mx-auto">
         <div class="relative max-w-7xl mx-auto">
             <div class="text-center">
                 <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
                     {i18n.t('pressArticles:title')}
                 </h2>
-                <p class="mt-3 max-w-2xl mx-auto text-xl sm:mt-4">
+                <p class="max-w-2xl mx-auto text-xl mb-16">
                     {i18n.t('pressArticles:description')}
                 </p>
             </div>
 
-            <div class="mt-12 max-w-lg mx-auto lg:max-w-none">
-                <div class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 grid sm:divide-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-px">
+            <div class="max-w-lg mx-auto lg:max-w-none">
+                <div class="bg-gray-100 overflow-hidden divide-y divide-gray-200 grid sm:divide-y-0 grid grid-cols-1 md:grid-cols-2 gap-px">
                     {#each articles as article}
                         <div class="relative group bg-brand-white p-6 md:flex md:flex-col hover:bg-brand-yellowLight">
                             <div class="relative p-3 border-gray-400">
@@ -75,12 +75,12 @@
                             </div>
                             <div class="md:flex-grow md:flex md:flex-col">
                                 <div class="mt-8 relative md:flex-grow">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="{article.linkURL}" target="_blank">
+                                    <a href="{article.linkURL}" target="_blank">
+                                        <h3 class="text-lg font-medium">
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             {article.title}
-                                        </a>
-                                    </h3>
+                                        </h3>
+                                    </a>
                                     <p class="mt-2 text-sm text-gray-600 md:flex-grow">
                                         {article.description}
                                     </p>

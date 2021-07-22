@@ -1,7 +1,6 @@
 <script>
     import initI18n from "../../../../../utils/initI18n";
     import {stores} from "@sapper/app";
-    import Banner from "../../../../../components/Banner.svelte";
 
     const {page} = stores();
     $: lang = $page.params.lang;

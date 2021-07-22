@@ -324,10 +324,10 @@
 </div>
 
 <Banner
-        description={i18n.t('index:banner-description')}
+        description={i18n.t('banner:description')}
         link={lang}/sensors/
- linkName={i18n.t('index:cta')}
-        title={i18n.t('index:banner-title')}
+        linkName={i18n.t('banner:cta')}
+        title={i18n.t('banner:title')}
 />
 <Campaigns/>
 <Contact/>

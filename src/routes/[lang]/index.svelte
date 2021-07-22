@@ -40,13 +40,6 @@
         return (num / si[i].value).toFixed(digits).replace(rx, "$4") + si[i].symbol;
     }
 
-    function delayMap() {
-        if (process.browser) {
-            setTimeout(function () {
-                document.getElementById('map-frame').src = 'https://maps.sensor.community/?selection=PM25&nooverlay=true#2/28.3/-1.1';
-            }, 900);
-        }
-    }
 </script>
 <svelte:head>
     <title>{i18n.t('index:metaTitle')} - Sensor.Community</title>
@@ -187,12 +180,18 @@
                     </p>
                     <p class="text-lg leading-7">
                         {@html i18n.t('index:about-section2')}
+                        <a href="https://github.com/opendata-stuttgart/" target="_blank">
+                            <span class=" text-brand-funcRed">
+                                GitHub
+                            </span>
+                            <span class="transform -rotate-45 text-brand-funcRed">&rarr;</span>
+                        </a>
                     </p>
                     <p class="text-lg leading-7">
-                        {i18n.t('index:about-section3')}
+                        {i18n.t('index:about-section4')}
                     </p>
                 </div>
-                <div class="mt-10">
+                <div class="mt-6">
                     <a class="text-base font-medium text-brand-funcRed" href="{lang}/sensors/">
                         {i18n.t('index:about-link')} &nbsp&rarr;
                     </a>
@@ -339,10 +338,10 @@
     </div>
 </div>
 <Banner
-        description={i18n.t('index:banner-description')}
+        description={i18n.t('banner:description')}
         link={lang}/sensors/
-        linkName={i18n.t('index:cta')}
-        title={i18n.t('index:banner-title')}
+ linkName={i18n.t('banner:cta')}
+        title={i18n.t('banner:title')}
 />
 <Campaigns/>
 
