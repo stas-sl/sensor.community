@@ -5,6 +5,9 @@ module.exports = {
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),
+        require('cssnano')({
+            preset: 'default',
+        }),
         // // only needed if you want to purge
         process.env.NODE_ENV === 'production' ? require('autoprefixer') : null,
         purgecss({

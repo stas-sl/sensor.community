@@ -12,21 +12,21 @@
         {
             hashtag: "#NO2",
             title: "Measuring NO2",
-            imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
+            imageURL: "images/campaigns.webp",
             linkURL: "/campaign/no2",
             description: "We've measured NO2 with diffusion tubes in 9 countries."
         },
         {
             hashtag: "#Zero200",
             title: "Start your local group!",
-            imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
+            imageURL: "images/campaigns.webp",
             linkURL: "/campaign/zero200",
             description: "#publications supports you in launching your local group."
         },
         {
             hashtag: "#Sensor@Refs",
             title: "Reference stations",
-            imageURL: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=ayUVM5ycQJ&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800",
+            imageURL: "images/campaigns.webp",
             linkURL: "/campaign/sensorAtRefs",
             description: "This campaign brings sensors at reference station in this world."
         }
