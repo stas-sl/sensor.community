@@ -1,7 +1,7 @@
 <script>
     import initI18n from "../utils/initI18n";
     import {stores} from "@sapper/app";
-    import LanguageSwitcher, {languageDropDown} from './LanguageSwitcher.svelte'
+    import LanguageSwitcher from './LanguageSwitcher.svelte'
     import {flag} from "country-emoji"
 
     const {page} = stores();
@@ -89,7 +89,7 @@
             </nav>
             <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
                 <div class="flex">
-                    <a sapper:prefetch href="https://github.com/opendata-stuttgart/" on:click={menuClose}
+                    <a href="https://github.com/opendata-stuttgart/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         GitHub
                     </a>
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="flex">
-                    <a sapper:prefetch href="https://forum.sensor.community/" on:click={menuClose}
+                    <a href="https://forum.sensor.community/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         {i18n.t('nav:forum')}
                     </a>
@@ -105,29 +105,26 @@
                 </div>
 
                 <div class="flex">
-                    <a sapper:prefetch href="https://devices.sensor.community/" on:click={menuClose}
+                    <a href="https://devices.sensor.community/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         Devices
                     </a>
                     <span class="transform -rotate-45">&rarr;</span>
                 </div>
                 <div class="flex">
-                    <a class="mr-1 font-extralight">
+                    <a
+                       class="mr-1 font-extralight">
                         <LanguageSwitcher class="z-50"/>
                     </a>
                 </div>
             </div>
             <div class="flex justify-between font-semibold text-brand-white lg:hidden ">
-                <div class="block z-50">
-                    <a sapper:prefetch on:click={menuClose}>
-                    <LanguageSwitcher class="z-50" on:click={menuClose}/>
-                    </a>
-                </div>
+                <a class="block z-50" on:click={menuClose}>
+                    <LanguageSwitcher/>
+                </a>
                 <div class="m-1.5 mx-2 border-r-2 border-brand-white"></div>
                 <button id="mobileMenuButton"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2"
-                        class:open on:click={() => open = !open} on:click={menuToggle}
-                        type="button">
+                        class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2" class:open on:click={() => open = !open} on:click={menuToggle} type="button">
                     <svg class="h-7 w-7 mt-1 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
                         <line id="top" x1="0" y1="5" x2="18" y2="5"></line>
                         <line id="middle" x1="0" y1="12" x2="18" y2="12"></line>
@@ -141,7 +138,7 @@
 
 <!--Mobile menu-->
 <div class="bg-brand-green sticky top-20 z-40">
-    <div class="bg-brand-green h-screen absolute -mt-10 inset-x-0 transition transform origin-top-right lg:hidden { menu.open ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition  duration-200">
+    <div class="bg-brand-green h-screen absolute -mt-10 inset-x-0 origin-top-right lg:hidden { menu.open ? 'block' : 'hidden' }">
         <div class="divide-y-2">
             <div class="mt-10 px-5 space-y-6 text-brand-white">
                 <nav class="grid { menu.open ? 'open' : 'closed' }">

@@ -341,7 +341,7 @@
 <Banner
         description={i18n.t('index:banner-description')}
         link={lang}/sensors/
- linkName={i18n.t('index:cta')}
+        linkName={i18n.t('index:cta')}
         title={i18n.t('index:banner-title')}
 />
 <Campaigns/>
