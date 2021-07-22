@@ -72,22 +72,17 @@
     });
 </script>
 <style>
-    small {
-        display: inline-flex;
-    }
-
-    small .icon {
-        width: 1em;
-        height: 1em;
+    .icon {
+        width: 0.5em;
+        height: 0.5em;
         stroke: currentColor;
         stroke-width: 3;
         fill: none;
-        margin-top: 8px;
     }
 
-    small .anchor {
-        width: 1.4em;
-        height: 1.4em;
+    .anchor {
+        width: 1.1em;
+        height: 1.1em;
     }
 
     .hairline:last-child {
@@ -104,26 +99,27 @@
         <div bind:this={container}>
             {#each sections as section}
                 <section data-id={section.slug}>
-                    <h2>
-                        <span id={section.slug}></span>
-                        {@html section.metadata.title}
-                        <small class="text-brand-funcRed">
-                            <a href="{section.lang}/sensors/airrohr#{section.slug}" class="anchor" aria-hidden>
+                    <h2 class="flex">
+                        <span class="text-brand-funcRed" id={section.slug}>
+                            <a href="{section.lang}/sensors/airrohr#{section.slug}" aria-hidden="false">
                                 <svg viewBox="0 0 512 512" class="anchor">
-                                    <path fill="currentColor" class="mt-10"
+                                    <path fill="currentColor"
                                           d="M384,228.571v-54.857h-45.714V128h-54.857v45.714h-54.857V128h-54.857v45.714H128v54.857h45.714  v54.857H128v54.857h45.714V384h54.857v-45.714h54.857V384h54.857v-45.714H384v-54.857h-45.714v-54.857H384z M283.429,283.429  h-54.857v-54.857h54.857V283.429z"/>
                                 </svg>
                             </a>
-                        </small>
-                        <small class="text-brand-funcRed">
+                        </span>
+
+                        {@html section.metadata.title}
+                        <span class="flex justify-end space-x-8 flex-1 mt-1">
                             <a href="https://github.com/{owner}/{project}/edit/develop/content/airrohr/{$locale}/{dir}/{section.file}"
                                title="{$_('guide.editOnGithub')}">
-                                <svg class="icon" viewBox='0 0 24 24' width="24" height="24">
+                                <svg class="icon text-gray-400 m-2 justify-end" viewBox='0 0 24 24' width="24"
+                                     height="24">
                                     <path d='M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34'/>
                                     <polygon points='18 2 22 6 12 16 8 16 8 12 18 2'/>
                                 </svg>
                             </a>
-                        </small>
+                        </span>
                     </h2>
                     {@html section.html}
                 </section>

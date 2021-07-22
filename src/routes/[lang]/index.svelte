@@ -110,7 +110,7 @@
                     <a href="https://maps.sensor.community/#2/0.0/0.0" target="_blank">
                         <img alt=""
                              class="w-full rounded-md shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                             src="images/maps.jpg">
+                             src="images/maps.webp">
                     </a>
                 </div>
                 <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
@@ -144,9 +144,9 @@
                 <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
                     <img alt=""
                          class="absolute inset-0 h-full w-full object-cover"
-                         src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100">
+                         src="images/woman-breathing-air.webp">
                     <div class="absolute inset-0 bg-brand-green mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-green-dark via-brand-green opacity-70"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-green-dark via-brand-green-dark opacity-70"></div>
                     <div class="relative px-8 text-brand-white">
                         <div>
                             <img alt="Sensor.Community" class="h-12"
@@ -166,6 +166,7 @@
 
                             <footer class="mt-4">
                                 <p class="text-base font-semibold">{i18n.t('index:mission-team')}</p>
+                                <a href="https://unsplash.com/photos/BQMZ5ligqps" target="_blank" class="text-brand-white opacity-50">{i18n.t('index:about-photo')} Unsplash</a>
                             </footer>
                         </blockquote>
                     </div>
@@ -284,7 +285,7 @@
                 <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img alt="Air Quality Sensor Inside"
                          class="w-full rounded-xl shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                         src="/images/air-quality-sensor-inside.jpg">
+                         src="/images/air-quality-sensor-inside.webp">
                 </div>
                 <figure class="px-4 mt-4 text-sm text-gray-600">
                     <figcaption>
