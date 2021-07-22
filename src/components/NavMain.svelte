@@ -1,7 +1,7 @@
 <script>
     import initI18n from "../utils/initI18n";
     import {stores} from "@sapper/app";
-    import LanguageSwitcher from './LanguageSwitcher.svelte'
+    import LanguageSwitcher, {languageDropDown} from './LanguageSwitcher.svelte'
     import {flag} from "country-emoji"
 
     const {page} = stores();
@@ -27,8 +27,6 @@
             open = false;
         }
     }
-
-
 </script>
 
 <style>
@@ -114,17 +112,16 @@
                     <span class="transform -rotate-45">&rarr;</span>
                 </div>
                 <div class="flex">
-                    <a sapper:prefetch on:click={menuClose}
-                       class="mr-1 font-extralight">
+                    <a class="mr-1 font-extralight">
                         <LanguageSwitcher class="z-50"/>
                     </a>
                 </div>
-
-
             </div>
             <div class="flex justify-between font-semibold text-brand-white lg:hidden ">
                 <div class="block z-50">
-                    <LanguageSwitcher/>
+                    <a sapper:prefetch on:click={menuClose}>
+                    <LanguageSwitcher class="z-50" on:click={menuClose}/>
+                    </a>
                 </div>
                 <div class="m-1.5 mx-2 border-r-2 border-brand-white"></div>
                 <button id="mobileMenuButton"

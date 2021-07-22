@@ -40,7 +40,6 @@
         return (num / si[i].value).toFixed(digits).replace(rx, "$4") + si[i].symbol;
     }
 
-
     function delayMap() {
         if (process.browser) {
             setTimeout(function () {
