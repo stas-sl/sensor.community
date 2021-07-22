@@ -35,15 +35,17 @@
         return await response.json()
     })()
 
-    function formatNumber(n) {
-        return String(n).replace(/\d+?(?=(?:\d{3})+$)/img, "$&.");
+    function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
 
     function nFormatter(num, digits) {
         const si = [
             {value: 1, symbol: ""},
             {value: 1E3, symbol: "k"},
-            {value: 1E6, symbol: "M"}
+            {value: 1E6, symbol: "M"},
+            {value: 1E9, symbol: "B"},
+            {value: 1E11, symbol: "T"}
         ];
         let rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
         let i;
@@ -52,7 +54,9 @@
                 break;
             }
         }
-        return (num / si[i].value).toFixed(digits).replace(rx, "$4") + si[i].symbol;
+
+        let number = (num / si[i].value).toFixed(digits).replace(rx, "$4")
+        return formatNumber(number) + si[i].symbol;
     }
 </script>
 
@@ -120,7 +124,7 @@
                     </div>
                     <div class="flex flex-col mb-6 md:mb-0">
                         <dt class="text-5xl font-extrabold">
-                            {nFormatter(data.numbers.countries)}
+                            {formatNumber(data.numbers.countries)}
                         </dt>
                         <dd class="mt-2 text-lg leading-6 font-medium">
                             {i18n.t('index:inNumbers-countries')}
@@ -128,7 +132,7 @@
                     </div>
                     <div class="flex flex-col">
                         <dt class="text-5xl font-extrabold">
-                            {nFormatter(data.numbers.measurements)}
+                            {nFormatter(data.numbers.measurements, 1)}
                         </dt>
                         <dd class="mt-2 text-lg leading-6 font-medium">
                             {i18n.t('index:inNumbers-dataPoints')}
@@ -136,7 +140,7 @@
                     </div>
                     <div class="flex flex-col">
                         <dt class="text-5xl font-extrabold">
-                            {nFormatter(data.numbers.local_labs)}
+                            {formatNumber(data.numbers.local_labs)}
                         </dt>
                         <dd class="mt-2 text-lg leading-6 font-medium">
                             {i18n.t('index:inNumbers-commits')}
@@ -210,7 +214,7 @@
                 {i18n.t('press:mediakit-or')}<a
                         class="text-xl leading-8 font-medium text-brand-funcRed"
                         href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
-                    {i18n.t('press:mediakit-download')}  &nbsp&rarr;
+                    {i18n.t('press:mediakit-download')} &nbsp&rarr;
                 </a>
             </p>
             <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">

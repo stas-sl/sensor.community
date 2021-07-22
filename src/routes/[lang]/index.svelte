@@ -19,15 +19,17 @@
         return await response.json()
     })()
 
-    function formatNumber(n) {
-        return String(n).replace(/\d+?(?=(?:\d{3})+$)/img, "$&.");
+    function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
 
     function nFormatter(num, digits) {
         const si = [
             {value: 1, symbol: ""},
             {value: 1E3, symbol: "k"},
-            {value: 1E6, symbol: "M"}
+            {value: 1E6, symbol: "M"},
+            {value: 1E9, symbol: "B"},
+            {value: 1E11, symbol: "T"}
         ];
         let rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
         let i;
@@ -37,7 +39,8 @@
             }
         }
 
-        return (num / si[i].value).toFixed(digits).replace(rx, "$4") + si[i].symbol;
+        let number = (num / si[i].value).toFixed(digits).replace(rx, "$4")
+        return formatNumber(number) + si[i].symbol;
     }
 
 </script>
@@ -225,27 +228,27 @@
                         <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.sensors)}</dd>
-                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-activeSensors')}</dt>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-activeSensors')}</dt>
                             </div>
 
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.countries)}</dd>
-                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-countries')}</dt>
+                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.countries)}</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
                             </div>
 
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.measurements, 0)}</dd>
-                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-dataPoints')}</dt>
+                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.measurements, 2)}</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-dataPoints')}</dt>
                             </div>
 
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.local_labs)}</dd>
-                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-communityLabs')}</dt>
+                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.local_labs)}</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-communityLabs')}</dt>
                             </div>
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.commits)}</dd>
-                                <dt class="text-base font-medium text-gray-600">{i18n.t('index:inNumbers-commits')}</dt>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-commits')}</dt>
                             </div>
                         </dl>
                     </div>

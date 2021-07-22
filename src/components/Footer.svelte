@@ -107,12 +107,6 @@
                                 </a>
                             </li>
                             <li class="mt-4">
-                            </li>
-                            <a href="{lang}/sensors/"
-                               class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                {i18n.t('footer:guides')}
-                            </a>
-                            <li class="mt-4">
                                 <a href="{lang}/donate/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:donate')}
@@ -134,15 +128,15 @@
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="{lang}/press/"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    {i18n.t('footer:press')}
-                                </a>
-                            </li>
-                            <li class="mt-4">
                                 <a href="{lang}/dashboard/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:dashboard')}
+                                </a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="{lang}/sensors/"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                    {i18n.t('footer:guides')}
                                 </a>
                             </li>
                             <li class="mt-4">
