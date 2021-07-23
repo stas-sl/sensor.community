@@ -2,7 +2,6 @@
     import initI18n from "../utils/initI18n";
     import {stores} from "@sapper/app";
     import LanguageSwitcher from './LanguageSwitcher.svelte'
-    import {flag} from "country-emoji"
 
     const {page} = stores();
     $: lang = $page.params.lang;

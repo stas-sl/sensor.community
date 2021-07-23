@@ -2,7 +2,7 @@
     import {onMount} from 'svelte';
     import GuideContents from './GuideContents.svelte';
     import {getFragment} from '../utils/navigation';
-    import {_, locale, locales} from 'svelte-i18n';
+    import {_, locale} from 'svelte-i18n';
     import {stores} from '@sapper/app';
 
     const {page} = stores();

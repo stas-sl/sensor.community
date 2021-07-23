@@ -71,7 +71,7 @@
                     {#each articles as article}
                         <div class="relative group bg-brand-white p-6 md:flex md:flex-col hover:bg-brand-yellowLight">
                             <div class="relative p-3 border-gray-400">
-                                <img src="{article.img}" class="filter saturate-0 md:flex-shrink-0 h-6">
+                                <img src="{article.img}" class="filter saturate-0 md:flex-shrink-0 h-6" alt="">
                             </div>
                             <div class="md:flex-grow md:flex md:flex-col">
                                 <div class="mt-8 relative md:flex-grow">

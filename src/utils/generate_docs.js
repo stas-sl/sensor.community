@@ -4,7 +4,6 @@ import {extract_frontmatter, extract_metadata, langs, link_renderer} from './mar
 import {make_session_slug_processor} from './slug';
 import marked from 'marked';
 import hljs from 'highlight.js';
-import PrismJS from "prismjs";
 
 export const SLUG_PRESERVE_UNICODE = false;
 export const SLUG_SEPARATOR = '_';
@@ -75,8 +74,6 @@ export default function generate_docs(dir) {
 
                 const plang = langs[lang];
                 const {value: highlighted} = hljs.highlight(lang, source);
-                //const highlighted = PrismJS.highlight(source, PrismJS.languages[plang],lang);
-
                 const html = `<div class='${class_name}'>${prefix}<pre class='language-${plang}'><code>${highlighted}</code></pre></div>`;
 
                 if (block_open) {
