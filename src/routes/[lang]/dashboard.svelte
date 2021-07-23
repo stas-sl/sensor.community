@@ -9,6 +9,16 @@
     import * as link_cities_labs from '../../../content/link_cities_labs_formated.js';
     import {onMount} from "svelte";
     //import * as Pancake from '@sveltejs/pancake';
+    import {timeFormatLocale, timeParse, timeFormat} from 'd3-time-format';
+    import {line} from 'd3-shape';
+    import {scaleTime, scaleLinear} from 'd3-scale';
+    import {select as Select,selectAll} from 'd3-selection';
+    import {extent,max,min} from 'd3-array';
+    import {axisBottom, axisLeft} from 'd3-axis';
+    // import 'd3-transition';
+    import {transition} from "d3-transition";
+    //import {default as formatDefaultLocale, format, formatPrefix} from "d3-format";
+
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -17,7 +27,7 @@
 
     // $: i18n = initI18n($page.params.lang);
 
-    let countSensor = {};
+    var countSensor = {};
     // const selector = {};
     const sensorTypes = {
         "PM": ["sds011", "sps30", "hpm", "pms7003"],
@@ -41,6 +51,65 @@
 
 
     var allLabs =[];
+
+
+    var pm_types = [ 'sds011', 'pms1003', 'pms3003', 'pms5003', 'pms6003', 'pms7003', 'sps30', 'hpm' ];
+    var temp_types = [ 'dht22', 'bmp180', 'bmp280', 'bme280', 'htu21d', 'ds18b20', 'sht10', 'sht11', 'sht30', 'sht31', 'sht35', 'sht85' ];
+    var noise_types = [ 'laerm' ];
+    var simple_types = [ 'pm', 'thp', 'noise' ];
+    var sensor_types = [];
+
+    var selectCountry = 'WORLD';
+
+    var parseDate = timeParse("%Y-%m-%d");
+
+    var has_sensors = [];
+    var date_count = -1;
+    
+    var globalJSON = [];
+
+
+     var valueline1 = line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.value); })
+    .defined(((d) => d.value != -1));
+
+     var valueline2 = line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.value); })
+    .defined(((d) => d.value != -1));
+
+     var valueline3 = line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.value); })
+    .defined(((d) => d.value != -1));
+
+
+    var margin = {top: 20, right: 10, bottom: 30, left: 50},
+    width = 400 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+    var viewBoxValues = "0 0 "+ width + margin.left + margin.right +" "+height + margin.top + margin.bottom;
+
+    var x = scaleTime().range([0, width]);
+    var y = scaleLinear().range([height, 0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     if (process.browser) {
@@ -68,12 +137,14 @@
             })
             .then(function (data) {
                 // countSensor.PM += data.hpm + data.pms1003 + data.pms3003 + data.pms5003 + data.pms6003 + data.pms7003 + data.sds011 + data.sps30;
-                 countSensor = data[data.length-1][yesterday];
+                globalJSON = data;
+
+                //last day for current count
+                countSensor = data[data.length-1][yesterday];
 
                  document.getElementById('value1').innerHTML = countSensor.sds011.WORLD.toString();
                  document.getElementById('value2').innerHTML = countSensor.bme280.WORLD.toString();
                  document.getElementById('value3').innerHTML = countSensor.laerm.WORLD.toString();
-
 
                  Object.keys(link_cities_labs).forEach(function(i){
 
@@ -88,6 +159,75 @@
                 newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
                     }
                 });
+
+
+                // Make Data
+    
+
+
+let mappedObject = dataMapper(data,selectCountry);
+
+
+console.log(mappedObject);
+console.log(mappedObject.pm);
+
+
+
+var svg = Select("#graphCountry").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    // .attr("viewBox","0 0 300 600")
+    .append("g")
+    .attr("transform","translate(" + margin.left + "," + margin.top + ")");   
+               
+    x.domain(extent(mappedObject.pm, function(d) { return d.date; }));
+    y.domain([0, max(mappedObject.pm, function(d) {return d.value;})]);
+
+    console.log(extent(mappedObject.pm, function(d) { return d.date; }));
+    console.log([0, max(mappedObject.pm, function(d) {return d.value;})]);
+
+  svg.append("path")
+     .data([mappedObject.pm])
+    .attr("class", "line")  
+    .attr("fill", "none")
+    .attr("stroke", "red" )
+    .attr("id", "linePM" )
+    .attr("d", valueline1);
+
+      svg.append("path")
+     .data([mappedObject.thp])
+    .attr("class", "line")  
+    .attr("fill", "none")
+    .attr("stroke", "blue" )
+    .attr("id", "lineTHP" )
+    .attr("d", valueline2);
+
+      svg.append("path")
+     .data([mappedObject.noise])
+    .attr("class", "line")  
+    .attr("fill", "none")
+    .attr("stroke", "green" )
+    .attr("id", "lineNoise" )
+    .attr("d", valueline3);
+  
+    svg.append("g")  
+   .attr("transform", "translate(" + 0 + "," + height  + ")")
+    .attr("class", "axis axis--x")
+    .call(axisBottom(x));           
+                           
+               
+      svg.append("g")
+  .attr("class", "axis axis--y")
+   .attr("transform", "translate(" + 0 + "," + 0 + ")")
+      .call(axisLeft(y))
+    //   .tickFormat(Format(".0f"))
+      .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("fill", "#000")
+      .text("Sensors");    
+
 
             });
 
@@ -123,35 +263,45 @@
         document.getElementById("divLinks").innerHTML = "";
         document.getElementById("divLabs").innerHTML = "";
 
-
         const selection = countries.array.find(obj => {
             return obj.id === e.target.value
         });
 
+        console.log(selection);
+        selectCountry = selection.code;
+
         if (selection.code != 'WORLD') {
+        
+            let mappedObject = dataMapper(globalJSON,selectCountry);
+
+            updateData(mappedObject);
+
+
+
+
+
             //document.getElementById('map-frame1').src = 'https://stats.sensor.community/sensors_per_country/?simple=yes&country=' + selection.code;
             document.getElementById('map-frame2').src = 'https://' + selection.id + '.maps.sensor.community/';
             
             let country = link_cities_labs[selection.id];
 
-            console.log(country);
-
-            console.log(country.regions.length);
-            console.log(country.cities.length);
-
-
             if (country.regions.length > 0 && country.cities.length > 0 ){
-                document.getElementById("divLinks").innerHTML = regionsDiv + citiesDiv;
+                document.getElementById("divLinks").innerHTML = countriesDiv + regionsDiv + citiesDiv;
             }else if(country.regions.length == 0 && country.cities.length > 0 ){
-                document.getElementById("divLinks").innerHTML = citiesDiv;
+                document.getElementById("divLinks").innerHTML = countriesDiv + citiesDiv;
             }else if(country.regions.length > 0 && country.cities.length == 0 ){
-                document.getElementById("divLinks").innerHTML = regionsDiv;
+                document.getElementById("divLinks").innerHTML = countriesDiv + regionsDiv;
             }else if(country.regions.length == 0 && country.cities.length == 0 ){
                 document.getElementById("divLinks").innerHTML = countriesDiv;
             }
 
 
             if (country.regions.length > 0 && country.cities.length > 0 ){
+                
+                let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                newCell.addEventListener("click", function(){zoomer(country.link)});
+                newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                
                 country.regions.forEach(function(i){
                     let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
                     newCell.addEventListener("click", function(){zoomer(i.link)});
@@ -166,6 +316,11 @@
 
 
             }else if(country.regions.length == 0 && country.cities.length > 0 ){
+
+                 let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                 newCell.addEventListener("click", function(){zoomer(country.id)});
+                    newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
                 country.cities.forEach(function(i){
                     let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
                     newCell.addEventListener("click", function(){zoomer(i.link)});
@@ -174,6 +329,11 @@
 
 
             }else if(country.regions.length > 0 && country.cities.length == 0 ){
+
+                 let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                 newCell.addEventListener("click", function(){zoomer(country.id)});
+                    newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
                 country.regions.forEach(function(i){
                     let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
                     newCell.addEventListener("click", function(){zoomer(i.link)});
@@ -182,13 +342,10 @@
 
             }else if(country.regions.length == 0 && country.cities.length == 0 ){
 
-                let country = countries.array.find(obj => {
-                        return obj.id === selection.id
-                        })
 
                  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                 newCell.addEventListener("click", function(){zoomer(country.id)});
-                    newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ country.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                 newCell.addEventListener("click", function(){zoomer(country2.id)});
+                    newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
             }
 
 
@@ -196,7 +353,6 @@
             if (country.labs.length > 0){
                 document.getElementById("divLabs").innerHTML = labsDiv;
                 country.labs.forEach(function(i){
-                
                 let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
                 newCell.addEventListener("click", function(){zoomerLab(country.id,i.lat,i.lon)});
                 newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
@@ -297,10 +453,8 @@
       //  }
     }
 
-        function zoomerLab(location,lat,lon) {
-       // if (process.browser) {
+    function zoomerLab(location,lat,lon) {
           document.getElementById('map-frame2').src = 'https://' + location + '.maps.sensor.community/#16/'+ lat+'/'+ lon;
-      //  }
     }
 
     function getLink(){
@@ -310,6 +464,154 @@
 
         document.getElementById("linkArea").value = "https://....";
     }
+
+    function dataMapper(data,country){
+
+
+    let dataPoints = [];
+    let dataPoints_grouped = [];
+    let dates = [];
+
+    simple_types.forEach( function(sensor_type) {
+    console.log(sensor_type);
+    dataPoints_grouped[sensor_type] = [];
+    });
+
+	for (var i = 0; i < data.length; i++) {
+		var keys = Object.keys(data[i]);
+//		console.log(keys[0]);
+		if (keys[0] > "2016-07") {
+			date_count++;
+			var sensors = Object.keys(data[i][keys[0]]);
+			for (var j = 0; j < sensors.length; j++) {
+				if (! sensor_types.includes(sensors[j])) {
+					sensor_types.push(sensors[j]);
+					dataPoints[sensors[j]] = [ sensors[j].toUpperCase() ];
+					for (var k = 1; k<=date_count; k++) {
+						dataPoints[sensors[j]][k] = 0;
+					}
+					has_sensors[sensors[j]] = [];
+				}
+			}
+			simple_types.forEach( function(sensor_type) {
+				dataPoints_grouped[sensor_type][date_count] = 0;
+			});
+			dates[date_count] = parseDate(keys[0]);
+			sensor_types.forEach( function(sensor_type) {
+				if (typeof(dataPoints[sensor_type]) === 'undefined') { dataPoints[sensor_type] = [ sensor_type.toUpperCase() ] }
+				if (typeof(data[i][keys[0]][sensor_type]) !== 'undefined' && typeof(data[i][keys[0]][sensor_type][country]) !== 'undefined') {
+					dataPoints[sensor_type][date_count] = parseInt(data[i][keys[0]][sensor_type][country]);
+					has_sensors[sensor_type][country] = 1;
+					if (pm_types.includes(sensor_type)) dataPoints_grouped['pm'][date_count] += parseInt(data[i][keys[0]][sensor_type][country]);
+					if (temp_types.includes(sensor_type)) dataPoints_grouped['thp'][date_count] += parseInt(data[i][keys[0]][sensor_type][country]);
+					if (noise_types.includes(sensor_type)) dataPoints_grouped['noise'][date_count] += parseInt(data[i][keys[0]][sensor_type][country]);
+				} else {
+					dataPoints[sensor_type][date_count] = 0;
+				}
+			});
+		}
+        
+    }
+
+        dataPoints_grouped.dates = dates;
+        dataPoints.dates = dates;
+
+    let mappedObject = {pm:[],thp:[],noise:[]};
+
+    dataPoints_grouped.dates.forEach(function(e,i){
+        let objectPM = {date:null,value:0};
+        let objectTHP = {date:null,value:0};
+        let objectNoise = {date:null,value:0};
+
+        objectPM.date = e;
+        objectTHP.date = e;
+        objectNoise.date = e;
+
+        objectPM.value = dataPoints_grouped.pm[i];
+        objectTHP.value = dataPoints_grouped.thp[i];
+        objectNoise.value = dataPoints_grouped.noise[i];
+
+    mappedObject.pm.push(objectPM);
+    mappedObject.thp.push(objectTHP);
+    mappedObject.noise.push(objectNoise);
+
+    });
+
+    return mappedObject;
+
+    }
+
+// function graphicBuilder(data){
+
+
+
+
+// } 
+
+
+function updateData(data) {
+
+    console.log(data);
+
+    // var t = transition()
+    // .duration(1500);
+
+
+
+
+
+ x.domain(extent(data.pm, function(d) { return d.date; }));
+  //Select("#graphCountry").Select("svg").Select(".axis axis--x")
+  selectAll(".axis--x")
+    .transition()
+.duration(750)
+    .call(axisBottom(x));
+
+  // create the Y axis
+y.domain([0, max(data.pm, function(d) {return d.value;})]);
+//  Select("#graphCountry").Select("svg").Select(".axis axis--y")
+selectAll(".axis--y")
+    .transition()
+    .duration(750)
+    .call(axisLeft(y));
+
+// var svg = selectAll("svg").transition();
+
+console.log(selectAll("#linePM"));
+
+selectAll("#linePM") 
+.transition()  // change the line
+            .duration(750)
+            .attr("d", valueline1(data.pm));
+
+
+
+selectAll("#lineTHP") 
+.transition()  // change the line
+            .duration(750)
+            .attr("d", valueline1(data.thp));
+            
+selectAll("#lineNoise") 
+.transition()  // change the line
+            .duration(750)
+            .attr("d", valueline1(data.noise));
+// // Select("#graphCountry").Select("svg").Select("#linePM")
+// selectAll("#linePM")
+//     .data([data.pm])
+//     .transition(t);
+
+// // Select("#graphCountry").Select("svg").Select("#lineTHP")
+// selectAll("#lineTHP")
+//     .data([data.thp])
+//     .transition(t);
+
+// // Select("#graphCountry").Select("svg").Select("#lineNoise")
+// selectAll("#lineNoise")
+//     .data([data.noise])
+//     .transition(t);
+}
+
+
 
 </script>
 <svelte:head>
@@ -424,7 +726,11 @@
                     </svg>
                 </div>
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-nonelg:pl-12">
-                    <div class="w-full bg-brand-white lg:w-auto lg:max-w-none">
+                    <div id="graphCountry" class="w-full bg-brand-white lg:w-auto lg:max-w-none">
+
+
+
+
 
 
                         <!-- <iframe id="map-frame1"
