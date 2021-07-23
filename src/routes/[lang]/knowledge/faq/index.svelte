@@ -7,7 +7,13 @@
     $: lang = $page.params.lang;
     $: i18n = initI18n(lang);
 
-    let faqs = [ {
+    let faqs = [{
+        id: "1",
+        title: "I would like to ask you to call me back!",
+        content: "As a matter of principle, we do not call anyone back. This is a volunteer project, it's organizing in our spare time. This also means that we would like to be able to schedule the work at times that we don't have to plan in advance if possible. Thank you for your understanding",
+        linkNames: ["UN@HABITAT for a better urban future"],
+        links: ["https://unhabitat.org/un-habitat-convenes-virtual-workshop-on-improving-air-quality-and-public-space-monitoring-in"],
+    },{
         id: "1",
         title: "I would like to buy a fine dust sensor. What do I have to do?",
         content: "With the shopping list, you can order the individual parts yourself from the manufacturer. Unfortunately, this is not possible with us. Check out our <a href=\"en\/sensors\/airrohr\#Introduction\">guide to find the shopping list guide</a>",
@@ -22,6 +28,12 @@
         },
         {
             id: "3",
+            title: "What kind of fine dust is measured by the SDS011?",
+            content: "The SDS011 measures PM10 and PM2.5. If you want to measure the PM1, you can use an Sensirion SPS30 or some Plantower sensors which are supported by our firmware.",
+            links: ["link1", "link2"]
+        },
+        {
+            id: "3",
             title: "Service Life of the SDS011 fine dust sensor",
             content: "According to the data sheet, the SDS011 sensor we use has a service life in continuous operation of approx. 8,000 hours. Our firmware therefore switches the sensor on for only 20 seconds per measuring interval of 150 seconds. This makes the theoretical lifetime 7.5 times longer. Practically, this should be enough for approx. 4-5 years of operation. Measuring interval 150 seconds (2.5 minutes) <ul class='py-4'> <li>8,000 hours = 0.913 years</li><li>7.5 x 0.913 years = 6.85 years (theoretical service life)</li></ul> Measuring interval 240 seconds (4 minutes) 12 x 0.913 years = 10.96 years (theoretical service life)",
             links: ["link1"]
@@ -29,7 +41,19 @@
         {
             id: "4",
             title: "Energy, Wifi and Data Volume",
-            content: "Cost Calculation: The fine dust sensor as a unit needs about 1 watt, if it would run the whole year, that would be (1W x 24h x 365 days)/ 1000 = 8,76 kWh so about 2,50€/ year.<p>Energy: The USB cable can also be extended to about 6-7m, because only voltage goes over it and no data. A reasonable battery and solar solution is being worked on. Who finds an affordable solution for a use with at least one week, can contact us.<p/><p>WLAN: must always be on, the ESP8266 with our firmware has no memory. If the WLAN is switched off over night, there will be no data.<p/><p>Data amount: is very small, only the ID, the time, the 4 data are transmitted as text.<p/>",
+            content: "Cost Calculation: The fine dust sensor as a unit needs about 1 watt, if it would run the whole year, that would be (1W x 24h x 365 days)/ 1000 = 8,76 kWh so about 2,50€/ year.<p>Energy: The USB cable can also be extended to about 6-7m, because only voltage goes over it and no data.<p>WLAN: must always be on, the ESP8266 with our firmware has no memory. If the WLAN is switched off over night, there will be no data.<p/><p>Data amount: is very small, only the ID, the time, the 4 data are transmitted as text.<p/>",
+            links: ["link1"]
+        },
+        {
+            id: "4",
+            title: "Battery usage",
+            content: "Battery usage is currently not suported, because there are peaks caused by the activation of the SDS011 every 2.5 minutes (starting fan) and the parallel usage of the wifi components. So there may be very short phases were the needed current is around 300mA (1.5W at 5V). If the system can't get this for these short timespans the voltage may drop to a point were the ESP8266 will be reset.",
+            links: ["link1"]
+        },
+        {
+            id: "14",
+            title: "I’m a bit worried if it is secure. How secure is it to connect the sensor through the (secure) WiFi-network? Is it an open connection?",
+            content: "<p>The sensor connects to the wifi (WPA2) if the corresponding access data is configured. During normal operation, therefore, all connections are made via an encrypted WLAN connection. Only the connection for the configuration of the sensor is open for the short time. Normally, no ports need to be opened and in no case to the inside of the network.</p><p>Some router, e.g. Fritzbox blocks access to NTP time servers for devices connected to the guest WLAN. This must be possible for our sensor so that we can check the certificates of the HTTPS connections during updates.</p>",
             links: ["link1"]
         },
         {
@@ -75,6 +99,12 @@
             links: ["link1"]
         },
         {
+            id: "11",
+            title: "Can I connect a wind sensor? Can you suggest me one of them?",
+            content: "Our device wasn't meant to be used as a weather station and the requirements for the location are completely different. Our devices doesn't support any wind sensors, so there is no suggest sensor.",
+            links: ["link1"]
+        },
+        {
             id: "12",
             title: "3D printed models for brackets, housings,..,",
             content: "<ul><li><a href='' target='_blank'></a></li><li><a href='https://www.thingiverse.com/thing:2423413' target='_blank'>Holder with suction cups (3D printing) Housing (3D printing)</a></li><li><a href='https://www.thingiverse.com/thing:2613387' target='_blank'>Housing (3D printed)</a></li><li><a href='' target='_blank'></a></li><li><a href='https://www.thingiverse.com/thing:2763916' target='_blank'>Housing for sensor with LCD display (3D printed)</a></li><li><a href='https://fablab-wuerzburg.dozuki.com/' target='_blank'>Housing of FabLab Würzburg (3D printing)</a></li><li><a href='https://www.thingiverse.com/thing:2775946' target='_blank'>Mounting frame for installation in surface box (3D print)</a></li></ul>",
@@ -88,6 +118,18 @@
                 "The values do not claim to be accurate. The sensor used measures PM2.5 and the PM10 value is estimated and can therefore be inaccurate. Individual stations can deliver implausible values. In case of high humidity, especially fog, the values can be significantly higher as the official stations measure the dried fine dust. However, fine dust particles condensed by moisture can increase the negative health effect of fine dust, especially in smog layers.\n" +
                 "\n" +
                 "In this respect, the OK lab values provide important additional information. However, the scale µg/m3 is not directly applicable for such layers, but can only be used as an orientation. A humidity correction is in preparation. The aim is to provide an additional value that is more comparable with the official values.\n",
+            links: ["link1"]
+        },
+        {
+            id: "14",
+            title: "When does the procedure starts for building monthly archive data?",
+            content: "On the 2nd of each month is the earliest start. It's not possible to split the data by country, because because processing power for sorting of all data takes a lot of time. But if you want the data earlier, downloading the daily files and merge it is the only way. And for all that: We have limited hard disk space. So we can't serve random versions of the data. At the moment it's more than 600GB data in CSV files and the zipped files.",
+            links: ["link1"]
+        },
+        {
+            id: "14",
+            title: "Does the API to get the latest value from the system? Is it possible to request the historical data points?",
+            content: "with more than 13 Million data points per day and as a voluntary project we can't afford a server system that would allow a random access to the data. But we have some \"endpoints\" to get the latest data (over the last 5 minutes): 'https://github.com/opendata-stuttgart/meta/wiki/EN-APIs'",
             links: ["link1"]
         }
     ]
