@@ -17,7 +17,7 @@
     import {axisBottom, axisLeft} from 'd3-axis';
     // import 'd3-transition';
     import {transition} from "d3-transition";
-    //import {default as formatDefaultLocale, format, formatPrefix} from "d3-format";
+    import {format as Format} from "d3-format";
 
 
     const {page} = stores();
@@ -216,11 +216,10 @@ var svg = Select("#graphCountry").append("svg")
     .call(axisBottom(x));           
                            
                
-      svg.append("g")
+    svg.append("g")
   .attr("class", "axis axis--y")
    .attr("transform", "translate(" + 0 + "," + 0 + ")")
-      .call(axisLeft(y))
-    //   .tickFormat(Format(".0f"))
+      .call(axisLeft(y).tickFormat(Format("d")))
       .append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
@@ -231,6 +230,9 @@ var svg = Select("#graphCountry").append("svg")
 
             });
 
+//             tickFormat(function (d){
+//     return d3.format(".1f")(d/10);
+// })
 
             
 
@@ -270,11 +272,13 @@ var svg = Select("#graphCountry").append("svg")
         console.log(selection);
         selectCountry = selection.code;
 
-        if (selection.code != 'WORLD') {
-        
             let mappedObject = dataMapper(globalJSON,selectCountry);
 
             updateData(mappedObject);
+
+        if (selection.code != 'WORLD') {
+        
+
 
 
 
@@ -370,7 +374,6 @@ var svg = Select("#graphCountry").append("svg")
 
             Object.keys(link_cities_labs).forEach(function(i){
                 if (i != "default"){
-                    console.log(link_cities_labs[i]);
 
                 let country = countries.array.find(obj => {
                         return obj.id === i
@@ -385,7 +388,6 @@ var svg = Select("#graphCountry").append("svg")
 
                 allLabs.forEach(function(i){
 
-                console.log(i);
                 let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
                 newCell.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
                 newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
@@ -570,10 +572,29 @@ function updateData(data) {
   // create the Y axis
 y.domain([0, max(data.pm, function(d) {return d.value;})]);
 //  Select("#graphCountry").Select("svg").Select(".axis axis--y")
+
+// let arr = data.pm;
+
+// let useSet = arr => {
+//   return [...new Set(arr)];
+// };
+
+
+let arrayTicks = [];
+
+data.pm.forEach(o=>{arrayTicks.push(o.value)});
+
+console.log([...new Set(arrayTicks)]);
+
+let ticks = ticker(arrayTicks);
+
+console.log(ticks);
+
 selectAll(".axis--y")
     .transition()
     .duration(750)
-    .call(axisLeft(y));
+  //  .call(axisLeft(y);     
+  .call(axisLeft(y).tickFormat(Format(".0f")).tickValues(ticks));
 
 // var svg = selectAll("svg").transition();
 
@@ -611,7 +632,15 @@ selectAll("#lineNoise")
 //     .transition(t);
 }
 
+function ticker(array){
+ let ticks = [...new Set(array)];
 
+ if (ticks.length <= 10 && Math.max(...ticks) <= 10 ){
+return ticks;
+ }else {
+     return null
+    }
+}
 
 </script>
 <svelte:head>
