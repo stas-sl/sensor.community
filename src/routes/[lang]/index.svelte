@@ -109,7 +109,7 @@
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                     <a href="https://maps.sensor.community/#2/0.0/0.0" target="_blank">
                         <img alt=""
-                             class="w-full rounded-md shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
+                             class="w-full rounded-xl  shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
                              src="images/maps.webp">
                     </a>
                 </div>
@@ -284,7 +284,7 @@
             <div class="mt-12 sm:mt-16 lg:mt-0">
                 <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img alt="Air Quality Sensor Inside"
-                         class="w-full rounded-xl shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                         class="w-full rounded-2xl shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                          src="/images/air-quality-sensor-inside.webp">
                 </div>
                 <figure class="px-4 mt-4 text-sm text-gray-600">
@@ -331,12 +331,12 @@
                 {i18n.t('index:partner-title')}
             </h2>
             <p class="mt-6 max-w-3xl text-lg leading-7">
-                {i18n.t('index:partner-description')}
+                {@html i18n.t('index:partner-description')}
             </p>
             <div class="mt-6">
-                <a class="text-base font-medium text-brand-funcRed" sapper:prefetch href="{lang}/press/">
-                    {i18n.t('index:partner-link')} &nbsp&rarr;
-                </a>
+<!--                <a class="text-base font-medium text-brand-funcRed" sapper:prefetch href="{lang}/press/">-->
+<!--                    {i18n.t('index:partner-link')} &nbsp&rarr;-->
+<!--                </a>-->
             </div>
         </div>
     </div>
@@ -347,6 +347,34 @@
  linkName={i18n.t('banner:cta')}
         title={i18n.t('banner:title')}
 />
+
+
+<div class="relative py-16">
+    <div class="absolute top-0 inset-x-0 h-1/2 lg:block" aria-hidden="true"></div>
+    <div class="max-w-7xl mx-auto bg-transparent lg:px-8">
+        <div class="lg:grid lg:grid-cols-12">
+            <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                <div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true"></div>
+                <div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
+                    <div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                        <img class="object-cover object-center rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1518367445291-98ac49923e14?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative bg-brand-yellowLight lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-2xl lg:grid lg:grid-cols-10 lg:items-center">
+
+                <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                    <h2 class="text-3xl font-extrabold text-white" id="join-heading">{i18n.t('index:mission')}</h2>
+                    <p class="text-lg text-white">{i18n.t('index:mission-description')}</p>
+                    <a class="btn btn-primary border sm:inline-block sm:w-auto mr-4" href="{lang}/mission">{i18n.t('index:mission-link')}</a>
+                    <a class="btn btn-secondary sm:inline-block sm:w-auto" href="{lang}/donate">{i18n.t('index:mission-donate')}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <Campaigns/>
 
 <!--<Articles/>-->

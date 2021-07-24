@@ -86,16 +86,18 @@
             </p>
             <ul class="text-xl leading-8">
                 <li><a href="https://github.com/opendata-stuttgart/sensors-software"
-                       target="_blank">{i18n.t('press:uniqueness-item-1')}</a></li>
+                       target="_blank">{i18n.t('mission:our-story-item-1')}</a></li>
                 <li><a href="https://github.com/opendata-stuttgart/sensor.community"
-                       target="_blank">{i18n.t('press:uniqueness-item-2')}</a></li>
+                       target="_blank">{i18n.t('mission:our-story-item-2')}</a></li>
                 <li><a href="https://github.com/opendata-stuttgart/feinstaub-map-v2"
-                       target="_blank">{i18n.t('press:uniqueness-item-3')}</a></li>
+                       target="_blank">{i18n.t('mission:our-story-item-3')}</a></li>
                 <li><a href="https://github.com/opendata-stuttgart/devices.sensor.community"
-                       target="_blank">{i18n.t('press:uniqueness-item-4')}</a></li>
+                       target="_blank">{i18n.t('mission:our-story-item-4')}</a></li>
             </ul>
             <p class="mt-8 text-xl leading-8">
                 {@html i18n.t('mission:our-story-paragraph-2')}</p>
+            <p class="mt-8 text-xl leading-8">
+                {@html i18n.t('mission:our-story-paragraph-3')}</p>
         </div>
     </div>
 </div>

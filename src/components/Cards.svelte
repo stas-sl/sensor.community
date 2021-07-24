@@ -11,7 +11,7 @@
 </script>
 <div class="relative px-4 my-6 text-left">
     <a sapper:prefetch href="{link}">
-        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col rounded-2xl shadow-lg overflow-hidden">
             <div class="flex-shrink-0 aspect-w-3 aspect-h-2">
                 <img alt="{title}"
                      class="h-full w-full object-contain"

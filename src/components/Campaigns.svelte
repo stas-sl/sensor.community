@@ -47,10 +47,8 @@
     // }
 </script>
 
-<!-- Todo: literal strings -->
-<!-- Todo: replace demo texts -->
-<div class="relative pt-16 pb-24 overflow-hidden">
-    <div class="relative max-w-7xl mx-auto mt-10">
+<div class="relative pt-8 pb-24 overflow-hidden">
+    <div class="relative max-w-7xl mx-auto">
         <div class="px-4">
             <h3 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
                 {i18n.t('campaigns:title')}
