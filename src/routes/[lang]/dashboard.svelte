@@ -53,8 +53,12 @@
     var allLabs =[];
 
 
-    var pm_types = [ 'sds011', 'pms1003', 'pms3003', 'pms5003', 'pms6003', 'pms7003', 'sps30', 'hpm' ];
-    var temp_types = [ 'dht22', 'bmp180', 'bmp280', 'bme280', 'htu21d', 'ds18b20', 'sht10', 'sht11', 'sht30', 'sht31', 'sht35', 'sht85' ];
+    // var pm_types = [ 'sds011', 'pms1003', 'pms3003', 'pms5003', 'pms6003', 'pms7003', 'sps30', 'hpm' ];
+    // var temp_types = [ 'dht22', 'bmp180', 'bmp280', 'bme280', 'htu21d', 'ds18b20', 'sht10', 'sht11', 'sht30', 'sht31', 'sht35', 'sht85' ];
+
+var pm_types = [ 'sds011' ];
+    var temp_types = [ 'bme280'];
+
     var noise_types = [ 'laerm' ];
     var simple_types = [ 'pm', 'thp', 'noise' ];
     var sensor_types = [];
@@ -93,21 +97,6 @@
 
     var x = scaleTime().range([0, width]);
     var y = scaleLinear().range([height, 0]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -181,7 +170,13 @@ var svg = Select("#graphCountry").append("svg")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");   
                
     x.domain(extent(mappedObject.pm, function(d) { return d.date; }));
-    y.domain([0, max(mappedObject.pm, function(d) {return d.value;})]);
+
+
+    if (max(mappedObject.pm, function(d) {return d.value;}) >= max(mappedObject.thp, function(d) {return d.value;}) && max(mappedObject.pm, function(d) {return d.value;}) >= max(mappedObject.noise, function(d) {return d.value;}) ){y.domain([0, max(mappedObject.pm, function(d) {return d.value;})]);}
+    if (max(mappedObject.thp, function(d) {return d.value;}) >= max(mappedObject.pm, function(d) {return d.value;}) && max(mappedObject.thp, function(d) {return d.value;}) >= max(mappedObject.noise, function(d) {return d.value;}) ){y.domain([0, max(mappedObject.thp, function(d) {return d.value;})]);}
+    if (max(mappedObject.noise, function(d) {return d.value;}) >= max(mappedObject.thp, function(d) {return d.value;}) && max(mappedObject.noise, function(d) {return d.value;}) >= max(mappedObject.pm, function(d) {return d.value;}) ){y.domain([0, max(mappedObject.noise, function(d) {return d.value;})]);}
+
+    
 
     console.log(extent(mappedObject.pm, function(d) { return d.date; }));
     console.log([0, max(mappedObject.pm, function(d) {return d.value;})]);
@@ -570,7 +565,24 @@ function updateData(data) {
     .call(axisBottom(x));
 
   // create the Y axis
-y.domain([0, max(data.pm, function(d) {return d.value;})]);
+//y.domain([0, max(data.pm, function(d) {return d.value;})]);
+
+let arrayTicks = [];
+
+    if (max(data.pm, function(d) {return d.value;}) >= max(data.thp, function(d) {return d.value;}) && max(data.pm, function(d) {return d.value;}) >= max(data.noise, function(d) {return d.value;}) ){
+        y.domain([0, max(data.pm, function(d) {return d.value;})]);
+        data.pm.forEach(o=>{arrayTicks.push(o.value)});
+    }
+    if (max(data.thp, function(d) {return d.value;}) >= max(data.pm, function(d) {return d.value;}) && max(data.thp, function(d) {return d.value;}) >= max(data.noise, function(d) {return d.value;}) ){
+        y.domain([0, max(data.thp, function(d) {return d.value;})]);
+        data.thp.forEach(o=>{arrayTicks.push(o.value)});
+    }
+    if (max(data.noise, function(d) {return d.value;}) >= max(data.thp, function(d) {return d.value;}) && max(data.noise, function(d) {return d.value;}) >= max(data.pm, function(d) {return d.value;}) ){
+        y.domain([0, max(data.noise, function(d) {return d.value;})]);
+        data.noise.forEach(o=>{arrayTicks.push(o.value)});
+    }
+
+
 //  Select("#graphCountry").Select("svg").Select(".axis axis--y")
 
 // let arr = data.pm;
@@ -580,9 +592,9 @@ y.domain([0, max(data.pm, function(d) {return d.value;})]);
 // };
 
 
-let arrayTicks = [];
 
-data.pm.forEach(o=>{arrayTicks.push(o.value)});
+
+
 
 console.log([...new Set(arrayTicks)]);
 
@@ -636,6 +648,11 @@ function ticker(array){
  let ticks = [...new Set(array)];
 
  if (ticks.length <= 10 && Math.max(...ticks) <= 10 ){
+
+
+
+
+    
 return ticks;
  }else {
      return null
