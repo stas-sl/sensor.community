@@ -8,24 +8,6 @@
     $: lang = $page.params.lang;
     $: i18n = initI18n(lang);
 
-
-    const sensors = [
-        {
-            hashtag: "#AirQuality",
-            title: "airRohr Sensor Kit #1",
-            imageURL: "/images/air-quality-sensor-inside.jpg",
-            linkURL: "/sensors/airrohr",
-            description: "Our basic and approved sensor kit"
-        },
-        {
-            hashtag: "#Noise",
-            title: "DNMS Sensor Kit #1",
-            imageURL: "images/dnms.jpg",
-            linkURL: "/sensors/dnms",
-            description: "In beta noise measurement sensor"
-        }
-    ]
-
 </script>
 
 <svelte:head>
@@ -70,20 +52,25 @@
             </div>
         </div>
         <div class="mt-16 mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl lg:max-w-7xl">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-24">
-                {#each sensors as sensor}
+            <div class="lg:grid lg:grid-cols-2 lg: gap-16">
                     <Cards
-                            description={sensor.description}
-                            imageUrl={sensor.imageURL}
-                            link={lang}{sensor.linkURL}
-                            title={sensor.title}
-                            hashTag={sensor.hashtag}
+                            description={i18n.t('sensor:airSensorDescription')}
+                            imageUrl="/images/air-quality-sensor-inside.jpg"
+                            link="{lang}/sensors/airrohr"
+                            title={i18n.t('sensor:airSensorTitle')}
+                            hashTag={i18n.t('sensor:airSensorHashtag')}
                     />
-                {/each}
+                    <Cards
+                            description={i18n.t('sensor:subtitle')}
+                            imageUrl="images/dnms.jpg"
+                            link="{lang}/sensors/dnms"
+                            title={i18n.t('sensor:noiseSensorTitle')}
+                            hashTag={i18n.t('sensor:noiseSensorDescription')}
+                    />
+
             </div>
         </div>
     </div>
 </div>
-
 
 <Contact/>

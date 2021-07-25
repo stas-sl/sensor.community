@@ -19,7 +19,7 @@
             hashtag: "",
             title: "Scientific publications",
             linkURL: "/knowledge/publications/",
-            description: "In beta noise measurement sensor"
+            description: "Noise measurement sensor in beta version"
         }
     ]
 

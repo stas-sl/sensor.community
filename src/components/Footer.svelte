@@ -188,7 +188,7 @@
         </div>
         <div class="mt-12 border-t border-gray-200 pt-8">
             <p class="text-base leading-6 text-gray-400 text-center">
-                {i18n.t('footer:withLove')}
+                {@html i18n.t('footer:withLove')}
             </p>
         </div>
     </div>

@@ -94,8 +94,8 @@
 <div bind:this={aside} class="mt-12">
     <GuideContents {sections}/>
 </div>
-<div class="max-w-3xl mx-auto max-w-6xl">
-    <div class="prose md:prose-xl mx-auto">
+<div class="mx-auto max-w-7xl">
+    <div class="prose md:prose-xl max-w-3xl">
         <div bind:this={container}>
             {#each sections as section}
                 <section data-id={section.slug}>
@@ -110,7 +110,7 @@
                         </span>
 
                         {@html section.metadata.title}
-                        <span class="flex justify-end space-x-8 flex-1 mt-1">
+                        <span class="hidden md:flex justify-end space-x-8 flex-1 mt-1">
                             <a href="https://github.com/{owner}/{project}/edit/develop/content/airrohr/{$locale}/{dir}/{section.file}"
                                title="{$_('guide.editOnGithub')}">
                                 <svg class="icon text-gray-400 mt-2 justify-end" viewBox='0 0 24 24' width="24"

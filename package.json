@@ -3,7 +3,7 @@
   "description": "new shiny website for dust and noise measuring project sensor.community based on sapper and svelte",
   "version": "0.8.0",
   "scripts": {
-    "dev": "sapper dev --ext '.svelte .svx' start:dev autobuild watch:tailwind watch:build",
+    "dev": "sapper dev --ext '.svelte' start:dev autobuild watch:tailwind",
     "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
     "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
     "export": "NODE_ENV=production postcss static/tailwind.css -o static/index.css && sapper export"

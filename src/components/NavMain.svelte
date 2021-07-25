@@ -21,7 +21,7 @@
     }
 
     function menuClose() {
-        if (menu.open === true){
+        if (menu.open === true) {
             menu.open = false;
             open = false;
         }
@@ -111,9 +111,7 @@
                     <span class="transform -rotate-45">&rarr;</span>
                 </div>
                 <div class="flex">
-                    <span class="mr-1 font-extralight">
-                        <LanguageSwitcher class="z-50"/>
-                    </span>
+                    <LanguageSwitcher class="z-50"/>
                 </div>
             </div>
             <div class="flex justify-between font-semibold text-brand-white lg:hidden ">
@@ -122,7 +120,8 @@
                 </span>
                 <div class="m-1.5 mx-2 border-r-2 border-brand-white"></div>
                 <button id="mobileMenuButton"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2" class:open on:click={() => open = !open} on:click={menuToggle} type="button">
+                        class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2"
+                        class:open on:click={() => open = !open} on:click={menuToggle} type="button">
                     <svg class="h-7 w-7 mt-1 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
                         <line id="top" x1="0" y1="5" x2="18" y2="5"></line>
                         <line id="middle" x1="0" y1="12" x2="18" y2="12"></line>

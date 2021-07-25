@@ -66,7 +66,7 @@
                 </div>
                 <div class="mt-6">
                     <div class="mt-6 sm:max-w-xl">
-                        <h1 class="text-5xl font-extrabold text-brand-black tracking-tight sm:text-5xl">
+                        <h1 class="text-5xl font-extrabold text-brand-black tracking-tight">
                             {i18n.t('index:h1')}
                         </h1>
                         <p class="mt-6 text-xl antialiased">
@@ -184,12 +184,9 @@
                     </p>
                     <p class="text-lg leading-7">
                         {@html i18n.t('index:about-section2')}
-                        <a href="https://github.com/opendata-stuttgart/" target="_blank">
-                            <span class=" text-brand-funcRed">
-                                GitHub
-                            </span>
-                            <span class="transform -rotate-45 text-brand-funcRed">&rarr;</span>
-                        </a>
+                    </p>
+                    <p class="text-lg leading-7">
+                        {@html i18n.t('index:about-section3')}
                     </p>
                     <p class="text-lg leading-7">
                         {i18n.t('index:about-section4')}
@@ -360,7 +357,7 @@
                         <img class="object-cover object-center rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1518367445291-98ac49923e14?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80" alt="">
                         <div class="flex">
                         <footer class="m-4 flex-grow">
-                            <a href="https://unsplash.com/photos/f9QAnJX6c7A" target="_blank" class="text-brand-white opacity-70">{i18n.t('index:about-photo')} Unsplash</a>
+                            <a href="images/mission.webp" target="_blank" class="text-brand-white opacity-70">{i18n.t('index:about-photo')} Unsplash</a>
                         </footer>
                         </div>
                     </div>
@@ -368,7 +365,6 @@
             </div>
 
             <div class="relative bg-brand-yellowLight lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-2xl lg:grid lg:grid-cols-10 lg:items-center">
-
                 <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
                     <h2 class="text-3xl font-extrabold text-white" id="join-heading">{i18n.t('index:mission')}</h2>
                     <p class="text-lg text-white">{i18n.t('index:mission-description')}</p>
@@ -381,6 +377,5 @@
 </div>
 
 <Campaigns/>
-
 <!--<Articles/>-->
 <Contact/>

@@ -18,7 +18,7 @@
     <dt class="text-lg">
         <button on:click={toggle} aria-expanded={isOpen}
                 class="text-left w-full flex justify-between items-start text-lg">
-            <span class="font-extrabold text-brand-black">{faq.title}</span>
+            <span class="font-bold text-brand-black">{faq.title}</span>
             <span class="ml-6 h-7 flex items-center">
             <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

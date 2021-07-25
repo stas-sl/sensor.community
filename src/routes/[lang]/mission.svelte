@@ -129,7 +129,7 @@
                     </div>
                     <div class="flex flex-col">
                         <dt class="text-5xl font-extrabold">
-                            {nFormatter(data.numbers.measurements,2)}
+                            {nFormatter(data.numbers.measurements, 2)}
                         </dt>
                         <dd class="mt-2 text-lg leading-6 font-medium">
                             {i18n.t('index:inNumbers-dataPoints')}
@@ -140,7 +140,7 @@
                             {formatNumber(data.numbers.local_labs)}
                         </dt>
                         <dd class="mt-2 text-lg leading-6 font-medium">
-                            {i18n.t('index:inNumbers-commits')}
+                            {i18n.t('index:inNumbers-communityLabs')}
                         </dd>
                     </div>
                 </dl>
@@ -166,7 +166,8 @@
                 </p>
 
                 <figure>
-                    <img alt="Sensor.Community Team building a particulate matter sensor with other people" class="w-full rounded-lg" height="873" src="images/team.jpg"
+                    <img alt="Sensor.Community Team building a particulate matter sensor with other people"
+                         class="w-full rounded-lg" height="873" src="images/team.jpg"
                          width="1310">
                     <figcaption>{i18n.t('mission:code-a-difference-figcaption')}</figcaption>
                 </figure>
@@ -207,50 +208,64 @@
                     <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{i18n.t('mission:mediakit')}</h2>
                     <p class="text-xl leading-8">{i18n.t('mission:mediakit-description')} <a
                             class="text-xl leading-8 font-medium text-brand-funcRed"
-                            href="https://exchange.sensor.community/index.php/s/m8iqaCGw4Yd5sm3" target="_blank">
+                            href="https://exchange.sensor.community/index.php/s/bkKqHFRT97aBAbR" target="_blank">
                         {i18n.t('mission:mediakit-download')} &nbsp&rarr;
                     </a>
                     </p>
                     <p class="text-xl leading-8">{i18n.t('mission:mediakit-press')} <a
                             href='mailto:press@Sensor.Community'>Press@Sensor.Community</a>
                     </p>
-                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-12">
-                        <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
+                    <h3>{i18n.t('mission:mediakit-logos')}</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-12">
+                        <div class="bg-brand-green rounded-lg max-w-xs shadow-md">
                             <div class="relative p-10 flex justify-center">
                                 <img alt="Sensor.Community Logo" class="relative" loading="lazy"
                                      src="images/logos/signet.png">
                             </div>
                         </div>
-                        <div class="flex-shrink m-3 relative overflow-hidden bg-brand-white rounded-lg max-w-xs shadow-lg">
+                        <div class="bg-brand-white rounded-lg max-w-xs shadow-md">
                             <div class="relative p-10 flex justify-center">
                                 <img alt="Sensor.Community Logo in Black" class="relative" loading="lazy"
                                      src="images/logos/signet-black.png">
                             </div>
                         </div>
-                        <div class="flex-shrink m-3 relative overflow-hidden bg-brand-black rounded-lg max-w-xs shadow-lg">
+                        <div class="bg-brand-black rounded-lg max-w-xs shadow-md">
                             <div class="relative p-10 flex justify-center">
                                 <img alt="Sensor.Community Logo in White" class="relative" loading="lazy"
                                      src="images/logos/signet-white.png">
                             </div>
                         </div>
                     </div>
-                    <div class="my-16 prose prose-lg mx-auto text-brand-black">
-                        <h2>Colors</h2>
-                        <div class="sm:grid sm:grid-cols-3 lg:grid-cols-3">
-                            <div class="flex-shrink m-3 relative overflow-hidden bg-brand-green rounded-lg max-w-xs shadow-lg">
-                                <div class="relative p-10 p-20 flex justify-center text-brand-white">
-                                    #084945
-                                </div>
+
+                    <div class="w-full my-16 relative bg-brand-green rounded-lg shadow-md">
+                        <div class="relative flex justify-center max-w-xs mx-auto h-64">
+                            <img alt="Sensor.Community Logo" class="relative" loading="lazy"
+                                 src="images/logos/logo.svg">
+                        </div>
+                    </div>
+
+                    <h3>{i18n.t('mission:mediakit-colors')}</h3>
+                    <div class="grid grid-cols-2 gap-10 mt-12">
+                        <div class="bg-brand-green rounded-lg shadow-md">
+                            <div class="relative p-20 flex justify-center text-brand-white">
+                                #084945
                             </div>
-                            <div class="flex-shrink m-3 relative overflow-hidden bg-brand-yellow rounded-lg max-w-xs shadow-lg">
-                                <div class="relative p-10 p-20 flex justify-center text-brand-white">
-                                    #E9A135
-                                </div>
+                        </div>
+                        <div class="bg-brand-yellow rounded-lg shadow-md">
+                            <div class="relative p-20 flex justify-center text-brand-white">
+                                #E9A135
                             </div>
-                            <div class="flex-shrink m-3 relative overflow-hidden bg-brand-greenBright rounded-lg max-w-xs shadow-lg">
-                                <div class="relative p-10 p-20 flex justify-center text-brand-white">
-                                    #6FEFE6
-                                </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-10 mt-12">
+                        <div class="bg-brand-green rounded-lg shadow-md">
+                            <div class="relative p-20 flex justify-center text-brand-white">
+                                #084945
+                            </div>
+                        </div>
+                        <div class="bg-brand-yellow rounded-lg shadow-md">
+                            <div class="relative p-20 flex justify-center text-brand-white">
+                                #E9A135
                             </div>
                         </div>
                     </div>
