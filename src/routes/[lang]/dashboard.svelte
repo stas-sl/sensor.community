@@ -109,13 +109,21 @@
 
 </script>
 <svelte:head>
-    <title>{i18n.t('index:metaTitle')} - Sensor.Community</title>
+    <title>{i18n.t('dashboard:metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('dashboard:metaDescription')}" name="description">
-    <meta content={i18n.t('dashboard:metaTitle')} property="og:title"/>
-    <meta content="website" property="og:type"/>
-    <meta content="" property="og:url"/>
-    <meta content="" property="og:image"/>
     <meta name="robots" content="noindex">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sensor.community{$page.path}">
+    <meta property="og:title" content="{i18n.t('dashboard:metaTitle')} - Sensor.Community">
+    <meta property="og:description" content="{i18n.t('dashboard:metaDescription')}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sensor.community{$page.path}">
+    <meta property="twitter:title" content="{i18n.t('dashboard:metaTitle')} - Sensor.Community">
+    <meta property="twitter:description" content="{i18n.t('dashboard:metaDescription')}">
 </svelte:head>
 
 <div class="pb-6">

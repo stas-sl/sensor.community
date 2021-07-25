@@ -1,3 +1,9 @@
+<!--<script context="module">-->
+<!--    export function preload({ params, query }) {-->
+<!--        return this.fetch("sitemap.xml");-->
+<!--    }-->
+<!--</script>-->
+
 <script>
     import initI18n from "../../utils/initI18n";
     import {stores} from "@sapper/app";
@@ -6,7 +12,6 @@
     import Contact from "../../components/Contact.svelte";
     import Banner from "../../components/Banner.svelte";
     import Button from "../../components/Button.svelte";
-    import {onMount} from "svelte";
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -47,10 +52,18 @@
 <svelte:head>
     <title>{i18n.t('index:metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('index:metaDescription')}" name="description">
-    <meta content={i18n.t('index:metaTitle')} property="og:title"/>
-    <meta content="website" property="og:type"/>
-    <meta content="" property="og:url"/>
-    <meta content="" property="og:image"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sensor.community{$page.path}">
+    <meta property="og:title" content="{i18n.t('index:metaTitle')} - Sensor.Community">
+    <meta property="og:description" content="{i18n.t('index:metaDescription')}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sensor.community{$page.path}">
+    <meta property="twitter:title" content="{i18n.t('index:metaTitle')} - Sensor.Community">
+    <meta property="twitter:description" content="{i18n.t('index:metaDescription')}">
 </svelte:head>
 
 <div class="pb-6">
@@ -166,7 +179,8 @@
 
                             <footer class="mt-4">
                                 <p class="text-base font-semibold">{i18n.t('index:mission-team')}</p>
-                                <a href="https://unsplash.com/photos/BQMZ5ligqps" target="_blank" class="text-brand-white opacity-50">{i18n.t('index:about-photo')} Unsplash</a>
+                                <a href="https://unsplash.com/photos/BQMZ5ligqps" target="_blank"
+                                   class="text-sm opacity-50">{i18n.t('index:about-photo')} Unsplash</a>
                             </footer>
                         </blockquote>
                     </div>
@@ -178,24 +192,14 @@
                 <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
                     {i18n.t('index:about-title')}
                 </h2>
-                <div class="mt-6 space-y-6">
-                    <p class="text-lg">
-                        {i18n.t('index:about-section1')}
-                    </p>
-                    <p class="text-lg leading-7">
-                        {@html i18n.t('index:about-section2')}
-                    </p>
-                    <p class="text-lg leading-7">
-                        {@html i18n.t('index:about-section3')}
-                    </p>
-                    <p class="text-lg leading-7">
-                        {i18n.t('index:about-section4')}
-                    </p>
-                </div>
-                <div class="mt-6">
-                    <a class="text-base font-medium text-brand-funcRed" href="{lang}/sensors/">
+                <div class="mt-6 space-y-6 text-lg leading-7">
+                    <p>{@html i18n.t('index:about-section1')}</p>
+                    <p>{@html i18n.t('index:about-section2')}</p>
+                    <p>{@html i18n.t('index:about-section3')}</p>
+                    <p>{i18n.t('index:about-section4')}</p>
+                    <p><a class="font-medium text-brand-funcRed" href="{lang}/sensors/">
                         {i18n.t('index:about-link')} &nbsp&rarr;
-                    </a>
+                    </a></p>
                 </div>
             </div>
         </div>
@@ -263,18 +267,16 @@
 <div class="relative py-16 overflow-hidden">
     <div class="relative">
         <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-                <div>
+            <div class="px-4 max-w-3xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+                <div class="mt-6">
+                    <h2 class="text-3xl font-extrabold tracking-tight">
+                        {i18n.t('index:guideSection-title')}
+                    </h2>
+                    <p class="mt-4 text-lg leading-7">
+                        {i18n.t('index:guideSection-description')}
+                    </p>
                     <div class="mt-6">
-                        <h2 class="text-3xl font-extrabold tracking-tight">
-                            {i18n.t('index:guideSection-title')}
-                        </h2>
-                        <p class="mt-4 text-lg">
-                            {i18n.t('index:guideSection-description')}
-                        </p>
-                        <div class="mt-6">
-                            <Button link="{lang}/sensors/" linkName="{i18n.t('index:cta')}"/>
-                        </div>
+                        <Button link="{lang}/sensors/" linkName="{i18n.t('index:cta')}"/>
                     </div>
                 </div>
             </div>
@@ -331,9 +333,9 @@
                 {@html i18n.t('index:partner-description')}
             </p>
             <div class="mt-6">
-<!--                <a class="text-base font-medium text-brand-funcRed" sapper:prefetch href="{lang}/press/">-->
-<!--                    {i18n.t('index:partner-link')} &nbsp&rarr;-->
-<!--                </a>-->
+                <!--                <a class="text-base font-medium text-brand-funcRed" sapper:prefetch href="{lang}/press/">-->
+                <!--                    {i18n.t('index:partner-link')} &nbsp&rarr;-->
+                <!--                </a>-->
             </div>
         </div>
     </div>
@@ -346,19 +348,22 @@
 />
 
 
-<div class="relative py-16">
-    <div class="absolute top-0 inset-x-0 h-1/2 lg:block" aria-hidden="true"></div>
+<div class="relative mt-32 mb-16">
     <div class="max-w-7xl mx-auto bg-transparent lg:px-8">
         <div class="lg:grid lg:grid-cols-12">
             <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                 <div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true"></div>
                 <div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                     <div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                        <img class="object-cover object-center rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1518367445291-98ac49923e14?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80" alt="">
+                        <img class="object-cover object-center rounded-2xl shadow-2xl"
+                             src="https://images.unsplash.com/photo-1518367445291-98ac49923e14?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                             alt="">
                         <div class="flex">
-                        <footer class="m-4 flex-grow">
-                            <a href="images/mission.webp" target="_blank" class="text-brand-white opacity-70">{i18n.t('index:about-photo')} Unsplash</a>
-                        </footer>
+                            <footer class="m-4 flex-grow">
+                                <a href="images/mission.webp" target="_blank"
+                                   class="text-brand-white text-sm opacity-70">{i18n.t('index:about-photo')}
+                                    Unsplash</a>
+                            </footer>
                         </div>
                     </div>
                 </div>
@@ -366,10 +371,12 @@
 
             <div class="relative bg-brand-yellowLight lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-2xl lg:grid lg:grid-cols-10 lg:items-center">
                 <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                    <h2 class="text-3xl font-extrabold text-white" id="join-heading">{i18n.t('index:mission')}</h2>
+                    <h2 class="text-3xl font-extrabold text-white">{i18n.t('index:mission')}</h2>
                     <p class="text-lg text-white">{i18n.t('index:mission-description')}</p>
-                    <a class="btn btn-primary border sm:inline-block sm:w-auto mr-4" href="{lang}/mission">{i18n.t('index:mission-link')}</a>
-                    <a class="btn btn-secondary sm:inline-block sm:w-auto" href="{lang}/donate">{i18n.t('index:mission-donate')}</a>
+                    <a class="btn btn-primary border sm:inline-block sm:w-auto mr-4 leading-7"
+                       href="{lang}/mission">{i18n.t('index:mission-link')}</a>
+                    <a class="btn btn-secondary sm:inline-block sm:w-auto leading-7"
+                       href="{lang}/donate">{i18n.t('index:mission-donate')}</a>
                 </div>
             </div>
         </div>

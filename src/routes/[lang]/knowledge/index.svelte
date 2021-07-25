@@ -28,10 +28,18 @@
 <svelte:head>
     <title>{i18n.t('knowledge:metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('knowledge:metaDescription')}" name="description">
-    <meta content={i18n.t('knowledge:metaTitle')} property="og:title"/>
-    <meta content="website" property="og:type"/>
-    <meta content="" property="og:url"/>
-    <meta content="" property="og:image"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sensor.community{$page.path}">
+    <meta property="og:title" content="{i18n.t('knowledge:metaTitle')} - Sensor.Community">
+    <meta property="og:description" content="{i18n.t('knowledge:metaDescription')}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sensor.community{$page.path}">
+    <meta property="twitter:title" content="{i18n.t('knowledge:metaTitle')} - Sensor.Community">
+    <meta property="twitter:description" content="{i18n.t('knowledge:metaDescription')}">
 </svelte:head>
 
 <div class="pb-6">
@@ -87,7 +95,7 @@
 
 
 <div class="relative pb-16 overflow-hidden">
-    <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+    <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24">
         <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div class="mt-6">
                 <h2 class="text-3xl font-extrabold tracking-tight">{i18n.t('knowledge:faq')}</h2>
@@ -100,7 +108,7 @@
             </div>
             <div class="my-16"></div>
         </div>
-        <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 max-w-prose">
+        <div class="px-4 lg:max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div class="mt-6">
                 <h2 class="text-3xl font-extrabold tracking-tight">{i18n.t('knowledge:publication')}</h2>
                 <p class="mt-4 text-lg">

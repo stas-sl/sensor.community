@@ -47,18 +47,18 @@
     // }
 </script>
 
-<div class="relative pt-8 pb-24 overflow-hidden">
+<div class="relative pt-16 pb-24 overflow-hidden">
     <div class="relative max-w-7xl mx-auto">
-        <div class="px-4">
-            <h3 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left sm:text-center">
+        <div class="px-4 max-w-3xl">
+            <h3 class="text-3xl tracking-tight font-extrabold sm:text-4xl text-left">
                 {i18n.t('campaigns:title')}
             </h3>
-            <p class="mt-3 text-left sm:text-center text-xl sm:mt-4">
+            <p class="mt-3 text-left text-xl sm:mt-4">
                 {i18n.t('campaigns:description')}
             </p>
         </div>
 
-        <div class="mt-12 max-w-lg mx-auto grid lg:grid-cols-3 lg:max-w-none">
+        <div class="mt-12 max-w-3xl md:max-w-lg mx-auto grid md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
             {#each campaigns as campaign}
                 <Cards
                         description={campaign.description}

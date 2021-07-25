@@ -149,10 +149,18 @@
 <svelte:head>
     <title>{i18n.t('faqs:metaTitle')} - Sensor.Community</title>
     <meta content="{i18n.t('faqs:metaDescription')}" name="description">
-    <meta content={i18n.t('faqs:metaTitle')} property="og:title"/>
-    <meta content="website" property="og:type"/>
-    <meta content="" property="og:url"/>
-    <meta content="" property="og:image"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sensor.community{$page.path}">
+    <meta property="og:title" content="{i18n.t('faqs:metaTitle')} - Sensor.Community">
+    <meta property="og:description" content="{i18n.t('faqs:metaDescription')}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sensor.community{$page.path}">
+    <meta property="twitter:title" content="{i18n.t('faqs:metaTitle')} - Sensor.Community">
+    <meta property="twitter:description" content="{i18n.t('faqs:metaDescription')}">
 </svelte:head>
 
 <div class="relative py-16 overflow-hidden text-brand-black">

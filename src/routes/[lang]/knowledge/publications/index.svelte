@@ -40,8 +40,8 @@
     <meta name="description" content="{i18n.t('publications:metaDescription')}">
     <meta content={i18n.t('publications:metaTitle')} property="og:title"/>
     <meta content="website" property="og:type"/>
-    <meta content="" property="og:url"/>
-    <meta content="" property="og:image"/>
+    <meta content="https://sensor.community{$page.path}" property="og:url"/>
+    <meta content="https://sensor.community{$page.path}" property="og:image"/>
 </svelte:head>
 
 <!-- Todo: literal strings -->
