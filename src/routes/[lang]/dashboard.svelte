@@ -143,9 +143,17 @@ var pm_types = [ 'sds011' ];
                         return obj.id === i
                         })
 
-                let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell(0);
-                newCell.addEventListener("click", function(){zoomer(country.id)});
-                newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                // let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell(0);
+                // newCell.addEventListener("click", function(){zoomer(country.id)});
+                // newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
+                let newRow = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow(-1);
+                let newCell1 = newRow.insertCell(0);
+                newCell1.addEventListener("click", function(){zoomer(country.id)});
+                newCell1.innerHTML=  country.name;
+                let newCell2 = newRow.insertCell(1);
+                newCell2.innerHTML= '<a href="'+ link_cities_labs[i].link +'"><button style="background-color: #4CAF50;text-align: center;" class="btn">Open in a new tab</button></a>';
+                
                     }
                 });
 
@@ -222,6 +230,8 @@ var svg = Select("#graphCountry").append("svg")
       .attr("fill", "#000")
       .text("Sensors");    
 
+    
+    Select("#linkGraph").attr("href","https://stats.sensor.community/sensors_per_country/?simple=yes&country=WORLD")
 
             });
 
@@ -241,9 +251,12 @@ var svg = Select("#graphCountry").append("svg")
 
                 data.forEach(function(i){
                 
-                let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                newCell.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
-                newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
+                let newRow = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow(-1);
+                let newCell1 = newRow.insertCell(0);
+                newCell1.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
+                newCell1.innerHTML=  i.title;
+                let newCell2 = newRow.insertCell(1);
+                newCell2.innerHTML= '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;text-align: center;" class="btn">Send an Email</button></a>';
                 })
 
             });
@@ -270,6 +283,9 @@ var svg = Select("#graphCountry").append("svg")
             let mappedObject = dataMapper(globalJSON,selectCountry);
 
             updateData(mappedObject);
+
+            Select("#linkGraph").attr("href","https://stats.sensor.community/sensors_per_country/?simple=yes&country="+ selection.code);
+
 
         if (selection.code != 'WORLD') {
         
@@ -318,7 +334,7 @@ var svg = Select("#graphCountry").append("svg")
 
                  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
                  newCell.addEventListener("click", function(){zoomer(country.id)});
-                    newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                 newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
 
                 country.cities.forEach(function(i){
                     let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
@@ -788,6 +804,7 @@ return ticks;
 
 
                     </div>
+                    <a id="linkGraph" target="_blank" rel="noopener noreferrer"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Open in a new tab</button></a>
                 </div>
                 <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
                     <figcaption>{i18n.t('dashboard:imageSubtitle')}
