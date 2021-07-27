@@ -187,6 +187,7 @@ module.exports = {
       {
         "lat": 45.587754,
         "lon": 5.276368,
+        "city": "Bourgoin-Jallieu",
         "title": "Collectif Nord Is'Air",
         "text": "<b>Collectif Nord Is'Air</b><br/><br/><b>Rencontres</b><br/>Rencontres mensuelles au local UFC-Que Choisir de Bourgoin-Jallieu (27, rue Bovier-Lapierre 38300 Bourgoin-Jallieu)<br/><br /><b>Contact<br/></b><a href=\"mailto:contactnordisair@gmail.com\" class=\"labs_contact\">Bruno Jacquet</a><br/><br />",
         "meetings_title": "Rencontres",
@@ -207,6 +208,7 @@ module.exports = {
         "lat": 48.4409,
         "lon": 1.49305,
         "title": "BetaMachine HS",
+        "city": "Chartres",
         "text": "<b>BetaMachine HS</b><br/><br/><b>Rencontres</b><br/>Le troisième samedi du mois de 14h à 18h au 15 rue Victor Gilbert, à Chartres<br/><br /><b>Contact<br/></b><a href=\"mailto:contact@betamachine.fr\" class=\"labs_contact\">Adrien SOISSONS</a><br/><br /><b>Website</b><br/><a href=\"http://betamachine.fr\" class=\"labs_website\">http://betamachine.fr</a><br />",
         "meetings_title": "Rencontres",
         "meetings": [
@@ -226,6 +228,7 @@ module.exports = {
       {
         "lat": 42.965079,
         "lon": 1.6076186,
+        "city": "Foix",
         "title": "Foix en commun.e",
         "text": "<b>Foix en commun.e</b><br/><br/><b>Rencontres</b><br/>Lieu de rencontre suivant les ateliers et événements.<br/>Fréquence des rencontres suivant les événements.<br/><br /><b>Contact<br/></b><a href=\"mailto:foixencommune@gmail.com\" class=\"labs_contact\">Association Foix en Commun.e</a><br/><br /><b>Website</b><br/><a href=\"http://foixencommune.fr/\" class=\"labs_website\">http://foixencommune.fr/</a><br />",
         "meetings_title": "Rencontres",
@@ -250,6 +253,7 @@ module.exports = {
       {
         "lat": 45.187582,
         "lon": 5.704925,
+        "city": "Grenoble",
         "title": "Enairgie-commune",
         "text": "<b>Enairgie-commune</b><br/><br/><b>Rencontres</b><br/>Permanence mensuelle le dernier lundi du mois de 18 heures à 20 heures à la <a href='https://turbine.coop/' target='_blank' rel='noreferrer'>turbine.coop</a>.<br/>Ateliers de montage au fablab la <a href='https://fablab.lacasemate.fr/' target='_blank' rel='noreferrer'>Casemate</a>.<br/><br /><b>Contact<br/></b><a href=\"mailto:contact@enairgie-commune.fr\" class=\"labs_contact\">Enairgie-commune</a><br/><br /><b>Website</b><br/><a href=\"https://enairgie-commune.frama.site\" class=\"labs_website\">https://enairgie-commune.frama.site</a><br />",
         "meetings_title": "Rencontres",
@@ -274,6 +278,7 @@ module.exports = {
       {
         "lat": 50.63112817273642,
         "lon": 3.05642843310259,
+        "city": "Lille",
         "title": "Respire Hauts-de-France",
         "text": "<b>Respire Hauts-de-France</b><br/><br/><b>Rencontres</b><br/>Venez nous rencontrer !<br/><br /><b>Contacts<br/></b><a href=\"mailto:hdf@respire-asso.org\" class=\"labs_contact\">Contact</a><br/><br /><b>Website</b><br/><a href=\"https://www.respire-asso.org/\" class=\"labs_website\">https://www.respire-asso.org/</a><br />",
         "meetings_title": "Rencontres",
@@ -296,6 +301,7 @@ module.exports = {
       {
         "lat": 48.862900386894694,
         "lon": 2.341460584802579,
+        "city": "Paris",
         "title": "Respire",
         "text": "<b>Respire</b><br/><br/><b>Rencontres</b><br/>Venez nous rencontrer !<br/><br /><b>Contacts<br/></b><a href=\"mailto:contact@respire-asso.org\" class=\"labs_contact\">Contact</a><br/><br /><b>Website</b><br/><a href=\"https://www.respire-asso.org/\" class=\"labs_website\">https://www.respire-asso.org/</a><br />",
         "meetings_title": "Rencontres",
@@ -318,6 +324,7 @@ module.exports = {
       {
         "lat": 48.104917,
         "lon": -1.676223,
+        "city": "Rennes",
         "title": "LabFab de Rennes",
         "text": "<b>LabFab de Rennes</b><br/><br/><b>Rencontres</b><br/>Lieu de rencontre suivant les ateliers et événements. Les ateliers les plus réguliers sont à la Maison des Associations de Rennes, 6 cours des Alliés, 35000 Rennes<br/>Fréquence des rencontres suivant les événements. Nous avons des temps d’accueil autour du Luftdaten tous les premiers vendredi midi du mois, de 12h30 à 13h30.<br/><br /><b>Contact<br/></b><a href=\"mailto:contact@labfab.fr\" class=\"labs_contact\">Association LabFab</a><br/><br /><b>Website</b><br/><a href=\"http://www.labfab.fr/\" class=\"labs_website\">http://www.labfab.fr/</a><br />",
         "meetings_title": "Rencontres",
@@ -341,6 +348,7 @@ module.exports = {
       {
         "lat": 48.105196,
         "lon": -1.674618,
+        "city": "Rennes",
         "title": "Capteurs Citoyens & Environnement",
         "text": "<b>Capteurs Citoyens & Environnement</b><br/><br/><b>Rencontres</b><br/>Chaque premier jeudi du mois à 17.30 aux Champs libres dans le cadre des rendez-vous 4C.<br/><br /><b>Contact<br/></b><a href=\"mailto:luftdaten@mce-info.org\" class=\"labs_contact\">Capteurs Citoyens & Environnement</a><br/><br /><b>Website</b><br/><a href=\"https://twitter.com/ccqa_rennes\" class=\"labs_website\">https://twitter.com/ccqa_rennes</a><br />",
         "meetings_title": "Rencontres",
@@ -362,6 +370,7 @@ module.exports = {
       {
         "lat": 49.44546775260442,
         "lon": 1.0693562337666467,
+        "city": "Rouen",
         "title": "Rouen Respire",
         "text": "<b>Rouen Respire</b><br/><br/><b>Rencontres</b><br/>Bientôt...<br/><br /><b>Contacts<br/></b><a href=\"mailto:president@rouenrespire.fr\" class=\"labs_contact\">Rouen Respire</a><br/><br /><b>Website</b><br/><a href=\"https://rouenrespire.fr/\" class=\"labs_website\">https://rouenrespire.fr/</a><br />",
         "meetings_title": "Rencontres",
@@ -383,6 +392,7 @@ module.exports = {
       {
         "lat": 46.80224,
         "lon": 1.62836,
+        "city": "Saint-Maur",
         "title": "Le Labo-Motive",
         "text": "<b>Le Labo-Motive</b><br/><br/><b>Renseignements</b><br/>Le Labo-Motive est en mesure de vous aider à mettre en œuvre votre sonde Luftdaten.<br/>Nous intégrons en plus de la sonde d'origine un circuit de mise off/on chaque 24h.<br/>Le jeudi soir de 18h à 22h et le samedi de 10h à 18h.<br/>http://www.lelabomotive.org/#calendrier pour vérifier si nous sommes ouverts<br/><br /><b>Contact<br/></b><a href=\"mailto:jean.christophe.l@lelabomotive.org\" class=\"labs_contact\">Jean-Christophe LEGER</a><br/><br /><b>Website</b><br/><a href=\"http://lelabomotive.org\" class=\"labs_website\">http://lelabomotive.org</a><br />",
         "meetings_title": "Renseignements",
@@ -412,6 +422,7 @@ module.exports = {
       {
         "lat": 43.610157,
         "lon": 1.449872,
+        "city": "Toulouse",
         "title": "Appel d'air / Association Reflets - CPIE Terres Toulousaines",
         "text": "<b>Appel d'air / Association Reflets - CPIE Terres Toulousaines</b><br/><br/><b>Rencontres</b><br/>Des réunions occasionnelles ont lieu dans des salles de réunions en ville, tous les deux mois environ. Des ateliers sont organisés au local de l'association ou sur des stands lors d'évènements particuliers, une fois par mois environ.<br/><br /><b>Contact<br/></b><a href=\"mailto:appeldair@cpieterrestoulousaines.org\" class=\"labs_contact\">Appel d'air</a><br/><br /><b>Website</b><br/><a href=\"http://cpieterrestoulousaines.org/\" class=\"labs_website\">http://cpieterrestoulousaines.org/</a><br />",
         "meetings_title": "Rencontres",
@@ -432,6 +443,7 @@ module.exports = {
       {
         "lat": 50.35571945493,
         "lon": 3.5259193182,
+        "city": "Valenciennes",
         "title": "De l'air !!!",
         "text": "<b>De l'air !!!</b><br/><br/><b>Rencontres</b><br/>3e jeudi de chaque mois à la Maison de Quartier Centre Ville de Valenciennes, 10 Rue des Ursulines, 59300 Valenciennes<br/><br /><b>Contact<br/></b><a href=\"mailto:delair@mailo.com\" class=\"labs_contact\">Pierrick</a><br/><br /><b>Website</b><br/><a href=\"https://sensor.community/fr/\" class=\"labs_website\">https://sensor.community/fr/</a><br />",
         "meetings_title": "Rencontres",
@@ -453,6 +465,7 @@ module.exports = {
       {
         "lat": 46.12696,
         "lon": 3.430028,
+        "city": "Vichy",
         "title": "Nous pouvons vous aider à monter votre détecteur (à Vichy ou n'importe où via internet)",
         "text": "<b>Nous pouvons vous aider à monter votre détecteur (à Vichy ou n'importe où via internet)</b><br/><br/><b>Aide locale ou à distance (FR/EN)</b><br/>On peut se rencontrer à Vichy ou nous pouvons vous aider par email/téléphone/vidéoconférence.<br/>If you speak English, we can also help you.<br/><br /><b>Contact<br/></b><a href=\"mailto:zalpeg@gmail.com\" class=\"labs_contact\">Vichy Luftdaten</a><br/><br />",
         "meetings_title": "Aide locale ou à distance (FR/EN)",

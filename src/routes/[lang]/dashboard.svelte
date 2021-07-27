@@ -8,14 +8,12 @@
     import * as countries from '../../../content/countries.js';
     import * as link_cities_labs from '../../../content/link_cities_labs_formated.js';
     import {onMount} from "svelte";
-    //import * as Pancake from '@sveltejs/pancake';
     import {timeFormatLocale, timeParse, timeFormat} from 'd3-time-format';
-    import {line} from 'd3-shape';
+    import {line,curveBasis,curveBundle} from 'd3-shape';
     import {scaleTime, scaleLinear} from 'd3-scale';
     import {select as Select,selectAll} from 'd3-selection';
     import {extent,max,min} from 'd3-array';
     import {axisBottom, axisLeft} from 'd3-axis';
-    // import 'd3-transition';
     import {transition} from "d3-transition";
     import {format as Format} from "d3-format";
 
@@ -28,7 +26,6 @@
     // $: i18n = initI18n($page.params.lang);
 
     var countSensor = {};
-    // const selector = {};
     const sensorTypes = {
         "PM": ["sds011", "sps30", "hpm", "pms7003"],
         "noise": ["laerm"],
@@ -39,15 +36,13 @@
     const today = new Date();
     const yesterday = dateFormater(today);
 
-    //const url_count = 'https://archive.sensor.community/' + yesterday + '/sensors_per_country.txt';
-
     const urlGlobalJSON = 'https://stats.sensor.community/sensors_per_country_per_day.json';
     const urlLabs ="https://opendata-stuttgart.github.io/luftdaten-local-labs/labs.json";
 
-    const countriesDiv ='<div class="sm:rounded-lg"><table id="countriesTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Country links</th></tr></thead><tbody></tbody></table></div>';
-    const regionsDiv ='<div class="sm:rounded-lg"><table id="regionsTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Region links</th></tr></thead><tbody></tbody></table></div>';
-    const citiesDiv ='<div class="sm:rounded-lg"><table id="citiesTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">City links</th></tr></thead><tbody></tbody></table></div>';
-    const labsDiv ='<div class="sm:rounded-lg"><table id="labsTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Labs</th></tr></thead><tbody></tbody></table></div>';
+    const countriesDiv ='<div class="sm:rounded-lg"><table id="countriesTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Country links</th></tr></thead><tbody style="display:block; max-height:240px; overflow-y:scroll;"></tbody></table></div>';
+    const regionsDiv ='<div class="sm:rounded-lg"><table id="regionsTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Region links</th></tr></thead><tbody style="display:block; max-height:240px; overflow-y:scroll;"></tbody></table></div>';
+    const citiesDiv ='<div class="sm:rounded-lg"><table id="citiesTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">City links</th></tr></thead><tbody style="display:block; max-height:240px; overflow-y:scroll;"></tbody></table></div>';
+    const labsDiv ='<div class="sm:rounded-lg"><table id="labsTable" class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr><th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Labs</th></tr></thead><tbody style="display:block; max-height:240px; overflow-y:scroll;"></tbody></table></div>';
 
 
     var allLabs =[];
@@ -56,7 +51,7 @@
     // var pm_types = [ 'sds011', 'pms1003', 'pms3003', 'pms5003', 'pms6003', 'pms7003', 'sps30', 'hpm' ];
     // var temp_types = [ 'dht22', 'bmp180', 'bmp280', 'bme280', 'htu21d', 'ds18b20', 'sht10', 'sht11', 'sht30', 'sht31', 'sht35', 'sht85' ];
 
-var pm_types = [ 'sds011' ];
+    var pm_types = [ 'sds011' ];
     var temp_types = [ 'bme280'];
 
     var noise_types = [ 'laerm' ];
@@ -72,18 +67,22 @@ var pm_types = [ 'sds011' ];
     
     var globalJSON = [];
 
+    //curve interpolations quite useless...
 
      var valueline1 = line()
+     .curve(curveBasis)
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .defined(((d) => d.value != -1));
 
      var valueline2 = line()
+     .curve(curveBasis)
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .defined(((d) => d.value != -1));
 
      var valueline3 = line()
+     .curve(curveBasis)
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .defined(((d) => d.value != -1));
@@ -98,25 +97,7 @@ var pm_types = [ 'sds011' ];
     var x = scaleTime().range([0, width]);
     var y = scaleLinear().range([height, 0]);
 
-
-
-
     if (process.browser) {
-
-        // fetch(url_count)
-        //     .then(function (response) {
-        //         return response.json();
-        //     })
-        //     .then(function (data) {
-        //         console.log(data[yesterday]);
-
-        //         // countSensor.PM += data.hpm + data.pms1003 + data.pms3003 + data.pms5003 + data.pms6003 + data.pms7003 + data.sds011 + data.sps30;
-        //         countSensor = data[yesterday];
-
-        //         document.getElementById('value1').innerHTML = countSensor.sds011.WORLD.toString();
-        //         document.getElementById('value2').innerHTML = countSensor.bme280.WORLD.toString();
-
-        //     });
 
             //it will load 5.7 MB each time...
 
@@ -147,13 +128,16 @@ var pm_types = [ 'sds011' ];
                 // newCell.addEventListener("click", function(){zoomer(country.id)});
                 // newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
 
-                let newRow = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow(-1);
-                let newCell1 = newRow.insertCell(0);
-                newCell1.addEventListener("click", function(){zoomer(country.id)});
-                newCell1.innerHTML=  country.name;
-                let newCell2 = newRow.insertCell(1);
-                newCell2.innerHTML= '<a href="'+ link_cities_labs[i].link +'"><button style="background-color: #4CAF50;text-align: center;" class="btn">Open in a new tab</button></a>';
+                // let newRow = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow(-1);
+                // let newCell1 = newRow.insertCell(0);
+                // newCell1.addEventListener("click", function(){zoomer(country.id)});
+                // newCell1.innerHTML=  country.name;
+                // newCell1.title = "https://" + link_cities_labs[i].link + ".maps.sensor.community";
+                // let newCell2 = newRow.insertCell(1);
+                // newCell2.innerHTML= '<a href="https://' + link_cities_labs[i].link + '.maps.sensor.community/" target="_blank" rel="noopener noreferrer"><button style="background-color: #4CAF50;text-align: center;" class="btn">Open in a new tab</button></a>';
                 
+                rowBuilder1("countriesTable",country.id,country.name, link_cities_labs[i].link);
+
                     }
                 });
 
@@ -233,13 +217,7 @@ var svg = Select("#graphCountry").append("svg")
     
     Select("#linkGraph").attr("href","https://stats.sensor.community/sensors_per_country/?simple=yes&country=WORLD")
 
-            });
-
-//             tickFormat(function (d){
-//     return d3.format(".1f")(d/10);
-// })
-
-            
+            });  
 
         fetch(urlLabs)
             .then(function (response) {
@@ -251,20 +229,22 @@ var svg = Select("#graphCountry").append("svg")
 
                 data.forEach(function(i){
                 
+                //NO CITY NAME IN THE MAIN LAB FILE!!!!
+                    
                 let newRow = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow(-1);
                 let newCell1 = newRow.insertCell(0);
                 newCell1.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
                 newCell1.innerHTML=  i.title;
+                newCell1.style = "cursor:default;max-width:200px;height:24px;white-space:nowrap;overflow:hidden;";
                 let newCell2 = newRow.insertCell(1);
                 newCell2.innerHTML= '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;text-align: center;" class="btn">Send an Email</button></a>';
-                })
-
+                newCell2.style = "min-width:200px;height:24px;white-space:nowrap;overflow:hidden;";
+            })
             });
 
-
-
     document.getElementById("copyLink").addEventListener("click", getLink);
-
+    //DOES NOT WORK
+    //document.getElementById('map-frame2').addEventListener("zoomend", getLink);
 
     }
 
@@ -272,6 +252,8 @@ var svg = Select("#graphCountry").append("svg")
 
         document.getElementById("divLinks").innerHTML = "";
         document.getElementById("divLabs").innerHTML = "";
+
+        document.getElementById("linkArea").value = "";
 
         const selection = countries.array.find(obj => {
             return obj.id === e.target.value
@@ -289,13 +271,6 @@ var svg = Select("#graphCountry").append("svg")
 
         if (selection.code != 'WORLD') {
         
-
-
-
-
-
-
-            //document.getElementById('map-frame1').src = 'https://stats.sensor.community/sensors_per_country/?simple=yes&country=' + selection.code;
             document.getElementById('map-frame2').src = 'https://' + selection.id + '.maps.sensor.community/';
             
             let country = link_cities_labs[selection.id];
@@ -312,65 +287,96 @@ var svg = Select("#graphCountry").append("svg")
 
 
             if (country.regions.length > 0 && country.cities.length > 0 ){
+
+            rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
                 
-                let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                newCell.addEventListener("click", function(){zoomer(country.link)});
-                newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                // let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                // newCell.addEventListener("click", function(){zoomer(country.link)});
+                // newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
                 
+
                 country.regions.forEach(function(i){
-                    let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    newCell.addEventListener("click", function(){zoomer(i.link)});
-                    newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
+                    rowBuilder1("regionsTable",i.link,i.name, i.link);
+
+                    // let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                    // newCell.addEventListener("click", function(){zoomer(i.link)});
+                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
                 });
 
                 country.cities.forEach(function(i){
-                    let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    newCell.addEventListener("click", function(){zoomer(i.link)});
-                    newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
+                    rowBuilder1("citiesTable",i.link,i.name, i.link);
+
+                    // let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                    // newCell.addEventListener("click", function(){zoomer(i.link)});
+                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
                 });
 
 
             }else if(country.regions.length == 0 && country.cities.length > 0 ){
 
-                 let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                 newCell.addEventListener("click", function(){zoomer(country.id)});
-                 newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                            rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
+
+
+                //  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                //  newCell.addEventListener("click", function(){zoomer(country.id)});
+                //  newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
 
                 country.cities.forEach(function(i){
-                    let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    newCell.addEventListener("click", function(){zoomer(i.link)});
-                    newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
+                    rowBuilder1("citiesTable",i.link,i.name, i.link);
+
+                    // let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                    // newCell.addEventListener("click", function(){zoomer(i.link)});
+                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                
                 });
 
 
             }else if(country.regions.length > 0 && country.cities.length == 0 ){
 
-                 let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                 newCell.addEventListener("click", function(){zoomer(country.id)});
-                    newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
+
+
+                //  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                //  newCell.addEventListener("click", function(){zoomer(country.id)});
+                //     newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
 
                 country.regions.forEach(function(i){
-                    let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    newCell.addEventListener("click", function(){zoomer(i.link)});
-                    newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+
+                     rowBuilder1("regionsTable",i.link,i.name, i.link);
+
+                    // let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                    // newCell.addEventListener("click", function(){zoomer(i.link)});
+                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+               
                 });
 
             }else if(country.regions.length == 0 && country.cities.length == 0 ){
 
+                                rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
 
-                 let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                 newCell.addEventListener("click", function(){zoomer(country2.id)});
-                    newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-            }
+
+                //  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                //  newCell.addEventListener("click", function(){zoomer(country2.id)});
+                //     newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+            
+            
+                };
 
 
 
             if (country.labs.length > 0){
                 document.getElementById("divLabs").innerHTML = labsDiv;
                 country.labs.forEach(function(i){
-                let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                newCell.addEventListener("click", function(){zoomerLab(country.id,i.lat,i.lon)});
-                newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
+
+                // let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                // newCell.addEventListener("click", function(){zoomerLab(country.id,i.lat,i.lon)});
+                // newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
+                
+                rowBuilder2("labsTable",country.id,i.lat,i.lon,i.city,i.title,i.contacts.url);
+
 
                 });
             }else{
@@ -378,7 +384,6 @@ var svg = Select("#graphCountry").append("svg")
             }
 
         } else {
-            //document.getElementById('map-frame1').src = 'https://stats.sensor.community/sensors_per_country/';
             document.getElementById('map-frame2').src = 'https://maps.sensor.community/';
             document.getElementById("divLinks").innerHTML = countriesDiv;
             document.getElementById("divLabs").innerHTML = labsDiv;
@@ -390,26 +395,37 @@ var svg = Select("#graphCountry").append("svg")
                         return obj.id === i
                         })
 
-                let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                newCell.addEventListener("click", function(){zoomer(country.id)});
-                newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-                    }
+
+                rowBuilder1("countriesTable",country.id,country.name, link_cities_labs[i].link);
+
+
+                // let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                // newCell.addEventListener("click", function(){zoomer(country.id)});
+                // newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
+                   
+            }
                 });
 
 
                 allLabs.forEach(function(i){
 
-                let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                newCell.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
-                newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
-                })
+                // let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
+                // newCell.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
+                // newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
+               
+                 //NO CITY NAME IN THE MAIN LAB FILE!!!!
+                    
+                let newRow = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow(-1);
+                let newCell1 = newRow.insertCell(0);
+                newCell1.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
+                newCell1.innerHTML=  i.title;
+                newCell1.style = "cursor:default;max-width:200px;height:24px;white-space:nowrap;overflow:hidden;";
+                let newCell2 = newRow.insertCell(1);
+                newCell2.innerHTML= '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;text-align: center;" class="btn">Send an Email</button></a>';
+                newCell2.style = "min-width:200px;height:24px;white-space:nowrap;overflow:hidden;";
+            })
 
         }
-
-        let PMCount = 0;
-        let TRHPCount = 0;
-        let radiationCount = 0;
-        let noiseCount = 0;
 
         if (countSensor.sds011.hasOwnProperty(selection.code)) {
             document.getElementById('value1').innerHTML = countSensor.sds011[selection.code].toString()
@@ -429,6 +445,39 @@ var svg = Select("#graphCountry").append("svg")
             document.getElementById('value3').innerHTML = "0"
         }
     }
+
+
+  function rowBuilder1(div,id,nameCountry, link) {  
+                let message="";
+                let newRow = document.getElementById(div).getElementsByTagName('tbody')[0].insertRow(-1);
+                let newCell1 = newRow.insertCell(0);
+                newCell1.addEventListener("click", function(){zoomer(id)});
+                newCell1.innerHTML = nameCountry;
+                newCell1.title = "https://" + link + ".maps.sensor.community/";
+                newCell1.style = "cursor:default;max-width:200px;height:24px;white-space:nowrap;overflow:hidden;";
+                let newCell2 = newRow.insertCell(1);
+                message = "Open in a new tab";
+                newCell2.innerHTML= '<a href="https://'+ link +'.maps.sensor.community/" target="_blank" rel="noopener noreferrer"><button style = "background-color: #4CAF50;text-align: center;cursor: pointer;" class="btn">'+ message +'</button></a>';         
+                newCell2.style = "min-width:200px;height:24px";
+            }
+
+    function rowBuilder2(div,id,lat,lon,city,nameLab, link) {  
+                let message="";
+                let newRow = document.getElementById(div).getElementsByTagName('tbody')[0].insertRow(-1);
+                let newCell0 = newRow.insertCell(0);
+                newCell0.addEventListener("click", function(){zoomerLab(id,lat,lon)});
+                newCell0.innerHTML = city;
+                newCell0.style = "cursor:default;max-width:150px;height:24px;white-space:nowrap;overflow:hidden;";
+                let newCell1 = newRow.insertCell(1);
+                newCell1.addEventListener("click", function(){zoomerLab(id,lat,lon)});
+                newCell1.innerHTML = nameLab;
+                newCell1.title = "https://" + link + ".maps.sensor.community/";
+                newCell1.style = "cursor:default;max-width:150px;height:24px;white-space:nowrap;overflow:hidden;";
+                let newCell2 = newRow.insertCell(2);
+                message = "Send an Email";
+                newCell2.innerHTML= '<a href="'+ link +'"><button style = "background-color: #4CAF50;text-align: center;cursor: pointer;" class="btn">'+ message +'</button></a>';         
+                newCell2.style = "min-width:150px;height:24px;white-space:nowrap;overflow:hidden;";
+            }
 
     function dateFormater(date) {
         //one day before
@@ -492,7 +541,6 @@ var svg = Select("#graphCountry").append("svg")
 
 	for (var i = 0; i < data.length; i++) {
 		var keys = Object.keys(data[i]);
-//		console.log(keys[0]);
 		if (keys[0] > "2016-07") {
 			date_count++;
 			var sensors = Object.keys(data[i][keys[0]]);
@@ -554,34 +602,17 @@ var svg = Select("#graphCountry").append("svg")
 
     }
 
-// function graphicBuilder(data){
-
-
-
-
-// } 
-
 
 function updateData(data) {
 
     console.log(data);
 
-    // var t = transition()
-    // .duration(1500);
-
-
-
-
-
  x.domain(extent(data.pm, function(d) { return d.date; }));
-  //Select("#graphCountry").Select("svg").Select(".axis axis--x")
-  selectAll(".axis--x")
-    .transition()
-.duration(750)
-    .call(axisBottom(x));
 
-  // create the Y axis
-//y.domain([0, max(data.pm, function(d) {return d.value;})]);
+selectAll(".axis--x")
+    .transition()
+    .duration(750)
+    .call(axisBottom(x));
 
 let arrayTicks = [];
 
@@ -598,22 +629,6 @@ let arrayTicks = [];
         data.noise.forEach(o=>{arrayTicks.push(o.value)});
     }
 
-
-//  Select("#graphCountry").Select("svg").Select(".axis axis--y")
-
-// let arr = data.pm;
-
-// let useSet = arr => {
-//   return [...new Set(arr)];
-// };
-
-
-
-
-
-
-console.log([...new Set(arrayTicks)]);
-
 let ticks = ticker(arrayTicks);
 
 console.log(ticks);
@@ -621,10 +636,7 @@ console.log(ticks);
 selectAll(".axis--y")
     .transition()
     .duration(750)
-  //  .call(axisLeft(y);     
   .call(axisLeft(y).tickFormat(Format(".0f")).tickValues(ticks));
-
-// var svg = selectAll("svg").transition();
 
 console.log(selectAll("#linePM"));
 
@@ -632,8 +644,6 @@ selectAll("#linePM")
 .transition()  // change the line
             .duration(750)
             .attr("d", valueline1(data.pm));
-
-
 
 selectAll("#lineTHP") 
 .transition()  // change the line
@@ -644,31 +654,46 @@ selectAll("#lineNoise")
 .transition()  // change the line
             .duration(750)
             .attr("d", valueline1(data.noise));
-// // Select("#graphCountry").Select("svg").Select("#linePM")
-// selectAll("#linePM")
-//     .data([data.pm])
-//     .transition(t);
 
-// // Select("#graphCountry").Select("svg").Select("#lineTHP")
-// selectAll("#lineTHP")
-//     .data([data.thp])
-//     .transition(t);
-
-// // Select("#graphCountry").Select("svg").Select("#lineNoise")
-// selectAll("#lineNoise")
-//     .data([data.noise])
-//     .transition(t);
 }
 
 function ticker(array){
  let ticks = [...new Set(array)];
 
- if (ticks.length <= 10 && Math.max(...ticks) <= 10 ){
+ if (ticks.length <= 11 && Math.max(...ticks) <= 10 ){
 
-
-
-
-    
+switch(Math.max(...ticks)) {
+  case 1:
+    ticks = [0,1];
+  break;
+  case 2:
+    ticks = [0,1,2];
+  break;
+  case 3:
+    ticks = [0,1,2,3];
+  break;
+  case 4:
+    ticks = [0,1,2,3,4];
+  break;
+  case 5:
+    ticks = [0,1,2,3,4,5];
+  break;
+  case 6:
+    ticks = [0,1,2,3,4,5,6];
+  break;
+  case 7:
+    ticks = [0,1,2,3,4,5,6,7];
+  break;
+  case 8:
+    ticks = [0,1,2,3,4,5,6,7,8];
+  break;
+  case 9:
+    ticks = [0,1,2,3,4,5,6,7,8,9];
+  break;
+  case 10:
+    ticks = [0,1,2,3,4,5,6,7,8,9,10];
+  break;
+} 
 return ticks;
  }else {
      return null
@@ -684,6 +709,19 @@ return ticks;
     <meta content="" property="og:url"/>
     <meta content="" property="og:image"/>
 </svelte:head>
+
+
+<!-- NOT WORKING
+
+<style>
+  .btn{
+    background-color: #4CAF50;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+</style> -->
 
 <div class="pb-6">
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
@@ -788,22 +826,7 @@ return ticks;
                     </svg>
                 </div>
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-nonelg:pl-12">
-                    <div id="graphCountry" class="w-full bg-brand-white lg:w-auto lg:max-w-none">
-
-
-
-
-
-
-                        <!-- <iframe id="map-frame1"
-                                src="https://stats.sensor.community/sensors_per_country/?simple=yes&country="
-                                style="height: 700px; width: 70%"
-                                title="sensor.community growth rate chart">
-                        </iframe> -->
-
-
-
-                    </div>
+                    <div id="graphCountry" class="w-full bg-brand-white lg:w-auto lg:max-w-none"></div>
                     <a id="linkGraph" target="_blank" rel="noopener noreferrer"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Open in a new tab</button></a>
                 </div>
                 <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
@@ -843,7 +866,7 @@ return ticks;
                                     </th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody style="display:block; max-height:240px; overflow-y:scroll;">
                                 </tbody>
                             </table>
                         </div>
@@ -870,7 +893,7 @@ return ticks;
                                     </th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody style="display:block; max-height:240px; overflow-y:scroll;">
                                 </tbody>
                             </table>
                         </div>
