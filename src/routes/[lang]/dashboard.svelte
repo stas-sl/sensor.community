@@ -11,7 +11,7 @@
     import {timeFormatLocale, timeParse, timeFormat} from 'd3-time-format';
     import {line} from 'd3-shape';
     import {scaleTime, scaleLinear, scaleOrdinal} from 'd3-scale';
-    import {select as Select,selectAll,mouse} from 'd3-selection';
+    import {select as Select,selectAll,pointer} from 'd3-selection';
     import {extent,max,min,bisector} from 'd3-array';
     import {axisBottom, axisLeft} from 'd3-axis';
     import {transition} from "d3-transition";
@@ -35,6 +35,8 @@
 
     const today = new Date();
     const yesterday = dateFormater(today);
+
+    const dateFormatter = timeFormat("%Y-%m-%d");
 
     const urlGlobalJSON = 'https://stats.sensor.community/sensors_per_country_per_day.json';
     const urlLabs ="https://opendata-stuttgart.github.io/luftdaten-local-labs/labs.json";
@@ -86,13 +88,25 @@
 
 
     var margin = {top: 20, right: 10, bottom: 30, left: 50},
-    width = 400 - margin.left - margin.right,
+    width = 400 - margin.left - margin.right, 
     height = 450 - margin.top - margin.bottom;
 
     var viewBoxValues = "0 0 "+ width + margin.left + margin.right +" "+height + margin.top + margin.bottom;
 
     var x = scaleTime().range([0, width]);
     var y = scaleLinear().range([height, 0]);
+
+    var category = ["SDS011", "BME280", "DNMS"]
+    var color = scaleOrdinal()
+        .domain(category)
+        .range(["red", "blue", "green"]);
+
+    var svg,linePM,lineTHP,lineNoise,xAxis,yAxis,xGrid,yGrid,svgLegend,legend,mouseLine,focusPM,focusTHP,focusNoise,overlay;
+
+    var bisectDate = bisector(function(d) { return d.date; }).left;
+
+    var mappedObject;
+
 
     if (process.browser) {
 
@@ -143,17 +157,15 @@
     
 
 
-let mappedObject = dataMapper(data,selectCountry);
+mappedObject = dataMapper(data,selectCountry);
 
 
 console.log(mappedObject);
 console.log(mappedObject.pm);
 
-
-
-var svg = Select("#graphCountry").append("svg")
+svg = Select("#graphCountry").append("svg")
     .attr("id","svgGraph")
-    .attr("width", width + margin.left + margin.right)
+    .attr("width", width + margin.left + margin.right + 70)
     .attr("height", height + margin.top + margin.bottom)
     // .attr("viewBox","0 0 300 600")
     .append("g")
@@ -171,90 +183,77 @@ var svg = Select("#graphCountry").append("svg")
     console.log(extent(mappedObject.pm, function(d) { return d.date; }));
     console.log([0, max(mappedObject.pm, function(d) {return d.value;})]);
 
-  svg.append("path")
+linePM = svg.append("path")
      .data([mappedObject.pm])
     .attr("class", "line")  
     .attr("fill", "none")
     .attr("stroke", "red" )
-    .attr("id", "linePM" )
     .attr("d", valueline1);
 
-      svg.append("path")
+lineTHP = svg.append("path")
      .data([mappedObject.thp])
     .attr("class", "line")  
     .attr("fill", "none")
     .attr("stroke", "blue" )
-    .attr("id", "lineTHP" )
     .attr("d", valueline2);
 
-      svg.append("path")
+lineNoise = svg.append("path")
      .data([mappedObject.noise])
     .attr("class", "line")  
     .attr("fill", "none")
     .attr("stroke", "green" )
-    .attr("id", "lineNoise" )
     .attr("d", valueline3);
   
-    svg.append("g")  
+xAxis = svg.append("g")  
    .attr("transform", "translate(" + 0 + "," + height  + ")")
     .attr("class", "axis axis--x")
     .call(axisBottom(x));   
 
-      svg.append("g")			
+xGrid = svg.append("g")			
       .attr("class", "grid-x")
-     .attr("id", "grid-x")
       .attr("stroke-width","0")
       .attr("transform", "translate(" + 0 + "," + height + ")")
       .call(axisBottom(x)
           .tickSize(-height)
           .tickFormat(""));
-                                 
-               
-    svg.append("g")
+                                              
+yAxis = svg.append("g")
   .attr("class", "axis axis--y")
    .attr("transform", "translate(" + 0 + "," + 0 + ")")
-      .call(axisLeft(y).tickFormat(Format("d")))
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", "0.71em")
-      .attr("fill", "#000")
-      .text("Sensors");    
+   .call(axisLeft(y).tickFormat(Format("d")))
+   .append("text")
+   .attr("transform", "rotate(-90)")
+   .attr("y", 6)
+   .attr("dy", "0.71em")
+   .attr("fill", "#000")
+   .text("Sensors");    
 
-
-      svg.append("g")			
+yGrid =  svg.append("g")			
       .attr("class", "grid-y")
-      .attr("id", "grid-y")
       .attr("stroke-width","0")
       .attr("transform", "translate(" + 0 + "," + 0 + ")")
       .call(axisLeft(y)
           .tickSize(-width)
           .tickFormat(""));
 
-    selectAll(".grid-x line")
+selectAll(".grid-x line")
             .attr("stroke","lightgrey")
             .attr("stroke-opacity","0.7")
             .attr("stroke-width","1")
             .attr("shape-rendering","crispEdges");
 
-    selectAll(".grid-y line")
+selectAll(".grid-y line")
             .attr("stroke","lightgrey")
             .attr("stroke-opacity","0.7")
             .attr("stroke-width","1")
             .attr("shape-rendering","crispEdges");
 
 
-var category = ["SDS011", "BME280", "DNMS"]
-var color = scaleOrdinal()
-        .domain(category)
-        .range(["red", "blue", "green"])
-
-var svgLegend = svg.append('g')
+svgLegend = svg.append('g')
             .attr('class', 'gLegend')
             .attr("transform", "translate(" + (width/2) + "," + 10 + ")");
 
-
-var legend = svgLegend.selectAll('.legend')
+legend = svgLegend.selectAll('.legend')
           .data(category)
           .enter().append('g')
             .attr("class", "legend")
@@ -275,91 +274,162 @@ var legend = svgLegend.selectAll('.legend')
             .style("font-size", 10)
             .text(d=>d);
 
+mouseLine = svg.append("g")
+            .attr("class", "mouse-over-line");
 
-
-        var tooltip = Select("#graphCountry").append("div")
-            .attr('id', 'tooltip')
-            .style('position', 'absolute')
-            .style("background-color", "#D3D3D3")
-            .style('padding', 6)
-            .style('display', 'none')
-
-         var mouseG = svg.append("g")
-            .attr("class", "mouse-over-effects");
-
-          mouseG.append("path") // create vertical line to follow mouse
+        mouseLine.append("path") // create vertical line to follow mouse
             .attr("class", "mouse-line")
             .style("stroke", "red")
             .style("stroke-dasharray", ("3, 3"))
-            .style("stroke-width", "2")
+            .style("stroke-width", "1")
             .style("opacity", "0");
 
 
 
-        //   var lines = document.getElementsByClassName('line');
+focusPM = svg.append("g")
+            .attr("class", "focus")
+            .style("display", "none");
 
+        focusPM.append("circle")
+            .attr("r", 4)
+            .style("fill", "red");
 
-        //   var mousePerLine = mouseG.selectAll('.mouse-per-line')
-        //     .data(mappedObject.pm)
-        //     .enter()
-        //     .append("g")
-        //     .attr("class", "mouse-per-line");
+        focusPM.append("rect")
+            .attr("class", "tooltip")
+            .attr("width", 70)
+            .attr("height", 30)
+            .attr("x", 10)
+            .attr("y", -22)
+            .attr("rx", 4)
+            .attr("ry", 4)
+            .style("fill","white")
+            .style("stroke","#000");
 
-        //   mousePerLine.append("circle")
-        //     .attr("r", 4)
-        //     .style("stroke", function (d) {
-        //       return "red"
-        //     })
-        //     .style("fill", "red")
-        //     .style("stroke-width", "1")
-        //     .style("opacity", "0");
+        focusPM.append("text")
+            .style("font-size", 10)
+            .attr("class", "tooltip-date")
+            .attr("x", 15)
+            .attr("y", -10);
 
-        //   mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
-        //     .attr('width', width) 
-        //     .attr('height', height)
-        //     .attr('fill', 'none')
-        //     .attr('pointer-events', 'all')
-        //     .on('mouseout', function () { // on mouse out hide line, circles and text
-        //       d3.select(".mouse-line")
-        //         .style("opacity", "0");
-        //       d3.selectAll(".mouse-per-line circle")
-        //         .style("opacity", "0");
-        //       d3.selectAll(".mouse-per-line text")
-        //         .style("opacity", "0");
-        //       d3.selectAll("#tooltip")
-        //         .style('display', 'none')
+        focusPM.append("text")
+            .style("font-size", 10)
+            .attr("class", "tooltip-value")
+            .attr("x", 15)
+            .attr("y", 5);
 
-        //     })
-        //     .on('mouseover', function () { // on mouse in show line, circles and text
-        //       d3.select(".mouse-line")
-        //         .style("opacity", "1");
-        //       d3.selectAll(".mouse-per-line circle")
-        //         .style("opacity", "1");
-        //       d3.selectAll("#tooltip")
-        //         .style('display', 'block')
-        //     })
-        //     .on('mousemove', function () { // update tooltip content, line, circles and text when mouse moves
-        //       var mouse = mouse(this);
+focusTHP = svg.append("g")
+            .attr("class", "focus")
+            .style("display", "none");
 
-        //       d3.selectAll(".mouse-per-line")
-        //         .attr("transform", function (d, i) {
-        //           var xDate = x.domain(extent(mappedObject.pm, function(d) { return d.date; })).invert(mouse[0]) // use 'invert' to get date corresponding to distance from mouse position relative to svg
-        //           var bisect = bisector(function (d) { return d.date; }).left // retrieve row index of date on parsed csv
-        //           var idx = bisect(d.value, xDate);
+        focusTHP.append("circle")
+            .attr("r", 4)
+            .style("fill", "blue");
 
-        //           d3.select(".mouse-line")
-        //             .attr("d", function () {
-        //               var data = "M" + xScale(d.value[idx].date) + "," + (height);
-        //               data += " " + xScale(d.value[idx].date) + "," + 0;
-        //               return data;
-        //             });
-        //           return "translate(" + xScale(d.value[idx].date) + "," + yScale(d.value[idx].premium) + ")";
+        focusTHP.append("rect")
+            .attr("class", "tooltip")
+            .attr("width", 70)
+            .attr("height", 30)
+            .attr("x", 10)
+            .attr("y", -22)
+            .attr("rx", 4)
+            .attr("ry", 4)
+            .style("fill","white")
+            .style("stroke","#000");
 
-        //         });
+        focusTHP.append("text")
+            .style("font-size", 10)
+            .attr("class", "tooltip-date")
+            .attr("x", 15)
+            .attr("y", -10);
 
-        //       updateTooltipContent(mouse, mappedObject.pm)
+        focusTHP.append("text")
+            .style("font-size", 10)
+            .attr("class", "tooltip-value")
+            .attr("x", 15)
+            .attr("y", 5);
 
-        //     });
+focusNoise = svg.append("g")
+            .attr("class", "focus")
+            .style("display", "none");
+
+        focusNoise.append("circle")
+            .attr("r", 4)
+            .style("fill", "green");
+
+        focusNoise.append("rect")
+            .attr("class", "tooltip")
+            .attr("width", 70)
+            .attr("height", 30)
+            .attr("x", 10)
+            .attr("y", -22)
+            .attr("rx", 4)
+            .attr("ry", 4)
+            .style("fill","white")
+            .style("stroke","#000");
+
+        focusNoise.append("text")
+            .style("font-size", 10)
+            .attr("class", "tooltip-date")
+            .attr("x", 15)
+            .attr("y", -10);
+
+        focusNoise.append("text")
+            .style("font-size", 10)
+            .attr("class", "tooltip-value")
+            .attr("x", 15)
+            .attr("y", 5);
+
+overlay = svg.append('rect') // append a rect to catch mouse movements on canvas
+            .attr("class", "overlay")
+            .attr('width', width) 
+            .attr('height', height)
+            .attr('fill', 'none')
+            .attr('pointer-events', 'all')
+            .on('mouseout', function () { // on mouse out hide line, circles and text
+              Select(".mouse-line").style("opacity", "0");
+              selectAll(".focus").style("display", "none");
+            })
+            .on('mouseover', function () { // on mouse in show line, circles and text
+              Select(".mouse-line").style("opacity", "1");
+              selectAll(".focus").style("display", null); 
+            })
+            .on('mousemove', function (event) { // update tooltip content, line, circles and text when mouse moves
+        
+            var mouse = pointer(event);
+        
+              Select(".mouse-line")
+                .attr("d", function() {
+                    var d = "M" + mouse[0] + "," + height;
+                    d += " " + mouse[0] + "," + 0;
+                    return d;
+                });
+
+                let x0 = x.invert(mouse[0]),
+                ipm = bisectDate(mappedObject.pm, x0, 1),
+                d0pm = mappedObject.pm[ipm - 1],
+                d1pm = mappedObject.pm[ipm],
+                dpm = x0 - d0pm.date > d1pm.date - x0 ? d1pm : d0pm,
+                ithp = bisectDate(mappedObject.thp, x0, 1),
+                d0thp = mappedObject.thp[ithp - 1],
+                d1thp = mappedObject.thp[ithp],
+                dthp = x0 - d0thp.date > d1thp.date - x0 ? d1thp : d0thp,
+                inoise = bisectDate(mappedObject.noise, x0, 1),
+                d0noise = mappedObject.noise[inoise - 1],
+                d1noise = mappedObject.noise[inoise],
+                dnoise = x0 - d0noise.date > d1noise.date - x0 ? d1noise : d0noise;
+
+            focusPM.attr("transform", "translate(" + x(dpm.date) + "," + y(dpm.value) + ")");
+            focusPM.select(".tooltip-date").text(dateFormatter(dpm.date));
+            focusPM.select(".tooltip-value").text(dpm.value);
+            
+            focusTHP.attr("transform", "translate(" + x(dthp.date) + "," + y(dthp.value) + ")");
+            focusTHP.select(".tooltip-date").text(dateFormatter(dthp.date));
+            focusTHP.select(".tooltip-value").text(dthp.value);
+
+            focusNoise.attr("transform", "translate(" + x(dnoise.date) + "," + y(dnoise.value) + ")");
+            focusNoise.select(".tooltip-date").text(dateFormatter(dnoise.date));
+            focusNoise.select(".tooltip-value").text(dnoise.value);
+            });
 
 
     
@@ -478,7 +548,7 @@ var legend = svgLegend.selectAll('.legend')
         console.log(selection);
         selectCountry = selection.code;
 
-            let mappedObject = dataMapper(globalJSON,selectCountry);
+            mappedObject = dataMapper(globalJSON,selectCountry);
 
             updateData(mappedObject);
 
@@ -505,96 +575,30 @@ var legend = svgLegend.selectAll('.legend')
             if (country.regions.length > 0 && country.cities.length > 0 ){
 
             rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
-                
-                // let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                // newCell.addEventListener("click", function(){zoomer(country.link)});
-                // newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-                
-
-                country.regions.forEach(function(i){
-
-                    rowBuilder1("regionsTable",i.link,i.name, i.link);
-
-                    // let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    // newCell.addEventListener("click", function(){zoomer(i.link)});
-                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-                });
-
-                country.cities.forEach(function(i){
-
-                    rowBuilder1("citiesTable",i.link,i.name, i.link);
-
-                    // let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    // newCell.addEventListener("click", function(){zoomer(i.link)});
-                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-                });
+            country.regions.forEach(function(i){rowBuilder1("regionsTable",i.link,i.name, i.link);});
+            country.cities.forEach(function(i){rowBuilder1("citiesTable",i.link,i.name, i.link);});
 
 
             }else if(country.regions.length == 0 && country.cities.length > 0 ){
 
-                            rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
-
-
-                //  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                //  newCell.addEventListener("click", function(){zoomer(country.id)});
-                //  newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-
-                country.cities.forEach(function(i){
-
-                    rowBuilder1("citiesTable",i.link,i.name, i.link);
-
-                    // let newCell = document.getElementById("citiesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    // newCell.addEventListener("click", function(){zoomer(i.link)});
-                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-                
-                });
-
+            rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
+            country.cities.forEach(function(i){rowBuilder1("citiesTable",i.link,i.name, i.link);});
 
             }else if(country.regions.length > 0 && country.cities.length == 0 ){
 
                 rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
-
-
-                //  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                //  newCell.addEventListener("click", function(){zoomer(country.id)});
-                //     newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-
-                country.regions.forEach(function(i){
-
-                     rowBuilder1("regionsTable",i.link,i.name, i.link);
-
-                    // let newCell = document.getElementById("regionsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                    // newCell.addEventListener("click", function(){zoomer(i.link)});
-                    // newCell.innerHTML=  i.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ i.link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-               
-                });
+                country.regions.forEach(function(i){rowBuilder1("regionsTable",i.link,i.name, i.link);});
 
             }else if(country.regions.length == 0 && country.cities.length == 0 ){
 
-                                rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
-
-
-                //  let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                //  newCell.addEventListener("click", function(){zoomer(country2.id)});
-                //     newCell.innerHTML=  selection.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[selection.id].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-            
-            
-                };
+                rowBuilder1("countriesTable",country.link,selection.name, link_cities_labs[selection.id].link);
+            };
 
 
 
             if (country.labs.length > 0){
                 document.getElementById("divLabs").innerHTML = labsDiv;
-                country.labs.forEach(function(i){
-
-                // let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                // newCell.addEventListener("click", function(){zoomerLab(country.id,i.lat,i.lon)});
-                // newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
-                
-                rowBuilder2("labsTable",country.id,i.lat,i.lon,i.city,i.title,i.contacts.url);
-
-
-                });
+                country.labs.forEach(function(i){rowBuilder2("labsTable",country.id,i.lat,i.lon,i.city,i.title,i.contacts.url);});
             }else{
                 document.getElementById("divLabs").innerHTML = "No local lab!";
             }
@@ -607,28 +611,13 @@ var legend = svgLegend.selectAll('.legend')
             Object.keys(link_cities_labs).forEach(function(i){
                 if (i != "default"){
 
-                let country = countries.array.find(obj => {
-                        return obj.id === i
-                        })
+                let country = countries.array.find(obj => {return obj.id === i})
+                rowBuilder1("countriesTable",country.id,country.name, link_cities_labs[i].link);    
+                }
+            });
 
+            allLabs.forEach(function(i){
 
-                rowBuilder1("countriesTable",country.id,country.name, link_cities_labs[i].link);
-
-
-                // let newCell = document.getElementById("countriesTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                // newCell.addEventListener("click", function(){zoomer(country.id)});
-                // newCell.innerHTML=  country.name + '<button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn" onclick=" window.open(\'https://'+ link_cities_labs[i].link + '.maps.sensor.community/\',\'_blank\')"> Open in new tab</button>';
-                   
-            }
-                });
-
-
-                allLabs.forEach(function(i){
-
-                // let newCell = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow().insertCell();
-                // newCell.addEventListener("click", function(){zoomerLab("world",i.lat,i.lon)});
-                // newCell.innerHTML=  i.title + '   ' + '<a href="'+ i.contacts.url +'"><button style="background-color: #4CAF50;padding: 10px;text-align: center;" class="btn">Send an Email</button></a>';
-               
                  //NO CITY NAME IN THE MAIN LAB FILE!!!!
                     
                 let newRow = document.getElementById("labsTable").getElementsByTagName('tbody')[0].insertRow(-1);
@@ -825,8 +814,7 @@ function updateData(data) {
 
  x.domain(extent(data.pm, function(d) { return d.date; }));
 
-selectAll(".axis--x")
-    .transition()
+selectAll(".axis--x").transition()
     .duration(750)
     .call(axisBottom(x));
 
@@ -845,81 +833,60 @@ let arrayTicks = [];
         data.noise.forEach(o=>{arrayTicks.push(o.value)});
     }
 
+
+xGrid.transition()
+     .duration(750)
+     .call(axisBottom(x)
+          .tickSize(-height)
+          .tickFormat(""));
+
+
 let ticks = ticker(arrayTicks);
 
 console.log(ticks);
 
-selectAll(".axis--y")
-    .transition()
+console.log(selectAll(".axis--y"));
+console.log(yAxis);
+
+selectAll(".axis--y").transition()
     .duration(750)
-  .call(axisLeft(y).tickFormat(Format(".0f")).tickValues(ticks));
-
-if (ticks == null){
-
-selectAll("#grid-y")			
-    .transition()
-    .duration(750)
-    .call(axisLeft(y)
-        .tickValues(ticks)
-        .tickSize(-width)
-        .tickFormat("")
-        );
+    .call(axisLeft(y).tickFormat(Format(".0f")).tickValues(ticks));
 
 
-
-    //   selectAll("#svgGraph").append("g")	
-    //     // .transition()
-    //     // .duration(750)		
-    //   .attr("class", "grid-y")
-    //   .attr("stroke-width","0")
-    //   .call(axisLeft(y)
-    //       .ticks(5)
-    //       .tickSize(-width)
-    //       .tickFormat(""));
-
-
-}else{
-
-console.log(ticks);
-
-selectAll("#grid-y")			
-    .transition()
+//selectAll("#grid-y")			
+yGrid.transition()
     .duration(750)
     .call(axisLeft(y)
         .tickValues(ticks)
         .tickSize(-width)
-        .tickFormat("")
-        );
+        .tickFormat(""));
 
-// selectAll(".grid-y")			
-//     .transition()
-//     .duration(750)
-//     .call(axisLeft(y)
-//         .ticks(ticks.length)
-//         .tickSize(-width)
-//         .tickFormat(""));
-}
-
-    selectAll(".grid-y line")
+selectAll(".grid-x line")
             .attr("stroke","lightgrey")
             .attr("stroke-opacity","0.7")
             .attr("stroke-width","1")
             .attr("shape-rendering","crispEdges");
 
+selectAll(".grid-y line")
+    .attr("stroke","lightgrey")
+    .attr("stroke-opacity","0.7")
+    .attr("stroke-width","1")
+    .attr("shape-rendering","crispEdges");
 
 
-selectAll("#linePM") 
-.transition()  // change the line
+
+//selectAll("#linePM") 
+linePM.transition()  // change the line
             .duration(750)
             .attr("d", valueline1(data.pm));
 
-selectAll("#lineTHP") 
-.transition()  // change the line
+//selectAll("#lineTHP") 
+lineTHP.transition()  // change the line
             .duration(750)
             .attr("d", valueline1(data.thp));
             
-selectAll("#lineNoise") 
-.transition()  // change the line
+//selectAll("#lineNoise") 
+lineNoise.transition()  // change the line
             .duration(750)
             .attr("d", valueline1(data.noise));
 
