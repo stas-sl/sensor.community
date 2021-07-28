@@ -9,10 +9,10 @@
     import * as link_cities_labs from '../../../content/link_cities_labs_formated.js';
     import {onMount} from "svelte";
     import {timeFormatLocale, timeParse, timeFormat} from 'd3-time-format';
-    import {line,curveBasis,curveBundle} from 'd3-shape';
-    import {scaleTime, scaleLinear} from 'd3-scale';
-    import {select as Select,selectAll} from 'd3-selection';
-    import {extent,max,min} from 'd3-array';
+    import {line} from 'd3-shape';
+    import {scaleTime, scaleLinear, scaleOrdinal} from 'd3-scale';
+    import {select as Select,selectAll,mouse} from 'd3-selection';
+    import {extent,max,min,bisector} from 'd3-array';
     import {axisBottom, axisLeft} from 'd3-axis';
     import {transition} from "d3-transition";
     import {format as Format} from "d3-format";
@@ -70,19 +70,16 @@
     //curve interpolations quite useless...
 
      var valueline1 = line()
-     .curve(curveBasis)
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .defined(((d) => d.value != -1));
 
      var valueline2 = line()
-     .curve(curveBasis)
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .defined(((d) => d.value != -1));
 
      var valueline3 = line()
-     .curve(curveBasis)
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); })
     .defined(((d) => d.value != -1));
@@ -90,7 +87,7 @@
 
     var margin = {top: 20, right: 10, bottom: 30, left: 50},
     width = 400 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 450 - margin.top - margin.bottom;
 
     var viewBoxValues = "0 0 "+ width + margin.left + margin.right +" "+height + margin.top + margin.bottom;
 
@@ -155,6 +152,7 @@ console.log(mappedObject.pm);
 
 
 var svg = Select("#graphCountry").append("svg")
+    .attr("id","svgGraph")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     // .attr("viewBox","0 0 300 600")
@@ -200,8 +198,17 @@ var svg = Select("#graphCountry").append("svg")
     svg.append("g")  
    .attr("transform", "translate(" + 0 + "," + height  + ")")
     .attr("class", "axis axis--x")
-    .call(axisBottom(x));           
-                           
+    .call(axisBottom(x));   
+
+      svg.append("g")			
+      .attr("class", "grid-x")
+     .attr("id", "grid-x")
+      .attr("stroke-width","0")
+      .attr("transform", "translate(" + 0 + "," + height + ")")
+      .call(axisBottom(x)
+          .tickSize(-height)
+          .tickFormat(""));
+                                 
                
     svg.append("g")
   .attr("class", "axis axis--y")
@@ -213,6 +220,147 @@ var svg = Select("#graphCountry").append("svg")
       .attr("dy", "0.71em")
       .attr("fill", "#000")
       .text("Sensors");    
+
+
+      svg.append("g")			
+      .attr("class", "grid-y")
+      .attr("id", "grid-y")
+      .attr("stroke-width","0")
+      .attr("transform", "translate(" + 0 + "," + 0 + ")")
+      .call(axisLeft(y)
+          .tickSize(-width)
+          .tickFormat(""));
+
+    selectAll(".grid-x line")
+            .attr("stroke","lightgrey")
+            .attr("stroke-opacity","0.7")
+            .attr("stroke-width","1")
+            .attr("shape-rendering","crispEdges");
+
+    selectAll(".grid-y line")
+            .attr("stroke","lightgrey")
+            .attr("stroke-opacity","0.7")
+            .attr("stroke-width","1")
+            .attr("shape-rendering","crispEdges");
+
+
+var category = ["SDS011", "BME280", "DNMS"]
+var color = scaleOrdinal()
+        .domain(category)
+        .range(["red", "blue", "green"])
+
+var svgLegend = svg.append('g')
+            .attr('class', 'gLegend')
+            .attr("transform", "translate(" + (width/2) + "," + 10 + ")");
+
+
+var legend = svgLegend.selectAll('.legend')
+          .data(category)
+          .enter().append('g')
+            .attr("class", "legend")
+            .attr("transform", function (d, i) {return "translate(0," + i * 20 + ")"});
+
+        legend.append("circle")
+            .attr("class", "legend-node")
+            .attr("cx", 0)
+            .attr("cy", 0)
+            .attr("r", 6)
+            .style("fill", d=>color(d));
+
+        legend.append("text")
+            .attr("class", "legend-text")
+            .attr("x", 6*2)
+            .attr("y", 6/2)
+            .style("fill", "black")
+            .style("font-size", 10)
+            .text(d=>d);
+
+
+
+        var tooltip = Select("#graphCountry").append("div")
+            .attr('id', 'tooltip')
+            .style('position', 'absolute')
+            .style("background-color", "#D3D3D3")
+            .style('padding', 6)
+            .style('display', 'none')
+
+         var mouseG = svg.append("g")
+            .attr("class", "mouse-over-effects");
+
+          mouseG.append("path") // create vertical line to follow mouse
+            .attr("class", "mouse-line")
+            .style("stroke", "red")
+            .style("stroke-dasharray", ("3, 3"))
+            .style("stroke-width", "2")
+            .style("opacity", "0");
+
+
+
+        //   var lines = document.getElementsByClassName('line');
+
+
+        //   var mousePerLine = mouseG.selectAll('.mouse-per-line')
+        //     .data(mappedObject.pm)
+        //     .enter()
+        //     .append("g")
+        //     .attr("class", "mouse-per-line");
+
+        //   mousePerLine.append("circle")
+        //     .attr("r", 4)
+        //     .style("stroke", function (d) {
+        //       return "red"
+        //     })
+        //     .style("fill", "red")
+        //     .style("stroke-width", "1")
+        //     .style("opacity", "0");
+
+        //   mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
+        //     .attr('width', width) 
+        //     .attr('height', height)
+        //     .attr('fill', 'none')
+        //     .attr('pointer-events', 'all')
+        //     .on('mouseout', function () { // on mouse out hide line, circles and text
+        //       d3.select(".mouse-line")
+        //         .style("opacity", "0");
+        //       d3.selectAll(".mouse-per-line circle")
+        //         .style("opacity", "0");
+        //       d3.selectAll(".mouse-per-line text")
+        //         .style("opacity", "0");
+        //       d3.selectAll("#tooltip")
+        //         .style('display', 'none')
+
+        //     })
+        //     .on('mouseover', function () { // on mouse in show line, circles and text
+        //       d3.select(".mouse-line")
+        //         .style("opacity", "1");
+        //       d3.selectAll(".mouse-per-line circle")
+        //         .style("opacity", "1");
+        //       d3.selectAll("#tooltip")
+        //         .style('display', 'block')
+        //     })
+        //     .on('mousemove', function () { // update tooltip content, line, circles and text when mouse moves
+        //       var mouse = mouse(this);
+
+        //       d3.selectAll(".mouse-per-line")
+        //         .attr("transform", function (d, i) {
+        //           var xDate = x.domain(extent(mappedObject.pm, function(d) { return d.date; })).invert(mouse[0]) // use 'invert' to get date corresponding to distance from mouse position relative to svg
+        //           var bisect = bisector(function (d) { return d.date; }).left // retrieve row index of date on parsed csv
+        //           var idx = bisect(d.value, xDate);
+
+        //           d3.select(".mouse-line")
+        //             .attr("d", function () {
+        //               var data = "M" + xScale(d.value[idx].date) + "," + (height);
+        //               data += " " + xScale(d.value[idx].date) + "," + 0;
+        //               return data;
+        //             });
+        //           return "translate(" + xScale(d.value[idx].date) + "," + yScale(d.value[idx].premium) + ")";
+
+        //         });
+
+        //       updateTooltipContent(mouse, mappedObject.pm)
+
+        //     });
+
 
     
     Select("#linkGraph").attr("href","https://stats.sensor.community/sensors_per_country/?simple=yes&country=WORLD")
@@ -247,6 +395,74 @@ var svg = Select("#graphCountry").append("svg")
     //document.getElementById('map-frame2').addEventListener("zoomend", getLink);
 
     }
+
+
+
+
+
+    //  function updateTooltipContent(mouse, data) {
+
+    //     sortingObj = []
+    //     data.map(d => {
+    //       var xDate = xScale.invert(mouse[0])
+    //       var bisect = bisector(function (d) { return d.date; }).left
+    //       var idx = bisect(d.value, xDate)
+    //       sortingObj.push({key: d.value[idx].vehicle_class, premium: d.value[idx].premium, bidding_no: d.value[idx].bidding_no, year: d.values[idx].date.getFullYear(), month: monthNames[d.values[idx].date.getMonth()]})
+    //     })
+
+    //     sortingObj.sort(function(x, y){
+    //        return d3.descending(x.premium, y.premium);
+    //     })
+
+    //     var sortingArr = sortingObj.map(d=> d.key)
+
+    //     var res_nested1 = res_nested.slice().sort(function(a, b){
+    //       return sortingArr.indexOf(a.key) - sortingArr.indexOf(b.key) // rank vehicle category based on price of premium
+    //     })
+
+    //     tooltip.html(sortingObj[0].month + "-" + sortingObj[0].year + " (Bidding No:" + sortingObj[0].bidding_no + ')')
+    //       .style('display', 'block')
+    //       .style('left', d3.event.pageX + 20)
+    //       .style('top', d3.event.pageY - 20)
+    //       .style('font-size', 11.5)
+    //       .selectAll()
+    //       .data(res_nested1).enter() // for each vehicle category, list out name and price of premium
+    //       .append('div')
+    //       .style('color', d => {
+    //         return color(d.key)
+    //       })
+    //       .style('font-size', 10)
+    //       .html(d => {
+    //         var xDate = xScale.invert(mouse[0])
+    //         var bisect = d3.bisector(function (d) { return d.date; }).left
+    //         var idx = bisect(d.values, xDate)
+    //         return d.key.substring(0, 3) + " " + d.key.slice(-1) + ": $" + d.values[idx].premium.toString()
+    //       })
+    //   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     function selectedCountry(e) {
 
@@ -638,7 +854,59 @@ selectAll(".axis--y")
     .duration(750)
   .call(axisLeft(y).tickFormat(Format(".0f")).tickValues(ticks));
 
-console.log(selectAll("#linePM"));
+if (ticks == null){
+
+selectAll("#grid-y")			
+    .transition()
+    .duration(750)
+    .call(axisLeft(y)
+        .tickValues(ticks)
+        .tickSize(-width)
+        .tickFormat("")
+        );
+
+
+
+    //   selectAll("#svgGraph").append("g")	
+    //     // .transition()
+    //     // .duration(750)		
+    //   .attr("class", "grid-y")
+    //   .attr("stroke-width","0")
+    //   .call(axisLeft(y)
+    //       .ticks(5)
+    //       .tickSize(-width)
+    //       .tickFormat(""));
+
+
+}else{
+
+console.log(ticks);
+
+selectAll("#grid-y")			
+    .transition()
+    .duration(750)
+    .call(axisLeft(y)
+        .tickValues(ticks)
+        .tickSize(-width)
+        .tickFormat("")
+        );
+
+// selectAll(".grid-y")			
+//     .transition()
+//     .duration(750)
+//     .call(axisLeft(y)
+//         .ticks(ticks.length)
+//         .tickSize(-width)
+//         .tickFormat(""));
+}
+
+    selectAll(".grid-y line")
+            .attr("stroke","lightgrey")
+            .attr("stroke-opacity","0.7")
+            .attr("stroke-width","1")
+            .attr("shape-rendering","crispEdges");
+
+
 
 selectAll("#linePM") 
 .transition()  // change the line
