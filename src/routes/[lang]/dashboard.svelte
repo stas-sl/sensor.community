@@ -95,19 +95,13 @@
     })
     .defined((d) => d.value != -1);
 
-  var margin = { top: 20, right: 10, bottom: 30, left: 50 },
-    width = 400 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+  var margin = { top: 20, right: 10, bottom: 30, left: 50 };
 
-  var viewBoxValues =
-    "0 0 " +
-    width +
-    margin.left +
-    margin.right +
-    " " +
-    height +
-    margin.top +
-    margin.bottom;
+   var  width = 300 - margin.left - margin.right;
+   var  height = 400 - margin.top - margin.bottom;
+
+
+  var viewBoxValues = "0 0 " + (height + margin.top + margin.bottom) + " " + (width + margin.left + margin.right + 80);
 
   var x = scaleTime().range([0, width]);
   var y = scaleLinear().range([height, 0]);
@@ -129,6 +123,7 @@
     focusPM,
     focusTHP,
     focusNoise,
+    tooltip,
     overlay;
 
   var bisectDate = bisector(function (d) {
@@ -138,6 +133,14 @@
   var mappedObject;
 
   if (process.browser) {
+
+
+  // var divWidth = parseInt(Select("#graphCountry").style("width"));
+  // var divHeight = parseInt(Select("#graphCountry").style("height"));
+
+  // console.log(divWidth);
+  // console.log(divHeight);
+
     //it will load 5.7 MB each time...
 
     fetch(urlGlobalJSON)
@@ -180,9 +183,9 @@
         svg = Select("#graphCountry")
           .append("svg")
           .attr("id", "svgGraph")
-          .attr("width", width + margin.left + margin.right + 70)
-          .attr("height", height + margin.top + margin.bottom)
-          // .attr("viewBox","0 0 300 600")
+          // .attr("width", width + margin.left + margin.right + 80)
+          // .attr("height", height + margin.top + margin.bottom)
+          .attr("viewBox",viewBoxValues)
           .append("g")
           .attr(
             "transform",
@@ -374,64 +377,12 @@
 
         focusPM.append("circle").attr("r", 4).style("fill", "red");
 
-        focusPM
-          .append("rect")
-          .attr("class", "tooltip")
-          .attr("width", 70)
-          .attr("height", 30)
-          .attr("x", 10)
-          .attr("y", -22)
-          .attr("rx", 4)
-          .attr("ry", 4)
-          .style("fill", "white")
-          .style("stroke", "#000");
-
-        focusPM
-          .append("text")
-          .style("font-size", 10)
-          .attr("class", "tooltip-date")
-          .attr("x", 15)
-          .attr("y", -10);
-
-        focusPM
-          .append("text")
-          .style("font-size", 10)
-          .attr("class", "tooltip-value")
-          .attr("x", 15)
-          .attr("y", 5);
-
         focusTHP = svg
           .append("g")
           .attr("class", "focus")
           .style("display", "none");
 
         focusTHP.append("circle").attr("r", 4).style("fill", "blue");
-
-        focusTHP
-          .append("rect")
-          .attr("class", "tooltip")
-          .attr("width", 70)
-          .attr("height", 30)
-          .attr("x", 10)
-          .attr("y", -22)
-          .attr("rx", 4)
-          .attr("ry", 4)
-          .style("fill", "white")
-          .style("stroke", "#000");
-
-        focusTHP
-          .append("text")
-          .style("font-size", 10)
-          .attr("class", "tooltip-date")
-          .attr("x", 15)
-          .attr("y", -10);
-
-        focusTHP
-          .append("text")
-          .style("font-size", 10)
-          .attr("class", "tooltip-value")
-          .attr("x", 15)
-          .attr("y", 5);
 
         focusNoise = svg
           .append("g")
@@ -440,11 +391,16 @@
 
         focusNoise.append("circle").attr("r", 4).style("fill", "green");
 
-        focusNoise
+        tooltip = svg
+          .append("g")
+          .attr("class", "focus")
+          .style("display", "none");
+
+        tooltip
           .append("rect")
           .attr("class", "tooltip")
-          .attr("width", 70)
-          .attr("height", 30)
+          .attr("width", 80)
+          .attr("height", 50)
           .attr("x", 10)
           .attr("y", -22)
           .attr("rx", 4)
@@ -452,19 +408,34 @@
           .style("fill", "white")
           .style("stroke", "#000");
 
-        focusNoise
+        tooltip
           .append("text")
           .style("font-size", 10)
           .attr("class", "tooltip-date")
           .attr("x", 15)
           .attr("y", -10);
 
-        focusNoise
+        tooltip
           .append("text")
           .style("font-size", 10)
-          .attr("class", "tooltip-value")
+          .attr("class", "tooltip-value-pm")
           .attr("x", 15)
           .attr("y", 5);
+
+        tooltip
+          .append("text")
+          .style("font-size", 10)
+          .attr("class", "tooltip-value-thp")
+          .attr("x", 15)
+          .attr("y", 15);
+        
+        tooltip
+          .append("text")
+          .style("font-size", 10)
+          .attr("class", "tooltip-value-noise")
+          .attr("x", 15)
+          .attr("y", 25);
+        
 
         overlay = svg
           .append("rect") // append a rect to catch mouse movements on canvas
@@ -506,28 +477,36 @@
               inoise = bisectDate(mappedObject.noise, x0, 1),
               d0noise = mappedObject.noise[inoise - 1],
               d1noise = mappedObject.noise[inoise],
-              dnoise = x0 - d0noise.date > d1noise.date - x0 ? d1noise : d0noise;
+              dnoise = x0 - d0noise.date > d1noise.date - x0 ? d1noise : d0noise,
+              itooltip = bisectDate(mappedObject.pm, x0, 1),
+              d0tooltip = mappedObject.pm[itooltip - 1],
+              d1tooltip = mappedObject.pm[itooltip],
+              dtooltip = x0 - d0tooltip.date > d1thp.date - x0 ? d1tooltip : d0tooltip;
 
             focusPM.attr(
               "transform",
               "translate(" + x(dpm.date) + "," + y(dpm.value) + ")"
             );
-            focusPM.select(".tooltip-date").text(dateFormatter(dpm.date));
-            focusPM.select(".tooltip-value").text(dpm.value);
 
             focusTHP.attr(
               "transform",
               "translate(" + x(dthp.date) + "," + y(dthp.value) + ")"
             );
-            focusTHP.select(".tooltip-date").text(dateFormatter(dthp.date));
-            focusTHP.select(".tooltip-value").text(dthp.value);
 
             focusNoise.attr(
               "transform",
               "translate(" + x(dnoise.date) + "," + y(dnoise.value) + ")"
             );
-            focusNoise.select(".tooltip-date").text(dateFormatter(dnoise.date));
-            focusNoise.select(".tooltip-value").text(dnoise.value);
+
+            tooltip.attr(
+              "transform",
+              "translate(" + x(dtooltip.date) + "," + mouse[1] + ")"
+            );
+
+            tooltip.select(".tooltip-date").text(dateFormatter(dpm.date));
+            tooltip.select(".tooltip-value-pm").text("SDS011: " + dpm.value);
+            tooltip.select(".tooltip-value-thp").text("BME280: " + dthp.value);
+            tooltip.select(".tooltip-value-noise").text("DNMS: " + dnoise.value);
           });
 
         Select("#linkGraph").attr(
