@@ -98,7 +98,7 @@
   var margin = { top: 20, right: 10, bottom: 30, left: 50 };
 
    var  width = 300 - margin.left - margin.right;
-   var  height = 400 - margin.top - margin.bottom;
+   var  height = 380 - margin.top - margin.bottom;
 
 
   var viewBoxValues = "0 0 " + (height + margin.top + margin.bottom) + " " + (width + margin.left + margin.right + 80);
