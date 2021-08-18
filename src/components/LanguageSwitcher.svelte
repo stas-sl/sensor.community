@@ -1,7 +1,6 @@
 <script>
     import initI18n from "../utils/initI18n";
     import {stores} from "@sapper/app";
-    import {flag} from "country-emoji"
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -56,23 +55,7 @@
                 {#each langauges as lang}
                     <a href="{`${lang}/${pathWithoutLang}`}" on:click={menuToggle}
                        class="uppercase inline-block py-3 px-4 text-brand-black rounded-lg font-semibold hover:bg-gray-200 hover:text-gray-700">
-                        {#if lang === "en"}
-                            {flag("gb")}
-                        {:else if lang === "ja"}
-                            {flag("jp")}
-                        {:else if lang === "da"}
-                            {flag("dk")}
-                        {:else if lang === "el"}
-                            {flag("gr")}
-                        {:else if lang === "zh"}
-                            {flag("cn")}
-                        {:else if lang === "et"}
-                            {flag("ee")}
-                        {:else if lang === "sl"}
-                            {flag("si")}
-                        {:else}
-                            {flag(lang)}
-                        {/if} <span class="ml-1">{lang}</span></a>
+                    {lang}</a>
                 {/each}
             </div>
             <div class="hidden rounded-b-lg md:block p-8 bg-gray-100">

@@ -187,12 +187,10 @@
     "mediakit-download": "download media kit",
     "mediakit-press": "If you are a member of the press and can't find something you need or you want to speak with someone from Sensor Community - please contact us at ",
     "mediakit-press-page": "press page",
-    "mediakit-description": "If you are a member of the press and can't find something you need-or you want to speak with someone from Sensor Community - please contact us at ",
     "mediakit-logos": "Logos",
     "mediakit-colors": "Colors",
     "mediakit-colors-primary": "Primary colors",
-    "mediakit-colors-extended": "Expanded colors",
-    "mediakit-download": "download the press kit"
+    "mediakit-colors-extended": "Expanded colors"
   },
   "press": {
     "metaTitle": "Press",

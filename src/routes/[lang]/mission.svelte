@@ -265,18 +265,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-10 mt-12">
-                        <div class="bg-brand-green rounded-lg shadow-md">
-                            <div class="relative p-20 flex justify-center text-brand-white">
-                                #084945
-                            </div>
-                        </div>
-                        <div class="bg-brand-yellow rounded-lg shadow-md">
-                            <div class="relative p-20 flex justify-center text-brand-white">
-                                #E9A135
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="grid grid-cols-3 gap-10 mt-12">-->
+<!--                        <div class="bg-brand-greenPastel rounded-lg shadow-md">-->
+<!--                            <div class="relative p-20 flex justify-center text-brand-white">-->
+<!--                                #084945-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="bg-brand-yellow rounded-lg shadow-md">-->
+<!--                            <div class="relative p-20 flex justify-center text-brand-white">-->
+<!--                                #E9A135-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="bg-brand-yellow rounded-lg shadow-md">-->
+<!--                            <div class="relative p-20 flex justify-center text-brand-white">-->
+<!--                                #E9A135-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
             <div class="relative overflow-hidden">
