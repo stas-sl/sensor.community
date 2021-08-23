@@ -226,8 +226,8 @@
                     </a>
                 </div>
                 <div class="relative mx-auto">
-                    <div class="mt-10 text-center">
-                        <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
+                    <div class="my-10 text-center">
+                        <dl class="grid md:grid-cols-4 grid-cols-2 gap-4">
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.sensors)}</dd>
                                 <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-activeSensors')}</dt>
@@ -248,10 +248,6 @@
                                 <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-communityLabs')}</dt>
                             </div>
 
-                            <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.commits)}</dd>
-                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-commits')}</dt>
-                            </div>
                         </dl>
                     </div>
                 </div>
@@ -300,29 +296,21 @@
 <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 py-16 lg:max-w-7xl">
     <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
         <div class="mt-12 mb-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-            <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                <img alt="Workcation" class="max-h-16"
+            <div class="col-span-1 flex justify-center py-8 px-8">
+                <img alt="JRC logo" class="max-h-20"
                      src="images/partner/jrc.png">
             </div>
-            <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                <img alt="Mirage" class="max-h-16"
+            <div class="col-span-1 flex justify-center py-8 px-8">
+                <img alt="OGC logo" class="max-h-20"
                      src="images/partner/ogc.png">
             </div>
-            <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                <img alt="Tuple" class="max-h-16"
+            <div class="col-span-1 flex justify-center py-8 px-8">
+                <img alt="RIVM logo" class="max-h-20"
                      src="images/partner/rivm.png">
             </div>
-            <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                <img alt="Laravel" class="max-h-16"
-                     src="images/partner/bosch.png">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                <img alt="Tuple" class="max-h-16"
+            <div class="col-span-1 flex justify-center py-8 px-8">
+                <img alt="Air Bulgaria logo" class="max-h-20"
                      src="images/partner/air-bulgaria.png">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                <img alt="Laravel" class="max-h-16"
-                     src="images/partner/bosch.png">
             </div>
         </div>
         <div>
