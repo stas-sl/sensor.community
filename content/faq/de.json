@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "title": "Ich möchte einen Feinstaubsensor kaufen. Was muss ich tun?",
+    "content": "Mit der Einkaufsliste können Sie die Einzelteile selbst beim Hersteller bestellen. Bei uns ist dies leider nicht möglich. In unserem <a href=\"de\/sensors\/airrohr/>Leitfaden finden Sie die Einkaufsliste</a>",
+    "linkNames": [
+      "UN@HABITAT für eine bessere urbane Zukunft"
+    ],
+    "links": [
+      "https://unhabitat.org/un-habitat-convenes-virtual-workshop-on-improving-air-quality-and-public-space-monitoring-in"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Was ist PM1, PM2.5 und PM10?",
+    "content": "PM bedeutet Particulate Matter, die Partikelgröße in µm <ul class='py-4'> <li>PM10 = 10 μm</li><li>PM2,5 = 2,5 μm</li></ul> Je kleiner der Feinstaub, desto gefährlicher für die Gesundheit.",
+    "links": [
+      "link1",
+      "link2"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Lebensdauer des Feinstaubsensors SDS011",
+    "content": "Der von uns verwendete SDS011-Sensor hat laut Datenblatt eine Lebensdauer im Dauerbetrieb von ca. 8.000 Stunden. Unsere Firmware schaltet den Sensor daher nur 20 Sekunden pro Messintervall von 150 Sekunden ein. Das macht die theoretische Lebensdauer 7,5 mal länger. Praktisch sollte das für ca. 4-5 Jahre Betrieb reichen. Messintervall 150 Sekunden (2,5 Minuten) <ul class='py-4'> <li>8.000 Stunden = 0,913 Jahre</li><li>7,5 x 0,913 Jahre = 6,85 Jahre (theoretische Lebensdauer)</li></ul> Messintervall 240 Sekunden (4 Minuten) 12 x 0,913 Jahre = 10,96 Jahre (theoretische Lebensdauer)",
+    "links": ["link1"]
+  },
+  {
+    "id": "4",
+    "title": "Energie, Wifi und Datenvolumen",
+    "content": "Kostenkalkulation: Der Feinstaubsensor als Gerät benötigt ca. 1 Watt, wenn er das ganze Jahr laufen würde, wären das (1W x 24h x 365 Tage)/ 1000 = 8,76 kWh also ca. 2,50€/ Jahr.<p>Energie: Das USB-Kabel kann auch auf ca. 6-7m verlängert werden, da nur Spannung darüber läuft und keine Daten. An einer vernünftigen Batterie- und Solarlösung wird gearbeitet. Wer eine bezahlbare Lösung für einen Einsatz mit mindestens einer Woche findet, kann sich bei uns melden.<p/><p>WLAN: muss immer an sein, der ESP8266 mit unserer Firmware hat keinen Speicher. Wenn das WLAN über Nacht ausgeschaltet wird, gibt es keine Daten.<p/><p>Datenmenge: ist sehr gering, es werden nur die ID, die Uhrzeit und die 4 Daten als Text übertragen.<p/>",
+    "links": ["link1"]
+  },
+  {
+    "id": "5",
+    "title": "Der Wifi-Name / das Passwort wurde geändert",
+    "content": "In diesem Fall sollte der Sensor nach einem Neustart (kurz vom Strom trennen) wieder als WLAN-Router gefunden werden. Dann können die Zugangsdaten wie bei der ersten Konfiguration (\"Konfiguration des Feinstaubsensors\") geändert werden.",
+    "links": ["link1"]
+  },{
+  "id": "6",
+  "title": "Zugriff auf Sensordaten",
+  "content": "Wir stellen die Daten der Sensoren als JSON-Dateien zur Verfügung, die jede Minute aktualisiert werden. Alle Sensorwerte der letzten 5 Minuten -> http://api.luftdaten.info/static/v1/data.json Werte der letzten 5 Minuten eines bestimmten Sensors -> http://api.luftdaten.info/v1/sensor/sensorid/ Für WordPress gibt es ein Plugin zur Anzeige der Werte eines oder mehrerer Sensoren (von Bleeptrack):https:/*de.wordpress.org/plugins/live-widget-luftdaten/ Für FHEM gibt es ein Modul zum Einlesen der Daten der Sensoren: https://fhem. de/commandref_DE.html#LuftdatenInfo Es gibt auch ein Plugin für \"Home Assistant\", die Konfigurationsanleitung findet sich hier: https://home-assistant.io/components/sensor.luftdaten/ Ein Homebridge-Modul findet sich auf Github: https://github.com/toto/homebridge-airrohr Vom Sensor selbst können die Daten als JSON über die Adresse http://{ip-of-the-sensor}/data.json oder http://feinstaubsensor-{nodemcu-id}.local abgerufen werden. Die IP ist die IP des Sensors im lokalen Netz, nicht die 192.168.4.1, die für die Erstkonfiguration verwendet wird. Die 2. Variante sollte normalerweise unter Linux und MacOS funktionieren. Für Windows muss eventuell eine Software installiert werden. Siehe dazu den Punkt 'Zugang zum Sensor'",
+  "links": ["link1"]
+},
+  {
+    "id": "7",
+    "title": "Zugriff auf den Sensor zur Änderung der Konfiguration",
+    "content": "Wenn der Sensor eine Verbindung zum WLAN aufbauen kann, ist er nur über das entsprechende Netzwerk zu erreichen. Als Adresse können Sie die IP-Adresse des Sensors nehmen, die Sie z.B. über den Router ermitteln können. Alternativ unterstützt der Sensor den Zugriff über die Adresse http://feinstaubsensor-{sensorID}.local/ . sensorID ist die Nummer, die wir auch bei der Registrierung des Sensors erhalten haben. Leider wird diese Adresse nicht von allen Betriebssystemen ohne zusätzliche Software unterstützt. Die Adresse sollte auf macOS, Linux (über den Avahi-Dienst) und aktuellen Versionen von Windows 10 funktionieren. Ebenso sollte sie funktionieren, wenn Apple iTunes oder Skype auf Windows 7 installiert sind. Mit den 'Bonjour-Druckdiensten für Windows' von Apple gibt es einen Download von nur 5MB, nach dem die Adresse ebenfalls abgerufen werden kann.",
+    "links": ["link1"]
+  },
+  {
+    "id": "8",
+    "title": "The configuration page asks for username and password",
+    "content": "Here probably the option 'BasicAuth' was activated by mistake. Then the default values should work as login: <p> User: admin </p/><p>assword: feinstaub <p/> Afterwards the option 'BasicAuth' should be deactivated again in the configuration.",
+    "links": ["link1"]
+  },
+  {
+    "id": "9",
+    "title": "Which servers and ports are used",
+    "content": "In the default configuration the following servers are used: <ul> <li>api.airdata.info</li> <li>firmware.airdata.info</li> <li>api.sensor.community</li> <li>firmware.sensor.community</li> <li>api-rrd.madavi.de</li> <li>www.madavi.de</li> <li>pool.ntp. org</li> </ul> <ul> <li>The following ports should be enabled for them:</li> <li>80/TCP HTTP</li> <li>443/TCP HTTPS</li> <li>123/UDP NTP (Network Time Protocol)</li> </ul> <p> If you want to use advanced options like the Custom API or OpenSenseMap, you have to enable the corresponding servers and ports as well.</p>",
+    "links": ["link1"]
+  },
+  {
+    "id": "10",
+    "title": "Andere Sensoren anschließen",
+    "content": "Es können weitere Sensoren angeschlossen werden. Derzeit unterstützt die Sensorsoftware die folgenden Sensoren: PPD42NS (Feinstaub, der erste von uns verwendete Sensor). SDS011, SDS018, SDS021 (Feinstaub, der SDS011 ist unser aktueller Sensor) BMP180. Nach dem Anschluss der Sensoren müssen diese in der Konfiguration aktiviert werden. Danach ist ein Neustart notwendig, da die Sensoren beim Start entsprechend initialisiert werden müssen.",
+    "links": ["link1"]
+  },
+  {
+    "id": "11",
+    "title": "Verbinde ein Display",
+    "content": "Displays mit dem Treiberchip SSD1306 werden über I2C (serieller Bus, mehrere Komponenten teilen sich die gleichen Anschlusspins, Beschreibung auf <a href='https://de.wikipedia.org/wiki/I%C2%B2C' target='_blank'>Wikipedia</a>) angeschlossen: SDA VCC Pin 3V3GND Pin GND, SCL Pin D4 (GPIO2), Pin D3 (GPIOO). Nach dem Anschluss muss das Display noch in der Konfiguration aktiviert werden. Danach ist ein Neustart erforderlich, da das Display beim Start entsprechend initialisiert werden muss. LCD-Displays (LCD1602) mit I2C-Anschluss werden auf die gleiche Weise angeschlossen und konfiguriert. Je nach verwendeter Version muss nur der VCC-Anschluss an 5V oder 3V angeschlossen werden. Wenn das Display nichts anzeigt, sollte zunächst die I2C-Adresse des LCDs überprüft werden. Danach kann man versuchen, den Kontrast durch Drehen des meist vorhandenen Potentiometers so zu verändern, dass der Text sichtbar wird.",
+    "links": ["link1"]
+  },
+  {
+    "id": "12",
+    "title": "3D-Druckmodelle für Halterungen, Gehäuse,...,",
+    "content": "<ul><li><a href='' target='_blank'></a></li><li><a href='https://www.thingiverse.com/thing:2423413' target='_blank'>Halterung mit Saugnäpfen (3D-Druck) Gehäuse (3D-Druck)</a></li><li><a href='https://www.thingiverse.com/thing:2613387' target='_blank'>Gehäuse (3D-Druck)</a></li><li><a href='' target='_blank'></a></li><li><a href='https://www.thingiverse. com/thing:2763916' target='_blank'>Gehäuse für Sensor mit LCD-Display (3D-Druck)</a></li><li><a href='https://fablab-wuerzburg.dozuki.com/' target='_blank'>Gehäuse von FabLab Würzburg (3D-Druck)</a></li><li><a href='https://www.thingiverse.com/thing:2775946' target='_blank'>Montagerahmen für Einbau in Aufputzdose (3D-Druck)</a></li></ul>",
+    "links": ["link1"]
+  },
+  {
+    "id": "13",
+    "title": "Warum schwanken die Werte im Vergleich zu den offiziellen Angaben?",
+    "content": "Bitte beachten Sie zum Vergleich mit den offiziellen Messwerten: Die offiziellen Werte sind in der Regel Tagesmittelwerte. Das OK-Lab misst in 2 1/2 Minuten-Intervallen, daher schwanken die Werte viel stärker.\n Die Werte erheben keinen Anspruch auf Genauigkeit. Der verwendete Sensor misst PM2,5 und der PM10-Wert ist geschätzt und kann daher ungenau sein. Einzelne Stationen können unplausible Werte liefern. Bei hoher Luftfeuchtigkeit, insbesondere bei Nebel, können die Werte deutlich höher sein, da die offiziellen Stationen den getrockneten Feinstaub messen. Die durch Feuchtigkeit kondensierten Feinstaubpartikel können jedoch die negative gesundheitliche Wirkung von Feinstaub, insbesondere in Smogschichten, verstärken.\n In dieser Hinsicht liefern die OK-Laborwerte wichtige Zusatzinformationen. Allerdings ist die Skala µg/m3 für solche Schichten nicht direkt anwendbar, sondern kann nur als Orientierung dienen. Eine Feuchtekorrektur ist in Vorbereitung. Ziel ist es, einen zusätzlichen Wert zur Verfügung zu stellen, der besser mit den offiziellen Werten vergleichbar ist.\n",
+    "links": ["link1"]
+  },
+  {
+    "id": "14",
+    "title": "Holt die API den neuesten Wert aus dem System? Ist es möglich, die historischen Datenpunkte anzufordern?",
+    "content": "Mit mehr als 13 Millionen Datenpunkten pro Tag und als freiwilliges Projekt können wir uns kein Serversystem leisten, das einen zufälligen Zugriff auf die Daten erlaubt. Aber wir haben einige \"Endpunkte\", um die neuesten Daten (über die letzten 5 Minuten) zu erhalten: 'https://github.com/opendata-stuttgart/meta/wiki/EN-APIs'",
+    "links": ["link1"]
+  }
+]
+
