@@ -4,7 +4,7 @@ title: Registreeri
 
 ### Registreeri ennast
 
-Mine [devices.sensor.community](https://devices.sensor.community/), et registreerida oma seade ja saada osa avatud andmevõrgustikust.
+Mine [devices.sensor.community](https://devices-test.sensor.community/register), et registreerida oma seade ja saada osa avatud andmevõrgustikust.
 
 
 ### Registreeri oma seade

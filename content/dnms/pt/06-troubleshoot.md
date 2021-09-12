@@ -8,7 +8,7 @@ Digite o seguinte endereço no navegador com seus próprios dados:
 
 O [ID] também pode ser pesquisado no campo de entrada no canto superior esquerdo [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
 
-* O sensor está registrado via [https://devices.sensor.community/](https://devices.sensor.community/) e está visível no mapa?
+* O sensor está registrado via [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) e está visível no mapa?
     * O nível do sinal WLAN era fraco no passado?
         aqui está o log do sinal do lado do servidor: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
         

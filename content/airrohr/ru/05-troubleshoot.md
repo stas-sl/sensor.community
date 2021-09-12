@@ -8,7 +8,7 @@ title: Устранение неполадок
 
 И[ID] также можно найти в поле ввода в верхнем левом углу этой страницы: [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Зарегистрирован ли датчик через [https://devices.sensor.community/](https://devices.sensor.community/) и виден ли он на карте?
+* Зарегистрирован ли датчик через [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) и виден ли он на карте?
 * Был ли в прошлом слабый уровень сигнала WLAN?
     Здесь находится сервер регистрации сигналов: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

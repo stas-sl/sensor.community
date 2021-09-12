@@ -4,7 +4,7 @@ title: Registratie
 
 ### Maak een account
 
-Ga naar [devices.sensor.community](https://devices.sensor.community/) om een account te maken en onderdeel te worden van het open data netwerk.
+Ga naar [devices.sensor.community](https://devices-test.sensor.community/register) om een account te maken en onderdeel te worden van het open data netwerk.
 
 
 ### Register je apparaat

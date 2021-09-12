@@ -4,7 +4,7 @@ title: Register
 
 ### Register yourself
 
-Go to [devices.sensor.community](https://devices.sensor.community/) to register your device and become a part of the open data network.
+Go to [devices.sensor.community](https://devices-test.sensor.community/register) to register your device and become a part of the open data network.
 
 
 ### Registriere dein Gerät

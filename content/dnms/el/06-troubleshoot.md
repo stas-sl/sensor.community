@@ -8,7 +8,7 @@ title: Αντιμετώπιση προβλημάτων
 
 Το [ID] μπορεί επίσης να αναζητηθεί στο πεδίο εισαγωγής στην επάνω αριστερή γωνία [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
 
-* Έχει καταχωρηθεί ο αισθητήρας μέσω [https://devices.sensor.community/](https://devices.sensor.community/) και είναι ο αισθητήρας ορατός στο χάρτη;
+* Έχει καταχωρηθεί ο αισθητήρας μέσω [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) και είναι ο αισθητήρας ορατός στο χάρτη;
   * Το επίπεδο σήματος WLAN ήταν αδύναμο στο παρελθόν;
     Εδώ είναι το αρχείο καταγραφής σήματος από την πλευρά του διακομιστή: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

@@ -4,7 +4,7 @@ title: Register
 
 ### Zarejestruj się
 
-Wejdź na stronę [devices.sensor.community](https://devices.sensor.community/), aby zarejestrować swoje urządzenie i stać się częścią otwartej sieci danych.
+Wejdź na stronę [devices.sensor.community](https://devices-test.sensor.community/register), aby zarejestrować swoje urządzenie i stać się częścią otwartej sieci danych.
 
 
 ### Zarejestruj swoje urządzenie

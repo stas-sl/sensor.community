@@ -8,7 +8,7 @@ Do prohlížeče zadejte svoje vlastní údaje v následujícím formátu::
 
 [ID] můžete nalézt na následující stránce [https://www.madavi.de/sensor/graph.php](https://www.madavi.de/sensor/graph.php)
 
-* Je senzor zaregistrovaný prostřednictvím [https://devices.sensor.community/](https://devices.sensor.community/) a je senzor viditelný na mapě?
+* Je senzor zaregistrovaný prostřednictvím [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) a je senzor viditelný na mapě?
     * Byla intenzita WIFi signálu v minulosti nízká? Zde je stránka s log souborem signálu: `https://www.madavi.de/sensor/signal.php?sensor=esp8266-[ID]`
 
 

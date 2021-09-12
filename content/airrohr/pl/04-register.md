@@ -4,7 +4,7 @@ title: Register
 
 ### Utwórz konto
 
-Wejdź na stronę [devices.sensor.community](https://devices.sensor.community/), aby utworzyć konto i stać się częścią otwartej sieci danych.
+Wejdź na stronę [devices.sensor.community](https://devices-test.sensor.community/register), aby utworzyć konto i stać się częścią otwartej sieci danych.
 
 
 ### Zarejestruj swoje urządzenie

@@ -4,7 +4,7 @@ title: Regisztráció
 
 ### Regisztráld magad
 
-Menjen a [devices.sensor.community](https://devices.sensor.community/) oldalra, hogy regisztrálja készülékét, és a nyílt adathálózat részévé váljon.
+Menjen a [devices.sensor.community](https://devices-test.sensor.community/register) oldalra, hogy regisztrálja készülékét, és a nyílt adathálózat részévé váljon.
 
 
 ### Regisztrálja az eszközét

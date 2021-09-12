@@ -4,7 +4,7 @@ title: Regisztráció
 
 ### Fiók létrehozása
 
-Menjen a [devices.sensor.community](https://devices.sensor.community/) oldalra, hogy fiókot hozzon létre, és a nyílt adathálózat részévé váljon.
+Menjen a [devices.sensor.community](https://devices-test.sensor.community/register) oldalra, hogy fiókot hozzon létre, és a nyílt adathálózat részévé váljon.
 
 
 ### Regisztrálja az eszközt

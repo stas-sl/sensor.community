@@ -4,7 +4,7 @@ title: Register
 
 ### Ustvarite račun
 
-Pojdite na [devices.sensor.community](https://devices.sensor.community/), da ustvarite račun in postanete del odprtega podatkovnega omrežja.
+Pojdite na [devices.sensor.community](https://devices-test.sensor.community/register), da ustvarite račun in postanete del odprtega podatkovnega omrežja.
 
 
 ### Registrirajte svojo napravo

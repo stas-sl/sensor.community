@@ -4,7 +4,7 @@ title: Регистриране
 
 ### Създай профил
 
-Отидете на [devices.sensor.community](https://devices.sensor.community/?lang=bg) за да създадете акаунт и да станете част от мрежата с отворени данни.
+Отидете на [devices.sensor.community](https://devices-test.sensor.community/register?lang=bg) за да създадете акаунт и да станете част от мрежата с отворени данни.
 
 
 ### Регистрирайте устройството си

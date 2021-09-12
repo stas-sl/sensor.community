@@ -4,7 +4,7 @@ title: Registro
 
 ### Cadastre-se
 
-Vá para [devices.sensor.community](https://devices.sensor.community/) para registrar seu dispositivo e tornar-se parte da rede de dados aberta.
+Vá para [devices.sensor.community](https://devices-test.sensor.community/register) para registrar seu dispositivo e tornar-se parte da rede de dados aberta.
 
 
 ### Registre seu dispositivo

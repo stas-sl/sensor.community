@@ -4,7 +4,7 @@ title: Reģistrēties
 
 ### Reģistrējieties
 
-Dodieties uz [devices.sensor.community](https://devices.sensor.community/), lai reģistrētu savu ierīci un kļūtu par atvērtā datu tīkla daļu.
+Dodieties uz [devices.sensor.community](https://devices-test.sensor.community/register), lai reģistrētu savu ierīci un kļūtu par atvērtā datu tīkla daļu.
 
 
 ### Reģistrējiet savu ierīci

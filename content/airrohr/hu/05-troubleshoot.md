@@ -8,7 +8,7 @@ title: Hibaelhárítás
 
 Az [ID] a bal felső sarokban lévő beviteli mezőben is kereshető [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Az érzékelő regisztrálva van a [https://devices.sensor.community/](https://devices.sensor.community/) segítségével, és az érzékelő látható a térképen?
+* Az érzékelő regisztrálva van a [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) segítségével, és az érzékelő látható a térképen?
     * A WLAN jelszintje gyenge volt a múltban?
       Itt van a szerveroldali jelnapló: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

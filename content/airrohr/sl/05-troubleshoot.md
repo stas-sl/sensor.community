@@ -9,7 +9,7 @@ V brskalnik vnesite naslednje podatke:
 
 [ID] lahko poiščete tudi v vnosnem polju v levem zgornjem kotu [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Ali je senzor registriran prek [https://devices.sensor.community/](https://devices.sensor.community/) in ali je senzor viden na zemljevidu?
+* Ali je senzor registriran prek [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) in ali je senzor viden na zemljevidu?
     * Ali je bila raven signala WLAN v preteklosti šibka?
       Tukaj je dnevnik signala na strani strežnika: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

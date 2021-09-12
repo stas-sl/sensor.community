@@ -8,7 +8,7 @@ Ange följande i webbläsaren med dina egna data:
 
 [ID] kan också sökas i inmatningsfältet i det övre vänstra hörnet [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
 
-* Är sensorn registrerad via [https://devices.sensor.community/ ](https://devices.sensor.community/) och är sensorn synlig på kartan?
+* Är sensorn registrerad via [https://devices-test.sensor.community/register ](https://devices-test.sensor.community/register) och är sensorn synlig på kartan?
     * Var WLAN-signalnivån svag tidigare?
         här är signalloggens serversida: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

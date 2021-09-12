@@ -8,7 +8,7 @@ title: Отстраняване на неизправности
 
 [ID] може да се търси и в полето за въвеждане в горния ляв ъгъл [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Регистрирана ли е станцията на [https://devices.sensor.community/](https://devices.sensor.community/) и странцията видима ли е на картата?
+* Регистрирана ли е станцията на [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) и странцията видима ли е на картата?
 * Ниско ли е било нивото на WLAN сигнал в миналото?
     Ето я от сървъра на дневника на сигнала: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
         

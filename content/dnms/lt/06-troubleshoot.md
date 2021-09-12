@@ -8,7 +8,7 @@ Naršyklėje įveskite šiuos savo duomenis:
 
 [ID] taip pat galima ieškoti viršutiniame kairiajame kampe esančiame įvesties lauke [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1).
 
-* Ar jutiklis užregistruotas per [https://devices.sensor.community/](https://devices.sensor.community/) ir ar jis matomas žemėlapyje?
+* Ar jutiklis užregistruotas per [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) ir ar jis matomas žemėlapyje?
   * Ar anksčiau WLAN signalo lygis buvo silpnas?
     čia pateikiamas serverio pusėje esantis signalo žurnalas: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

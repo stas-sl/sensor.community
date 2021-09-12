@@ -4,7 +4,7 @@ title: Регистрация
 
 ### Регистрирайте устройството си
 
-Отидете на адрес [devices.sensor.community](https://devices.sensor.community/), за да регистрирате устройството си и да станете част от мрежата за отворени данни.
+Отидете на адрес [devices.sensor.community](https://devices-test.sensor.community/register), за да регистрирате устройството си и да станете част от мрежата за отворени данни.
 
 
 ### Регистър

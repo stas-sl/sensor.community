@@ -8,7 +8,7 @@ Do prehliadača zadajte svoje vlastné údaje v nasledujúcom formáte:
 
 [ID] možno tiež vyhľadať vo vstupnom poli v ľavom hornom rohu tejto stránky: [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Je senzor zaregistrovaný prostredníctvom [https://devices.sensor.community/](https://devices.sensor.community/) a je senzor viditeľný na mape?
+* Je senzor zaregistrovaný prostredníctvom [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) a je senzor viditeľný na mape?
 * Bola intenzita WiFi signálu v minulosti slabá?
 Tu je stránka s log súborom signálu: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

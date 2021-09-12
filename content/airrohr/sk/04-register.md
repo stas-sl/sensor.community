@@ -4,7 +4,7 @@ title: Registrácia
 
 ### Zaregistrujte sa
 
-Navštívte stránku  [devices.sensor.community](https://devices.sensor.community/?lang=sk) zaregistrujte váš senzor a staňte sa súčasťou siete otvorených dát.
+Navštívte stránku  [devices.sensor.community](https://devices-test.sensor.community/register?lang=sk) zaregistrujte váš senzor a staňte sa súčasťou siete otvorených dát.
 
 
 ### Zaregistrujte svoje zariadenie

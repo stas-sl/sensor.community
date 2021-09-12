@@ -8,7 +8,7 @@ Ingrese lo siguiente en el navegador con sus propios datos:
 
 [ID] también se puede buscar en el campo de entrada en la esquina superior izquierda de la página: [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* ¿Está el sensor registrado en [https://devices.sensor.community/](https://devices.sensor.community/) y es el sensor visible en el mapa?
+* ¿Está el sensor registrado en [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) y es el sensor visible en el mapa?
 * ¿Ha estado la señal WLAN en un nivel bajo en el pasado?
     Aquí está el servidor de registro de la señal: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

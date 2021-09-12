@@ -4,7 +4,7 @@ title: Registrazione
 
 ### Creazione di un account utente
 
-Vai a [devices.sensor.community](https://devices.sensor.community/) e
+Vai a [devices.sensor.community](https://devices-test.sensor.community/register) e
 crea un account e diventa parte della rete di raccolta di dati aperti.
 
 ### Registrazione del dispositivo
