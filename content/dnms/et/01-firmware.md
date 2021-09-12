@@ -10,14 +10,14 @@ NocdeMCU-de v3 kiibistik on tavaliselt CH341, vaadake lihtsalt oma NodeMCU tagak
 
 ### Windows
 
-##### Draiverid mudelile V2 (CP2102) Windowsi jaoks.
+#### Draiverid mudelile V2 (CP2102) Windowsi jaoks.
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 peaks neid automaatselt alla laadima.
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitine versioon - **ei** toeta 64-bitise versiooni operatsioonisüsteemi.
 
-##### Draiverid mudelile V3 (CH340/CH341) Windowsi jaoks.
+#### Draiverid mudelile V3 (CH340/CH341) Windowsi jaoks.
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 peaks saama need automaatselt alla laadida.
 
-##### Allalaaditud faili väljavõtmine Windowsile
+#### Allalaaditud faili väljavõtmine Windowsile
 * V2 jaoks: Avage kaust CP210x ja tehke topeltklõps rakendusel CP210xVCPInstaller_x64 (või x86)
 * V3 puhul: avage kaust CH341SER ja tehke topeltklõps rakendusel SETUP.
 
@@ -25,11 +25,11 @@ NocdeMCU-de v3 kiibistik on tavaliselt CH341, vaadake lihtsalt oma NodeMCU tagak
 
 ### MacOS
 
-##### MacOS draiverid
+#### MacOS draiverid
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Laaditud faili väljavõtmine MacOS jaoks.
+#### Laaditud faili väljavõtmine MacOS jaoks.
 * V2 jaoks: Paki kaust CP210x välja ja tee topeltklõps rakendusel CP210xVCPInstaller_x64 (või x86).
 * V3 puhul: pakendage lahti kaust CH341SER ja tehke topeltklõps rakendusel SETUP.
 * Käivitage Mac uuesti.
@@ -57,10 +57,10 @@ Suur tänu [Piotrile, Poolast](https://dropbox.inf.re/), tema abi eest! 🙋♂�
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Teensy tahvlitesse saab .hex faili flashida iseseisva GUI tarkvaraga [Teensy Loader](https://www.pjrc.com/teensy/loader.html) Windowsile, Macile ja Linuxile.
 Olemas on ka käsurea versioon.
 
-##### Teensyduino
+#### Teensyduino
 Teensy tahvlitesse saab .ino faili flashida Arduino IDE laiendiga [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Vajaduse korral saate muuta püsivara otse Arduino IDE-s.

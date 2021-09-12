@@ -7,10 +7,10 @@ title: Ievads
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Iepirkumu saraksts
-##### Sensora komplekts
+#### Sensora komplekts
 * [Iepriekš ielādēts sensora komplekts](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Atsevišķas sastāvdaļas
+#### Atsevišķas sastāvdaļas
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 smalko putekļu sensors](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011)
 * BME280 6-PIN, temperatūra, mitrums un gaisa spiediens.

@@ -45,7 +45,7 @@ Acest depozit conține diferite configurații pentru a construi senzorul cu dife
 
 ### Lista de cumpărături
 
-##### Componente unice
+#### Componente unice
 * [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Placa de dezvoltare Teensy 4.0](https://www.pjrc.com/store/teensy40.html). Alți vânzători: [EXPTECH](https://www.exp-tech.de/plattformen/teensy/9596/teensy-4.0-development-board), [Antratek](https://www.antratek.de/teensy-4-0), [PIMORONI](https://shop.pimoroni.com/products/teensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/)

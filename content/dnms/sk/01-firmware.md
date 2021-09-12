@@ -10,14 +10,14 @@ Na komunikáciu so zariadením ESP8266 potrebujete ovládače usb2serial pre svo
 
 ### Windows
 
-##### Ovládače pre model V2 (CP2102) pre Windows
+#### Ovládače pre model V2 (CP2102) pre Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - systém Windows 10 by mal byť schopný ich automaticky stiahnuť
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitová verzia - **nepodporuje** 64-bitovú verziu OS
 
-##### Ovládač pre model V3 (CH340/CH341) pre Windows
+#### Ovládač pre model V3 (CH340/CH341) pre Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - systém Windows 10 by mal byť schopný ich automaticky stiahnuť
 
-##### Rozbaľte stiahnutý súbor pre systém Windows:
+#### Rozbaľte stiahnutý súbor pre systém Windows:
 * pre V2: Otvorte priečinok CP210x a dvakrát kliknite na aplikáciu CP210xVCPInstaller_x64 (alebo x86)
 * pre V3: otvorte priečinok CH341SER a dvakrát kliknite na aplikáciu SETUP.
 
@@ -25,11 +25,11 @@ Na komunikáciu so zariadením ESP8266 potrebujete ovládače usb2serial pre svo
 
 ### MacOS
 
-##### Ovládače systému MacOS
+#### Ovládače systému MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Rozbaľte stiahnutý súbor pre systém MacOS.
+#### Rozbaľte stiahnutý súbor pre systém MacOS.
 * pre V2: Rozbaľte priečinok CP210x a dvakrát kliknite na aplikáciu CP210xVCPInstaller_x64 (alebo x86)
 * pre V3: Rozbaľte priečinok CH341SER a dvakrát kliknite na aplikáciu SETUP.
 * Reštartovanie počítača Mac
@@ -57,10 +57,10 @@ V [Githube Helmuta Bittera](https://github.com/hbitter/DNMS/tree/master/Firmware
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Súbor .hex môžete flashovať na doskách Teensy pomocou samostatného grafického softvéru [Teensy Loader](https://www.pjrc.com/teensy/loader.html) pre Windows, Mac a Linux.
 Existuje aj verzia pre príkazový riadok.
 
-##### Teensyduino
+#### Teensyduino
 Súbor .ino môžete flashovať v doskách Teensy s príponou Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 V prípade potreby môžete firmvér upraviť priamo v prostredí Arduino IDE.

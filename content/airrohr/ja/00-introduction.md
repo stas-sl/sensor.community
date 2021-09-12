@@ -7,10 +7,10 @@ title: Introduction
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Shopping list
-##### センサーキット
+#### センサーキット
 * [プリフラッシングセンサーキット](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### シングルコンポーネント
+#### シングルコンポーネント
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * SDS011 ファインダストセンサー」(http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011)
 * BME280 6-PIN、温度・湿度・気圧

@@ -6,10 +6,10 @@ title: Introducción
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Lista de compras
-##### Kit de sensores
+#### Kit de sensores
 * [Kit de sensores predestinados](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Componentes individuales
+#### Componentes individuales
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 Sensor de polvo fino](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) 
 * BME280 6-PIN, temperatura, humedad y presión atmosférica.

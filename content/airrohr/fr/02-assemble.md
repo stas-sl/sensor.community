@@ -15,7 +15,7 @@ Remarque: Nos instructions font référence à la version 3 de la platine NodeMC
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Une fois l'assemblage terminé, cela devrait ressembler à ça. 
+#### Une fois l'assemblage terminé, cela devrait ressembler à ça. 
 
 
 ### Connecter le SDS011
@@ -49,11 +49,11 @@ SCL -> Pin D4
 
 ### Assemblage
 
- ##### NodeMCU et SDS011
+ #### NodeMCU et SDS011
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Utilisez un serre-câble pour attacher le NodeMCU et le SDS011, de manière à ce que l'antenne Wifi soit à l'opposé du capteur de particules fines.
 
- ##### Tube flexible
+ #### Tube flexible
  <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
  <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -61,14 +61,14 @@ Utilisez un serre-câble pour attacher le NodeMCU et le SDS011, de manière à c
 * Avec un serre-câble, attachez le thermomètre/hygromètre BME280 sur le tube flexible.
 * passez le câble USB dans un des coudes PVC. Placez le SDS011 de manière à ce que le NodeMCU soit vers le haut et le petit ventilateur vers le bas. Le tube flexible et le câble USB sont du même côté.
 
- ##### Coudes PVC
+ #### Coudes PVC
 * Insérez l'ensemble SDS011/NodeMCU dans un des coudes PVC.
 * Le câble USB, le tube flexible et le BME280 doivent être visibles comme ci-dessous.
 * Installez le second coude PVC sur le premier.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
- ##### Finition
+ #### Finition
 * Positionnez le BME280 sur le tube flexible au niveau du bord du coude PVC.
 * Coupez le tube flexible au ras du tube PVC.
 * En option : vous pouvez installez du filet moustiquaire aux extrémités des coudes PVC pour éviter l'entrée d'insectes.

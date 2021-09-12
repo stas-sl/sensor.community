@@ -6,10 +6,10 @@ title: Вступ
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Список покупок
-##### Комплект датчиків
+#### Комплект датчиків
 * [Набір попередньо прошитих датчиків](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Поодинокі компоненти
+#### Поодинокі компоненти
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 Датчик тонкої пилу](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) 
 * BME280 6-PIN, температура, вологість та тиск повітря

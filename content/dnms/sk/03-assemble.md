@@ -13,7 +13,7 @@ Mikrofónová jednotka je založená na rozbočovacej doske Pesky Products s mik
 Mikrofónová jednotka je založená na rozbočovacej doske Pesky Products s mikrofónom MEMS ICS-43434. Takúto dosku môžete nájsť na [Tindie marketplace](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/).
 
 
-##### Puzdro pre jednotku mikrofónu
+#### Puzdro pre jednotku mikrofónu
 Kryt je vyrobený z polystyrénovej rúrky s priemerom 12,7 mm (0,500"). Tento priemer umožňuje priamo pripojiť väčšinu kalibrátorov na jednotku.
 
 Prototyp bol vyvinutý s rúrkou [Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ Teraz môžete rúrku naplniť živicou. Tento krok je povinný, aby sa zabráni
 
 Prototyp bol vyvinutý s niektorými [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) vyrobenými spoločnosťou Copaltec GmbH.
 
-##### Špecifikácie:
+#### Špecifikácie:
 * Dielektrická pevnosť: 28 kVmm
 * Špecifický odpor vpredu: 5,8.1014 ohmcm
 * Povrchový odpor: 1,3.1016 ohmov

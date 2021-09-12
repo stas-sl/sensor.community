@@ -9,14 +9,14 @@ title: Драйвер и фърмуер
 
 ### Windows
 
-##### Драйвери за модел V2 (CP2102) за Windows
+#### Драйвери за модел V2 (CP2102) за Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 би трябвало да може да ги изтегли автоматично
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-битова версия - **не се поддържа** 64-битова версия на операционната система
 
-##### Драйвер за модел V3 (CH340/CH341) за Windows
+#### Драйвер за модел V3 (CH340/CH341) за Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 би трябвало да може да ги изтегли автоматично
 
-##### Извличане на изтегления файл за Windows
+#### Извличане на изтегления файл за Windows
 * за V2: Отворете папката CP210x и щракнете два пъти върху приложението CP210xVCPInstaller_x64 (или x86)
 * за V3: отворете папката CH341SER и щракнете два пъти върху приложението SETUP.
 
@@ -24,11 +24,11 @@ title: Драйвер и фърмуер
 
 ### MacOS
 
-##### MacOS драйвери
+#### MacOS драйвери
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Извличане на изтегления файл за MacOS
+#### Извличане на изтегления файл за MacOS
 * за V2: Разопаковайте папката CP210x и щракнете два пъти върху приложението CP210xVCPInstaller_x64 (или x86)
 * за V3: разархивирайте папката CH341SER и щракнете два пъти върху приложението SETUP.
 * Рестартирайте вашия Mac
@@ -56,10 +56,10 @@ title: Драйвер и фърмуер
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Можете да флашнете .hex файла в платките Teensy със самостоятелния софтуер с графичен интерфейс [Teensy Loader](https://www.pjrc.com/teensy/loader.html) за Windows, Mac и Linux.
 Съществува и версия за команден ред.
 
-##### Teensyduino
+#### Teensyduino
 Можете да флашнете .ino файла в платките Teensy с разширението Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Ако е необходимо, можете да модифицирате фърмуера директно в Arduino IDE.

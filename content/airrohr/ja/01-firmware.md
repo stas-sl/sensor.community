@@ -12,14 +12,14 @@ NocdeMCU v3のチップセットは通常CH341で、NodeMCU (ESP8266)の背面�
 
 ### Windows
 
-##### Windows版NodeMCU (ESP8266) V2 (CP2102)のドライバです。
+#### Windows版NodeMCU (ESP8266) V2 (CP2102)のドライバです。
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 では自動的にダウンロードできるはずです。
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32ビット版 - **64ビット版OSには対応していません。
 
-##### Windows版 NodeMCU (ESP8266) V3 (CH340/CH341)用ドライバ
+#### Windows版 NodeMCU (ESP8266) V3 (CH340/CH341)用ドライバ
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 では自動的にダウンロードできるはずです。
 
-##### ダウンロードしたファイルを解凍する for Windows
+#### ダウンロードしたファイルを解凍する for Windows
 NodeMCU (ESP8266) V2用 *。フォルダCP210xを開き、アプリケーションCP210xVCPInstaller_x64(またはx86)をダブルクリックしてください。
 * for NodeMCU (ESP8266) V3: CH341SERフォルダを開き、アプリケーションSETUPをダブルクリックしてください。
 
@@ -27,11 +27,11 @@ NodeMCU (ESP8266) V2用 *。フォルダCP210xを開き、アプリケーショ�
 
 ### MacOS
 
-##### MacOS ドライバ
+#### MacOS ドライバ
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### MacOS用にダウンロードしたファイルを解凍する
+#### MacOS用にダウンロードしたファイルを解凍する
 * V2用です。V2の場合：フォルダCP210xを解凍し、アプリケーションCP210xVCPInstaller_x64(またはx86)をダブルクリックしてください。
 * V3 の場合：CH341SER フォルダを解凍して、アプリケーション SETUP をダブルクリックしてください。
 * Macを再起動してください。

@@ -14,7 +14,7 @@ title: ПХБ и електрически схеми
 Печатна платка за NodeMCU ESP8266 CPU/WLAN с разширение на шината I2C за свързване на DNMS, както и на други сензори (SDS011, BME280...).
 
 
-##### Изтегляне
+#### Изтегляне
 * [Електрическа схема](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerber файл за качване на уебсайта на производителя на печатни платки](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ title: ПХБ и електрически схеми
 Печатна платка за DNMS Teensy 4.0, която може да се свърже директно към NodeMCU ESP8266 или към горната печатна платка AIRROHR.
 
 
-##### Изтегляне
+#### Изтегляне
 * [Електрическа схема](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber файл за качване на уебсайта на производителя на печатни платки](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

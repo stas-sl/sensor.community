@@ -7,10 +7,10 @@ title: Εισαγωγή
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Λίστα αγορών
-##### Κιτ αισθητήρων
+#### Κιτ αισθητήρων
 * [Pre-flashed Sensor Kit](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Μεμονωμένα εξαρτήματα
+#### Μεμονωμένα εξαρτήματα
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 Αισθητήρας λεπτής σκόνης](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011)
 * BME280 6-PIN, θερμοκρασία & υγρασία & πίεση αέρα

@@ -12,14 +12,14 @@ Wybierz łącze, które odpowiada systemowi operacyjnemu twojego komputera.
 
 ### Windows
 
-##### Sterowniki dla NodeMCU (ESP8266) V2 (CP2102) dla Windows
+#### Sterowniki dla NodeMCU (ESP8266) V2 (CP2102) dla Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 powinien mieć możliwość automatycznego pobrania ich
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - wersja 32-bitowa - **nie** obsługująca 64-bitową wersję OS
 
-##### Sterownik dla NodeMCU (ESP8266) V3 (CH340/CH341) dla Windows
+#### Sterownik dla NodeMCU (ESP8266) V3 (CH340/CH341) dla Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 powinien mieć możliwość automatycznego pobrania ich
 
-##### Rozpakuj pobrany plik dla systemu Windows:
+#### Rozpakuj pobrany plik dla systemu Windows:
 * dla NodeMCU (ESP8266) V2: Otwórz folder CP210x i kliknij dwukrotnie na aplikację CP210xVCPInstaller_x64 (lub x86).
 * dla NodeMCU (ESP8266) V3: otwórz folder CH341SER i kliknij dwukrotnie na SETUP aplikacji.
 
@@ -27,11 +27,11 @@ Wybierz łącze, które odpowiada systemowi operacyjnemu twojego komputera.
 
 ### MacOS
 
-##### Sterowniki MacOS
+#### Sterowniki MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-##### Wyodrębnienie pobranego pliku dla systemu MacOS.
+#### Wyodrębnienie pobranego pliku dla systemu MacOS.
 * dla V2: Rozpakuj folder CP210x i kliknij dwukrotnie na aplikację CP210xVCPInstaller_x64 (lub x86).
 * dla V3: Rozpakuj folder CH341SER i kliknij dwukrotnie na SETUP aplikacji.
 * Zrestartuj komputer Mac

@@ -15,7 +15,7 @@ firmware flasher__の項を参照してください。
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>。
 
-##### 完成すると、こんな感じになります。
+#### 完成すると、こんな感じになります。
 
 
 ### Wire the SDS011
@@ -57,11 +57,11 @@ SCL -> D4ピン
 
 ### Tie everything together
 
-##### Tie NodeMCU and SDS011 together
+#### Tie NodeMCU and SDS011 together
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>。
 NodeMCU(ESP8266)とSDS011センサーをケーブルタイで繋ぎ、Wifiアンテナがセンサーから離れるようにする
 
-##### Connect flexible tube
+#### Connect flexible tube
 <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>。
 <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>。
 
@@ -69,14 +69,14 @@ NodeMCU(ESP8266)とSDS011センサーをケーブルタイで繋ぎ、Wifiアン
 * 別のケーブルタイを使用して、BME280温度センサーをチューブに取り付ける
 * USBケーブルをチューブに通します。SDS011を、NodeMCUが上向き、ファンが下向きになるように取り付ける
 
-##### Push in sensor into the pipe
+#### Push in sensor into the pipe
 * センサーをパイプに押し込む
 * USBケーブル、フレキシブルチューブ、BME280はチューブの端から見えるようにしてください。
 * もう一方のパイプを最初のパイプの上に押し込みます。
 
 <img src=".../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>。
 
-##### Finishing
+#### Finishing
 * 温度センサーがパイプの端にくるように、フレキシブルチューブに配置します。
 * パイプの端にあるフレキシブルチューブを切り取ります。
 * オプション：チューブのオープンエンドを細かいメッシュで覆うことができます。これで、空気は循環し、虫は外に出られなくなります。

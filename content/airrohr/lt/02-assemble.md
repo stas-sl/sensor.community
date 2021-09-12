@@ -15,7 +15,7 @@ Pastaba: mūsų instrukcijos taikomos "NodeMCU" 3 versijai. Ją galima atpažint
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Kai baigsite, turėtų atrodyti štai kaip
+#### Kai baigsite, turėtų atrodyti štai kaip
 
 
 ### Prijunkite SDS011

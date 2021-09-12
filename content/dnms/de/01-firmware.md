@@ -10,14 +10,14 @@ Wähle den Link, der dem Betriebssystem deines Computers entspricht.
 
 ### Windows
 
-##### Treiber für das Modell V2 (CP2102) für Windows
+#### Treiber für das Modell V2 (CP2102) für Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 sollte in der Lage sein, die Treiber automatisch herunterzuladen
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-Bit-Version - **nicht** unterstützt 64-Bit-Version OS
 
-##### Treiber für das Modell V3 (CH340/CH341) für Windows
+#### Treiber für das Modell V3 (CH340/CH341) für Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 sollte in der Lage sein, die Treiber automatisch herunterzuladen
 
-##### Entpacken der heruntergeladene Datei für Windows:
+#### Entpacken der heruntergeladene Datei für Windows:
 * für V2: Entpacken Ordner CP210x und starte die Anwendung CP210xVCPInstaller_x64 (oder x86)
 * für V3: Entpacke Ordner CH341SER und starte die Anwendung SETUP.
 
@@ -25,11 +25,11 @@ Wähle den Link, der dem Betriebssystem deines Computers entspricht.
 
 ### MacOS
 
-##### MacOS-Treiber
+#### MacOS-Treiber
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Entpacken der heruntergeladene Datei für MacOS.
+#### Entpacken der heruntergeladene Datei für MacOS.
 * für V2: Entpacke Ordner CP210x und starte die Anwendung CP210xVCPInstaller_x64 (oder x86)
 * für V3: Entpacke Ordner CH341SER und starte die Anwendung SETUP.
 * Mac neustarten
@@ -57,10 +57,10 @@ Auf [Helmut Bitter's Github](https://github.com/hbitter/DNMS/tree/master/Firmwar
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Die .hex-Datei kann man mit dem [Teensy Loader](https://www.pjrc.com/teensy/loader.html) (Windows, Mac und Linux) flashen.
 Eine Kommandozeilenversion existiert ebenfalls.
 
-##### Teensyduino
+#### Teensyduino
 Die .ino-Datei kann man mit der Arduino IDE-Erweiterung [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html) flashen.
 Bei Bedarf kann man die Firmware direkt in der Arduino-IDE modifizieren.

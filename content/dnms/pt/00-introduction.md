@@ -45,7 +45,7 @@ Esse repositório contém configurações diferentes para construir o sensor com
 
 ### Lista de compras
 
-##### Componentes individuais
+#### Componentes individuais
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Placa de desenvolvimento Teensy 4.0](https://www.pjrc.com/store/teensy40.html). Other sellers: [EXPTECH](https://www.exp-tech.de/plattformen/teensy/9596/teensy-4.0-development-board), [Antratek](https://www.antratek.de/teensy-4-0), [PIMORONI](https://shop.pimoroni.com/products/teensy-4-0-development-board)
 * [Microfone Digital ICS-43434](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/)

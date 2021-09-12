@@ -15,7 +15,7 @@ Huomautus: Ohjeemme viittaavat NodeMCU:n versioon 3. Tämän tunnistaa liitänn�
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Kun olet valmis, sen pitäisi näyttää tältä.
+#### Kun olet valmis, sen pitäisi näyttää tältä.
 
 
 ### Johdota SDS011
@@ -57,26 +57,26 @@ SCL -> Nasta D4
 
 ### Sido kaikki yhteen
 
- ##### Sido NodeMCU ja SDS011 yhteen.
+ #### Sido NodeMCU ja SDS011 yhteen.
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Yhdistä NodeMCU (ESP8266) ja SDS011-anturi kaapelisidoksella siten, että Wlan-antenni osoittaa poispäin anturista.
 
- ##### Connect joustava putki
- ##### Connect joustava putki
- ##### Connect joustava putki
+ #### Connect joustava putki
+ #### Connect joustava putki
+ #### Connect joustava putki
 
 * Liitä joustava putki SDS011-anturiin.
 * Kiinnitä BME280-lämpötila-anturi putkeen toisella nippusiteellä.
 * Vie USB-kaapeli putken läpi. Asenna SDS011 siten, että NodeMCU on ylhäältäpäin ja tuuletin alhaaltapäin.
 * Vie USB-kaapeli putken läpi. Asenna SDS011 siten, että NodeMCU on ylhäältäpäin ja tuuletin alhaaltapäin.
- ##### Työnnä anturi putkeen
+ #### Työnnä anturi putkeen
 * Työnnä osat putkeen niin, että ne juuttuvat sisään.
 * USB-kaapelin, taipuisan putken ja BME280:n pitäisi näkyä ulos putken päästä
 * Työnnä toinen putki ensimmäisen putken päälle.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
-##### Viimeistely
+#### Viimeistely
 * Aseta lämpötila-anturi joustavaan putkeen niin, että se on putken reunalla.
 * Katkaise joustava putki putken päästä.
 * Valinnainen: voit peittää putken avoimet päät hienolla verkolla. Näin ilma pääsee kiertämään, mutta hyönteiset pysyvät ulkopuolella.

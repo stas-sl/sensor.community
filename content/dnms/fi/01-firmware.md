@@ -10,14 +10,14 @@ NocdeMCU v3:n piirisarja on yleensä CH341, tarkista NodeMCU:n takaa tekniset ti
 
 ### Windows
 
-##### Ohjaimet mallille V2 (CP2102) Windowsille
+#### Ohjaimet mallille V2 (CP2102) Windowsille
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10:n pitäisi pystyä lataamaan nämä automaattisesti.
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bittinen versio - **ei** tukee 64-bittistä versiota käyttöjärjestelmästä.
 
-##### Ohjain mallille V3 (CH340/CH341) Windowsissa
+#### Ohjain mallille V3 (CH340/CH341) Windowsissa
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10:n pitäisi pystyä lataamaan nämä automaattisesti.
 
-##### Pura ladattu tiedosto Windowsille:
+#### Pura ladattu tiedosto Windowsille:
 * V2:lle: Avaa kansio CP210x ja kaksoisnapsauta sovellusta CP210xVCPInstaller_x64 (tai x86).
 * V3: avaa kansio CH341SER ja kaksoisnapsauta sovellusta SETUP.
 
@@ -25,11 +25,11 @@ NocdeMCU v3:n piirisarja on yleensä CH341, tarkista NodeMCU:n takaa tekniset ti
 
 ### MacOS
 
-##### MacOS -ajurit
+#### MacOS -ajurit
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Pura ladattu tiedosto MacOS:lle.
+#### Pura ladattu tiedosto MacOS:lle.
 * V2:lle: Pura kansio CP210x ja kaksoisnapsauta sovellusta CP210xVCPInstaller_x64 (tai x86).
 * V3: Pura kansio CH341SER ja kaksoisnapsauta sovellusta SETUP.
 * Käynnistä Mac uudelleen
@@ -57,10 +57,10 @@ Suuret kiitokset [Piotrille, Puolasta](https://dropbox.inf.re), hänen avustaan!
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Voit flashata .hex-tiedoston Teensy-levyihin itsenäisellä GUI-ohjelmistolla [Teensy Loader](https://www.pjrc.com/teensy/loader.html) Windows-, Mac- ja Linux-käyttöjärjestelmille.
 Myös komentoriviversio on olemassa.
 
-##### Teensyduino
+#### Teensyduino
 Voit flashata .ino-tiedoston Teensy-levyissä, joissa on Arduino IDE:n pääte [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Tarvittaessa voit muokata laiteohjelmistoa suoraan Arduino IDE:ssä.

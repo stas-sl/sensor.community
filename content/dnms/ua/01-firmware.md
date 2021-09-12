@@ -10,14 +10,14 @@ title: Драйвер та прошивка
 
 ### Windows
 
-##### Драйвери для моделі V2 (CP2102) для Windows
+#### Драйвери для моделі V2 (CP2102) для Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 повинна мати можливість їх автоматичного завантаження
 * [Windows 7/8 / 8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-розрядна версія - ** не ** підтримує 64-розрядну версію ОС
 
-##### Драйвер для моделі V3 (CH340/CH341) для Windows
+#### Драйвер для моделі V3 (CH340/CH341) для Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 повинна мати можливість автоматично завантажувати їх
 
-##### Витягніть завантажений файл для Windows:
+#### Витягніть завантажений файл для Windows:
 * для V2: Відкрийте папку CP210x і двічі клацніть на програмі CP210xVCPInstaller_x64 (або x86)
 * для V3: відкрийте папку CH341SER і двічі клацніть на програмі SETUP.
 
@@ -25,11 +25,11 @@ title: Драйвер та прошивка
 
 ### MacOS
 
-##### Драйвери MacOS
+#### Драйвери MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-##### Витягніть завантажений файл для MacOS.
+#### Витягніть завантажений файл для MacOS.
 * для V2: розпакуйте папку CP210x і двічі клацніть на програмі CP210xVCPInstaller_x64 (або x86)
 * для V3: розпакуйте папку CH341SER і двічі клацніть на програмі SETUP.
 * Перезапустіть Mac
@@ -57,10 +57,10 @@ title: Драйвер та прошивка
 * .я не
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Ви можете прошити файл .hex на платах Teensy за допомогою автономного програмного забезпечення графічного інтерфейсу [Teensy Loader](https://www.pjrc.com/teensy/loader.html) для Windows, Mac і Linux.
 Також існує версія командного рядка.
 
-##### Teensyduino
+#### Teensyduino
 Ви можете прошити файл .ino на платах Teensy з розширенням IDE Arduino [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 За потреби ви можете змінити прошивку безпосередньо в IDE Arduino.

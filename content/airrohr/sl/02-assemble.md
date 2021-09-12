@@ -15,7 +15,7 @@ Opomba: Naša navodila se nanašajo na različico 3 enote NodeMCU. To lahko prep
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Ko končate, mora biti videti takole
+#### Ko končate, mora biti videti takole
 
 
 ### Ožičenje SDS011

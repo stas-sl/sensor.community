@@ -14,7 +14,7 @@ title: PCBs和电路图
 NodeMCU ESP8266 CPU/WLAN的PCB，带有I2C总线扩展，可以连接DNMS以及其他传感器（SDS011，BME280...）。
 
 
-##### 下载
+#### 下载
 * [电路图](./docs/dnms/airrohr-PCB-电路图.pdf)
 * [Gerber文件要上传到PCB制造商的网站](./docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ NodeMCU ESP8266 CPU/WLAN的PCB，带有I2C总线扩展，可以连接DNMS以及�
 DNMS Teensy 4.0的PCB，可以直接连接在NodeMCU ESP8266上，也可以连接在上面的AIRROHR PCB上。
 
 
-##### 下载
+#### 下载
 * [电路图](.../docs/dnms/dnms-噪声测量-teensy-40-电路图.pdf)
 * [Gerber文件要在PCB制造商的网站上上传](./docs/dnms/dnms-噪声测量-teensy-40-circuit-gerber.zip)
 

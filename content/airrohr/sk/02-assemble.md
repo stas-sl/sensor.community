@@ -15,7 +15,7 @@ Poznámka: Naše pokyny sa vzťahujú na NodeMCU V3. Ten je možné rozpoznať p
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Keď skončíte, takto by mal vyzerať výsledok
+#### Keď skončíte, takto by mal vyzerať výsledok
 
 
 ### Pripojenie senzoru SDS011
@@ -51,11 +51,11 @@ SCL -> Pin D4
 
 ### Zviažte všetko dohromady
 
- ##### Sťahovacou svorkou spojte NodeMCU s SDS011 tak, ako vidíte na obrázku
+ #### Sťahovacou svorkou spojte NodeMCU s SDS011 tak, ako vidíte na obrázku
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Pomocou svorky spojte NodeMCU (ESP8266) a senzor prachových častíc SDS011 tak, aby anténa Wifi (kovový pliešok s textom WiFi) smerovala preč od senzora.
 
- ##### Pripojte ohybnú hadičku
+ #### Pripojte ohybnú hadičku
  <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
  <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -63,14 +63,14 @@ Pomocou svorky spojte NodeMCU (ESP8266) a senzor prachových častíc SDS011 tak
 * Použite ďalšiu svorku na pripojenie BME280 senzora k hadičke.
 * Prevlečte USB kábel cez kolienko. Namontujte SDS011 tak, aby NodeMCU smerovala hore a ventilátor smeroval dole.
 
- ##### Vložte senzor do plastového kolena
+ #### Vložte senzor do plastového kolena
 * Zasuňte súčiastky do kolena tak, aby sa zasekli vo vnútri.
 * USB kábel, ohybná hadička a senzor BME280 by mali trčať z konca plastového kolena.
 * Zatlačte do seba oba plastové kolená.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
- ##### Finalizácia
+ #### Finalizácia
 * Snímač teploty na ohybnej hadičke umiestnite tak, aby bola na okraji kolena.
 * Odrežte hadičku na konci kolena.
 * Voliteľné: Otvorené konce kolien môžete zakryť jemnou sieťkou. Vzduch tak môže prúdiť, ale hmyz zostáva vonku.

@@ -14,7 +14,7 @@ Zadnje različice tiskanih vezij so opisane tukaj. Za dodatne informacije in dos
 Ploščica tiskanega vezja za centralni procesor NodeMCU ESP8266/WLAN z razširitvijo vodila I2C za priključitev DNMS in drugih senzorjev (SDS011, BME280 ...).
 
 
-##### Prenos
+#### Prenos
 * [Shema vezja](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Datoteka Gerber za prenos na spletno stran proizvajalca tiskanih vezij](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ Ploščica tiskanega vezja za centralni procesor NodeMCU ESP8266/WLAN z razširi
 Tiskano vezje za DNMS Teensy 4.0, ki ga lahko priključite neposredno na NodeMCU ESP8266 ali na zgornje tiskano vezje AIRROHR.
 
 
-##### Prenos
+#### Prenos
 * [Shema vezja](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Datoteka Gerber za prenos na spletno stran proizvajalca tiskanega vezja](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

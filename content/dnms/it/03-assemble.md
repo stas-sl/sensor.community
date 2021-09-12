@@ -13,7 +13,7 @@ L'unità microfonica è basata sulla breakout board di Pesky Products con un mic
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Alloggiamento per l'unità microfono
+#### Alloggiamento per l'unità microfono
 L'alloggiamento è realizzato con un tubo di polistirolo da .500" (12,7mm). Questo diametro permette di inserire direttamente la maggior parte dei calibratori sull'unità.
 
 Il prototipo è stato sviluppato con il [tubo Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -45,7 +45,7 @@ Ora puoi riempire il tubo con della resina. Questo passo è obbligatorio per evi
 
 Il prototipo è stato sviluppato con della [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) prodotta dalla Copaltec GmbH.
 
-##### Specifiche
+#### Specifiche
 * Rigidità dielettrica: 28 kV/mm
 * Resistenza specifica in avanti: 5,8.1014 ohm/cm
 * Resistenza di superficie: 1,3.1016 ohm

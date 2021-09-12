@@ -14,7 +14,7 @@ title: друковані плати та принципові схеми
 Плата для процесора / бездротової локальної мережі NodeMCU ESP8266 з розширенням I2C Bus для підключення DNMS, а також інших датчиків (SDS011, BME280…).
 
 
-##### Завантажити:
+#### Завантажити:
 * [Принципова схема](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Файл Gerber для завантаження на веб-сайті виробника друкованих плат](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ title: друковані плати та принципові схеми
 Друкована плата для DNMS Teensy 4.0, яку можна підключити безпосередньо до NodeMCU ESP8266 або до друкованої плати AIRROHR вище.
 
 
-##### Завантажити:
+#### Завантажити:
 * [Електрична схема](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Файл Gerber для завантаження на веб-сайті виробника друкованих плат](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

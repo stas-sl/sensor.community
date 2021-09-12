@@ -10,14 +10,14 @@ Chipset för NocdeMCUs v3 är vanligtvis CH341, kolla bara på baksidan av din N
 
 ### Windows
 
-##### Drivrutiner för modell V2 (CP2102) för Windows
+#### Drivrutiner för modell V2 (CP2102) för Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 bör kunna ladda ner dessa automatiskt
 * [Windows 7/8 / 8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitarsversion - ** inte ** stödjer 64-bitars version OS
 
-##### Drivrutin för modell V3 (CH340/CH341) för Windows
+#### Drivrutin för modell V3 (CH340/CH341) för Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 bör kunna ladda ner dessa automatiskt
 
-##### Extrahera den nedladdade filen för Windows:
+#### Extrahera den nedladdade filen för Windows:
 * för V2: Öppna mappen CP210x och dubbelklicka på applikationen CP210xVCPInstaller_x64 (eller x86)
 * för V3: öppna mappen CH341SER och dubbelklicka på applikationsinställningen.
 
@@ -25,11 +25,11 @@ Chipset för NocdeMCUs v3 är vanligtvis CH341, kolla bara på baksidan av din N
 
 ### MacOS
 
-##### MacOS-drivrutiner
+#### MacOS-drivrutiner
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Extrahera den nedladdade filen för MacOS.
+#### Extrahera den nedladdade filen för MacOS.
 * för V2: Packa upp mappen CP210x och dubbelklicka på applikationen CP210xVCPInstaller_x64 (eller x86)
 * för V3: Packa upp mappen CH341SER och dubbelklicka på applikationsinställningen.
 * Starta om din Mac
@@ -57,10 +57,10 @@ I [Helmut Bitter's Github](https://github.com/hbitter/DNMS/tree/master/Firmware)
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Du kan blinka .hex-filen i Teensy-korten med den fristående GUI-programvaran [Teensy Loader](https://www.pjrc.com/teensy/loader.html) för Windows, Mac och Linux.
 En kommandoradsversion finns också.
 
-##### Teensyduino
+#### Teensyduino
 Du kan blinka .ino-filen i Teensy-korten med Arduino IDE-tillägget [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Om det behövs kan du ändra firmware direkt i Arduino IDE.

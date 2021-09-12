@@ -12,7 +12,7 @@ firmware flasher__の項を参照。
 
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
-##### Housing for the microphone unit
+#### Housing for the microphone unit
 筐体には0.500インチ（12.7mm）のポリスチレン製チューブが使用されています。この直径により、ほとんどの校正器を直接ユニットに接続することができます。
 
 プロトタイプは、[Evergreen No.236 tubing](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing) で開発されました。
@@ -47,7 +47,7 @@ firmware flasher__の項を参照。
 
 試作品は、Copaltec GmbH社製の「PURe Isolation ST 33」https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900）を一部使用して開発しました。
 
-##### Specifications
+#### Specifications
 * 誘電率：28kVmm
 * 固有の順方向抵抗。5,8.1014 ohmcm
 * 表面抵抗値：1,3.1016Ω

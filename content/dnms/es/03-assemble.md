@@ -13,7 +13,7 @@ La unidad de micrófono se basa en el tablero de escape de Pesky Products con un
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Carcasa de la unidad de micrófono
+#### Carcasa de la unidad de micrófono
 La carcasa está hecha con un tubo de poliestireno de 12,7 mm. Este diámetro permite enchufar directamente la mayoría de los calibradores de la unidad.
 
 El prototipo fue desarrollado con el [tubo Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -45,7 +45,7 @@ Ahora puedes llenar el tubo con algo de resina. Este paso es obligatorio para ev
 
 El prototipo fue desarrollado con algo de [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) producido por Copaltec GmbH.
 
-##### Especificaciones:
+#### Especificaciones:
 * Fuerza dieléctrica: 28 kV/mm
 * Resistencia específica hacia adelante: 5,8.1014 ohm/cm
 * Resistencia de la superficie: 1,3.1016 ohm

@@ -12,14 +12,14 @@ Wähle den Link, der dem Betriebssystem deines Computers entspricht.
 
 ### Windows
 
-##### Treiber für Modell V2 (CP2102) für Windows
+#### Treiber für Modell V2 (CP2102) für Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 sollte in der Lage sein, diese automatisch herunterzuladen
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-Bit-Version - **keine** Unterstützung für die 64-Bit-Version des Betriebssystems
 
-##### Treiber für Modell V3 (CH340/CH341) für Windows
+#### Treiber für Modell V3 (CH340/CH341) für Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 sollte in der Lage sein, diese automatisch herunterzuladen.
 
-##### Entpacke die heruntergeladene Datei für Windows:
+#### Entpacke die heruntergeladene Datei für Windows:
 * für V2: Öffne den Ordner CP210x und doppelklicke auf die Anwendung CP210xVCPInstaller_x64 (oder x86)
 * für V3: Öffnen den Ordner CH341SER und doppelklicke auf die Anwendung SETUP.
 
@@ -27,11 +27,11 @@ Wähle den Link, der dem Betriebssystem deines Computers entspricht.
 
 ### MacOS
 
-##### MacOS-Treiber
+#### MacOS-Treiber
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-##### Entpacke die heruntergeladene Datei für MacOS.
+#### Entpacke die heruntergeladene Datei für MacOS.
 * für V2: Entpacke den Ordner CP210x und doppelklicke auf die Anwendung CP210xVCPInstaller_x64 (oder x86)
 * für V3: Entpacke den Ordner CH341SER und doppelklicke auf die Anwendung SETUP.
 * Starten deinen Mac neu

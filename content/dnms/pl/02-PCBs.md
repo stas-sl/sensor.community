@@ -14,7 +14,7 @@ Ostatnie wersje płytek drukowanych są opisane tutaj. Więcej informacji i dost
 Płytka drukowana dla NodeMCU ESP8266 CPU/WLAN z rozszerzeniem magistrali I2C do podłączenia DNMS oraz innych czujników (SDS011, BME280...).
 
 
-##### Pobierz:
+#### Pobierz:
 * [Schemat połączeń](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Plik Gerber do załadowania na stronie producenta obwodów drukowanych](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ Płytka drukowana dla NodeMCU ESP8266 CPU/WLAN z rozszerzeniem magistrali I2C do
 Płytka drukowana dla DNMS Teensy 4.0, która może być podłączona bezpośrednio do NodeMCU ESP8266 lub do powyższej płytki AIRROHR.
 
 
-##### Pobierz:
+#### Pobierz:
 * [Schemat połączeń](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Plik Gerber do załadowania na stronie producenta obwodów drukowanych](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

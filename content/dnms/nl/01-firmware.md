@@ -10,14 +10,14 @@ De chipset voor NocdeMCUs v3 is meestal CH341, kijk maar eens op de achterkant v
 
 ### Windows
 
-##### Stuurprogramma's voor model V2 (CP2102) voor Windows
+#### Stuurprogramma's voor model V2 (CP2102) voor Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 zou in staat moeten zijn om deze automatisch te downloaden
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bits versie - **niet** ondersteuning voor 64-bits versie OS
 
-##### Stuurprogramma voor model V3 (CH340/CH341) voor Windows
+#### Stuurprogramma voor model V3 (CH340/CH341) voor Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 zou in staat moeten zijn om deze automatisch te downloaden
 
-##### Pak het gedownloade bestand voor Windows uit:
+#### Pak het gedownloade bestand voor Windows uit:
 * voor V2: Open de map CP210x en dubbelklik op de toepassing CP210xVCPInstaller_x64 (of x86)
 * voor V3: open de map CH341SER en dubbelklik op de toepassing SETUP.
 
@@ -25,11 +25,11 @@ De chipset voor NocdeMCUs v3 is meestal CH341, kijk maar eens op de achterkant v
 
 ### MacOS
 
-##### MacOS-stuurprogramma's
+#### MacOS-stuurprogramma's
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Pak het gedownloade bestand voor MacOS uit.
+#### Pak het gedownloade bestand voor MacOS uit.
 * voor V2: Unzip de map CP210x en dubbelklik op de toepassing CP210xVCPInstaller_x64 (of x86)
 * voor V3: Unzip de map CH341SER en dubbelklik op de toepassing SETUP.
 * Herstart uw Mac
@@ -57,10 +57,10 @@ In [Helmut Bitter's Github](https://github.com/hbitter/DNMS/tree/master/Firmware
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 
 Er bestaat ook een opdrachtregelversie.
 
-##### Teensyduino
+#### Teensyduino
 Je kan het .ino bestand flashen in de Teensy boards met de Arduino IDE extensie [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Indien nodig, kunt u de firmware rechtstreeks in de Arduino IDE wijzigen.

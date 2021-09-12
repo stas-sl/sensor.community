@@ -14,7 +14,7 @@ Paskutinės spausdintinių plokščių versijos aprašytos čia. Daugiau informa
 Plokštelė, skirta "NodeMCU ESP8266 CPU/WLAN" su I2C magistralės plėtiniu, prie kurio galima prijungti DNMS ir kitus jutiklius (SDS011, BME280...).
 
 
-##### Atsisiųsti
+#### Atsisiųsti
 * [Grandinės schema](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerberio failas, kurį galima įkelti į spausdintinių plokščių gamintojo svetainę](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ Plokštelė, skirta "NodeMCU ESP8266 CPU/WLAN" su I2C magistralės plėtiniu, pr
 DNMS "Teensy 4.0" spausdintinė plokštė, kurią galima prijungti tiesiogiai prie "NodeMCU ESP8266" arba prie pirmiau pateiktos AIRROHR spausdintinės plokštės.
 
 
-##### Atsisiųsti
+#### Atsisiųsti
 * [Grandinės schema](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerberio failas, kurį reikia įkelti į PCB gamintojo svetainę](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

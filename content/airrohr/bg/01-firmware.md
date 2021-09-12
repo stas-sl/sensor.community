@@ -12,14 +12,14 @@ title: Драйвери и фърмуер
 
 ### Windows
 
-##### Драйвери за модел V2 (CP2102) за Windows
+#### Драйвери за модел V2 (CP2102) за Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 трябва да може да ги изтегля автоматично
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bit версия за тези ОС, които не поддържат 64-bit версии
 
-##### Драйвери за модел V3 (CH340/CH341) за Windows
+#### Драйвери за модел V3 (CH340/CH341) за Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 трябва да може да ги изтегля автоматично
 
-##### Разархивирайте изтегления файл. Разархивирайте това:
+#### Разархивирайте изтегления файл. Разархивирайте това:
 * за V2: Отворете папката CP210x и кликнете два пъти върху приложението CP210xVCPInstaller_x64 (или x86)
 * за V3: Отворете папката CH341SER и кликнете два пъти върху приложението SETUP.
 
@@ -27,11 +27,11 @@ title: Драйвери и фърмуер
 
 ### MacOS
 
-#####  Драйвери за MacOS
+####  Драйвери за MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-#####  Разархивирайте изтегления файл за MacOS.
+####  Разархивирайте изтегления файл за MacOS.
 * за V2: Разархивирайте папката CP210x и кликнете два пъти върху приложението CP210xVCPInstaller_x64 (or x86)
 * за V3: Разархивирайте папката CH341SER и кликнете два пъти върху приложението SETUP.
 * Рестартирайте своя Mac

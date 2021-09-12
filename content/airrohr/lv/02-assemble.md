@@ -15,7 +15,7 @@ Piezīme: mūsu norādījumi attiecas uz NodeMCU 3. versiju. To var atpazīt pē
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Kad esat pabeidzis, tam vajadzētu izskatīties šādi.
+#### Kad esat pabeidzis, tam vajadzētu izskatīties šādi.
 
 
 ### Savienojiet SDS011
@@ -54,11 +54,11 @@ SCL -> Pin D4
 
 ### Visu sasiet kopā
 
-##### Sasieniet NodeMCU un SDS011 kopā
+#### Sasieniet NodeMCU un SDS011 kopā
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Izmantojiet kabeļu saiti, lai savienotu NodeMCU (ESP8266) un sensoru SDS011 tā, lai Wifi antena būtu vērsta prom no sensora.
 
-##### Savienojiet elastīgo cauruli
+#### Savienojiet elastīgo cauruli
 <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
 <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -66,14 +66,14 @@ Izmantojiet kabeļu saiti, lai savienotu NodeMCU (ESP8266) un sensoru SDS011 tā
 * Izmantojiet vēl vienu kabeļu saiti, lai piestiprinātu BME280 temperatūras sensoru pie caurules.
 * USB kabeli izvelciet caur caurulīti. Uzstādiet SDS011 ar NodeMCU uz augšu un ventilatoru uz leju.
 
-##### Ievietojiet sensoru caurulē.
+#### Ievietojiet sensoru caurulē.
 * Iebīdiet detaļas caurulē tā, lai tās būtu iespiestas iekšpusē.
 * USB kabelim, elastīgajai caurulei un BME280 jāskatās ārā no caurules gala.
 * Uzstumiet otru cauruli uz pirmās caurules.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
-##### Apdare
+#### Apdare
 * Uzlieciet temperatūras sensoru uz elastīgās caurules tā, lai tas atrastos uz caurules malas.
 * Nogrieziet elastīgo cauruli caurules galā.
 * Pēc izvēles: caurulītes atvērtos galus var aizklāt ar smalku sietu. Lai gaiss varētu cirkulēt, bet kukaiņi paliktu ārpusē.

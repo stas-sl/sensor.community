@@ -12,7 +12,7 @@ De microfoon unit is gebaseerd op het Pesky Products breakout board met een MEMS
 
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
-##### Behuizing voor de microfoon
+#### Behuizing voor de microfoon
 De behuizing is gemaakt van een polystyreenbuis van .500" (12,7 mm). Deze diameter maakt het mogelijk de meeste kalibratoren rechtstreeks op het toestel aan te sluiten.
 
 Het prototype is ontwikkeld met de [Evergreen No. 236 tubing](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ Nu kunt u de buis vullen met wat hars. Deze stap is verplicht om resonantie te v
 
 Het prototype werd ontwikkeld met enkele [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) geproduceerd door Copaltec GmbH.
 
-##### Specificaties:
+#### Specificaties:
 * Diëlektrische sterkte: 28 kVmm
 * Specifieke voorwaartse weerstand: 5,8.1014 ohmcm
 * Oppervlakte weerstand: 1,3.1016 ohm

@@ -7,10 +7,10 @@ title: Въвеждаща част
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Списък за пазаруване
-##### Комплект сензори
+#### Комплект сензори
 * [Готови станции](https://nettigo.eu/products/airbg-info-luftdaten)
 
-##### Единични компоненти
+#### Единични компоненти
 * [NodeMCU ESP8266 V3, CPU/WLAN микроконтролер](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 сензор за прах ](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) 
 * BME 280 3.3V, сензор за температура, влажност и атмосферно налягане – 6 пина

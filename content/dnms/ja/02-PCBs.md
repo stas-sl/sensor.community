@@ -14,7 +14,7 @@ PCBの最後のバージョンは、ここで説明されています。詳し�
 <img src="../docs/dnms/airrohr-PCB.jpg" style="display: block; width:40%;margin: 1em 0" loading="lazy"/>。
 NodeMCU ESP8266 CPU/WLAN用のPCBで、DNMSや他のセンサー(SDS011, BME280...)を接続するためのI2C Bus拡張機能を備えています。
 
-##### ダウンロード
+#### ダウンロード
 * [回路図](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [PCBメーカーのウェブサイトにアップロードするガーバーファイル](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -23,7 +23,7 @@ NodeMCU ESP8266 CPU/WLAN用のPCBで、DNMSや他のセンサー(SDS011, BME280.
 <img src="../docs/dnms/dnms-noise-measuring-teensy-4.jpg" style="display: block;width:40%; margin: 1em 0" loading="lazy"/>。
 DNMS Teensy 4.0用のPCBで、NodeMCU ESP8266に直接接続したり、上記のAIRROHR用PCBに接続することができます。
 
-#####  ダウンロード
+####  ダウンロード
 * [回路図](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * プリント基板メーカーのサイトにアップロードするガーバーファイル](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip))
 

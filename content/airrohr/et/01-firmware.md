@@ -12,14 +12,14 @@ Valige link, mis vastab teie arvuti operatsioonisüsteemile.
 
 ### Windows
 
-##### NodeMCU (ESP8266) V2 (CP2102) draiverid Windowsile
+#### NodeMCU (ESP8266) V2 (CP2102) draiverid Windowsile
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 peaks olema võimeline neid automaatselt alla laadima.
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitine versioon - **ei toeta** 64-bitise versiooni operatsioonisüsteemi
 
-##### Driver for NodeMCU (ESP8266) V3 (CH340/CH341) for Windows
+#### Driver for NodeMCU (ESP8266) V3 (CH340/CH341) for Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 peaks olema võimeline neid automaatselt alla laadima.
 
-##### Laaditud faili väljavõte Windowsi jaoks:
+#### Laaditud faili väljavõte Windowsi jaoks:
 * NodeMCU (ESP8266) V2: Avage kaust CP210x ja tehke topeltklõps rakendusel CP210xVCPInstaller_x64 (või x86).
 * NodeMCU (ESP8266) V3 puhul: avage kaust CH341SER ja tehke topeltklõps rakendusel SETUP.
 
@@ -27,11 +27,11 @@ Valige link, mis vastab teie arvuti operatsioonisüsteemile.
 
 ### MacOS
 
-##### MacOS draiverid
+#### MacOS draiverid
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Laaditud faili ekstraheerimine MacOS-i jaoks.
+#### Laaditud faili ekstraheerimine MacOS-i jaoks.
 * V2 jaoks: Paki kaust CP210x välja ja tee topeltklõps rakendusel CP210xVCPInstaller_x64 (või x86).
 * V3 puhul: Paki lahti kaust CH341SER ja tee topeltklõps rakendusel SETUP.
 * Taaskäivitage oma Mac

@@ -7,10 +7,10 @@ title: Bevezetés
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Vásárlási lista
-##### Szenzor készlet
+#### Szenzor készlet
 * [Előre feltöltött érzékelőkészlet](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Egyedi alkatrészek
+#### Egyedi alkatrészek
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 finom porérzékelő](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011)
 * BME280 6-PIN, hőmérséklet & páratartalom & légnyomás

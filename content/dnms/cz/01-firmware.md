@@ -10,14 +10,14 @@ NodeMCU v3 chipset je obvykle CH341, zkontrolujte zadní stranu Vašeho NodeMCU 
 
 ### Windows
 
-##### Ovladač modelu V2 (CP2102) pro Windows
+#### Ovladač modelu V2 (CP2102) pro Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 by měly být schopny tyto drivery automaticky stáhnout.
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitová verze - **nepodporuje** 64-bitovou verzi Windows.
 
-##### Ovladač modelu V3 (CH340/CH341) pro Windows
+#### Ovladač modelu V3 (CH340/CH341) pro Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 by měly být schopny tyto drivery automaticky stáhnout.
 
-##### Rozbalte stažený soubor pro Windows:
+#### Rozbalte stažený soubor pro Windows:
 * pro V2: Otevřete adresář CP210x a dvojklikem spusťte soubor CP210xVCPInstaller_x64 (or x86)
 * pro V3: Otevřete adresář CH341SER a dvojklikem spusťte soubor SETUP.
 
@@ -25,11 +25,11 @@ NodeMCU v3 chipset je obvykle CH341, zkontrolujte zadní stranu Vašeho NodeMCU 
 
 ### MacOS
 
-#####  MacOS Ovladače
+####  MacOS Ovladače
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-#####  Rozbalte stažený soubor pro MacOS.
+####  Rozbalte stažený soubor pro MacOS.
 * pro V2: Otevřete adresář CP210x a dvojklikem spusťte soubor CP210xVCPInstaller_x64 (or x86)
 * pro V3: Otevřete adresář CH341SER a dvojklikem spusťte soubor SETUP.
 * Restarujte Váš Mac
@@ -56,10 +56,10 @@ Na [Githubu Helmuta Bittera](https://github.com/hbitter/DNMS/tree/master/Firmwar
 * .ino
 * .hex
 
-#####  Teensy Loader
+####  Teensy Loader
 Soubor .hex můžete flashovat na desku Teensy pomocí samostatného softwaru GUI [Teensy Loader](https://www.pjrc.com/teensy/loader.html) dostupný pro Windows, Mac a Linux.
 Existuje také verze pouze s příkazovým řádkem.
 
-#####  Teensyduino
+####  Teensyduino
 Soubor .ino můžete flashovat na desku Teensy pomocí rozšíření Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 V případě potřeby můžete firmware upravit přímo zde v Arduino IDE.

@@ -14,7 +14,7 @@ PCB-de viimased versioonid on kirjeldatud siin. Lisateavet ja juurdepääsu KiCa
 PCB NodeMCU ESP8266 CPU/WLAN jaoks koos I2C Bus laiendiga, et ühendada DNMS-i ja ka teisi andureid (SDS011, BME280...).
 
 
-##### Allalaadimine
+#### Allalaadimine
 * [elektriskeem](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerber-faili üleslaadimiseks trükkplaaditootja veebisaidil](../docs/dnms/airrohr-PCB-ahela skeem-gerber.zip)
 
@@ -25,7 +25,7 @@ PCB NodeMCU ESP8266 CPU/WLAN jaoks koos I2C Bus laiendiga, et ühendada DNMS-i j
 PCB DNMS Teensy 4.0 jaoks, mida saab ühendada otse NodeMCU ESP8266 või ülaltoodud AIRROHR PCB-le.
 
 
-##### Lae alla
+#### Lae alla
 * [elektriskeem](../docs/dnms/dnms-müra-mõõtmine-teensy-40-elektriskeem.pdf)
 * [Gerber-faili üleslaadimiseks trükkplaadi tootja veebisaidil](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

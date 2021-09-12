@@ -12,14 +12,14 @@ Alegeți legătura care corespunde sistemului de operare al computerului dumneav
 
 ### Windows
 
-##### Drivere pentru NodeMCU (ESP8266) V2 (CP2102) pentru Windows
+#### Drivere pentru NodeMCU (ESP8266) V2 (CP2102) pentru Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 ar trebui să fie capabil să descarce automat acestea
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - versiune pe 32 de biți - **nu** suportă versiunea pe 64 de biți OS
 
-##### Driver pentru NodeMCU (ESP8266) V3 (CH340/CH341) pentru Windows
+#### Driver pentru NodeMCU (ESP8266) V3 (CH340/CH341) pentru Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 ar trebui să fie capabil să le descarce automat.
 
-##### Extrageți fișierul descărcat pentru Windows:
+#### Extrageți fișierul descărcat pentru Windows:
 * pentru NodeMCU (ESP8266) V2: Deschideți folderul CP210x și faceți dublu clic pe aplicația CP210xVCPInstaller_x64 (sau x86)
 * pentru NodeMCU (ESP8266) V3: deschideți folderul CH341SER și faceți dublu clic pe aplicația SETUP.
 
@@ -27,11 +27,11 @@ Alegeți legătura care corespunde sistemului de operare al computerului dumneav
 
 ### MacOS
 
-##### Drivere MacOS
+#### Drivere MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Extrageți fișierul descărcat pentru MacOS.
+#### Extrageți fișierul descărcat pentru MacOS.
 * pentru V2: Descompuneți folderul CP210x și faceți dublu clic pe aplicația CP210xVCPInstaller_x64 (sau x86).
 * pentru V3: Dezarhivați folderul CH341SER și faceți dublu clic pe aplicația SETUP.
 * Reporniți Mac-ul

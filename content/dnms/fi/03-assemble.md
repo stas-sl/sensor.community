@@ -13,7 +13,7 @@ Mikrofoniyksikkö perustuu Pesky Productsin irrotuslevyyn, jossa on MEMS-mikrofo
 Mikrofoniyksikkö perustuu Pesky Productsin irrotuslevyyn, jossa on MEMS-mikrofoni ICS-43434. Voit ostaa tällaisen levyn [Tindie marketplace](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/).
 
 
-##### Mikrofoniyksikön kotelo
+#### Mikrofoniyksikön kotelo
 Kotelo on valmistettu .500" (12,7 mm) polystyreeniputkesta. Tämän halkaisijan ansiosta useimmat kalibraattorit voidaan liittää suoraan laitteeseen.
 
 Prototyyppi kehitettiin [Evergreen No. 236 -putkella](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ Nyt voit täyttää putken hartsilla. Tämä vaihe on pakollinen resonanssin vä
 
 Prototyyppi kehitettiin käyttäen Copaltec GmbH:n valmistamaa [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900).
 
-##### Tekniset tiedot:
+#### Tekniset tiedot:
 * Läpilyöntilujuus: 28 kVmm
 * Erityinen etuvastus: 5,8.1014 ohmcm
 * Pintavastus: 1,3.1016 ohmia

@@ -12,14 +12,14 @@ Valitse tietokoneen käyttöjärjestelmää vastaava linkki.
 
 ### Windows
 
-##### Ohjaimet NodeMCU (ESP8266) V2 (CP2102) - Windowsille
+#### Ohjaimet NodeMCU (ESP8266) V2 (CP2102) - Windowsille
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10:n pitäisi pystyä lataamaan nämä automaattisesti.
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bittinen versio - **ei** tukee 64-bittistä versiota käyttöjärjestelmästä.
 
-##### Ajuri NodeMCU:lle (ESP8266) V3 (CH340/CH341) Windows-käyttöjärjestelmälle
+#### Ajuri NodeMCU:lle (ESP8266) V3 (CH340/CH341) Windows-käyttöjärjestelmälle
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10:n pitäisi pystyä lataamaan nämä automaattisesti.
 
-##### Pura ladattu tiedosto Windowsille:
+#### Pura ladattu tiedosto Windowsille:
 * NodeMCU:lle (ESP8266) V2: Avaa kansio CP210x ja kaksoisnapsauta sovellusta CP210xVCPInstaller_x64 (tai x86).
 * NodeMCU (ESP8266) V3: avaa kansio CH341SER ja kaksoisnapsauta sovellusta SETUP.
 
@@ -27,11 +27,11 @@ Valitse tietokoneen käyttöjärjestelmää vastaava linkki.
 
 ### MacOS
 
-##### MacOS -ajurit
+#### MacOS -ajurit
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Pura ladattu tiedosto MacOS:lle.
+#### Pura ladattu tiedosto MacOS:lle.
 * V2:lle: Pura kansio CP210x ja kaksoisnapsauta sovellusta CP210xVCPInstaller_x64 (tai x86).
 * V3: Pura kansio CH341SER ja kaksoisnapsauta sovellusta SETUP.
 * Käynnistä Mac uudelleen

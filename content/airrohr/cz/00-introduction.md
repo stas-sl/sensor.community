@@ -7,10 +7,10 @@ title: Úvod
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Nákupní seznam
-##### Set všech součástek
+#### Set všech součástek
 * [Set všech potřebných součástek včetně nahraného softwaru](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Jednotlivé komponenty
+#### Jednotlivé komponenty
 * [Modul NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Senzor prachových částic SDS011](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011)
 * BME280 6-PINový, teplota & vlhkost & tlak vzduchu

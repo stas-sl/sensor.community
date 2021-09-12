@@ -216,7 +216,7 @@
                     <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{i18n.t('mission:mediakit')}</h2>
                     <p class="text-xl leading-8">{i18n.t('mission:mediakit-description')} <a
                             class="text-xl leading-8 font-medium text-brand-funcRed"
-                            href="https://exchange.sensor.community/index.php/s/bkKqHFRT97aBAbR" target="_blank">
+                            href="https://exchange.sensor.community/index.php/s/nLGKfMNsmbWLQfR" target="_blank">
                         {i18n.t('mission:mediakit-download')} &nbsp&rarr;
                     </a>
                     </p>

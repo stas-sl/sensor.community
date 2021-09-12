@@ -13,25 +13,25 @@ Kies hieronder de link die overeenkomt met het operating systeem van je computer
 
 ### Windows
 
-##### Drivers voor NodeMCU V2 (CP2102) voor Windows
+#### Drivers voor NodeMCU V2 (CP2102) voor Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 zou deze automatisch moeten kunnen downloaden
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bit versie - ondersteunt **niet** 64-bit
 
-##### Driver voor NodeMCU V3 (CH340/CH341) voor Windows
+#### Driver voor NodeMCU V3 (CH340/CH341) voor Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 zou deze automatisch moeten kunnen downloaden
 
-##### Uitpakken van de gedownloade file voor Windows:
+#### Uitpakken van de gedownloade file voor Windows:
 * Pak de geZIPte drivers uit met behulp van de uitpak functie in de Windows Verkenner.
 * voor NodeMCU (ESP8266) V2: open de folder CP210x en dubbelklik op de applicatie CP210xVCPInstaller_x64 (of x86)
 * voor NodeMCU (ESP8266) V3: open de folder CH341SER en dubbelklik op de applicatie SETUP.
 
 ### MacOS
 
-##### MacOS Drivers
+#### MacOS Drivers
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-#####  Uitpakken van de gedownloade file for MacOS.
+####  Uitpakken van de gedownloade file for MacOS.
 * voor V2: Unzip de folder CP210x en dubbelklik op de applicatie CP210xVCPInstaller_x64 (or x86)
 * voor V3: Unzip de folder CH341SER en dubbelklik op de applicatie SETUP.
 * Herstart je Mac

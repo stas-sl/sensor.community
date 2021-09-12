@@ -12,7 +12,7 @@ Die aktuellste Version der Leiterplatten ist hier beschrieben. Weitere Informati
 <img src="../docs/dnms/airrohr-PCB.jpg" style="display: block; width:40%;margin: 1em 0" loading="lazy"/>
 Platine für den NodeMCU ESP8266 CPU/WLAN mit einer I2C-Bus-Erweiterung zum Anschluss des DNMS sowie weiterer Sensoren (SDS011, BME280...).
 
-##### Download
+#### Download
 * [Schaltplan](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerber-Datei zum Hochladen auf der Website des Leiterplattenherstellers](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -23,7 +23,7 @@ Platine für den NodeMCU ESP8266 CPU/WLAN mit einer I2C-Bus-Erweiterung zum Ansc
 Platine für den DNMS Teensy 4.0, der direkt auf einen NodeMCU ESP8266 oder auf die obige AIRROHR-Platine gesteckt werden kann.
 
 
-##### Download
+#### Download
 * [Schaltplan](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber-Datei zum Hochladen auf der Website des Leiterplattenherstellers](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

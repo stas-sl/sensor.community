@@ -40,7 +40,7 @@ In der Variante kann die Verbindung zwischen dem NodeMCU und dem DNMS bis zu 10m
 
 ### Einkaufsliste
 
-##### Einzelne Komponenten
+#### Einzelne Komponenten
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Teensy 4.0 Entwicklungsboard](https://www.pjrc.com/store/teensy40.html). Andere Anbieter: [EXPTECH](https://www.exp-tech.de/plattformen/teensy/9596/teensy-4.0-development-board), [Antratek](https://www.antratek.de/teensy-4-0), [PIMORONI](https://shop.pimoroni.com/products/teensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/)
@@ -48,7 +48,7 @@ In der Variante kann die Verbindung zwischen dem NodeMCU und dem DNMS bis zu 10m
   <br>
 
 
-##### Einzelne KomponentenDer für die airRohr-DNMS-Kombi:
+#### Einzelne KomponentenDer für die airRohr-DNMS-Kombi:
 * [SPS30 Feinstaubsensor](https://www.sparkfun.com/products/15103). Andere Anbieter: [TME](https://www.tme.eu/de/details/sps30/gassensoren/sensirion/1-101638-10/?brutto=1), [SOS electronic](https://www.soselectronic.de/products/sensirion/sps30-2-304234). Der [SDS011 Feinstaubsensor](https://de.aliexpress.com/wholesale?catId=0&initiative_id=AS_20200813122806&SearchText=sds011) kann ebenfalls verwendet werden.
 * [BME280 6-PIN Version, temperature & humidity](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20200308040440&SearchText=bme280+-5V+%2B3.3V). Andere Anbieter®: [Nettigo](https://nettigo.eu/products/module-pressure-humidity-and-temperature-sensor-bosch-bme280), [Berrybase](https://www.berrybase.de/bauelemente/sensoren-module/feuchtigkeit/bme680-breakout-board-4in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-luftdruck-und-luftg-252-t)
 * [Kabel](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=Dupont+cable+20cm+female-female)

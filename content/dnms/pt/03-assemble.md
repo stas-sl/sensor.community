@@ -13,7 +13,7 @@ A unidade de microfone é baseada na placa breakout Pesky Products com um microf
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Caixa para a unidade de microfone
+#### Caixa para a unidade de microfone
 O invólucro é feito com um tubo de poliestireno de 0,500" (12,7 mm). Este diâmetro permite conectar diretamente a maioria dos calibradores na unidade.
 
 O protótipo foi desenvolvido com o [tubo Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -45,7 +45,7 @@ Agora você pode preencher o tubo com um pouco de resina. Esta etapa é obrigat�
 
 O protótipo foi desenvolvido com a resina [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) produzido pela Copaltec GmbH.
 
-##### Especificações:
+#### Especificações:
 * Rigidez dielétrica: 28 kV / mm
 * Resistência direta específica: 5,8,1014 ohm / cm
 * Resistência de superfície: 1,3,1016 ohm

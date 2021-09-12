@@ -13,7 +13,7 @@ Unitatea de microfon se bazează pe o placă de descompunere Pesky Products cu u
 Unitatea de microfon se bazează pe o placă de descompunere Pesky Products cu un microfon MEMS ICS-43434. Puteți găsi o astfel de placă pe [Tindie marketplace](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/).
 
 
-##### Carcasă pentru unitatea de microfon
+#### Carcasă pentru unitatea de microfon
 Carcasa este fabricată cu un tub de polistiren de 12,7 mm (0,500"). Acest diametru permite conectarea directă a majorității calibratoarelor la unitate.
 
 Prototipul a fost dezvoltat cu [tubulatura Evergreen nr. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ Acum puteți umple tubul cu puțină rășină. Acest pas este obligatoriu pentr
 
 Prototipul a fost dezvoltat cu niște [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) produs de Copaltec GmbH.
 
-##### Specificații:
+#### Specificații:
 * Rezistența dielectrică: 28 kVmm
 * Rezistență specifică la înaintare: 5,8.1014 ohmcm
 * Rezistența de suprafață: 1,3.1016 ohm

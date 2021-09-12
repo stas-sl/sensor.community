@@ -12,7 +12,7 @@ Mikrofoniüksus põhineb Pesky Products Breakout-plaadil koos MEMS-mikrofoniga I
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Mikrofoniüksuse korpus
+#### Mikrofoniüksuse korpus
 Korpus on valmistatud .500" (12,7 mm) polüstüreenist torudest. See läbimõõt võimaldab ühendada otse enamiku kalibraatoreid seadme külge.
 
 Prototüüp töötati välja [Evergreen nr. 236 toruga](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ Nüüd saate toru vaiguga täita. See samm on kohustuslik, et vältida resonants
 
 Prototüüp on välja töötatud mõne [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900), mida toodab Copaltec GmbH.
 
-##### Spetsifikatsioonid
+#### Spetsifikatsioonid
 * Dielektriline tugevus: 28 kV/mm
 * Spetsiifiline läbivoolutakistus: 5,8.1014 ohm/cm.
 * Pinnatakistus: 1,3,1016 oomi

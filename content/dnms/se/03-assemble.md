@@ -11,7 +11,7 @@ Mikrofonenheten är baserad på Pesky Products brytkort med en MEMS-mikrofon ICS
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Hölje för mikrofonenheten
+#### Hölje för mikrofonenheten
 Höljet är tillverkat med en 0,55 "(12,7 mm) polystyrenrör. Denna diameter gör det möjligt att direkt ansluta de flesta kalibratorer på enheten.
 
 Prototypen utvecklades med [Evergreen No. 236 slangar](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -43,7 +43,7 @@ Nu kan du fylla röret med lite harts. Detta steg är obligatoriskt för att und
 
 Prototypen utvecklades med en del [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) producerad av Copaltec GmbH.
 
-##### Specifikationer:
+#### Specifikationer:
 * Dielektrisk hållfasthet: 28 kV / mm
 * Specifikt framåtriktat motstånd: 5,8.1014 ohm / cm
 * Ytmotstånd: 1,3.1016 ohm

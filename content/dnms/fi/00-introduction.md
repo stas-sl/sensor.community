@@ -45,7 +45,7 @@ Kyseinen arkisto sisältää erilaisia kokoonpanoja anturin rakentamiseksi erila
 
 ### Ostoslista
 
-##### Yksittäiset komponentit
+#### Yksittäiset komponentit
 * [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Teensy 4.0 -kehitysalusta](https://www.pjrc.com/store/teensy40.html). Muut myyjät: [EXPTECH](https://www.exp-tech.de/plattformen/teensy/9596/teensy-4.0-development-board), [Antratek](https://www.antratek.de/teensy-4-0), [PIMORONI](https://shop.pimoroni.com/products/teensy-4-0-development-board).
 * [Digitales Mikrofon ICS-43434](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/)

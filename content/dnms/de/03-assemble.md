@@ -13,7 +13,7 @@ Die Mikrofoneinheit basiert auf einem Breakout-Board von Pesky Products mit eine
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Gehäuse für die Mikrofoneinheit
+#### Gehäuse für die Mikrofoneinheit
 Das Gehäuse ist aus einem .500" (12,7mm) Polystyrolrohr gefertigt. Dieser Durchmesser erlaubt es, die meisten Kalibratoren direkt an das Gerät anzuschließen.
 
 Der Prototyp wurde mit dem [Evergreen-Rohr Nr. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing) entwickelt.
@@ -45,7 +45,7 @@ Nun das Rohr mit etwas Harz befüllen. Dieser Schritt ist zwingend erforderlich,
 
 Der Prototyp wurde entwickelt mit [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) der Firma Copaltec GmbH.
 
-##### Spezifikationen:
+#### Spezifikationen:
 * Durchschlagsfestigkeit: 28 kV/mm
 * Spezifischer Durchlasswiderstand: 5,8.1014 Ohm/cm
 * Oberflächenwiderstand: 1,3.1016 ohm

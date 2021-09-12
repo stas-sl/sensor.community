@@ -10,14 +10,14 @@ Chipset-ul pentru NocdeMCU v3 este de obicei CH341, verificați partea din spate
 
 ### Windows
 
-##### Drivere pentru modelul V2 (CP2102) pentru Windows
+#### Drivere pentru modelul V2 (CP2102) pentru Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 ar trebui să fie capabil să descarce automat acestea
 * [Windows 788.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - versiune pe 32 de biți - **nu** suportă versiunea pe 64 de biți OS
 
-##### Driver pentru modelul V3 (CH340/CH341) pentru Windows
+#### Driver pentru modelul V3 (CH340/CH341) pentru Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 ar trebui să fie capabil să le descarce automat.
 
-##### Extrageți fișierul descărcat pentru Windows:
+#### Extrageți fișierul descărcat pentru Windows:
 * pentru V2: Deschideți folderul CP210x și faceți dublu clic pe aplicația CP210xVCPInstaller_x64 (sau x86).
 * pentru V3: deschideți dosarul CH341SER și faceți dublu clic pe aplicația SETUP.
 
@@ -25,11 +25,11 @@ Chipset-ul pentru NocdeMCU v3 este de obicei CH341, verificați partea din spate
 
 ### MacOS
 
-##### Drivere MacOS
+#### Drivere MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Extrageți fișierul descărcat pentru MacOS.
+#### Extrageți fișierul descărcat pentru MacOS.
 * pentru V2: Descompuneți folderul CP210x și faceți dublu clic pe aplicația CP210xVCPInstaller_x64 (sau x86).
 * pentru V3: Dezarhivați folderul CH341SER și faceți dublu clic pe aplicația SETUP.
 * Reporniți Mac-ul
@@ -57,10 +57,10 @@ Așteptați până când procesul se termină. Acum putem asambla senzorul.
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Puteți să introduceți fișierul .hex în plăcile Teensy cu ajutorul software-ului independent GUI [Teensy Loader](https://www.pjrc.com/teensy/loader.html) pentru Windows, Mac și Linux.
 Există și o versiune în linie de comandă.
 
-##### Teensyduino
+#### Teensyduino
 Puteți să afișați fișierul .ino în plăcile Teensy cu extensia Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Dacă este necesar, puteți modifica firmware-ul direct în Arduino IDE.

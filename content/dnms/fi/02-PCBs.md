@@ -14,7 +14,7 @@ Piirilevyjen viimeiset versiot kuvataan tässä. Katso [Helmut Bitterin Github](
 Piirilevy NodeMCU ESP8266 CPUWLAN:lle, jossa on I2C-väylän laajennus DNMS: n ja muiden antureiden (SDS011, BME280...) liittämiseksi.
 
 
-##### Lataa:
+#### Lataa:
 * [Piirikaavio](..docsdnmsairrohr-PCB-circuit-diagram.pdf)
 * [Gerber-tiedosto ladattavaksi PCB-valmistajan verkkosivustolle](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -24,7 +24,7 @@ Piirilevy NodeMCU ESP8266 CPUWLAN:lle, jossa on I2C-väylän laajennus DNMS: n j
 Piirilevy DNMS Teensy 4.0: lle, joka voidaan liittää suoraan NodeMCU ESP8266: hen tai edellä mainittuun AIRROHR PCB: hen.
 
 
-##### Lataa:
+#### Lataa:
 * [Piirikaavio](..docsdnmsdnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber-tiedosto ladattavaksi piirilevyvalmistajan verkkosivustolle](..docsdnmsdnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

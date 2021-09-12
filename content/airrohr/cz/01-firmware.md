@@ -12,14 +12,14 @@ Vyberte odkaz, který odpovídá vašemu operačnímu systému.
 
 ### Windows
 
-##### Ovladač modelu V2 (CP2102) pro Windows
+#### Ovladač modelu V2 (CP2102) pro Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 by měly být tyto drivery schopny stáhnout automaticky.
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitová verze - **nepodporuje** 64-bitovou verzi Windows.
 
-##### Ovladač modelu V3 (CH340/CH341) pro Windows
+#### Ovladač modelu V3 (CH340/CH341) pro Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 by měly být tyto drivery schopny stáhnout automaticky.
 
-##### Rozbalte stažený soubor pro Windows:
+#### Rozbalte stažený soubor pro Windows:
 * pro V2: Otevřete adresář CP210x a dvojklikem spusťte soubor CP210xVCPInstaller_x64 (or x86)
 * pro V3: Otevřete adresář CH341SER a dvojklikem spusťte soubor SETUP.
 
@@ -27,11 +27,11 @@ Vyberte odkaz, který odpovídá vašemu operačnímu systému.
 
 ### MacOS
 
-#####  MacOS Ovladače
+####  MacOS Ovladače
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-#####  Rozbalte stažený soubor pro MacOS.
+####  Rozbalte stažený soubor pro MacOS.
 * pro V2: Otevřete adresář CP210x a dvojklikem spusťte soubor CP210xVCPInstaller_x64 (or x86)
 * pro V3: Otevřete adresář CH341SER a dvojklikem spusťte soubor SETUP.
 * Restarujte Váš Mac

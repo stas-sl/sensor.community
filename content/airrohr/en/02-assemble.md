@@ -15,7 +15,7 @@ Note: Our instructions refer to version 3 of the NodeMCU. This can be recognized
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### When you are done, this is how it should look like
+#### When you are done, this is how it should look like
 
 
 ### Wire the SDS011
@@ -55,11 +55,11 @@ SCL -> Pin D4
 
 ### Tie everything together
 
-##### Tie NodeMCU and SDS011 together
+#### Tie NodeMCU and SDS011 together
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Use a cable tie to link the NodeMCU (ESP8266) and the SDS011 sensor so that the Wifi antenna points away from the sensor
 
-##### Connect flexible tube
+#### Connect flexible tube
 <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
 <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -67,19 +67,23 @@ Use a cable tie to link the NodeMCU (ESP8266) and the SDS011 sensor so that the 
 * Use another cable tie to attach the BME280 temperature sensor to the tube
 * Pass the USB cable through the tube. Mount the SDS011 with the NodeMCU facing to the top and the fan facing to the bottom
  
-##### Push in sensor into the pipe
-* Push the parts into the tube, so it's jammed inside
+#### Push in sensor into the pipe
+* Push the parts into the tube, so it's jammed inside. Make sure that no cables are pinched.
+ <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
+
 * USB cable, flexible tube and BME280 should look out of the tube's end
 * Push the other pipe onto the first one.
 
-<img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
+<img src="../docs/airrohr/slide-other-tube-into-air-quality-sensor.jpeg" loading="lazy"/>
 
-##### Finishing
+
+#### Finishing
 * Position the temperature sensor on the flexible tube, so that it's on the edge of the pipe.
 * Cut off the flexible tube at the end of the pipe
 * Optional: you can cover the open ends of the tube with a fine mesh. So air can circulate but insects stay outside
- 
+
 <img src="../docs/airrohr/position-bme280.jpeg" loading="lazy"/>
+
 
 ### Placement 
 Ideal place would be 1.5 to 3.5 meters above the street and well ventilated. However, this cannot be done for all people because, therefore, information such as the height above the ground and the position to the street is requested during registration.

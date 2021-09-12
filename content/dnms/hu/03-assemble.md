@@ -12,7 +12,7 @@ A mikrofonegység a Pesky Products ICS-43434 MEMS-mikrofonnal ellátott breakout
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### A mikrofonegység háza
+#### A mikrofonegység háza
 A ház 12,7 mm-es (0,500") polisztirol csőből készül. Ez az átmérő lehetővé teszi a legtöbb kalibrátor közvetlen csatlakoztatását az egységre.
 
 A prototípust az [Evergreen No. 236 csővel](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing) fejlesztettük ki.
@@ -44,7 +44,7 @@ Most már meg lehet tölteni a csövet némi gyantával. Ez a lépés kötelező
 
 A prototípust a Copaltec GmbH által gyártott némi [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) gyantával fejlesztettük ki.
 
-##### Műszaki adatok
+#### Műszaki adatok
 * Dielektromos szilárdság: 28 kV/mm
 * Fajlagos előremenő ellenállás: 5,8.1014 ohm/cm
 * Felületi ellenállás: 1,3.1016 ohm

@@ -13,7 +13,7 @@ Mikrofonska enota temelji na razdelilni plošči Pesky Products z mikrofonom MEM
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Ohišje za mikrofonsko enoto
+#### Ohišje za mikrofonsko enoto
 Ohišje je izdelano iz polistirenske cevi velikosti 0,500" (12,7 mm). Ta premer omogoča neposredno priključitev večine kalibratorjev na enoto.
 
 Prototip je bil razvit s cevjo [Evergreen št. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -45,7 +45,7 @@ Zdaj lahko cev napolnite z nekaj smole. Ta korak je obvezen, če se želite izog
 
 Prototip je bil razvit z nekaj [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900), ki ga je izdelalo podjetje Copaltec GmbH.
 
-##### Specifikacije
+#### Specifikacije
 * Dielektrična trdnost: 28 kV/mm
 * Specifična upornost v smeri naprej: 5,8.1014 ohm/cm
 * Površinska upornost: 1,3.1016 ohm

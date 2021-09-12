@@ -13,7 +13,7 @@ De senaste versionerna av PCB beskrivs här. Se [Helmut Bitter's Github](https:/
 <img src="../docs/dnms/airrohr-PCB.jpg" style="display: block; width:40%;margin: 1em 0" loading="lazy"/>
 Kretskort för NodeMCU ESP8266 CPU / WLAN med en I2C-bussförlängning för att ansluta DNMS till samt andra sensorer (SDS011, BME280 ...).
 
-##### Ladda ner:
+#### Ladda ner:
 * [Kretsschema](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerber-fil att ladda upp på PCB-tillverkarens webbplats](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -24,7 +24,7 @@ Kretskort för NodeMCU ESP8266 CPU / WLAN med en I2C-bussförlängning för att 
 PCB för DNMS Teensy 4.0 som kan anslutas direkt på en NodeMCU ESP8266 eller på AIRROHR PCB ovan.
 
 
-##### Ladda ner:
+#### Ladda ner:
 * [Kretsschema](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber-fil att ladda upp på PCB-tillverkarens webbplats](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

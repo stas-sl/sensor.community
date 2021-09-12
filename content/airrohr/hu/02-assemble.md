@@ -15,7 +15,7 @@ Megjegyzés: Utasításaink a NodeMCU 3-as verziójára vonatkoznak. Ezt a VU é
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Ha kész vagy, így kell kinéznie
+#### Ha kész vagy, így kell kinéznie
 
 
 ### Vezessük be az SDS011-et
@@ -55,11 +55,11 @@ SCL -> Pin D4
 
 ### Kössünk össze mindent
 
-##### Kösd össze a NodeMCU-t és az SDS011-et!
+#### Kösd össze a NodeMCU-t és az SDS011-et!
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Egy kábelkötegelővel kösse össze a NodeMCU-t (ESP8266) és az SDS011 érzékelőt úgy, hogy a Wifi antenna az érzékelőtől távolabb mutasson.
 
-##### Csatlakoztassa a hajlékony csövet
+#### Csatlakoztassa a hajlékony csövet
 <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
 <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -67,14 +67,14 @@ Egy kábelkötegelővel kösse össze a NodeMCU-t (ESP8266) és az SDS011 érzé
 * Egy másik kábelkötegelővel rögzítse a BME280 hőmérséklet-érzékelőt a csőhöz.
 * Vezesse át az USB-kábelt a csövön. Szerelje fel az SDS011-et úgy, hogy a NodeMCU felülre, a ventilátor pedig alulra nézzen.
 
-##### Tolja be az érzékelőt a csőbe
+#### Tolja be az érzékelőt a csőbe
 * Nyomja be az alkatrészeket a csőbe, úgy, hogy beakadjon a csőbe.
 * Az USB-kábelnek, a rugalmas csőnek és a BME280-nak ki kell néznie a cső végéből.
 * Nyomja a másik csövet az elsőre.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
-##### Befejezés
+#### Befejezés
 * Helyezze a hőmérséklet-érzékelőt a hajlékony csőre úgy, hogy az a cső szélén legyen.
 * Vágja le a hajlékony csövet a cső végénél.
 * Opcionális: a cső nyitott végeit finom hálóval fedheti le. Így a levegő keringhet, de a rovarok kívül maradnak.

@@ -12,14 +12,14 @@ title: Πρόγραμμα οδήγησης &amp; υλικολογισμικό
 
 ### Windows
 
-##### Οδηγούς για NodeMCU (ESP8266) V2 (CP2102) για Windows
+#### Οδηγούς για NodeMCU (ESP8266) V2 (CP2102) για Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Τα Windows 10 θα πρέπει να μπορούν να τα κατεβάσουν αυτόματα.
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - Έκδοση 32-bit - **δεν υποστηρίζει** έκδοση 64-bit OS
 
-##### Πρόγραμμα οδήγησης για NodeMCU (ESP8266) V3 (CH340/CH341) για Windows
+#### Πρόγραμμα οδήγησης για NodeMCU (ESP8266) V3 (CH340/CH341) για Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Τα Windows 10 θα πρέπει να μπορούν να τα κατεβάσουν αυτόματα
 
-##### Αποσυμπιέστε το αρχείο που κατεβάσατε για τα Windows
+#### Αποσυμπιέστε το αρχείο που κατεβάσατε για τα Windows
 * για το NodeMCU (ESP8266) V2: Ανοίξτε το φάκελο CP210x και κάντε διπλό κλικ στην εφαρμογή CP210xVCPInstaller_x64 (ή x86)
 * για NodeMCU (ESP8266) V3: ανοίξτε το φάκελο CH341SER και κάντε διπλό κλικ στην εφαρμογή SETUP.
 
@@ -27,11 +27,11 @@ title: Πρόγραμμα οδήγησης &amp; υλικολογισμικό
 
 ### MacOS
 
-##### Οδηγοί MacOS
+#### Οδηγοί MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Εξάγετε το αρχείο που κατεβάσατε για MacOS
+#### Εξάγετε το αρχείο που κατεβάσατε για MacOS
 * για το V2: Αποσυμπιέστε το φάκελο CP210x και κάντε διπλό κλικ στην εφαρμογή CP210xVCPInstaller_x64 (ή x86)
 * για V3: Αποσυμπιέστε το φάκελο CH341SER και κάντε διπλό κλικ στην εφαρμογή SETUP.
 * Επανεκκίνηση του Mac σας

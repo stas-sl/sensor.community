@@ -12,7 +12,7 @@ title: Συναρμολόγηση
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Περίβλημα για τη μονάδα μικροφώνου
+#### Περίβλημα για τη μονάδα μικροφώνου
 Το περίβλημα είναι κατασκευασμένο από σωλήνα πολυστυρενίου 0,500" (12,7 mm). Αυτή η διάμετρος επιτρέπει την απευθείας σύνδεση των περισσότερων βαθμονομητών στη μονάδα.
 
 Το πρωτότυπο αναπτύχθηκε με τον σωλήνα [Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ title: Συναρμολόγηση
 
 Το πρωτότυπο αναπτύχθηκε με κάποια [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) που παράγεται από την Copaltec GmbH.
 
-##### Προδιαγραφές
+#### Προδιαγραφές
 * Διηλεκτρική αντοχή: 28 kV/mm
 * Ειδική αντίσταση προς τα εμπρός: 5,8.1014 ohm/cm
 * Επιφανειακή αντίσταση: 1,3.1016 ohm

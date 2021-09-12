@@ -2,7 +2,7 @@
 title: Odpravljanje težav
 ---
 
-##### Težave z oddajanjem?
+#### Težave z oddajanjem?
 V brskalnik vnesite naslednje podatke:
 `https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1&var-chipID=esp8266-[ID]`
 

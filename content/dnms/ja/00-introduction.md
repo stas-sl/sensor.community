@@ -43,7 +43,7 @@ title: Introduction
 このケースでは、NodeMCUとDNMSの間の接続は10mにもなります。これは、正確なノイズ測定を行うためには、DNMSの適切な位置を見つける必要があるため、重要です。
 
 ### ショッピングリスト
-##### 単一コンポーネント
+#### 単一コンポーネント
 * [NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Teensy 4.0 開発ボード](https://www.pjrc.com/store/teensy40.html). その他の販売者 [EXPTECH](https://www.exp-tech.de/plattformen/teensy/9596/teensy-4.0-development-board), [Antratek](https://www.antratek.de/teensy-4-0), [PIMORONI](https://shop.pimoroni.com/products/teensy-4-0-development-board)
 * [Digitales Mikrofon ICS-43434](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/)

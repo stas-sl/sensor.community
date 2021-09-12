@@ -14,7 +14,7 @@ Les versions actuelles des platines sont décrites ici. Consultez le [GitHub de 
 Platine pour le microcontrôleur NodeMCU ESP8266 (processeur + WiFi) disposant d'une extension de bus I2C pour connecter le DNMS et les autres capteurs (SPS30, SDS011, BME280…).
 
 
-##### Download
+#### Download
 * [Diagramme](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Fichier Gerber à charger sur le site internet du fabricant de platines](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ Platine pour le microcontrôleur NodeMCU ESP8266 (processeur + WiFi) disposant d
 Platine pour le microcontrôleur Teensy 4.0 à connecter à la platine AIRROHR ci-dessus.
 
 
-##### Download
+#### Download
 * [Diagramme](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Fichier Gerber à charger sur le site internet du fabricant de platines](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

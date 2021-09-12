@@ -10,14 +10,14 @@ A NocdeMCU v3 chipkészlet általában CH341, csak ellenőrizze a NodeMCU hátol
 
 ### Windows
 
-##### Illesztőprogramok a V2-es modellhez (CP2102) Windowshoz
+#### Illesztőprogramok a V2-es modellhez (CP2102) Windowshoz
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - A Windows 10 képesnek kell lennie arra, hogy automatikusan letöltse ezeket.
 * [Windows 7/8/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32 bites verzió - **nem** támogatja a 64 bites verziójú operációs rendszert.
 
-##### illesztőprogram a V3 modellhez (CH340/CH341) Windowshoz
+#### illesztőprogram a V3 modellhez (CH340/CH341) Windowshoz
 * [Windows](http://www.wch.cn/downloads/file/5.html) - A Windows 10 képesnek kell lennie arra, hogy automatikusan letöltse ezeket.
 
-##### A letöltött fájl kicsomagolása Windows számára
+#### A letöltött fájl kicsomagolása Windows számára
 * a V2-es modellhez: Nyissa meg a CP210x mappát, és kattintson duplán a CP210xVCPInstaller_x64 (vagy x86) alkalmazásra.
 * V3 esetében: nyissa meg a CH341SER mappát, és kattintson duplán a SETUP alkalmazásra.
 
@@ -25,11 +25,11 @@ A NocdeMCU v3 chipkészlet általában CH341, csak ellenőrizze a NodeMCU hátol
 
 ### MacOS
 
-##### MacOS illesztőprogramok
+#### MacOS illesztőprogramok
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### A letöltött fájl kicsomagolása MacOS esetén
+#### A letöltött fájl kicsomagolása MacOS esetén
 * V2 esetében: Csomagolja ki a CP210x mappát, és kattintson duplán a CP210xVCPInstaller_x64 (vagy x86) alkalmazásra.
 * V3 esetében: Csomagolja ki a CH341SER mappát, és kattintson duplán a SETUP alkalmazásra.
 * Indítsa újra a Mac számítógépet
@@ -57,10 +57,10 @@ A [Helmut Bitter Githubjában](https://github.com/hbitter/DNMS/tree/master/Firmw
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 A .hex fájlt a Teensy kártyákon a [Teensy Loader](https://www.pjrc.com/teensy/loader.html) önálló GUI szoftverrel flashelheted a Teensy kártyákon Windows, Mac és Linux operációs rendszerekhez.
 Létezik egy parancssoros verzió is.
 
-##### Teensyduino
+#### Teensyduino
 A .ino fájlt az Arduino IDE kiterjesztésű [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html) szoftverrel flashelheti a Teensy kártyákon.
 Szükség esetén a firmware-t közvetlenül az Arduino IDE-ben módosíthatja.

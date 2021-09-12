@@ -10,14 +10,14 @@ Il chipset per le NocdeMCU v3 è di solito CH341, basta controllare il retro del
 
 ### Windows
 
-##### Drivers per il modello V2 (CP2102) per Windows
+#### Drivers per il modello V2 (CP2102) per Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 dovrebbe essere in grado di scaricarli automaticamente
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - versione a 32 bit - **non** supporta la versione a 64 bit del sistema operativo
 
-##### Driver per il modello V3 (CH340/CH341) per Windows
+#### Driver per il modello V3 (CH340/CH341) per Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 dovrebbe essere in grado di scaricarli automaticamente
 
-##### Estrarre il file scaricato per Windows
+#### Estrarre il file scaricato per Windows
 * per V2: Aprire la cartella CP210x e fare doppio clic sull'applicazione CP210xVCPInstaller_x64 (o x86)
 * per V3: aprire la cartella CH341SER e fare doppio clic sull'applicazione SETUP.
 
@@ -25,11 +25,11 @@ Il chipset per le NocdeMCU v3 è di solito CH341, basta controllare il retro del
 
 ### MacOS
 
-##### MacOS Drivers
+#### MacOS Drivers
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Estrarre il file scaricato per MacOS
+#### Estrarre il file scaricato per MacOS
 * per V2: Decomprimere la cartella CP210x e fare doppio clic sull'applicazione CP210xVCPInstaller_x64 (o x86)
 * per V3: decomprimere la cartella CH341SER e fare doppio clic sull'applicazione SETUP.
 * Riavviare il Mac
@@ -57,10 +57,10 @@ Nel Github di [Helmut Bitter](https://github.com/hbitter/DNMS/tree/master/Firmwa
 * .ino
 * .hex
 
-##### Loader Teensy
+#### Loader Teensy
 Puoi flashare il file .hex nelle schede Teensy con il software standalone GUI [Teensy Loader](https://www.pjrc.com/teensy/loader.html) per Windows, Mac e Linux.
 Esiste anche una versione a linea di comando.
 
-##### Teensyduino
+#### Teensyduino
 Puoi flashare il file .ino nelle schede Teensy con l'estensione Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Se necessario, è possibile modificare il firmware direttamente nell'IDE di Arduino.

@@ -14,7 +14,7 @@ Pēdējās PCB versijas ir aprakstītas šeit. Lai iegūtu papildu informāciju 
 PCB NodeMCU ESP8266 CPU/WLAN ar I2C kopnes paplašinājumu, lai pieslēgtu DNMS, kā arī citus sensorus (SDS011, BME280...).
 
 
-##### Lejupielādēt
+#### Lejupielādēt
 * [Shēma](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerber fails augšupielādei PCB ražotāja tīmekļa vietnē](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ PCB NodeMCU ESP8266 CPU/WLAN ar I2C kopnes paplašinājumu, lai pieslēgtu DNMS,
 DNMS Teensy 4.0 PCB, ko var pievienot tieši NodeMCU ESP8266 vai AIRROHR PCB iepriekš.
 
 
-##### Lejupielādēt
+#### Lejupielādēt
 * [Shēma](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber fails augšupielādei PCB ražotāja tīmekļa vietnē](../docs/dnms/dnms/nms-noise-measuring-teensy-40-circuit-gerber.zip)
 

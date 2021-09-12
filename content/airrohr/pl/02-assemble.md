@@ -15,7 +15,7 @@ Uwaga: Nasze instrukcje odnoszą się do wersji 3 NodeMCU. Można to rozpoznać 
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Kiedy skończysz, tak to powinno wyglądać.
+#### Kiedy skończysz, tak to powinno wyglądać.
 
 
 ### Podłączyć SDS011
@@ -53,11 +53,11 @@ SCL -> Pin D4
 
 ### Związać wszystko razem
 
- ##### Wiązanie NodeMCU i SDS011 razem
+ #### Wiązanie NodeMCU i SDS011 razem
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Do połączenia NodeMCU (ESP8266) z czujnikiem SDS011 należy użyć opaski kablowej, tak aby antena Wifi była skierowana z dala od czujnika.
 
- ##### Podłączenie rury elastycznej
+ #### Podłączenie rury elastycznej
  <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
  <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -66,14 +66,14 @@ Do połączenia NodeMCU (ESP8266) z czujnikiem SDS011 należy użyć opaski kabl
 * Przepuść kabel USB przez tubę. Zamontować SDS011 z modułem NodeMCU skierowanym do góry i wentylatorem skierowanym do dołu.
 
  
- ##### Wsuń czujnik do rury
+ #### Wsuń czujnik do rury
 * Wepchnij części do rury, żeby się zacięły w środku
 * Kabel USB, giętka rurka i BME280 powinny wychodzić z końca rurki
 * Wepchnij drugą rurę na pierwszą.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
- ##### Wykończenie
+ #### Wykończenie
 * Umieść czujnik temperatury na rurze elastycznej, tak aby znajdował się na jej krawędzi.
 * Odetnij rurę elastyczną na końcu rury
 * Opcjonalnie: można zakryć otwarte końce rurki delikatną siatką. Tak więc powietrze może cyrkulować, ale owady pozostają na zewnątrz

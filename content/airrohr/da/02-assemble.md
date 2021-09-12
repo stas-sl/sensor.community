@@ -75,7 +75,7 @@ Brug et kabelbånd til at forbinde NodeMCU'en (ESP8266) og SDS011-sensoren, så 
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
-##### Færdiggørelse
+#### Færdiggørelse
 * Placér temperaturføleren på det fleksible rør, så den sidder på kanten af røret.
 * Skær det fleksible rør af i enden af røret
 * Valgfrit: Du kan dække de åbne ender af røret med et fint net. Så kan luften cirkulere, men insekterne bliver udenfor

@@ -12,14 +12,14 @@ NocdeMCU v3 的芯片组通常是CH341，只要检查你的NodeMCU (ESP8266)的�
 
 ### Windows
 
-##### NodeMCU (ESP8266) V2 (CP2102) for Windows 的驱动程序。
+#### NodeMCU (ESP8266) V2 (CP2102) for Windows 的驱动程序。
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10应能自动下载这些内容。
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32位版本- 不支持64位版本操作系统。
 
-##### NodeMCU (ESP8266) V3 (CH340/CH341) for Windows 的驱动程序。
+#### NodeMCU (ESP8266) V3 (CH340/CH341) for Windows 的驱动程序。
 * [Windows](http://www.wch.cn/downloads/file/5.html)--Windows 10应能自动下载这些内容。
 
-##### 解压下载的Windows文件
+#### 解压下载的Windows文件
 NodeMCU (ESP8266) V2的*。打开CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程序。
 * 对于NodeMCU (ESP8266) V3：打开CH341SER文件夹，双击应用程序SETUP。
 
@@ -28,11 +28,11 @@ NodeMCU (ESP8266) V2的*。打开CP210x文件夹，双击CP210xVCPInstaller_x64(
 
 ### MacOS
 
-##### MacOS 驱动程序
+#### MacOS 驱动程序
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### 解压下载的MacOS文件
+#### 解压下载的MacOS文件
 V2的*。解压CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程序。
 * 对于V3：解压CH341SER文件夹，双击应用程序SETUP。
 * 重新启动您的Mac

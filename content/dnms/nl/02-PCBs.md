@@ -14,7 +14,7 @@ De laatste versies van de printplaten worden hier beschreven. Raadpleeg [Helmut 
 PCB voor de NodeMCU ESP8266 CPUWLAN met een I2C Bus uitbreiding om de DNMS op aan te sluiten alsook andere sensoren (SDS011, BME280...).
 
 
-##### Download
+#### Download
 * [Schakelschema](..docsdnmsairrohr-PCB-circuit-diagram.pdf)
 * [Gerber-bestand te uploaden naar de website van de PCB-fabrikant](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -24,7 +24,7 @@ PCB voor de NodeMCU ESP8266 CPUWLAN met een I2C Bus uitbreiding om de DNMS op aa
 PCB voor de DNMS Teensy 4.0 die rechtstreeks kan worden aangesloten op een NodeMCU ESP8266 of op de AIRROHR PCB hierboven.
 
 
-##### Download
+#### Download
 * [Schakelschema](..docsdnmsdnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber-bestand om te uploaden naar de website van de PCB-fabrikant](..docsdnmsdnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

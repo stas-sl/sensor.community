@@ -14,7 +14,7 @@ Le ultime versioni dei PCB sono descritte qui. Fate riferimento a [Helmut Bitter
 PCB per il NodeMCU ESP8266 CPU/WLAN con un'estensione I2C Bus per collegare il DNMS e altri sensori (SDS011, BME280...).
 
 
-##### Scaricare
+#### Scaricare
 * [Schema del circuito](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [File Gerber da caricare sul sito del produttore di PCB](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ PCB per il NodeMCU ESP8266 CPU/WLAN con un'estensione I2C Bus per collegare il D
 PCB per il DNMS Teensy 4.0 che può essere collegato direttamente su un NodeMCU ESP8266 o sul PCB AIRROHR di cui sopra.
 
 
-##### Scaricare
+#### Scaricare
 * [Schema del circuito](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [File Gerber da caricare sul sito web del produttore del PCB](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

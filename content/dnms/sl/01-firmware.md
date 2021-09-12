@@ -10,14 +10,14 @@ Za komunikacijo s svojim ESP8266 potrebujete gonilnike usb2serial za svoj operac
 
 ### Windows
 
-##### Gonilniki za model V2 (CP2102) za Windows
+#### Gonilniki za model V2 (CP2102) za Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - operacijski sistem Windows 10 bi moral biti sposoben samodejno prenesti te
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32-bitna različica - **ne podpirajo** 64-bitne različice OS
 
-##### Gonilnik za model V3 (CH340/CH341) za Windows
+#### Gonilnik za model V3 (CH340/CH341) za Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - sistem Windows 10 bi jih moral biti sposoben samodejno prenesti
 
-##### Izvleček prenesene datoteke za Windows
+#### Izvleček prenesene datoteke za Windows
 * za V2: Odprite mapo CP210x in dvakrat kliknite na aplikacijo CP210xVCPInstaller_x64 (ali x86)
 * za V3: odprite mapo CH341SER in dvakrat kliknite na aplikacijo SETUP.
 
@@ -25,11 +25,11 @@ Za komunikacijo s svojim ESP8266 potrebujete gonilnike usb2serial za svoj operac
 
 ### MacOS
 
-##### Gonilniki za MacOS
+#### Gonilniki za MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### Izvleček prenesene datoteke za MacOS
+#### Izvleček prenesene datoteke za MacOS
 * za V2: Razpakirajte mapo CP210x in dvakrat kliknite na aplikacijo CP210xVCPInstaller_x64 (ali x86).
 * za V3: Razpakirajte mapo CH341SER in dvakrat kliknite na aplikacijo SETUP.
 * Ponovno zaženite računalnik Mac
@@ -57,10 +57,10 @@ Na Githubu [Helmuta Bitterja](https://github.com/hbitter/DNMS/tree/master/Firmwa
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Datoteko .hex v ploščah Teensy lahko flashnete s samostojno programsko opremo [Teensy Loader](https://www.pjrc.com/teensy/loader.html) za Windows, Mac in Linux.
 Obstaja tudi različica za ukazno vrstico.
 
-##### Teensyduino
+#### Teensyduino
 Datoteko .ino lahko v plošče Teensy vklopite z razširitvijo Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 Po potrebi lahko vdelano programsko opremo spreminjate neposredno v Arduino IDE.

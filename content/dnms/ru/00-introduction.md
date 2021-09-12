@@ -45,7 +45,7 @@ title: Вступление
 
 ### Список покупок
 
-##### Компоненты сенсора шума DNMS
+#### Компоненты сенсора шума DNMS
 Компонент | Описание | Ссылки на продавцов
 ------------ | -------------  | -------------
 ESP8266 NodeMCU v3 <img src="https://www.cytron.io/image/cache/catalog/products/NODEMCU-V3/NodeMCU%20V3%20Lolin%20(1)-800x800.jpg" width="100" height="100" loading="lazy"/> | процессор с возможностью подключения к WiFi. Версия NodeMCU v2 не рекомендуется к покупке, также как и платы без металлической защиты от помех на чипе WiFi | [проверенный продавец](https://ru.aliexpress.com/item/5pcs-lot-New-Wireless-module-NodeMcu-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266-with/32266751149.html) <br /> [список продавцов](https://www.aliexpress.com/wholesale?minPrice=&maxPrice=&isBigSale=n&isFreeShip=y&isNew=n&isFavorite=n&shipFromCountry=&shipCompanies=&SearchText=nodemcu+v3+esp8266+ch340&CatId=202001107&g=y&SortType=price_asc&needQuery=y) 

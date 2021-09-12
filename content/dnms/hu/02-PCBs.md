@@ -14,7 +14,7 @@ A nyomtatott áramköri lapok legutóbbi változatait itt ismertetjük. További
 NYÁK a NodeMCU ESP8266 CPU/WLAN számára I2C busz kiterjesztéssel a DNMS, valamint más érzékelők (SDS011, BME280...) csatlakoztatásához.
 
 
-##### Letöltés
+#### Letöltés
 * [Áramköri diagram](../docs/dnms/airrohr-PCB-áramköri diagram.pdf)
 * [Gerber fájl a nyomtatott áramköri lap gyártójának weboldalára történő feltöltéshez](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ NYÁK a NodeMCU ESP8266 CPU/WLAN számára I2C busz kiterjesztéssel a DNMS, val
 NYÁK a DNMS Teensy 4.0-hoz, amely közvetlenül csatlakoztatható egy NodeMCU ESP8266-ra vagy a fenti AIRROHR NYÁK-ra.
 
 
-##### Letöltés
+#### Letöltés
 * [Áramköri diagram](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber fájl a NYÁK gyártójának weboldalára történő feltöltéshez](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

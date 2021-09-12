@@ -12,7 +12,7 @@ title: Assemble
 
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
-##### 麦克风单元的外壳
+#### 麦克风单元的外壳
 外壳由0.500"（12.7mm）聚苯乙烯管制成。这个直径允许直接插入设备上的大多数校准器。
 
 原型是用[Evergreen 236号管材](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing)开发的。
@@ -46,7 +46,7 @@ title: Assemble
 
 原型是用Copaltec GmbH生产的一些[PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900)开发的。
 
-##### 规格
+#### 规格
 * 绝缘强度：28千伏/毫米
 * 特定正向电阻。5.8.1014欧姆/厘米。
 * 表面电阻：1.3.1016欧姆。

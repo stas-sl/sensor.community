@@ -7,11 +7,11 @@ title: Inleiding
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Boodschappenlijst
-##### Complete sets (rond de € 50)
+#### Complete sets (rond de € 50)
 * [Voorgeprogrammeerde sensorkit](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 * [Sensorkit met DHT22 en mini display, behuizing zelf nog toevoegen](https://www.tinytronics.nl/shop/nl/luchtwachters-delft-maak-zelf-een-fijnstofmeter-workshop-kit)
 
-##### Losse onderdelen
+#### Losse onderdelen
 Koop alleen wat je nodig hebt, koop liefst lokaal of bestel in Nederland.
 * NodeMCU ESP8266 CPU/WLAN [TinyTronics: snel, uit NL](https://www.tinytronics.nl/shop/nl/communicatie/wi-fi/esp8266-nodemcu-v2) [AliExpress](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * SDS011 fijnstofsensor [TinyTronics: snel, uit NL](https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/nova-sds011-hoge-precisie-laser-stofsensor) [AliExpress](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) 

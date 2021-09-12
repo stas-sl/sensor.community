@@ -14,7 +14,7 @@ Le microphone est basé sur une platine Pesky Products avec un composant MEMS IC
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Corps du microphone
+#### Corps du microphone
 Le corps du microphone est réalisé avec du tube de polystyrène .500" (12.7mm). Ce diamètre permet d'insérer directement le microphone dans la plupart des calibrateurs.
 
 Le prototype a été fabriqué avec un [tube Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -47,7 +47,7 @@ Vous pouvez maintenant remplir le tube avec de la résine isolante. Cette étape
 
 Le prototype a été développé avec de la [résine PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) de la marque Copaltec GmbH.
 
-##### Spécifications:
+#### Spécifications:
 * rigidité diélectrique : 28 kV/mm
 * résistance directe : 5,8.1014 ohm/cm
 * résistance de surface : 1,3.1016 ohm

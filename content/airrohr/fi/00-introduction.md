@@ -8,10 +8,10 @@ title: Johdanto
 
 
 ### Ostoslista
-##### Anturisarja
+#### Anturisarja
 * [esilämmitetty anturipaketti](https://nettigo.euproductsluftdaten-org-pl-kit-sds011-bme280)
 
-##### Yksittäiset komponentit
+#### Yksittäiset komponentit
 * [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 Hienopölyanturi](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=sds011)
 * BME280 6-PIN, lämpötila, kosteus ja ilmanpaine.

@@ -10,14 +10,14 @@ Chipset dla NocdeMCUs v3 jest zazwyczaj CH341, wystarczy sprawdzić z tyłu Node
 
 ### Windows
 
-##### Sterowniki dla modelu V2 (CP2102) dla Windows
+#### Sterowniki dla modelu V2 (CP2102) dla Windows
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 powinien mieć możliwość automatycznego pobrania ich
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - wersja 32-bitowa - **nie** obsługująca 64-bitową wersję OS
 
-##### Sterownik dla modelu V3 (CH340/CH341) dla Windows
+#### Sterownik dla modelu V3 (CH340/CH341) dla Windows
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 powinien mieć możliwość automatycznego pobrania ich
 
-##### Rozpakuj pobrany plik dla systemu Windows:
+#### Rozpakuj pobrany plik dla systemu Windows:
 * dla V2: Otwórz folder CP210x i kliknij dwukrotnie na aplikację CP210xVCPInstaller_x64 (lub x86).
 * dla V3: otwórz folder CH341SER i kliknij dwukrotnie na SETUP aplikacji.
 
@@ -25,11 +25,11 @@ Chipset dla NocdeMCUs v3 jest zazwyczaj CH341, wystarczy sprawdzić z tyłu Node
 
 ### MacOS
 
-##### Sterowniki MacOS
+#### Sterowniki MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-##### Wyodrębnienie pobranego pliku dla systemu MacOS.
+#### Wyodrębnienie pobranego pliku dla systemu MacOS.
 * dla V2: Rozpakuj folder CP210x i kliknij dwukrotnie na aplikację CP210xVCPInstaller_x64 (lub x86).
 * dla V3: Rozpakuj folder CH341SER i kliknij dwukrotnie na SETUP aplikacji.
 * Zrestartuj komputer Mac
@@ -57,10 +57,10 @@ W [Helmut Bitter's Github](https://github.com/hbitter/DNMS/tree/master/Firmware)
 * .ino
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 Plik .hex w płytkach Teensy można błyskać za pomocą samodzielnego oprogramowania GUI [Teensy Loader](https://www.pjrc.com/teensy/loader.html) dla systemów Windows, Mac i Linux.
 Istnieje również wersja z wiersza poleceń.
 
-##### Teensyduino
+#### Teensyduino
 Możesz migać plik .ino na tablicach Teensy z rozszerzeniem Arduino IDE [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
 W razie potrzeby, możesz zmodyfikować firmware bezpośrednio w Arduino IDE.

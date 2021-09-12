@@ -13,7 +13,7 @@ Mikrofonní jednotka je založena na desce od Pesky Products s mikrofonem MEMS I
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Pouzdro pro mikrofonní jednotku
+#### Pouzdro pro mikrofonní jednotku
 Pouzdro je vyrobeno z polystyrenové trubice o průměru 12,7 mm. Tento průměr umožňuje přímo připojit všechny kabely k jednotce.
 
 Prototyp byl vyvinut s [Evergreen No. 236 trubkou](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -45,7 +45,7 @@ Nyní můžete trubičku naplnit trochou pryskyřice. Tento krok je nutný, aby 
 
 Prototyp byl vyvinut za pomocí pryskyřice [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) od firmy Copaltec.
 
-##### Specifikace:
+#### Specifikace:
 * Dielektrická pevnost: 28 kV/mm
 * Specifický  odpor: 5,8 1014 ohm/cm
 * Povrchový odpor: 1,3.1016 ohm

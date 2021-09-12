@@ -14,7 +14,7 @@ Zde jsou popsány pouze poslední verze desek plošných spojů. Zkontrolujte [G
 Deska plošných spojů pro NodeMCU ESP8266 CPU/WLAN s rozšířením sběrnice I2C Bus pro připojení DNMS a dalších senzorů (SDS011, BME280…).
 
 
-##### Stažení:
+#### Stažení:
 * [Schéma zapojení](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Soubor Gerber k nahrání na web výrobce PCB](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,6 +25,6 @@ Deska plošných spojů pro NodeMCU ESP8266 CPU/WLAN s rozšířením sběrnice 
 PCB pro DNMS Teensy 4.0, které lze připojit přímo na NodeMCU ESP8266 nebo na PCB AIRROHR výše.
 
 
-##### Stažení:
+#### Stažení:
 * [Schéma zapojení](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Soubor Gerber k nahrání na web výrobce PCB](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)

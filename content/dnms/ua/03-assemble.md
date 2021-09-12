@@ -12,7 +12,7 @@ title: Зібрати
 
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
-##### Корпус для мікрофонного блоку
+#### Корпус для мікрофонного блоку
 Корпус виконаний з полістиролової трубки .500 "(12,7 мм). Цей діаметр дозволяє безпосередньо підключити більшість калібраторів на пристрої.
 
 Прототип був розроблений за допомогою [трубки Evergreen № 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -46,7 +46,7 @@ title: Зібрати
 
 Прототип був розроблений за допомогою [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) виробництва Copaltec GmbH.
 
-##### Технічні характеристики:
+#### Технічні характеристики:
 * Діелектрична міцність: 28 кВ / мм
 * Питомий опір руху вперед: 5,8,1014 Ом / см
 * Поверхневий опір: 1,3,1016 Ом

@@ -12,14 +12,14 @@ Choisissez le lien correspondsant à votre ordinateur.
 
 ### Windows
 
-##### Pilotes Windows pour le modèle V2 (CP2102)
+#### Pilotes Windows pour le modèle V2 (CP2102)
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - Windows 10 devrait pouvoir charger automatiquement ce pilote.
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - Version 32-bit - Incompatible avec la version 64-bit du système d'exploitation.
 
-##### Pilotes Windows pour le modèle V3 (CH340/CH341)
+#### Pilotes Windows pour le modèle V3 (CH340/CH341)
 * [Windows](http://www.wch.cn/downloads/file/5.html) - Windows 10 devrait pouvoir charger automatiquement ce pilote.
 
-##### Installer le fichier téléchargé pour Windows :
+#### Installer le fichier téléchargé pour Windows :
 * V2: Ouvrez le dossier CP210x et double-cliquez sur le fichier exécutable CP210xVCPInstaller_x64 (or x86).
 * V3: Ouvrez le dossier CH341SER et double-cliquez sur le fichier exécutable SETUP.
 
@@ -27,11 +27,11 @@ Choisissez le lien correspondsant à votre ordinateur.
 
 ### MacOS
 
-#####  Pilotes MacOS
+####  Pilotes MacOS
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip )
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html) 
 
-#####  Décompresser et installer le fichier téléchargé pour MacOS.
+####  Décompresser et installer le fichier téléchargé pour MacOS.
 * V2: Décompressez le dossier CP210x et double-cliquez sur l'image disque `SiLabsUSBDriverDisk.dmg` puis sur le fichier exécutable `Install CP210x VCP Driver`
 * V3: Décompressez le dossier CH341SER et double-cliquez sur le fichier exécutable `CH34x_Install_V1.5.pkg`
 * Redémarrez votre Mac

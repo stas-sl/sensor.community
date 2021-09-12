@@ -8,10 +8,10 @@ title: Sissejuhatus
 
 
 ### Ostunimekiri
-##### Anduri komplekt
+#### Anduri komplekt
 * [Eelvälgustatud andurikomplekt](https://nettigo.euproductsluftdaten-org-pl-kit-sds011-bme280)
 
-##### Üksikud komponendid
+#### Üksikud komponendid
 * [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 Peentolmuandur](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=sds011)
 * BME280 6-PIN, temperatuur, õhuniiskus ja õhurõhk

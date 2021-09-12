@@ -7,10 +7,10 @@ title: Introduction
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Liste des composants
-##### Détecteur en kit
+#### Détecteur en kit
 * [Kit avec micrologiciel préinstallé](https://nettigo.eu/products/luftdaten-org-pl-kit-sds011-bme280)
 
-##### Composants individuels
+#### Composants individuels
 * [Platine NodeMCU ESP8266 CPU/WLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [Détecteur de particules fines SDS011](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) 
 * Thermomètre & hygromètre BME280 6-PIN

@@ -13,7 +13,7 @@ title: Сглобяване на
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Корпус за блока на микрофона
+#### Корпус за блока на микрофона
 Корпусът е изработен от полистиренова тръба с диаметър 0,500" (12,7 mm). Този диаметър позволява да се включат директно повечето от калибраторите на устройството.
 
 Прототипът е разработен с тръбата [Evergreen No. 236](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -45,7 +45,7 @@ title: Сглобяване на
 
 Прототипът е разработен с известно количество [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900), произведено от Copaltec GmbH.
 
-##### Спецификации
+#### Спецификации
 * Диелектрична якост: 28 kV/mm
 * Специфично съпротивление в права посока: 5,8.1014 ома/см
 * Повърхностно съпротивление: 1,3.1016 ома

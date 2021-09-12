@@ -14,7 +14,7 @@ Ultimele versiuni ale PCB-urilor sunt descrise aici. Consultați [Helmut Bitter'
 PCB pentru NodeMCU ESP8266 CPUWLAN cu o extensie I2C Bus pentru a conecta DNMS, precum și alți senzori (SDS011, BME280...).
 
 
-##### Descărcați:
+#### Descărcați:
 * [Schema de circuit](..docsdnmsairrohr-PCB-circuit-diagramă.pdf)
 * [Fișier Gerber pentru a fi încărcat pe site-ul web al producătorului PCB](..docsdnmsairrohr-PCB-circuit-circuit-diagram-gerber.zip)
 
@@ -24,7 +24,7 @@ PCB pentru NodeMCU ESP8266 CPUWLAN cu o extensie I2C Bus pentru a conecta DNMS, 
 PCB pentru DNMS Teensy 4.0 care poate fi conectat direct pe un NodeMCU ESP8266 sau pe PCB-ul AIRROHR de mai sus.
 
 
-##### Descărcați:
+#### Descărcați:
 * [Schema de circuit](..docsdnmsdnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Fișier Gerber pentru a fi încărcat pe site-ul web al producătorului PCB](..docsdnmsdnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

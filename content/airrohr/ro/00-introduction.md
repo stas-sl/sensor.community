@@ -7,10 +7,10 @@ title: Introducere
 <img src="../docs/airrohr/particulate-matter-air-quality-sensor-kit.jpeg" loading="lazy"/>
 
 ### Lista de cumpărături
-##### Kit senzor
+#### Kit senzor
 * [Kit de senzori pre-flashed](https://nettigo.euproductsluftdaten-org-pl-kit-sds011-bme280)
 
-##### Componente unice
+#### Componente unice
 * [NodeMCU ESP8266 CPUWLAN](https://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=nodemcu+v3+esp8266+ch340)
 * [SDS011 Senzor de praf fin](http://www.aliexpress.comwholesale?groupsort=1&amp;SortType=price_asc&amp;SearchText=sds011)
 * BME280 6-PIN, temperatură și umiditate și presiune atmosferică

@@ -10,14 +10,14 @@ NocdeMCU v3的芯片组通常是CH341，只要检查你的NodeMCU的背面就可
 
 ### Windows
 
-##### 用于Windows的V2模型的驱动程序 (CP2102)
+#### 用于Windows的V2模型的驱动程序 (CP2102)
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)----Windows 10应能自动下载这些内容。
 * [Windows 7/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip)----32位版本----**不支持64位版本操作系统。
 
-##### V3型号(CH340/CH341)的驱动程序，适用于Windows。
+#### V3型号(CH340/CH341)的驱动程序，适用于Windows。
 * [Windows](http://www.wch.cn/downloads/file/5.html)--Windows 10应能自动下载这些内容。
 
-##### 解压下载的Windows文件
+#### 解压下载的Windows文件
 V2的*。打开CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程序。
 * 对于V3：打开CH341SER文件夹，双击应用程序SETUP。
 
@@ -25,11 +25,11 @@ V2的*。打开CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程�
 
 ### MacOS
 
-##### MacOS 驱动程序
+#### MacOS 驱动程序
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### 解压下载的MacOS文件
+#### 解压下载的MacOS文件
 V2的*。解压CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程序。
 * 对于V3：解压CH341SER文件夹，双击应用程序SETUP。
 * 重新启动您的Mac
@@ -57,10 +57,10 @@ V2的*。解压CP210x文件夹，双击CP210xVCPInstaller_x64(或x86)应用程�
 * .ini
 * .hex
 
-##### Teensy Loader
+#### Teensy Loader
 您可以使用独立的GUI软件[Teensy Loader](https://www.pjrc.com/teensy/loader.html)来更新Teensy板中的.hex文件，该软件适用于Windows、Mac和Linux。
 也有一个命令行版本。
 
-##### Teensyduino
+#### Teensyduino
 你可以用Arduino IDE扩展名[Teensyduino](https://www.pjrc.com/teensy/teensyduino.html)在Teensy板子上闪现.inio文件。
 如果需要，可以直接在Arduino IDE中修改固件。

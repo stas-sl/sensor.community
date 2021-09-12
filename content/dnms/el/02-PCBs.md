@@ -14,7 +14,7 @@ title: PCB και κυκλωματικά διαγράμματα
 PCB για την NodeMCU ESP8266 CPU/WLAN με μια επέκταση I2C Bus για τη σύνδεση του DNMS καθώς και άλλων αισθητήρων (SDS011, BME280...).
 
 
-##### Λήψη
+#### Λήψη
 * [Κυκλωματικό διάγραμμα](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Αρχείο Gerber για μεταφόρτωση στον ιστότοπο του κατασκευαστή της πλακέτας](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -25,7 +25,7 @@ PCB για την NodeMCU ESP8266 CPU/WLAN με μια επέκταση I2C Bus 
 PCB για το DNMS Teensy 4.0 που μπορεί να συνδεθεί απευθείας σε ένα NodeMCU ESP8266 ή στο παραπάνω PCB AIRROHR.
 
 
-##### Λήψη
+#### Λήψη
 * [Κυκλωματικό διάγραμμα](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Αρχείο Gerber για μεταφόρτωση στον ιστότοπο του κατασκευαστή της πλακέτας](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

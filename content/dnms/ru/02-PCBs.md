@@ -17,7 +17,7 @@ title: Печатные платы
 Печатная плата для NodeMCU ESP8266 CPU/WLAN с расширением шины I2C для подключения DNMS, а также других датчиков (SDS011, BME280 и пр.).
 
 
-##### Скачать:
+#### Скачать:
 * [Принципиальная схема](.../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Файл Gerber для загрузки на сайт производителя печатной платы](.../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -28,6 +28,6 @@ title: Печатные платы
 Печатная плата для DNMS Teensy 4.0, которая может быть подключена непосредственно к узлу NodeMCU ESP8266 или к печатной плате AIRROHR, указанной выше.
 
 
-##### Скачать:
+#### Скачать:
 * [Электрическая схема](../docs/dnms/dnms-noisee-measuring-teensy-40-circuit-diagram.pdf)
 * [Файл Gerber для загрузки на сайт производителя печатной платы](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)

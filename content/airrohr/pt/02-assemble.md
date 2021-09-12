@@ -15,7 +15,7 @@ Nota: Nossas instruções referem-se à versão 3 do NodeMCU. Isso pode ser reco
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### Quando você estiver pronto, assim que deve ser feito:
+#### Quando você estiver pronto, assim que deve ser feito:
 
 
 ### Conecte o SDS011
@@ -57,11 +57,11 @@ SCL -> Pino D4
 
 ### Amarre tudo junto
 
- ##### Conecte o NodeMCU e o SDS011
+ #### Conecte o NodeMCU e o SDS011
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 Use uma braçadeira para conectar o NodeMCU (ESP8266) e o sensor SDS011 para que a antena Wifi aponte para longe do sensor
 
- ##### Conecte o tubo flexível
+ #### Conecte o tubo flexível
  <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
  <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -69,14 +69,14 @@ Use uma braçadeira para conectar o NodeMCU (ESP8266) e o sensor SDS011 para que
 * Use outra braçadeira para prender o sensor de temperatura BME280 ao tubo
 * Passe o cabo USB pelo tubo. Monte o SDS011 com o NodeMCU voltado para cima e o ventilador voltado para baixo
  
- ##### Empurre o sensor para dentro do tubo
+ #### Empurre o sensor para dentro do tubo
 * Empurre as peças para dentro do tubo, para que fique preso dentro
 * Cabo USB, tubo flexível e BME280 devem ficar virados para fora da extremidade do tubo
 * Empurre o outro tubo para o primeiro.
 
 <img src="../docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>
 
-##### Finalizando
+#### Finalizando
 * Posicione o sensor de temperatura no tubo flexível, de forma que fique na borda do tubo.
 * Corte o tubo flexível na extremidade do tubo
 * Opcional: você pode cobrir as extremidades abertas do tubo com uma malha fina. Então o ar pode circular, mas os insetos não entram

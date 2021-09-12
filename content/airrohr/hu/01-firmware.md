@@ -12,14 +12,14 @@ Válassza ki a számítógép operációs rendszerének megfelelő linket.
 
 ### Windows
 
-##### Illesztőprogramok NodeMCU (ESP8266) V2 (CP2102) számára Windowshoz
+#### Illesztőprogramok NodeMCU (ESP8266) V2 (CP2102) számára Windowshoz
 * [Windows 10](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip) - A Windows 10 képesnek kell lennie arra, hogy automatikusan letöltse ezeket.
 * [Windows 7/8/8/8.1](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip) - 32 bites verzió - **nem** támogatja a 64 bites verziójú operációs rendszert.
 
-##### Illesztőprogram NodeMCU (ESP8266) V3 (CH340/CH341) Windows számára
+#### Illesztőprogram NodeMCU (ESP8266) V3 (CH340/CH341) Windows számára
 * [Windows](http://www.wch.cn/downloads/file/5.html) - A Windows 10 képesnek kell lennie arra, hogy automatikusan letöltse ezeket.
 
-##### A letöltött fájl kicsomagolása Windows számára
+#### A letöltött fájl kicsomagolása Windows számára
 * for NodeMCU (ESP8266) V2: Nyissa meg a CP210x mappát, és kattintson duplán a CP210xVCPInstaller_x64 (vagy x86) alkalmazásra.
 * NodeMCU (ESP8266) V3 esetén: nyissa meg a CH341SER mappát, és kattintson duplán a SETUP alkalmazásra.
 
@@ -27,11 +27,11 @@ Válassza ki a számítógép operációs rendszerének megfelelő linket.
 
 ### MacOS
 
-##### MacOS illesztőprogramok
+#### MacOS illesztőprogramok
 * [NodeMCU V2](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 * [NodeMCU V3](http://www.wch.cn/downloads/file/178.html)
 
-##### A letöltött fájl kicsomagolása MacOS esetén
+#### A letöltött fájl kicsomagolása MacOS esetén
 * V2 esetében: Csomagolja ki a CP210x mappát, és kattintson duplán a CP210xVCPInstaller_x64 (vagy x86) alkalmazásra.
 * V3 esetében: Csomagolja ki a CH341SER mappát, és kattintson duplán a SETUP alkalmazásra.
 * Indítsa újra a Mac számítógépet

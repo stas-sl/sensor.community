@@ -13,7 +13,7 @@ Moduł mikrofonowy oparty jest na płycie Pesky Products breakoutboard z mikrofo
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 
-##### Obudowa modułu mikrofonu
+#### Obudowa modułu mikrofonu
 Obudowa wykonana jest z rurki styropianowej .500" (12,7 mm). Średnica ta pozwala na bezpośrednie podłączenie większości kalibratorów do urządzenia.
 
 Prototyp został opracowany przy użyciu [Evergreen nr 236 rurki](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
@@ -44,7 +44,7 @@ Teraz możesz wypełnić rurę żywicą. Ten krok jest obowiązkowy w celu unikn
 
 Prototyp został opracowany przy użyciu niektórych materiałów [PURe Isolation ST 33](https://www.buerklin.com/en/Polyurethane-cast-resin-black-Copaltec-PURe-Isolation-ST-33/p/12L5900) produkowanych przez Copaltec GmbH.
 
-##### Specyfikacje:
+#### Specyfikacje:
 * Wytrzymałość dielektryczna: 28 kV/mm
 * Szczególny opór do przodu: 5,8.1014 ohm/cm
 * Opór powierzchniowy: 1,3.1016 om

@@ -14,7 +14,7 @@ Tu sú opísané posledné verzie dosiek plošných spojov. Ďalšie informácie
 DPS pre NodeMCU ESP8266 CPUWLAN s rozšírením zbernice I2C na pripojenie DNMS, ako aj iných senzorov (SDS011, BME280...).
 
 
-##### Na stiahnutie:
+#### Na stiahnutie:
 * [Schéma zapojenia](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
 * [Gerber súbor na nahratie na webovú stránku výrobcu PCB](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
@@ -24,7 +24,7 @@ DPS pre NodeMCU ESP8266 CPUWLAN s rozšírením zbernice I2C na pripojenie DNMS,
 DPS pre DNMS Teensy 4.0, ktorý možno pripojiť priamo na NodeMCU ESP8266 alebo na vyššie uvedenú DPS AIRROHR.
 
 
-##### Na stiahnutie:
+#### Na stiahnutie:
 * [Schéma zapojenia](...docsdnmsdnms-noise-measuring-teensy-40-circuit-diagram.pdf)
 * [Gerber súbor na nahratie na webovú stránku výrobcu PCB](..docsdnmsdnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

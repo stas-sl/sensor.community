@@ -15,7 +15,7 @@ title: Assemble
 
 <img src="../docs/airrohr/nodemcu-v3-bme280.jpeg" style="margin-top: 1em" loading="lazy"/>
 
-##### When you are done, this is how it should look like
+#### When you are done, this is how it should look like
 
 ### Wire the SDS011
 针脚的编号是由右至左，连接时要确保电缆坐在针脚上，因为大多数杜邦电缆也适合在针脚之间。
@@ -53,12 +53,12 @@ SCL -> 引脚D4
 
 ### Tie everything together
 
-##### Tie NodeMCU and SDS011 together
+#### Tie NodeMCU and SDS011 together
 <img src="../docs/airrohr/tie-air-quality-sensor-together.jpeg" loading="lazy"/>
 
 使用扎线带连接NodeMCU (ESP8266)和SDS011传感器，使Wifi天线远离传感器。
 
-##### Connect flexible tube
+#### Connect flexible tube
 <img src="../docs/airrohr/sds011-with-tube.jpeg" style="width:49%; padding-right: 0.5em" loading="lazy"/>
 <img src="../docs/airrohr/bme280-tied-to-tube.jpeg" style="width:49%;" loading="lazy"/>
 
@@ -66,14 +66,14 @@ SCL -> 引脚D4
 * 使用另一条扎带将BME280温度传感器连接到管子上。
 * 将USB线穿过管子。安装SDS011时，NodeMCU朝上，风扇朝下。
 
-##### Push in sensor into the pipe
+#### Push in sensor into the pipe
 * 将零件推入管内，使其卡在里面。
 * USB线、软管和BME280应从管子的末端看出去。
 * 将另一根管子推到第一根管子上。
 
 <img src="./docs/airrohr/sds011-jammed-into-tube.jpeg" loading="lazy"/>。
 
-##### Finishing
+#### Finishing
 * 将温度传感器放置在软管上，使其位于管子的边缘。
 * 在管子的末端切断柔性管。
 * 可选：你可以用细网罩住管子的开口端。这样空气就可以流通，但昆虫就会留在外面。
