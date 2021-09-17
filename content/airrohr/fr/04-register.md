@@ -4,7 +4,7 @@ title: Enregistrement
 
 ### Enregistrez-vous
 
-Allez sur  [devices.sensor.community](https://devices-test.sensor.community/register) et créez un compte pour enregistrer votre station et participer à notre réseau de données libres.
+Allez sur  [devices.sensor.community](https://devices.sensor.community/register) et créez un compte pour enregistrer votre station et participer à notre réseau de données libres.
 
 
 ### Enregistrez votre station

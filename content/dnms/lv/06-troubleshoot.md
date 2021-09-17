@@ -8,7 +8,7 @@ Ievadiet pārlūkprogrammā šādus datus:
 
 [ID] var meklēt arī ievades laukā augšējā kreisajā stūrī [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1).
 
-* Vai sensors ir reģistrēts, izmantojot [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register), un vai sensors ir redzams kartē?
+* Vai sensors ir reģistrēts, izmantojot [https://devices.sensor.community/register](https://devices.sensor.community/register), un vai sensors ir redzams kartē?
     * Vai WLAN signāla līmenis iepriekš ir bijis vājš?
       Šeit ir servera puses signāla žurnāls: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`.
 

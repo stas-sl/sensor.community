@@ -10,7 +10,7 @@ title: Risoluzione dei problemi
 * Controlla che il dispositivo sia visibile sulla
   [mappa](https://maps.sensor.community)
 * Controlla la registrazione su
-  [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register)
+  [https://devices.sensor.community/register](https://devices.sensor.community/register)
 
 ### Problemi di cavo micro-USB?
 

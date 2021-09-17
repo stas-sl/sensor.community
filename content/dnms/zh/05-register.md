@@ -3,7 +3,7 @@ title: Register
 ---
 
 ### Register yourself
-前往[devices.sensor.community](https://devices-test.sensor.community/register)注册您的设备并成为开放数据网络的一部分。
+前往[devices.sensor.community](https://devices.sensor.community/register)注册您的设备并成为开放数据网络的一部分。
 
 ### Register your device
 登录后点击注册新设备并填写表格。

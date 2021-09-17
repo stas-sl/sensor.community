@@ -8,7 +8,7 @@ Gebe folgendes in deinem Browser mit deinen eigenen Daten ein:
 
 Die [ID] kann auch im Eingabefeld open links auf der Seite [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1) gesucht werden.
 
-* Ist der Sensor über [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) registriert und ist der Sensor auf der Karte sichtbar?
+* Ist der Sensor über [https://devices.sensor.community/register](https://devices.sensor.community/register) registriert und ist der Sensor auf der Karte sichtbar?
 * War das WLAN-Signal in der Vergangenheit schwach?
   Hier ist das server-seitige Signalprotokoll: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

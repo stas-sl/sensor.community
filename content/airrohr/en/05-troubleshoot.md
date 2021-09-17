@@ -8,7 +8,7 @@ Enter the following in the browser with your own data:
 
 The [ID] can also be searched for in input field in the upper left corner [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Is the sensor registered via [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) and is the sensor visible on the map?
+* Is the sensor registered via [https://devices.sensor.community/register](https://devices.sensor.community/register) and is the sensor visible on the map?
     * Was the WLAN signal level weak in the past?
         here is the signal log server-side: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
         

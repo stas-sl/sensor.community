@@ -4,7 +4,7 @@ title: Reģistrēties
 
 ### Izveidot kontu
 
-Dodieties uz [devices.sensor.community](https://devices-test.sensor.community/register), lai izveidotu kontu un kļūtu par atvērtā datu tīkla daļu.
+Dodieties uz [devices.sensor.community](https://devices.sensor.community/register), lai izveidotu kontu un kļūtu par atvērtā datu tīkla daļu.
 
 
 ### Reģistrējiet savu ierīci

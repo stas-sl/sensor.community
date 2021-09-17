@@ -8,7 +8,7 @@ Entrez l'adresse suivante dans votre navigateur en remplçant l'`ID` et le type 
 
 L'`ID` peut également être recherchée dans la liste déroulante sur la page.
 
-* Le détecteur a-t-il été enregistré sur le site [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) et est-il visible sur la carte ?
+* Le détecteur a-t-il été enregistré sur le site [https://devices.sensor.community/register](https://devices.sensor.community/register) et est-il visible sur la carte ?
 * Le signal Wifi était-il faible dernièrement ? 
 Ici, un server qui enregistre le niveau de signal Wifi : 
 

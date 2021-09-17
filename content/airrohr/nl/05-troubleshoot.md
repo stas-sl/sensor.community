@@ -5,7 +5,7 @@ title: Foutzoeken
 Let op: de namen "sensor" en "station" worden soms door elkaar heen gebruikt. Meestal wordt de NodeMCU (al dan niet met sensoren er aan gekoppeld) bedoeld.
 
 ### Geen meetdata (meer)?
-Bekijk de data van je station op [sensor.community](https://devices-test.sensor.community/registersensors)
+Bekijk de data van je station op [sensor.community](https://devices.sensor.community/registersensors)
 * Log in
 * Zie je je station (sensor UID)? 
   * Zo niet, voeg je station toe en kijk of er data binnenkomt. Zie __Registratie__

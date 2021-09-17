@@ -4,7 +4,7 @@ title: Registruotis
 
 ### Užsiregistruokite
 
-Eikite į [devices.sensor.community](https://devices-test.sensor.community/register), kad užregistruotumėte savo prietaisą ir taptumėte atviro duomenų tinklo dalimi.
+Eikite į [devices.sensor.community](https://devices.sensor.community/register), kad užregistruotumėte savo prietaisą ir taptumėte atviro duomenų tinklo dalimi.
 
 
 ### Užregistruokite savo prietaisą

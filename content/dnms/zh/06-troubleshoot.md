@@ -9,7 +9,7 @@ title: Troubleshoot
 
 也可以在左上角的输入栏中搜索[ID][https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
 
-* 传感器是否通过[https://devices-test.sensor.community/register](https://devices-test.sensor.community/register)注册，传感器在地图上是否可见？
+* 传感器是否通过[https://devices.sensor.community/register](https://devices.sensor.community/register)注册，传感器在地图上是否可见？
   * 过去的WLAN信号是否很弱？
     这里是服务器端的信号记录：`https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`。
 

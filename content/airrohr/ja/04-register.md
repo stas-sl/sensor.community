@@ -4,7 +4,7 @@ title: Register
 
 ### Create an account
 
-[devices.sensor.community](https://devices-test.sensor.community/register)にアクセスしてアカウントを作成し、オープンデータネットワークの一員となってください。
+[devices.sensor.community](https://devices.sensor.community/register)にアクセスしてアカウントを作成し、オープンデータネットワークの一員となってください。
 
 
 ### Register your device

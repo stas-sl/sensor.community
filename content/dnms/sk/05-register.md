@@ -1,28 +1,32 @@
 ---
-title: Registrácia
+title: Register
 ---
 
-### Zaregistrujte sa
 
-Prejdite na stránku [devices.sensor.community](https://devices.sensor.community), kde zaregistrujete svoje zariadenie a stanete sa súčasťou otvorenej dátovej siete.
-
+<div class="relative bg-brand-greenPastel">
+  <div class="max-w-7xl mx-auto py-1 px-3 sm:px-6 lg:px-4">
+    <div class="pr-16 sm:text-center sm:px-16">
+        <p class="text-brand-green">
+           Ak chcete zaregistrovať svoje zariadenie a stať sa súčasťou otvorenej dátovej siete. Prejdite na stránku  
+            <span aria-hidden="true">&rarr;</span>
+        <span class="block sm:ml-2 sm:inline-block">
+          <a href="https://devices.sensor.community/register" class="text-white font-bold underline">  Devices.Sensor.Community</a>
+        </span>
+        </p>
+    </div>
+  </div>
+</div>
 
 ### Zaregistrujte svoje zariadenie
-Po registrácii kliknite na "Registrovať nový senzor" a vyplňte formulár.
-Domov -> (Prihlásenie) - Moje senzory -> Registrácia nového senzora
 
-* Vaše zaznamenané ChipID zariadenia ESP8266 (NodeMCU).
-* Vaša e-mailová adresa (nebude zverejnená).
-* Vaša adresa: Ulica s číslom domu, poštovým smerovacím číslom a mestom. Kliknutím na "Hľadať zadanú adresu" získate súradnice polohy (sú zaokrúhlené nadol). Skontrolujte polohu čapu a v prípade potreby ho vymeňte.
-* interný názov uľahčuje rozdelenie, ak máte viacero senzorov (napríklad záhrada, senzor pre mamu,...).
-* prostredie stanice - napr. výška nad zemou, okraj cesty, vysoká intenzita dopravy, voľné priestranstvo alebo podobne.
+Po prihlásení kliknite na registráciu nového zariadenia a vyplňte formulár.<br>
+Domov &rarr; (Prihlásenie) &rarr; Snímače -> Registrovať snímač
 
-#### NB!
+* vaše zapísané ChipID ESP8266 (NodeMCU)
+* vaša e-mailová adresa (nebude zverejnená)
+* vaša adresa: Ulica s číslom domu, PSČ a mesto. Kliknutím na "Lookup entered address" (vyhľadať zadanú adresu) získate súradnice polohy (budú zaokrúhlené). Skontrolujte polohu kolíka, v prípade potreby ju zmeňte
+* vnútorný názov uľahčuje oddelenie, ak máte viacero snímačov (napríklad záhrada, snímač pre mamu,...)
+* okolie stanice - napr. výška nad zemou, strana cesty, vysoká intenzita dopravy, voľné pole a pod.
 
-Momentálne sa to dá urobiť len manuálne, stačí poslať žiadosť na tech (at) sensor.community.
-Siehe [vydanie](https://github.com/opendata-stuttgart/sensor.community/issues/117), kde nájdete podrobnosti.
-
-V súčasnosti nie je možné zaregistrovať pomocou stránky oba snímače PM, snímač vlhkosti a snímač DNMS pripojené k jednej jednotke NodeMCU.
-Zatiaľ sa to dá urobiť len manuálne zaslaním žiadosti na adresu tech (at) sensor.community.
-Pozri [vydanie](https://github.com/opendata-stuttgart/sensor.community/issues/117
-), kde nájdete podrobnosti.
+> #### Mimochodom!
+> V súčasnosti nie je možné pomocou stránky zaregistrovať oba senzory PM, teploty/vlhkosti a DNMS pripojené k jednej jednotke NodeMCU. Zatiaľ je to možné vykonať len manuálne zaslaním žiadosti na adresu tech (at) sensor.community. Podrobnosti nájdete v časti [vydanie](https://github.com/opendata-stuttgart/sensor.community/issues/117).

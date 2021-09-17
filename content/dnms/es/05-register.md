@@ -4,7 +4,7 @@ title: Registrarse
 
 ### Crea una cuenta 
 
-Vaya a [devices.sensor.community](https://devices-test.sensor.community/register) para registrar su dispositivo y formar parte de la red de datos abierta.
+Vaya a [devices.sensor.community](https://devices.sensor.community/register) para registrar su dispositivo y formar parte de la red de datos abierta.
 
 
 ### Registra tu dispositivo

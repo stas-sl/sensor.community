@@ -12,7 +12,7 @@ Sisestage brauseris oma andmetega järgmine:
 
 [ID] saab otsida ka vasakus ülanurgas olevast sisendväljast [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
 
-* Kas andur on registreeritud [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) kaudu ja kas andur on kaardil nähtav?
+* Kas andur on registreeritud [https://devices.sensor.community/register](https://devices.sensor.community/register) kaudu ja kas andur on kaardil nähtav?
   * Kas WLAN-signaali tase oli varem nõrk?
     siin on serveripoolne signaalilogi: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

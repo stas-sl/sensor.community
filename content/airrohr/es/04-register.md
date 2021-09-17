@@ -3,7 +3,7 @@ title: Registrarse
 ---
 
 ### Crea una cuenta 
-Ve a [devices.sensor.community](https://devices-test.sensor.community/register) para crear una cuenta y conviértete en parte de la red Open Data.
+Ve a [devices.sensor.community](https://devices.sensor.community/register) para crear una cuenta y conviértete en parte de la red Open Data.
 
 ### Registra tu dispositivo 
 Una vez creas una cuenta e inicias sesión, podrás registrar tu dispositivo. Completa el formulario para registrar tu dispositivo. Vaya a Inicio -> (Iniciar sesión) - Sensores -> Registrar nuevo sensor

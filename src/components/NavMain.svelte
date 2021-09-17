@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="flex">
-                    <a href="https://devices-test.sensor.community/register" on:click={menuClose}
+                    <a href="https://devices.sensor.community/" on:click={menuClose}
                        target="_blank" class="mr-1 font-extralight">
                         Devices
                     </a>

@@ -8,7 +8,7 @@ Wprowadź poniższe dane w przeglądarce z własnymi danymi:
 
 [ID] można również wyszukać w polu wprowadzania w lewym górnym rogu tej strony [https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1](https://api-rrd.madavi.de/grafana/d/GUaL5aZMz/pm-sensors?orgId=1)
 
-* Czy czujnik jest zarejestrowany przez [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) i czy jest on widoczny na mapie?
+* Czy czujnik jest zarejestrowany przez [https://devices.sensor.community/register](https://devices.sensor.community/register) i czy jest on widoczny na mapie?
 * Czy w przeszłości poziom sygnału WLAN był słaby?
     Tutaj znajduje się serwer logów sygnałowych: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
         

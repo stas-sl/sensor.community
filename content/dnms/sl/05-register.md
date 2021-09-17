@@ -4,7 +4,7 @@ title: Register
 
 ### Registrirajte se
 
-Pojdite na [devices.sensor.community](https://devices-test.sensor.community/register), da registrirate svojo napravo in postanete del odprtega podatkovnega omrežja.
+Pojdite na [devices.sensor.community](https://devices.sensor.community/register), da registrirate svojo napravo in postanete del odprtega podatkovnega omrežja.
 
 
 #### Registrirajte svojo napravo

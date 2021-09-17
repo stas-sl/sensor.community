@@ -4,7 +4,7 @@ title: Register
 
 ### Create an account
 
-前往[devices.sensor.community](https://devices-test.sensor.community/register)创建一个账户，成为开放数据网络的一部分。
+前往[devices.sensor.community](https://devices.sensor.community/register)创建一个账户，成为开放数据网络的一部分。
 
 
 ### Register your device

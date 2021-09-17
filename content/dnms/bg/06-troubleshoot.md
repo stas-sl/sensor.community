@@ -8,7 +8,7 @@ title: Отстраняване на неизправности
 
 Идентификаторът [ID] може да бъде търсен и в полето за въвеждане в горния ляв ъгъл [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
 
-* Регистриран ли е сензорът чрез [https://devices-test.sensor.community/register](https://devices-test.sensor.community/register) и вижда ли се сензорът на картата?
+* Регистриран ли е сензорът чрез [https://devices.sensor.community/register](https://devices.sensor.community/register) и вижда ли се сензорът на картата?
   * Слабо ли е било нивото на сигнала на WLAN в миналото?
     Ето дневника на сигнала от страна на сървъра: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
 

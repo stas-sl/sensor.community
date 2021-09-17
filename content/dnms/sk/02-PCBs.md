@@ -1,30 +1,25 @@
 ---
-title: DPS a schémy zapojenia
+title: PCB a schémy zapojenia
 ---
 
-Najlepší spôsob, ako zostaviť DNMS, je použiť jednu z našich dosiek plošných spojov.
-V súčasnosti existuje pomerne veľa výrobcov PCB, ktorí dokážu vyrobiť dosky plošných spojov za pár dolárov bez minimálneho množstva. Napríklad [JLCPCB](https://jlcpcb.com/).
-Stačí si stiahnuť naše schémy zapojenia alebo súbory Gerber nižšie, nahrať ich na webovú stránku výrobcu a objednať si PCB.
-
+Najlepší spôsob, ako zostaviť DNMS, je použiť jednu z našich dosiek plošných spojov. V súčasnosti existuje pomerne veľa výrobcov PCB, ktorí dokážu vyrobiť dosiek plošných spojov za pár dolárov bez minimálneho množstva. Napríklad [JLCPCB](https:/jlcpcb.com/). Stačí si stiahnuť náš schémy obvodov a/alebo súbory Gerber nižšie, nahrajte ich na webovú stránku výrobcu a objednajte si dosky plošných spojov.
 <br>
-Tu sú opísané posledné verzie dosiek plošných spojov. Ďalšie informácie a prístup k súborom KiCad nájdete na [Github Helmuta Bittera](https://github.com/hbitter/DNMS/tree/master/PCBs).
+
+Posledné verzie dosiek plošných spojov sú opísané tu. Pozri [Github Helmut Bitter](https://github.com/hbitter/DNMS/tree/master/PCBs), kde nájdete ďalšie informácie a prístup k KiCad súbory.
 
 ### AIRROHR V1.4
 <img src="../docs/dnms/airrohr-PCB.jpg" style="display: block; width:40%;margin: 1em 0" loading="lazy"/>
-DPS pre NodeMCU ESP8266 CPUWLAN s rozšírením zbernice I2C na pripojenie DNMS, ako aj iných senzorov (SDS011, BME280...).
+DPS pre CPU/WLAN NodeMCU ESP8266 s rozšírením zbernice I2C na pripojenie DNMS, ako aj ďalších snímačov (SDS011, BME280...).
 
-
-#### Na stiahnutie:
-* [Schéma zapojenia](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
-* [Gerber súbor na nahratie na webovú stránku výrobcu PCB](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
+* [Schéma zapojenia PDF](../docs/dnms/airrohr-PCB-circuit-diagram.pdf)
+* [Gerber súbor zip na nahratie na webovú stránku výrobcu PCB](../docs/dnms/airrohr-PCB-circuit-diagram-gerber.zip)
 
 ---
 
 ### DNMS - T4 V1.4
-DPS pre DNMS Teensy 4.0, ktorý možno pripojiť priamo na NodeMCU ESP8266 alebo na vyššie uvedenú DPS AIRROHR.
+<img src="../docs/dnms/dnms-noise-measuring-teensy-4.jpg" style="display: block;width:40%; margin: 1em 0" loading="lazy"/>
+DPS pre DNMS Teensy 4.0, ktorú možno pripojiť priamo na NodeMCU ESP8266 alebo na vyššie uvedenú DPS AIRROHR.
 
-
-#### Na stiahnutie:
-* [Schéma zapojenia](...docsdnmsdnms-noise-measuring-teensy-40-circuit-diagram.pdf)
-* [Gerber súbor na nahratie na webovú stránku výrobcu PCB](..docsdnmsdnms-noise-measuring-teensy-40-circuit-gerber.zip)
+* [Schéma zapojenia PDF](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-diagram.pdf)
+* [Gerber súbor zip na nahratie na webovú stránku výrobcu PCB](../docs/dnms/dnms-noise-measuring-teensy-40-circuit-gerber.zip)
 

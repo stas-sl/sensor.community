@@ -4,7 +4,7 @@ title: Registro
 
 ### Registrati
 
-Vai a [devices.sensor.community](https://devices-test.sensor.community/register) per registrare il tuo dispositivo e diventare parte della rete di dati aperti.
+Vai a [devices.sensor.community](https://devices.sensor.community/register) per registrare il tuo dispositivo e diventare parte della rete di dati aperti.
 
 
 ### Registra il tuo dispositivo

@@ -4,7 +4,7 @@ title: Εγγραφή
 
 ### Εγγραφείτε μόνοι σας
 
-Μεταβείτε στη διεύθυνση [devices.sensor.community](https://devices-test.sensor.community/register) για να καταχωρήσετε τη συσκευή σας και να γίνετε μέλος του δικτύου ανοικτών δεδομένων.
+Μεταβείτε στη διεύθυνση [devices.sensor.community](https://devices.sensor.community/register) για να καταχωρήσετε τη συσκευή σας και να γίνετε μέλος του δικτύου ανοικτών δεδομένων.
 
 
 ### Καταχωρήστε τη συσκευή σας

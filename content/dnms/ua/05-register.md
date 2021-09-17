@@ -4,7 +4,7 @@ title: Реєстрація
 
 ### Зареєструйтесь
 
-Зайдіть на [devices.sensor.community](https://devices-test.sensor.community/register), щоб зареєструвати свій пристрій і стати частиною мережі відкритих даних.
+Зайдіть на [devices.sensor.community](https://devices.sensor.community/register), щоб зареєструвати свій пристрій і стати частиною мережі відкритих даних.
 
 
 ### Зареєструйте свій пристрій
