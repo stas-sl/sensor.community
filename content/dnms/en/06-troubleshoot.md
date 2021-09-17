@@ -7,10 +7,10 @@ Enter the following in the browser with your own data:
 `https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1&var-chipID=esp8266-[ID]`
 
 The [ID] can also be searched for in input field in the upper left corner [https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1](https://api-rrd.madavi.de/grafana/d/BYsfp-xGz/dnms?orgId=1)
-a
+
 * Is the sensor registered via [https://devices.sensor.community/register](https://devices.sensor.community/register) and is the sensor visible on the map?
     * Was the WLAN signal level weak in the past?
-        here is the signal log server-side: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
+        Here is the signal log server-side: `https://api-rrd.madavi.de/grafana/d/Fk6mw1WGz/wifi-signal?orgId=1&var-chipID=esp8266-[ID]`
         
 
 
@@ -28,8 +28,7 @@ a
     * Track text on serial interface with serial terminal program (Settings: baud 9600, 8N1)
         * Linux: screen, minicom, cutecom; Windows: Tera Term; MacOS: screen, minicom, ...
         * possibly suitable usb2serial drivers are still necessary, see [https://github.com/opendata-stuttgart/meta/wiki/Firmware-einspielen](https://github.com/opendata-stuttgart/meta/wiki/Firmware-einspielen)
-    * There you should be able to see what the sensor is doing (boot messages, WLAN connection or AP, measurement - only
-      after 3 minutes)
+    * There you should be able to see what the sensor is doing (boot messages, WLAN connection or AP, measurement - only after 3 minutes)
 
 ### Electronics problems?
 

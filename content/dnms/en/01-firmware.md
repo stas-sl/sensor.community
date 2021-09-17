@@ -2,8 +2,7 @@
 title: Driver & firmware
 ---
 
-We already prepared the firmware. You only have to install drivers and flash your NodeMCU (ESP8266) and Teensy 4.0
-boards.
+We already prepared the firmware. You only have to install drivers and flash your NodeMCU (ESP8266) and Teensy 4.0  boards.
 
 To communicate with your ESP8266 you need [usb2serial](https://en.wikipedia.org/wiki/Serial_port) drivers for your
 operating system.

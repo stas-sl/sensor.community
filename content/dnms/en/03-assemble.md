@@ -60,7 +60,7 @@ For each tubing 15 g of resin should be sufficient.
 When the resin has hardened remove the tape. Your microphone unit is ready.
 
 ## DNMS Housing
-When the Teensy (DNMS) and the NodeMCU (standalone or on PCB) are separated: DNMS and airRohr
+When the Teensy (DNMS) and the NodeMCU (standalone or on PCB) are separated: DNMS and airRohr.
 You need a piece of 25 mm diameter tubing (for example tubing for electrical applications), a connector, a 90° bow and a M25 IP68 cable gland.
 The tube itself should be 160 mm long. The DNMS looks place in. The microphone housing is maintained by the cable gland.
 The bow prevents water and humidity to enter the housing while letting the cable pass.
@@ -80,18 +80,14 @@ The PCB carrying the NodeMCU can be put in any kind of electrical box.
 The housings themselves should be waterproof. Only the microphone inlet could be sensitive. TDK, the manufacturer has published some recommendations for sealing InvenSense bottom-port MEMS microphones from dust and liquid ingress but the components are difficult to find and were not tested.
 It is absolutely necessary to install a weather protection in the form of a foam cover. If necessary, even a household sponge is sufficient. There are several reasons for this:
 * it protects against wind noise (which can increase the decibels measurements)
-* it protects against direct water leakage on the microphone. To avoid condensation on the microphone pull back the
-  cover a beat after installing it in order to create a small cavity.
-* it protects against solar radiation. Intense sunlight can influence the measured values and reduce the life of the
-  microphone.
+* it protects against direct water leakage on the microphone. To avoid condensation on the microphone pull back the cover a beat after installing it in order to create a small cavity.
+* it protects against solar radiation. Intense sunlight can influence the measured values and reduce the life of the microphone.
 
 <img src="../docs/dnms/dnms-noise-measuring-microphone-bonette.jpg" style="width:45%; margin: 3em 0" loading="lazy"/>
 
-Those foam covers are normaly sold as ‘covers for measurement microfons’. But they are expensive. You can also take a
-normal foam ball and cut a hole with the scissors.
+Those foam covers are normaly sold as ‘covers for measurement microfons’. But they are expensive. You can also take a normal foam ball and cut a hole with the scissors.
 
-If you need more
-ones [this source](https://de.aliexpress.com/item/32357483926.html?gps-id=pcStoreJustForYou&scm=1007.23125.137358.0&scm_id=1007.23125.137358.0&scm-url=1007.23125.137358.0&pvid=6cc8dfcd-974e-4fde-9dc9-6444c37a9069&spm=a2g0o.store_home.smartJustForYou_148437547.2
+If you need more ones [this source](https://de.aliexpress.com/item/32357483926.html?gps-id=pcStoreJustForYou&scm=1007.23125.137358.0&scm_id=1007.23125.137358.0&scm-url=1007.23125.137358.0&pvid=6cc8dfcd-974e-4fde-9dc9-6444c37a9069&spm=a2g0o.store_home.smartJustForYou_148437547.2
 ) can be helpful.
 
 ## Location of the microphone

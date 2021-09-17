@@ -33,10 +33,8 @@ That repository contains different setups to build the sensor with different kin
 * a setup where the NodeMCU with some sensors (PM, temperature etc.) and the DNMS are separated. The PCBs are called AIRROHR V1.4 and DNMS - T4 V1.4
 * a combined version of the NodeMCU and DNMS on the same PCB: DNMS - T4+NodeMCU V1.4
 
-Only the variant where the NODEMCU and DNMS are separated is described here. Have a look at Helmut's Github for the
-other variants!
-In this case, the connection between the NodeMCU and the DNMS can be as long as 10m. This is important because you need
-to find the right position for the DNMS to obtain accurate noise measurements.
+Only the variant where the NODEMCU and DNMS are separated is described here. Have a look at Helmut's Github for the other variants!  
+In this case, the connection between the NodeMCU and the DNMS can be as long as 10m. This is important because you need  to find the right position for the DNMS to obtain accurate noise measurements.
 
 ## Shopping list
 
