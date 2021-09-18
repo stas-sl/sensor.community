@@ -9,7 +9,6 @@
         return {};
     }
 </script>
-
 <script>
     import Nav from '../components/NavMain.svelte';
     import Footer from '../components/Footer.svelte';

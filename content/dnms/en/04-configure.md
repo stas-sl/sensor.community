@@ -19,15 +19,10 @@ title: Configure
 ### Get the ID
 
 1. Connect the station with an USB cable to power up the sensor
-
-2. The station tries to connect to the configured WiFi access point. If this does not work, the sensor opens an access
-   point with the name `Particulate Matter ID` , `Feinstaubsensor-ID` or `airRohr-ID`. The ID is the **ChipID** (for
+2. The station tries to connect to the configured WiFi access point. If this does not work, the sensor opens an access point with the name `Particulate Matter ID` , `Feinstaubsensor-ID` or `airRohr-ID`. The ID is the **ChipID** (for
    example 13597771). **Please note that number down, as you need it for the registration**
-
 3. Connect to the created access point. Wait until the connection is established.<br>*Android*: If the connection
-   disconnects immediately, you may have to deactivate the option 'Smart network switch' under 'Connections -> WiFi ->
-   Advanced'
-
+   disconnects immediately, you may have to deactivate the option 'Smart network switch' under 'Connections -> WiFi -> Advanced'
 4. Open your browser and type in [http://192.168.4.1/](http://192.168.4.1/)
 
 > ⚠️ **Please note**  It may take a few tries for the NodeMCU to connect to the home WiFi network. Please do not get impatient and try until it works. The sensor can also be configured via a smartphone. If the configuration of the sensor has worked, the configuration page is no longer accessible under this IP 192.168.4.1

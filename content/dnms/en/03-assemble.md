@@ -5,17 +5,14 @@ title: Assemble
 
 ## Microphone unit
 
-The microphone unit is based on Pesky Products breakout board with a MEMS microphone ICS-43434. You can fin such board
-at the [Tindie marketplace](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/).
+The microphone unit is based on Pesky Products breakout board with a MEMS microphone ICS-43434. You can fin such board at the [Tindie marketplace](https://www.tindie.com/products/onehorse/ics43434-i2s-digital-microphone/).
 <img src="../docs/dnms/dnms-noise-measuring-microphone.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 ### Housing for the microphone unit
 
-The housing is made with a .500" (12.7mm) polystyrene tubing. This diameter permits to plug directly most of the
-calibrators on the unit.
+The housing is made with a .500" (12.7mm) polystyrene tubing. This diameter permits to plug directly most of the calibrators on the unit.
 
-The prototype was developed with
-the [Evergreen No. 236 tubing](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
+The prototype was developed with the [Evergreen No. 236 tubing](https://evergreenscalemodels.com/products/236-500-12-7mm-od-white-polystyrene-tubing).
 <img src="../docs/dnms/dnms-noise-measuring-microphone-anschluesse.jpg" style="width:40%; margin: 3em 0" loading="lazy"/>
 
 <br>
@@ -92,21 +89,13 @@ If you need more ones [this source](https://de.aliexpress.com/item/32357483926.h
 
 ## Location of the microphone
 
-It is important to place the microphone in an area as "free" as possible, this means in a location with as less sound
-reflecting surfaces as possible. The distance to reflective surfaces should be as great as possible. Try not to mount
-the microphone directly on the wall of a house, because walls reflect sounds strongly. The distance to the wall should
-ideally be more than 1 m. Of course this is not always easy to realize. With a distance of about 50 cm from the tip of
-the microphone to the wall, the induced error is still reasonable. Good places are for example balconies or terrace
-railings, or a small mast on the roof.
+It is important to place the microphone in an area as "free" as possible, this means in a location with as less sound  reflecting surfaces as possible. The distance to reflective surfaces should be as great as possible. Try not to mount
+the microphone directly on the wall of a house, because walls reflect sounds strongly. The distance to the wall should ideally be more than 1 m. Of course this is not always easy to realize. With a distance of about 50 cm from the tip of
+the microphone to the wall, the induced error is still reasonable. Good places are for example balconies or terrace railings, or a small mast on the roof.
 
-You can also try to place the microphone directly on the corner of the house for the reflections to partially cancel
-each other. A free-standing mast of at least 1 m height could also be a solution but then you have to watch out for
-reflections on the ground. That depends on the floor covering, of course.
+You can also try to place the microphone directly on the corner of the house for the reflections to partially cancel each other. A free-standing mast of at least 1 m height could also be a solution but then you have to watch out for  reflections on the ground. That depends on the floor covering, of course.
 
-It is also important to always be aware that we measure ambient noise. We can only make an approximation of the noise
-emission of sources such as roads or railways. However, the closer you get to the source, the more accurate the
-reference to the source becomes. Upgrades of the firmware should then be able to get preceise measurements for an
-identified type of noise.
+It is also important to always be aware that we measure ambient noise. We can only make an approximation of the noise emission of sources such as roads or railways. However, the closer you get to the source, the more accurate the  reference to the source becomes. Upgrades of the firmware should then be able to get preceise measurements for an identified type of noise.
 
 <img src="../docs/dnms/measuring-sensor-on-balcony.jpg" style="width:49%; margin: 1em 0;" loading="lazy"/>
 <img src="../docs/dnms/measuring-sensor-on-terasse.jpg" style="width:49%; margin: 1em 0;" loading="lazy"/>
