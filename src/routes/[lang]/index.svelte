@@ -74,8 +74,8 @@
                     <img alt="sensor community logo" class="h-8 w-auto"
                          src="images/logos/signet.svg">
                     <span class="py-1 font-semibold text-brand-yellow tracking-wide uppercase">
-                  Sensor.Community
-                </span>
+              Sensor.Community
+            </span>
                 </div>
                 <div class="mt-6">
                     <div class="mt-6 sm:max-w-xl">
@@ -130,6 +130,89 @@
                     <figcaption>{i18n.t('index:imageSubtitle')}
                     </figcaption>
                 </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Steps Section-->
+<div class="relative py-16">
+    <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
+        <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20">
+            <div class="flex max-w-sm mb-8 lg:grid-cols-7 sm:mx-auto lg:max-w-full">
+                <div class="px-10 py-20 text-center border border-2 rounded-lg lg:px-5 lg:py-10">
+
+                    <div class="p-4 flex items-center justify-center">
+                        <div class="relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="#084945">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
+                        Build</p>
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">First you have to build your sensor with our guide.
+                        Experience people can use <a class="text-brand-funcRed" href="https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md
+">other supported sensors</a> and build their custom device. </p>
+                    <a class="text-brand-funcRed" href="{lang}/sensors/">{i18n.t('index:cta')}</a>
+                </div>
+
+                <div class="px-10 py-32">
+                    <div class="dot-flashing"></div>
+                </div>
+
+                <div class="px-10 py-20 text-center border border-2 rounded-lg lg:px-5 lg:py-10">
+                    <div class="p-4 flex items-center justify-center">
+                        <div class="relative">
+                            <div class="ping"></div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="#fff" viewBox="0 0 24 24"
+                                     stroke="#084945">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
+                        Register & Send Data</p>
+
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">After you build your device, you have to register it
+                        in our registeration and self-service platform. Only then you'll be able to send data the Sensor
+                        Community.</p>
+                    <a class="text-brand-funcRed" href="devices.sensor.community/register" target="_blank">Register your
+                        Device</a>
+                </div>
+
+                <div class="px-10 py-32">
+                    <div class="dot-flashing"></div>
+                </div>
+
+                <div class="px-10 py-20 text-center border border-2 rounded-lg lg:px-5 lg:py-10">
+
+                    <div class="p-4 flex items-center justify-center">
+                        <div class="relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                 stroke="#084945">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
+                        Visualize</p>
+
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">The recieved data from your sensor will be stored,
+                        processed and visualiszed by our server infrastructure. Don't worry, your data will be
+                        anonymized.</p>
+                    <a class="text-brand-funcRed" href="https://maps.sensor.community/" target="_blank">See all sensors
+                        on our Map</a>
+
+                </div>
             </div>
         </div>
     </div>
@@ -205,6 +288,7 @@
         </div>
     </div>
 </div>
+
 
 {#await fetchNumbers}
     <p>{i18n.t('index:inNumbers-fetching')}</p>
@@ -331,7 +415,7 @@
 <Banner
         description={i18n.t('banner:description')}
         link={lang}/sensors/
- linkName={i18n.t('banner:cta')}
+linkName={i18n.t('banner:cta')}
         title={i18n.t('banner:title')}
 />
 
