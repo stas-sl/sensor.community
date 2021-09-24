@@ -137,7 +137,7 @@
 
 
 <!-- Steps Section-->
-<div class="relative py-16">
+<div class="relative pt-16">
     <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
         <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20">
             <div class="flex max-w-sm mb-8 lg:grid-cols-7 sm:mx-auto lg:max-w-full">
