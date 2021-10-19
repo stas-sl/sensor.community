@@ -136,13 +136,17 @@
 </div>
 
 
-<!-- Steps Section-->
-<div class="relative pt-16">
+<!-- Procedure Section-->
+<div class="relative mt-16 pt-16 bg-brand-yellowLight">
     <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
-        <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20">
-            <div class="flex max-w-sm mb-8 lg:grid-cols-7 sm:mx-auto lg:max-w-full">
-                <div class="px-10 py-20 text-center border border-2 rounded-lg lg:px-5 lg:py-10">
-
+        <div class="relative text-center">
+            <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                How does it work?
+            </h2>
+        </div>
+        <div class="mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl py-20">
+            <div class="max-w-sm mb-8 grid grid-cols-1 md:flex lg:grid-cols-7 mx-auto lg:max-w-full gap-8 md:gap-0">
+                <div class="p-10 text-center border border-2 rounded-lg bg-brand-white">
                     <div class="p-4 flex items-center justify-center">
                         <div class="relative">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="#084945">
@@ -156,14 +160,14 @@
                     <p class="max-w-xs mx-auto mb-2 text-gray-700">First you have to build your sensor with our guide.
                         Experience people can use <a class="text-brand-funcRed" href="https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md
 ">other supported sensors</a> and build their custom device. </p>
-                    <a class="text-brand-funcRed" href="{lang}/sensors/">{i18n.t('index:cta')}</a>
+                    <p class="pt-4"><a class="text-brand-funcRed pt-3" href="{lang}/sensors/">{i18n.t('index:cta')}</a></p>
                 </div>
 
-                <div class="px-10 py-32">
+                <div class="px-10 py-40 hidden md:block">
                     <div class="dot-flashing"></div>
                 </div>
 
-                <div class="px-10 py-20 text-center border border-2 rounded-lg lg:px-5 lg:py-10">
+                <div class="p-10 text-center border border-2 rounded-lg bg-brand-white">
                     <div class="p-4 flex items-center justify-center">
                         <div class="relative">
                             <div class="ping"></div>
@@ -183,15 +187,15 @@
                     <p class="max-w-xs mx-auto mb-2 text-gray-700">After you build your device, you have to register it
                         in our registeration and self-service platform. Only then you'll be able to send data the Sensor
                         Community.</p>
-                    <a class="text-brand-funcRed" href="devices.sensor.community/register" target="_blank">Register your
-                        Device</a>
+                    <p class="pt-4"><a class="text-brand-funcRed" href="devices.sensor.community/register" target="_blank">Register your
+                        Device</a></p>
                 </div>
 
-                <div class="px-10 py-32">
+                <div class="px-10 py-40 hidden md:block">
                     <div class="dot-flashing"></div>
                 </div>
 
-                <div class="px-10 py-20 text-center border border-2 rounded-lg lg:px-5 lg:py-10">
+                <div class="p-10 text-center border border-2 rounded-lg bg-brand-white">
 
                     <div class="p-4 flex items-center justify-center">
                         <div class="relative">
@@ -206,11 +210,11 @@
                     <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
                         Visualize</p>
 
-                    <p class="max-w-xs mx-auto mb-2 text-gray-700">The recieved data from your sensor will be stored,
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">The recieved data from your sensor will be <a class="text-brand-funcRed" href=" https://archive.sensor.community/" target="_blank">archived</a>,
                         processed and visualiszed by our server infrastructure. Don't worry, your data will be
                         anonymized.</p>
-                    <a class="text-brand-funcRed" href="https://maps.sensor.community/" target="_blank">See all sensors
-                        on our Map</a>
+                    <p class="pt-4"><a class="text-brand-funcRed pt-3" href="https://maps.sensor.community/" target="_blank">See all sensors
+                        on our Map</a></p>
 
                 </div>
             </div>
