@@ -1,6 +1,7 @@
 <script>
     import initI18n from "../utils/initI18n";
     import {stores} from "@sapper/app";
+    import {menuOpened, langSwitcherOpened} from '../store';
 
     const {page} = stores();
     $: lang = $page.params.lang;
@@ -12,12 +13,24 @@
         .slice(2)
         .join("/");
 
-    export let open = false
-    export let menu = {open: false};
+    // 1. create a store that can have it's value be set from the 'outside'.
+    let current;
+    let mainMenu;
 
-    function menuToggle() {
-        open = !open;
-    }
+    // 2. subscribe to the store to receive updates on value changes.
+    menuOpened.subscribe(value => {
+        mainMenu = value
+    });
+    langSwitcherOpened.subscribe(value => {
+        current = value
+    });
+
+    // toggle the current boolean values, and set the store value which will notify all subscribes of the new value.
+    const menuToggle = () => {
+        menuOpened.set(false)
+        current = !current
+        langSwitcherOpened.set(current)
+    };
 
     const langauges = [
         "en", "de", "fr", "it", "sk", "ru", "cz", "bg", "pl", "es", "nl", "ua", "se", "pt", "ja", "zh", "da", "el", "et", "hu", "lt", "lv", "ro", "sl"
@@ -29,7 +42,7 @@
             on:click={menuToggle}
             type="button">
         <span class="text-base leading-6 font-bold uppercase">{lang}</span>
-        {#if !menu.open}
+        {#if !current}
             <div class="px-1">
                 <svg class="text-brand-white h-5 w-5 mt-1"
                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -49,7 +62,7 @@
             </div>
         {/if}
     </button>
-    <div class="absolute transform leading-6 -ml-4 inset-x-0 d:max-w-md md:-translate-x-48 { open ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition duration-200">
+    <div class="absolute transform leading-6 -ml-4 inset-x-0 d:max-w-md md:-translate-x-48 { current ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition duration-200">
         <div class="h-screen md:h-full rounded-lg shadow-lg mt-8 md:w-64">
             <div class="relative bg-brand-white ml-3 md:ml-0 p-5 grid grid-cols-2">
                 {#each langauges as lang}
