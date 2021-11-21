@@ -23,6 +23,21 @@
         });
     });
 
+    let activeTab = "#2";
+
+    const isBrowser = typeof window !== 'undefined'
+    const href = (isBrowser ? window.location.href : 'https://example.com')
+
+
+    function setActiveTab(tabNr) {
+        console.log(tabNr);
+        const ret = {};
+        for (let i in tabs) {
+            ret[i] = (i === `tab${tabNr}` ? true : false)
+        }
+        return ret;
+    }
+
 </script>
 <style>
     svg {
@@ -32,12 +47,18 @@
     [aria-expanded=true] svg {
         transform: rotate(0.5turn);
     }
+    .hash::after{
+        content: "#";
+    }
 </style>
 <div class="pt-6">
-    <dt class="text-lg" id="faq{faq.id}">
+    <dt class="text-lg" id="{lang}/knowledge/faq#{faq.id}">
         <button on:click={toggle} aria-expanded={isOpen}
                 class="text-left w-full flex justify-between items-start text-lg">
-            <span class="font-bold text-brand-black">{faq.title}</span>
+            <h2 class="group flex whitespace-pre-wrap" id="#{faq.id}">
+                <a href="{lang}/knowledge/faq#{faq.id}" class="absolute text-gray-500 no-underline hash opacity-0 group-hover:opacity-100" style="margin-left:-1em;padding-right:0.5em" aria-label="Anchor"></a><span>{faq.title}</span>
+            </h2>
+        <!--<span class="font-bold text-brand-black">{faq.title}</span>-->
             <span class="ml-6 h-7 flex items-center">
             <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -56,4 +77,3 @@
         </a>
     {/if}
 </div>
-
