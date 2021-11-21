@@ -16,28 +16,11 @@
         const element = document.querySelector('#faq' + location.hash.replace('#', ''))
         const rect = element.getBoundingClientRect() // get rects(width, height, top, etc)
         const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        on:click={toggle}
         window.scroll({
             top: rect.top + rect.height / 2 - viewHeight / 2,
             behavior: 'smooth' // smooth scroll
         });
     });
-
-    let activeTab = "#2";
-
-    const isBrowser = typeof window !== 'undefined'
-    const href = (isBrowser ? window.location.href : 'https://example.com')
-
-
-    function setActiveTab(tabNr) {
-        console.log(tabNr);
-        const ret = {};
-        for (let i in tabs) {
-            ret[i] = (i === `tab${tabNr}` ? true : false)
-        }
-        return ret;
-    }
-
 </script>
 <style>
     svg {
@@ -47,7 +30,8 @@
     [aria-expanded=true] svg {
         transform: rotate(0.5turn);
     }
-    .hash::after{
+
+    .hash::after {
         content: "#";
     }
 </style>
@@ -55,10 +39,11 @@
     <dt class="text-lg" id="{lang}/knowledge/faq#{faq.id}">
         <button on:click={toggle} aria-expanded={isOpen}
                 class="text-left w-full flex justify-between items-start text-lg">
-            <h2 class="group flex whitespace-pre-wrap" id="#{faq.id}">
-                <a href="{lang}/knowledge/faq#{faq.id}" class="absolute text-gray-500 no-underline hash opacity-0 group-hover:opacity-100" style="margin-left:-1em;padding-right:0.5em" aria-label="Anchor"></a><span>{faq.title}</span>
+            <h2 class="group font-bold text-brand-black flex whitespace-pre-wrap" id="faq{faq.id}">
+                <a href="{lang}/knowledge/faq#{faq.id}" class="absolute text-brand-funcRed no-underline hash opacity-0 group-hover:opacity-100"
+                   style="margin-left:-1em;padding-right:0.5em" aria-label="Anchor"></a><span>{faq.title}</span>
             </h2>
-        <!--<span class="font-bold text-brand-black">{faq.title}</span>-->
+            <!--<span class="font-bold text-brand-black">{faq.title}</span>-->
             <span class="ml-6 h-7 flex items-center">
             <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -67,13 +52,9 @@
                 </span>
         </button>
     </dt>
-    {#if isOpen}
-        <a href="{lang}/knowledge/faq#{faq.id}">
-            <dd class="mt-2 pr-12" transition:slide={{ duration: 300 }}>
-                <p class="text-base prose max-w-7xl text-brand-black">
-                    {@html faq.content}
-                </p>
-            </dd>
-        </a>
-    {/if}
+    <dd class="mt-2 pr-12 faq{faq.id} {isOpen ? 'block' : 'hidden'}" transition:slide={{ duration: 300 }}>
+        <p class="text-base prose max-w-7xl text-brand-black">
+            {@html faq.content}
+        </p>
+    </dd>
 </div>
