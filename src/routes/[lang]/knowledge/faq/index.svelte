@@ -15,13 +15,29 @@
 <script>
     import {stores} from "@sapper/app";
     import initI18n from "../../../../utils/initI18n";
-    import Docs from '../../../../components/Docs.svelte'
-    import Item from "../../../../components/Accordian.svelte"
+    import Item, {isOpen} from "../../../../components/Accordian.svelte"
+    import {onMount} from "svelte";
 
     let {page} = stores();
     $: lang = $page.params.lang;
     $: i18n = initI18n(lang);
     export let faqs;
+
+    onMount(() => {
+        let elem = document.querySelector('.faq' + location.hash.replace("#", ""));
+        elem.classList.toggle("block");
+        elem.classList.toggle("hidden");
+        let isOpen
+
+
+        const element = document.querySelector('#faq' + location.hash.replace('#', ''))
+        const rect = element.getBoundingClientRect() // get rects(width, height, top, etc)
+        const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        window.scroll({
+            top: rect.top + rect.height / 2 - viewHeight / 2,
+            behavior: 'smooth' // smooth scroll
+        });
+    });
 </script>
 
 <svelte:head>

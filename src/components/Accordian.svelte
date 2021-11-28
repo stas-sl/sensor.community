@@ -9,18 +9,8 @@
     $: i18n = initI18n(lang);
 
     export let faq
-    let isOpen = false
+    export let isOpen = false
     const toggle = () => isOpen = !isOpen
-
-    onMount(async () => {
-        const element = document.querySelector('#faq' + location.hash.replace('#', ''))
-        const rect = element.getBoundingClientRect() // get rects(width, height, top, etc)
-        const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        window.scroll({
-            top: rect.top + rect.height / 2 - viewHeight / 2,
-            behavior: 'smooth' // smooth scroll
-        });
-    });
 </script>
 <style>
     svg {
@@ -39,11 +29,10 @@
     <dt class="text-lg" id="{lang}/knowledge/faq#{faq.id}">
         <button on:click={toggle} aria-expanded={isOpen}
                 class="text-left w-full flex justify-between items-start text-lg">
-            <h2 class="group font-bold text-brand-black flex whitespace-pre-wrap" id="faq{faq.id}">
+            <span class="group font-bold text-brand-black flex whitespace-pre-wrap" id="faq{faq.id}">
                 <a href="{lang}/knowledge/faq#{faq.id}" class="absolute text-brand-funcRed no-underline hash opacity-0 group-hover:opacity-100"
                    style="margin-left:-1em;padding-right:0.5em" aria-label="Anchor"></a><span>{faq.title}</span>
-            </h2>
-            <!--<span class="font-bold text-brand-black">{faq.title}</span>-->
+            </span>
             <span class="ml-6 h-7 flex items-center">
             <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
