@@ -9,7 +9,7 @@
     $: i18n = initI18n(lang);
 
     export let faq
-    export let isOpen = false
+    let isOpen = false
     const toggle = () => isOpen = !isOpen
 </script>
 <style>

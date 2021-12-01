@@ -15,7 +15,7 @@
 <script>
     import {stores} from "@sapper/app";
     import initI18n from "../../../../utils/initI18n";
-    import Item, {isOpen} from "../../../../components/Accordian.svelte"
+    import Item from "../../../../components/Accordian.svelte"
     import {onMount} from "svelte";
 
     let {page} = stores();
@@ -25,10 +25,8 @@
 
     onMount(() => {
         let elem = document.querySelector('.faq' + location.hash.replace("#", ""));
-        elem.classList.toggle("block");
-        elem.classList.toggle("hidden");
-        let isOpen
-
+        elem.classList.remove("hidden");
+        elem.classList.add("block");
 
         const element = document.querySelector('#faq' + location.hash.replace('#', ''))
         const rect = element.getBoundingClientRect() // get rects(width, height, top, etc)
