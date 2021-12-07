@@ -4,7 +4,7 @@ title: Register
 
 ### Create an account
 
-Go to [devices.sensor.community](https://devices.sensor.community/registerregister) to create an account and become a part of the open data network.
+Go to [devices.sensor.community](https://devices.sensor.community/register/) to create an account and become a part of the open data network.
 
 
 ### Register your device
