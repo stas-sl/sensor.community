@@ -24,17 +24,13 @@
     export let faqs;
 
     onMount(() => {
-        let elem = document.querySelector('.faq' + location.hash.replace("#", ""));
-        elem.classList.remove("hidden");
-        elem.classList.add("block");
-
-        const element = document.querySelector('#faq' + location.hash.replace('#', ''))
-        const rect = element.getBoundingClientRect() // get rects(width, height, top, etc)
-        const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        window.scroll({
-            top: rect.top + rect.height / 2 - viewHeight / 2,
-            behavior: 'smooth' // smooth scroll
-        });
+        let elem = '.faq' + location.hash.replace("#", "")
+        let selector = document.querySelector(elem);
+        if (selector) {
+            selector.classList.remove("hidden");
+            selector.classList.add("block");
+            selector.scrollIntoView();
+        }
     });
 </script>
 
@@ -48,7 +44,7 @@
     <meta property="og:title" content="{i18n.t('faqs:metaTitle')} - Sensor.Community">
     <meta property="og:description" content="{i18n.t('faqs:metaDescription')}">
 
-    <!-- Twitter -->
+    <!-- Twitter @-->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sensor.community{$page.path}">
     <meta property="twitter:title" content="{i18n.t('faqs:metaTitle')} - Sensor.Community">

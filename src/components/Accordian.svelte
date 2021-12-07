@@ -1,6 +1,5 @@
 <script>
     import {slide} from "svelte/transition";
-    import {onMount} from 'svelte';
     import {stores} from "@sapper/app";
     import initI18n from "../utils/initI18n";
 
