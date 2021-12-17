@@ -66,14 +66,11 @@
             </div>
         </div>
 
-        <div class="hidden md:block sm:mx-auto sm:max-w-3xl sm:px-6">
+        <div class="hidden lg:block sm:mx-auto sm:max-w-3xl sm:px-6">
             <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <div class="hidden sm:block">
-                    <div
-                            class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full">
-                    </div>
-                    <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" fill="none" height="392"
-                         viewBox="0 0 404 392" width="404">
+                    <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" fill="none"
+                         viewBox="0 0 404 392">
                         <defs>
                             <pattern height="20" id="837c3e70-6c3a-44e6-8854-cc48c737b659" patternUnits="userSpaceOnUse"
                                      width="20" x="0" y="0">
@@ -83,9 +80,8 @@
                         <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
                     </svg>
                 </div>
-                <div class="animate-heartBeat relative pl-4 -mr-40 sm:mx-auto sm:max-w-2xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-                    <img alt="Support Sensor.Community by donating and keep the network alive"
-                         class="w-full lg:h-full lg:w-auto lg:max-w-none"
+                <div class="animate-heartBeat relative ml-24 pt-24 mt-12">
+                    <img alt="Support Sensor.Community by donating and keep the network alive" class="h-64"
                          src="icons/heart.svg">
                 </div>
             </div>
