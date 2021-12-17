@@ -80,9 +80,9 @@
                         <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
                     </svg>
                 </div>
-                <div class="animate-heartBeat relative ml-24 pt-24 mt-12">
+                <div class="relative mx-auto ml-48 pt-24 mt-6">
                     <img alt="Support Sensor.Community by donating and keep the network alive" class="h-64"
-                         src="icons/heart.svg">
+                         src="images/heart.svg">
                 </div>
             </div>
         </div>
