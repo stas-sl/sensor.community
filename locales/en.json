@@ -60,7 +60,7 @@
     "partner-description": "We have leveraged our international contacts and had conversations with staff around the world over the past years, sharing our best practices and listening to their local approaches. <p class='mt-5'>Sensor.Community is dedicated to measuring particulate matter with the Citizen Science project. Become a partner of our Citizen Science project</p>",
     "partner-link": "Meet our partners",
     "mission": "Our Mission",
-    "mission-description": "We are a volunteer-run sensor network that has not received support from any organizations or ministries. We are a free and open source software. Your donations directly support the operation and development of this project.",
+    "mission-description": "Our goal ist to provide data transparency in the area of air quality for everyone. We are a volunteer-run sensor network that has not received support from any organizations or ministries. We are a free and open source software. Your donations directly support the operation and development of this project.",
     "mission-link": "Explore our mission",
     "mission-donate": "Donate to our mission"
 
@@ -97,7 +97,7 @@
     "metaTitle": "Donate - help us by showing your love",
     "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
     "h1": "Country Dashboard",
-    "description": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission. Support the community with a donation and keep the network alive",
+    "description": "Our goal ist to provide data transparency in the area of air quality for everyone. We are a volunteer-run sensor network that has not received support from any organizations or ministries. We are a free and open source software. Your donations directly support the operation and development of this project.",
     "pmSensors": "Particulate Matter Sensors",
     "tempSensors": "Temperature/RH/Pressure Sensors",
     "noiseSensors": "Noise Measurement Sensors",
@@ -107,7 +107,8 @@
     "metaTitle": "Donate - help us by showing your love",
     "metaDescription": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission.",
     "h1": "Show your support",
-    "description": "We are non-profit, non-corporate and non-compromised. People like you help us. We rely on donations to carry out our mission. Support the community with a donation and keep the network alive",
+    "description": "Our goal ist to provide data transparency in the area of air quality for everyone. We are non-profit and non-corporate. We rely on donations to carry out our mission.",
+    "history": "Since 2015, we have been measuring particle sizes PM10 and PM 2.5. Thanks to your support, we have thousands sensors worldwide.",
     "section": "Ways to support",
     "campaign": "Running Campaign",
     "donation": "Direct Donation",

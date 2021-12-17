@@ -48,6 +48,9 @@
                         <p class="mt-6 text-xl text-gray-900 antialiased">
                             {i18n.t('donate:description')}
                         </p>
+                        <p class="mt-6 text-xl text-gray-900 antialiased">
+                            {i18n.t('donate:history')}
+                        </p>
                     </div>
                 </div>
                 <div class="mt-12 lg:mt-24 lg:hidden">
