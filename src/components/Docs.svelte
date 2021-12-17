@@ -100,7 +100,7 @@
             {#each sections as section}
                 <section data-id={section.slug}>
                     <h2 class="flex">
-                        <span class="text-brand-funcRed" id={section.slug}>
+                        <span class="text-brand-funcRed scroll-mt-24" id={section.slug}>
                             <a href="{section.lang}/sensors/airrohr#{section.slug}" aria-hidden="false">
                                 <svg viewBox="0 0 512 512" class="anchor mt-1 md:mt-0">
                                     <path fill="currentColor"
