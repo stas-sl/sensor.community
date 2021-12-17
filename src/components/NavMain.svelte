@@ -62,7 +62,7 @@
     }
 </style>
 
-<div class="bg-brand-green sticky top-0 z-50">
+<div class="bg-brand-green sticky top-0 z-50 print:hidden">
     <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
         <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
             <div class="lg:w-0 lg:flex-1 justify-end">
@@ -140,7 +140,7 @@
 </div>
 
 <!--Mobile menu-->
-<div class="bg-brand-green sticky top-20 z-40">
+<div class="bg-brand-green sticky top-20 z-40 print:hidden">
     <div class="bg-brand-green h-screen absolute -mt-10 inset-x-0 origin-top-right lg:hidden { current ? 'block' : 'hidden' }">
         <div class="divide-y-2">
             <div class="mt-10 px-5 space-y-6 text-brand-white">

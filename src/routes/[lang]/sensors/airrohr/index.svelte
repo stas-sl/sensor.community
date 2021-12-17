@@ -44,7 +44,7 @@
 {#await sections}
     <p>{i18n.t('index:inNumbers-fetching')}</p>
 {:then data}
-    <div class="p-5 border-b border-gray-200">
+    <div class="p-5 border-b border-gray-200 print:hidden">
         <a href="{lang}/sensors/">←&nbsp {i18n.t('breadcrumb:toSensorOverview')}</a>
     </div>
     <div class="relative px-4">

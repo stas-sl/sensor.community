@@ -7,7 +7,7 @@
     $: i18n = initI18n(lang);
 </script>
 
-<div class="bg-gray-50">
+<div class="bg-gray-50 print:hidden">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-8 lg:py-24 lg:px-24">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="xl:col-span-1">

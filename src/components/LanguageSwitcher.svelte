@@ -37,7 +37,7 @@
     ].sort()
 </script>
 
-<div class="md:relative z-50">
+<div class="md:relative z-50 print:hidden">
     <button class="text-brand-white inline-flex"
             on:click={menuToggle}
             type="button">

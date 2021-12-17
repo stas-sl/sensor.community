@@ -95,7 +95,7 @@
     <GuideContents {sections}/>
 </div>
 <div class="mx-auto max-w-7xl">
-    <div class="prose md:prose-xl max-w-3xl">
+    <div class="prose md:prose-xl max-w-3xl print:prose-sm">
         <div bind:this={container}>
             {#each sections as section}
                 <section data-id={section.slug}>
@@ -123,7 +123,7 @@
                     </h2>
                     {@html section.html}
                 </section>
-                <div class="border border-gray-200 mt-20 mb-20 hairline"></div>
+                <div class="border border-gray-200 mt-20 mb-20 hairline print:hidden"></div>
             {/each}
         </div>
     </div>
