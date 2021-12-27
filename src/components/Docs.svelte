@@ -111,8 +111,8 @@
 
                         {@html section.metadata.title}
                         <span class="hidden md:flex justify-end space-x-8 flex-1 mt-1">
-                            <a href="https://github.com/{owner}/{project}/edit/develop/content/airrohr/{$locale}/{dir}/{section.file}"
-                               title="{$_('guide.editOnGithub')}">
+                            <a href="https://github.com/{owner}/{project}/edit/develop/content/airrohr/{section.lang}{dir}/{section.file}"
+                                                      title="{$_('guide.editOnGithub')}">
                                 <svg class="icon text-gray-400 mt-2 justify-end" viewBox='0 0 24 24' width="24"
                                      height="24">
                                     <path d='M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34'/>
