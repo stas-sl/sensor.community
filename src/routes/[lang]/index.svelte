@@ -124,10 +124,20 @@
                         <img alt=""
                              class="w-full rounded-xl  shadow-xl ring-1 ring-brand-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
                              src="images/maps.webp">
+                        <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
+                            <svg class="h-14 w-14 text-brand-black opacity-70" fill="currentColor" viewBox="0 0 84 84">
+                                <circle cx="42" cy="42" r="42" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
+                            <svg class="h-8 w-8 text-brand-black opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </div>
                     </a>
                 </div>
                 <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
-                    <figcaption>{i18n.t('index:imageSubtitle')}
+                    <figcaption>{@html i18n.t('index:imageSubtitle')}
                     </figcaption>
                 </figure>
             </div>
