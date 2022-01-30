@@ -32,7 +32,7 @@
     "h1": "Measure air quality by yourself",
     "subtitle": "We are a contributors driven global sensor network that creates open environmental data.",
     "cta": "Build your own DIY sensor",
-    "imageSubtitle": "Click on the picture to open in a new browser tab",
+    "imageSubtitle": "<b>Click on the picture</b> to open in a new browser tab",
     "about-title": "What is Sensor.Community?",
     "about-photo": "Photo:",
     "about-section1": "<span class='font-bold'>We are completely volunteers-run sensor network.</span> All our code is Open Source and can be found on <a href='https://github.com/opendata-stuttgart/' target='_blank' class='text-brand-funcRed'>GitHub</a>.",
@@ -339,5 +339,17 @@
     "privacyPolicyMail": "Email: rajko@sensor.community",
     "privacyPolicyContactTitle": "Contact via e-mail, social media or telephone",
     "privacyPolicyContactDescription": "As far as you address the e-mail, telephone or social media offered on our website and provide us with personal data, these data will be automatically stored and processed by our team to process your inquiry. These data are only processed for correspondence with you. We need your e-mail address to be able to answer your inquiry. We need your telephone number in order to be able to answer your callback request. Legal basis: The legal basis for the use of your data as described above is Art. 6 para. 1 lit. a DSGVO. Deletion: The personal data collected by us will be deleted if they are no longer required. We check the necessity every 2 years. You can also revoke the data processing at any time."
+  },
+  "copyright": {
+    "metaTitle": "Copyright & License",
+    "metaDescription": "Copyright & License",
+    "title": "Copyright & License",
+    "h1": "Copyright & License",
+    "dataDescription": "Sensor.Community is open data, licensed under the <a href='https://opendatacommons.org/licenses/dbcl/1-0/' target='_blank'>Open Data Commons Open Database License (ODbL)</a>. </br></br>You are free to copy, distribute, transmit and adapt our data, as long as you credit Sensor.Community and its contributors. If you alter or build upon our data, you may distribute the result only under the same licence. The full legal code explains your rights and responsibilities.</br></br>Our documentation is licensed under the <a href='https://creativecommons.org/licenses/by-sa/2.0/' target='_blank'>Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0)</a>.",
+    "mediaDescription": "All photos can be downloaded and used for free. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. Our media is licensed under the <a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</a>  ",
+    "creditTitle": "How to credit Sensor.Community",
+    "creditDescription": "We require that you use the credit <i>Sensor.Community contributors</i>.</br></br>You must also make it clear that the data is available under the Open Database License. You may do this by linking to <b>this copyright page</b>. Alternatively, and as a requirement if you are distributing in a data form, you can name and link directly to the license(s). In media where links are not possible (e.g. printed works), we suggest you direct your readers to Sensor.Community",
+    "infringementTitle": "Infringements",
+    "infringementDescription": "Sensor.Community contributors are reminded never to add data from any copyrighted sources (e.g. Google Maps or printed maps) without explicit permission from the copyright holders.</br></br>If you believe that copyrighted material has been inappropriately added to the Sensor.Community, please <a href='mailto:Contact@Sensor.Community'>contact us directly</a>."
   }
 }

@@ -164,19 +164,13 @@
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank"
+                                <a href="{lang}/copyrights/" target="_blank"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Firmware License
+                                    Copyright & License
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="https://opendatacommons.org/licenses/dbcl/1-0/" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    DB Contents License
-                                </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank"
+                                <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Photos License
                                 </a>
