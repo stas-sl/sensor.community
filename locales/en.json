@@ -351,5 +351,17 @@
     "creditDescription": "We require that you use the credit <i>Sensor.Community contributors</i>.</br></br>You must also make it clear that the data is available under the Open Database License. You may do this by linking to <b>this copyright page</b>. Alternatively, and as a requirement if you are distributing in a data form, you can name and link directly to the license(s). In media where links are not possible (e.g. printed works), we suggest you direct your readers to Sensor.Community",
     "infringementTitle": "Infringements",
     "infringementDescription": "Sensor.Community contributors are reminded never to add data from any copyrighted sources (e.g. Google Maps or printed maps) without explicit permission from the copyright holders.</br></br>If you believe that copyrighted material has been inappropriately added to the Sensor.Community, please <a href='mailto:Contact@Sensor.Community'>contact us directly</a>."
+  },
+  "places": {
+    "metaTitle": "List of all Map place links",
+    "metaDescription": "Copyright & License",
+    "title": "Linklist of all ",
+    "h1": "Linklist",
+    "dataDescription": "Sensor.Community is open data, licensed under the <a href='https://opendatacommons.org/licenses/dbcl/1-0/' target='_blank'>Open Data Commons Open Database License (ODbL)</a>. </br></br>You are free to copy, distribute, transmit and adapt our data, as long as you credit Sensor.Community and its contributors. If you alter or build upon our data, you may distribute the result only under the same licence. The full legal code explains your rights and responsibilities.</br></br>Our documentation is licensed under the <a href='https://creativecommons.org/licenses/by-sa/2.0/' target='_blank'>Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0)</a>.",
+    "mediaDescription": "All photos can be downloaded and used for free. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. Our media is licensed under the <a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</a>  ",
+    "creditTitle": "How to credit Sensor.Community",
+    "creditDescription": "We require that you use the credit <i>Sensor.Community contributors</i>.</br></br>You must also make it clear that the data is available under the Open Database License. You may do this by linking to <b>this copyright page</b>. Alternatively, and as a requirement if you are distributing in a data form, you can name and link directly to the license(s). In media where links are not possible (e.g. printed works), we suggest you direct your readers to Sensor.Community",
+    "infringementTitle": "Infringements",
+    "infringementDescription": "Sensor.Community contributors are reminded never to add data from any copyrighted sources (e.g. Google Maps or printed maps) without explicit permission from the copyright holders.</br></br>If you believe that copyrighted material has been inappropriately added to the Sensor.Community, please <a href='mailto:Contact@Sensor.Community'>contact us directly</a>."
   }
 }
