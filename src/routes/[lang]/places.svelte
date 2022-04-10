@@ -86,11 +86,14 @@
 
 
 <div class="relative py-16">
+    <div class="lg:mx-auto lg:max-w-7xl px-8 lg:items-start pb-12 text-center">
+        A click on view-button will open the map in a new window and centers the city. Search for your country or city with <code>ctrl/cmd + f</code> in your browser.
+    </div>
     <div class="masonry lg:mx-auto lg:max-w-7xl px-8 lg:items-start">
         {#each Object.entries(places) as [state, placeObject]}
             <div class="rounded-lg shadow divide-y divide-gray-200 mb-10">
-                <div class="flow-root p-8">
-                    <h2 class="text-xl mb-4">{capitalize(state)}</h2>
+                <div class="flow-root px-8">
+                    <h2 class="text-xl font-bold mb-4">{capitalize(state)}</h2>
                     <ul role="list" class="-my-5 divide-y divide-gray-200">
                         {#each Object.entries(placeObject) as [place, coordinates]}
                             <li class="py-4">

@@ -333,7 +333,7 @@
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.countries)}</dd>
-                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
+                                <a href="{lang}/places/" class="text-brand-funcRed"><dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt></a>
                             </div>
 
                             <div class="pt-6">

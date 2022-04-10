@@ -140,8 +140,8 @@
                                 </a>
                             </li>
                             <li class="mt-4">
-                                <a href="{lang}/"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                <a href="{lang}/places"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">Places
                                 </a>
                             </li>
                             <li class="mt-4">
