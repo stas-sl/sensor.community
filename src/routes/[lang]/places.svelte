@@ -90,11 +90,11 @@
         A click on view-button will open the map in a new window and centers the city. Search for your country or city with <code>ctrl/cmd + f</code> in your browser.
     </div>
     <div class="masonry lg:mx-auto lg:max-w-7xl px-8 lg:items-start">
-        {#each Object.entries(places) as [state, placeObject]}
+        {#each Object.entries(places).slice(1) as [state, placeObject]}
             <div class="rounded-lg shadow divide-y divide-gray-200 mb-10">
-                <div class="flow-root px-8">
-                    <h2 class="text-xl font-bold mb-4">{capitalize(state)}</h2>
-                    <ul role="list" class="-my-5 divide-y divide-gray-200">
+                <div class="flow-root px-4">
+                    <h2 class="text-xl font-bold">{capitalize(state)}</h2>
+                    <ul role="list" class="divide-y divide-gray-200">
                         {#each Object.entries(placeObject) as [place, coordinates]}
                             <li class="py-4">
                                 <div class="flex items-center space-x-4">
@@ -103,7 +103,7 @@
                                     </div>
                                     <div>
                                         <a href="https://maps.sensor.community/#4/{coordinates[0]}/{coordinates[1]}" target="_blank"
-                                           class="inline-flex items-center shadow-sm px-3 py-0.5 border border-gray-300 text-sm leading-5 font-medium rounded-full text-gray-700 bg-white hover:border-brand-funcRed hover:text-brand-funcRed">
+                                           class="inline-flex items-center shadow-sm px-4 py-0.5 border border-gray-300 text-sm leading-5 font-medium rounded-full text-gray-700 bg-white hover:border-brand-funcRed hover:text-brand-funcRed">
                                             View </a>
                                     </div>
                                 </div>

@@ -19,9 +19,7 @@ module.exports = {
     "sachsen-anhalt": [51.9713, 11.4697],
     "schleswig-holstein": [54.47, 9.5142],
     "thueringen": [50.8614, 11.0522],
-
     "ruhrgebiet": [51.5175, 7.145],
-
     "aachen": [50.777, 6.0836],
     "aalen": [48.8372, 10.0936],
     "ahlen": [51.7633, 7.8911],
@@ -588,5 +586,5 @@ module.exports = {
   "new zealand":{
     "new-zealand": [-44, 173],
     "wellington": [-41.3, 174.79],
-  },
+  }
 }
