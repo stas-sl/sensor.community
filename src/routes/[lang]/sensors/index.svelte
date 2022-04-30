@@ -70,11 +70,11 @@
                             hashTag={i18n.t('sensor:airSensorHashtag')}
                     />
                     <Cards
-                            description={i18n.t('sensor:subtitle')}
+                            description={i18n.t('sensor:noiseSensorDescription')}
                             imageUrl="images/dnms.jpg"
                             link="{lang}/sensors/dnms"
                             title={i18n.t('sensor:noiseSensorTitle')}
-                            hashTag={i18n.t('sensor:noiseSensorDescription')}
+                            hashTag={i18n.t('sensor:noiseSensorHashtag')}
                     />
 
             </div>

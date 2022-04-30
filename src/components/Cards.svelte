@@ -23,7 +23,7 @@
                         {hashTag}
                     </p>
                     <div class="block mt-2">
-                        <h3 class="text-xl font-bold">
+                        <h3 class="text-3xl font-bold">
                             {title}
                         </h3>
                         <p class="mt-3 text-base text-gray-600">

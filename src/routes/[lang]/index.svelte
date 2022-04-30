@@ -26,26 +26,6 @@
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
     }
 
-    function nFormatter(num, digits) {
-        const si = [
-            {value: 1, symbol: ""},
-            {value: 1E3, symbol: "k"},
-            {value: 1E6, symbol: "M"},
-            {value: 1E9, symbol: "B"},
-            {value: 1E11, symbol: "T"}
-        ];
-        let rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-        let i;
-        for (i = si.length - 1; i > 0; i--) {
-            if (num >= si[i].value) {
-                break;
-            }
-        }
-
-        let number = (num / si[i].value).toFixed(digits).replace(rx, "$4")
-        return formatNumber(number) + si[i].symbol;
-    }
-
 </script>
 <svelte:head>
     <title>{i18n.t('index:metaTitle')} - Sensor.Community</title>
@@ -171,7 +151,7 @@
                     <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200">{i18n.t('index:steps-build')}</p>
                     <p class="max-w-xs mx-auto mb-2">
                         {@html i18n.t('index:steps-build-description')}
-                        </p>
+                    </p>
                     <p class="pt-4"><a class="text-brand-funcRed pt-3" href="{lang}/sensors/">{i18n.t('index:cta')}&nbsp&rarr;</a>
                     </p>
                 </div>
@@ -200,7 +180,8 @@
                     <p class="max-w-xs mx-auto mb-2">
                         {i18n.t('index:steps-register-description')}
                     </p>
-                    <p class="pt-4"><a class="text-brand-funcRed" href="devices.sensor.community/register" target="_blank">{i18n.t('index:steps-register-cta')}</a>
+                    <p class="pt-4"><a class="text-brand-funcRed" href="devices.sensor.community/register"
+                                       target="_blank">{i18n.t('index:steps-register-cta')}</a>
                         <span class="inline-block text-brand-funcRed -rotate-45">&rarr;</span>
                     </p>
                 </div>
@@ -224,7 +205,8 @@
                     <p class="max-w-xs mx-auto mb-2">
                         {@html i18n.t('index:steps-visualize-description')}</p>
                     <p class="pt-4"><a class="text-brand-funcRed pt-3" href="https://maps.sensor.community/"
-                                       target="_blank">{i18n.t('index:steps-visualize-cta')}</a><span class="inline-block text-brand-funcRed -rotate-45">&rarr;</span></p>
+                                       target="_blank">{i18n.t('index:steps-visualize-cta')}</a><span
+                            class="inline-block text-brand-funcRed -rotate-45">&rarr;</span></p>
 
                 </div>
             </div>
@@ -252,11 +234,10 @@
             <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
                 <!-- Quote Card-->
                 <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                    <img alt=""
+                    <img alt="woman breathing fresh air without pollution"
                          class="absolute inset-0 h-full w-full object-cover"
                          src="images/woman-breathing-air.webp">
                     <div class="absolute inset-0 bg-brand-green mix-blend-multiply"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-green-dark via-brand-green-dark opacity-70"></div>
                     <div class="relative px-8 text-brand-white">
                         <div>
                             <img alt="Sensor.Community" class="h-12"
@@ -325,30 +306,58 @@
                     <span class="inline-block text-brand-funcRed -rotate-45">&rarr;</span>
                 </div>
                 <div class="relative mx-auto">
-                    <div class="my-10 text-center">
-                        <dl class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                    <div class="my-3 text-center">
+                        <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.sensors)}</dd>
-                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-activeSensors')}</dt>
+                                <dd class="text-4xl font-extrabold">{formatNumber(data.numbers.sensors)}</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-aqSensors')}</dt>
                             </div>
 
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.countries)}</dd>
-                                <a href="{lang}/places/" class="text-brand-funcRed">
-                                    <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
-                                </a>
+                                <dd class="text-4xl font-extrabold">{formatNumber(data.numbers.countries)}</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
                             </div>
 
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{nFormatter(data.numbers.measurements, 2)}</dd>
+                                <dd class="text-4xl font-extrabold">{formatNumber(data.numbers.measurements, 2)}</dd>
                                 <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-dataPoints')}</dt>
                             </div>
-
+                        </dl>
+                    </div>
+                    <div class="my-3 text-center">
+                        <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
                             <div class="pt-6">
-                                <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.local_labs)}</dd>
-                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-communityLabs')}</dt>
+                                <dd class="text-4xl font-extrabold">250</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-dnmsSensors')}</dt>
                             </div>
 
+                            <div class="pt-6">
+                                <dd class="text-4xl font-extrabold">7</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
+                            </div>
+
+                            <div class="pt-6">
+                                <dd class="text-4xl font-extrabold">-</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-dataPoints')}</dt>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="my-3 text-center">
+                        <dl class="grid md:grid-cols-3 grid-cols-2 gap-4">
+                            <div class="pt-6">
+                                <dd class="text-4xl font-extrabold">180</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-no2Sensors')}</dt>
+                            </div>
+
+                            <div class="pt-6">
+                                <dd class="text-4xl font-extrabold">9</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
+                            </div>
+
+                            <div class="pt-6">
+                                <dd class="text-4xl font-extrabold">270</dd>
+                                <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-dataPoints')}</dt>
+                            </div>
                         </dl>
                     </div>
                 </div>
