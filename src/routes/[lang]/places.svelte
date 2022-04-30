@@ -50,7 +50,7 @@
                             {i18n.t('places:h1')}
                         </h1>
                         <p class="mt-6 text-xl antialiased">
-                            {i18n.t('index:subtitle')}
+                            {i18n.t('places:subtitle')}
                         </p>
                         <div class="mt-6">
                             <Button link="{lang}/sensors/" linkName="{i18n.t('index:cta')}"/>
@@ -84,10 +84,9 @@
     </div>
 </div>
 
-
 <div class="relative py-16">
     <div class="lg:mx-auto lg:max-w-7xl px-8 lg:items-start pb-12 text-center">
-        A click on view-button will open the map in a new window and centers the city. Search for your country or city with <code>ctrl/cmd + f</code> in your browser.
+        {i18n.t('places:explanation')}
     </div>
     <div class="masonry lg:mx-auto lg:max-w-7xl px-8 lg:items-start">
         {#each Object.entries(places).slice(1) as [state, placeObject]}
@@ -104,7 +103,7 @@
                                     <div>
                                         <a href="https://maps.sensor.community/#4/{coordinates[0]}/{coordinates[1]}" target="_blank"
                                            class="inline-flex items-center shadow-sm px-4 py-0.5 border border-gray-300 text-sm leading-5 font-medium rounded-full text-gray-700 bg-white hover:border-brand-funcRed hover:text-brand-funcRed">
-                                            View </a>
+                                            {i18n.t('places:view')}</a>
                                     </div>
                                 </div>
                             </li>

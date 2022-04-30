@@ -7,8 +7,6 @@
 <script>
     import initI18n from "../../utils/initI18n";
     import {stores} from "@sapper/app";
-    import Campaigns from "../../components/Campaigns.svelte";
-    import Articles from "../../components/Articles.svelte";
     import Contact from "../../components/Contact.svelte";
     import Banner from "../../components/Banner.svelte";
     import Button from "../../components/Button.svelte";
@@ -126,18 +124,20 @@
                              src="images/maps.webp">
                         <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                             <svg class="h-14 w-14 text-brand-black opacity-70" fill="currentColor" viewBox="0 0 84 84">
-                                <circle cx="42" cy="42" r="42" fill="white" />
+                                <circle cx="42" cy="42" r="42" fill="white"/>
                             </svg>
                         </div>
                         <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
-                            <svg class="h-8 w-8 text-brand-black opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            <svg class="h-8 w-8 text-brand-black opacity-80" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
                         </div>
                     </a>
                 </div>
                 <figure class="px-4 md:px-16 mt-4 text-sm text-gray-600">
-                    <figcaption>{@html i18n.t('index:imageSubtitle')}
+                    <figcaption>{@html i18n.t('index:image-subtitle')}
                     </figcaption>
                 </figure>
             </div>
@@ -145,13 +145,14 @@
     </div>
 </div>
 
+<!-- Todo: literal strings camelCase or kebal-case -->
 
 <!-- Procedure Section-->
 <div class="relative mt-16 pt-16 bg-brand-yellowLight">
     <div class="lg:mx-auto lg:max-w-7xl lg:px-8">
         <div class="relative text-center">
             <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                How does it work?
+                {i18n.t('index:steps-title')}
             </h2>
         </div>
         <div class="mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl py-20">
@@ -159,18 +160,20 @@
                 <div class="p-10 text-center border border-2 rounded-lg bg-brand-white">
                     <div class="p-4 flex items-center justify-center">
                         <div class="relative">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="#084945">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                 stroke="#084945">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
                             </svg>
                         </div>
                     </div>
 
-                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
-                        Build</p>
-                    <p class="max-w-xs mx-auto mb-2 text-gray-700">First you have to build your sensor with our guide.
-                        Experience people can use <a class="text-brand-funcRed" href="https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md
-">other supported sensors</a> and build their custom device. </p>
-                    <p class="pt-4"><a class="text-brand-funcRed pt-3" href="{lang}/sensors/">{i18n.t('index:cta')}</a></p>
+                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200">{i18n.t('index:steps-build')}</p>
+                    <p class="max-w-xs mx-auto mb-2">
+                        {@html i18n.t('index:steps-build-description')}
+                        </p>
+                    <p class="pt-4"><a class="text-brand-funcRed pt-3" href="{lang}/sensors/">{i18n.t('index:cta')}&nbsp&rarr;</a>
+                    </p>
                 </div>
 
                 <div class="px-10 py-40 hidden md:block">
@@ -182,7 +185,8 @@
                         <div class="relative">
                             <div class="ping"></div>
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="#fff" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="#fff"
+                                     viewBox="0 0 24 24"
                                      stroke="#084945">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
@@ -191,16 +195,15 @@
                         </div>
                     </div>
 
-                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
-                        Register & Send Data</p>
+                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200">{i18n.t('index:steps-register')}</p>
 
-                    <p class="max-w-xs mx-auto mb-2 text-gray-700">After you build your device, you have to register it
-                        in our registeration and self-service platform. Only then you'll be able to send data the Sensor
-                        Community.</p>
-                    <p class="pt-4"><a class="text-brand-funcRed" href="devices.sensor.community/register" target="_blank">Register your
-                        Device</a></p>
+                    <p class="max-w-xs mx-auto mb-2">
+                        {i18n.t('index:steps-register-description')}
+                    </p>
+                    <p class="pt-4"><a class="text-brand-funcRed" href="devices.sensor.community/register" target="_blank">{i18n.t('index:steps-register-cta')}</a>
+                        <span class="inline-block text-brand-funcRed -rotate-45">&rarr;</span>
+                    </p>
                 </div>
-
                 <div class="px-10 py-40 hidden md:block">
                     <div class="dot-flashing"></div>
                 </div>
@@ -217,14 +220,11 @@
                         </div>
                     </div>
 
-                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400">
-                        Visualize</p>
-
-                    <p class="max-w-xs mx-auto mb-2 text-gray-700">The recieved data from your sensor will be <a class="text-brand-funcRed" href=" https://archive.sensor.community/" target="_blank">archived</a>,
-                        processed and visualiszed by our server infrastructure. Don't worry, your data will be
-                        anonymized.</p>
-                    <p class="pt-4"><a class="text-brand-funcRed pt-3" href="https://maps.sensor.community/" target="_blank">See all sensors
-                        on our Map</a></p>
+                    <p class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200">{i18n.t('index:steps-visualize')}</p>
+                    <p class="max-w-xs mx-auto mb-2">
+                        {@html i18n.t('index:steps-visualize-description')}</p>
+                    <p class="pt-4"><a class="text-brand-funcRed pt-3" href="https://maps.sensor.community/"
+                                       target="_blank">{i18n.t('index:steps-visualize-cta')}</a><span class="inline-block text-brand-funcRed -rotate-45">&rarr;</span></p>
 
                 </div>
             </div>
@@ -320,8 +320,9 @@
                     </p>
                     <a class="text-base font-medium text-brand-funcRed"
                        href="https://sensors2ref.maps.sensor.community/#3/21.53/6.15">
-                        {i18n.t('index:inNumbers-sensorsAtRefs')} &nbsp&rarr;
+                        {i18n.t('index:inNumbers-sensorsAtRefs')}
                     </a>
+                    <span class="inline-block text-brand-funcRed -rotate-45">&rarr;</span>
                 </div>
                 <div class="relative mx-auto">
                     <div class="my-10 text-center">
@@ -333,7 +334,9 @@
 
                             <div class="pt-6">
                                 <dd class="text-4xl lg:text-5xl font-extrabold">{formatNumber(data.numbers.countries)}</dd>
-                                <a href="{lang}/places/" class="text-brand-funcRed"><dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt></a>
+                                <a href="{lang}/places/" class="text-brand-funcRed">
+                                    <dt class="mt-2 text-base font-medium">{i18n.t('index:inNumbers-countries')}</dt>
+                                </a>
                             </div>
 
                             <div class="pt-6">
@@ -469,6 +472,4 @@ linkName={i18n.t('banner:cta')}
     </div>
 </div>
 
-<!--<Campaigns/>-->
-<!--<Articles/>-->
 <Contact/>

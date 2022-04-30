@@ -167,7 +167,7 @@
                        href="{lang}/sensors/airrohr/"
                        on:click={menuToggle}>
                         <div class="text-base font-extralight">
-                            Air Quality Kit (airRohr)
+                            {i18n.t('nav:airrohr')}
                         </div>
                     </a>
 
@@ -175,7 +175,7 @@
                        href="{lang}/sensors/dnms/"
                        on:click={menuToggle}>
                         <div class="text-base font-extralight">
-                            Noise Measuring Sensor (DNMS)
+                            {i18n.t('nav:dnms')}
                         </div>
                     </a>
 

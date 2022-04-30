@@ -3,6 +3,8 @@
     "home": "Home",
     "mission": "Mission",
     "guides": "Guides",
+    "airrohr": "Air Quality Kit (airRohr)",
+    "dnms": "Noise Measuring Sensor (DNMS)",
     "knowledge": "Knowledge",
     "forum": "Forum",
     "donate": "Donate",
@@ -32,7 +34,16 @@
     "h1": "Measure air quality by yourself",
     "subtitle": "We are a contributors driven global sensor network that creates open environmental data.",
     "cta": "Build your own DIY sensor",
-    "imageSubtitle": "<b>Click on the picture</b> to open in a new browser tab",
+    "image-subtitle": "<b>Click on the picture</b> to open in a new browser tab",
+    "steps-title": "How does it work?",
+    "steps-build": "Build",
+    "steps-build-description": "First you have to build your sensor with our guide. Experience people can use <a class=\"text-brand-funcRed\" href=\"https://github.com/opendata-stuttgart/sensors-software/blob/master/airrohr-firmware/Readme.md\">other supported sensors</a> and build their custom device.",
+    "steps-register": "Register & Send Data",
+    "steps-register-description": "After you build your device, register it on our registration and self-service platform. Only then you'll be able to send data the Sensor.Community.",
+    "steps-register-cta": "Register your Device",
+    "steps-visualize": "Visualize",
+    "steps-visualize-description": "The recieved data from your sensor will be <a\n                            class=\"text-brand-funcRed\" href=\" https://archive.sensor.community/\" target=\"_blank\">archived</a>,\n                        processed and visualiszed by our server infrastructure. Don't worry, your data will be\n                        anonymized.",
+    "steps-visualize-cta": "See all sensors on our Map",
     "about-title": "What is Sensor.Community?",
     "about-photo": "Photo:",
     "about-section1": "<span class='font-bold'>We are completely volunteers-run sensor network.</span> All our code is Open Source and can be found on <a href='https://github.com/opendata-stuttgart/' target='_blank' class='text-brand-funcRed'>GitHub</a>.",
@@ -129,17 +140,18 @@
     "publication": "Publications",
     "publication-description": "Find interesting scientific evaluation link and information about our Air Quality (airRohr) or Noise Measurement (DNSM) sensors, e.g.'How accurately does the SDS011 measure'"
   },
-  "faqs": {
-    "metaTitle": "Help Center - Sensor Community",
+  "faq": {
+    "metaTitle": "Help Center - Troubleshoot and FAQ",
     "metaDescription": "Help Center - Sensor Community",
-    "h1": "Recent posts",
-    "description": " Find news or other interesting information"
+    "h1": "Troubleshoot and FAQ",
+    "description": "You have questions? We got you covered! Find your answers in our FAQ.",
+    "forum": "Still looking for an answer? Check our forum."
   },
   "publications": {
     "metaTitle": "Publications",
     "metaDescription": "Publications - Sensor Community",
-    "h1": "Recent posts",
-    "description": " Find news or other interesting information"
+    "h1": "Publications",
+    "description": "Scientific monitoring and evaluation"
   },
   "contributors": {
     "metaTitle": "Contributors",
@@ -148,13 +160,6 @@
     "description": "Meet the team who is working behind the scenes to harness the power of Sensor Community.",
     "contactBottom": "\uD83D\uDCEEPlease use the contact options at the bottom of the page.",
     "meetTeam": "Meet the team"
-  },
-  "faq": {
-    "metaTitle": "Troubleshoot and FAQ",
-    "metaDescription": "Press",
-    "h1": "Troubleshoot and FAQ",
-    "description": "You have questions? We got you covered! Find your answers in our FAQ.",
-    "forum": "Still looking for an answer? Check our forum."
   },
   "mission": {
     "metaTitle": "Mission",
@@ -303,7 +308,7 @@
     "tech-faq": "Frequent Asked Questions"
   },
   "footer": {
-    "importantLinks": "Important Links",
+    "links": "Links",
     "sitemap": "Sitemap",
     "license": "License",
     "knowledge": "Knowledge",
@@ -311,10 +316,13 @@
     "donate": "Donate",
     "mission": "Mission",
     "press": "Press",
+    "support": "Support",
+    "forum": "Forum",
     "dashboard": "Dashboard",
     "privacy": "Privacy & Terms",
+    "copyright-license": "Copyright & License",
     "missionStatement": "Our mission is to inspire people to follow their curiosity by offering a platform for everybody to share open environmental data.",
-    "withLove": "Made with \uD83D\uDC95 &nbsp in Stuttgart, Germany"
+    "withLove": "Made with \uD83D\uDC95 in Stuttgart, Germany"
   },
   "imprint": {
     "metaTitle": "Imprint & Privacy",
@@ -325,7 +333,7 @@
     "lastModified": "Last Modified: ",
     "imprint": "Imprint",
     "imprintName": "Name: Rajko Zschiegner",
-    "imprintStreet": "Street:  Reichenbacher Str. 20",
+    "imprintStreet": "Street: Reichenbacher Str. 20",
     "imprintPostalCode": "Zip Code: 07973 Greiz",
     "imprintCountry": "Country: Germany",
     "imprintMail": "Email: rajko@sensor.community",
@@ -355,8 +363,11 @@
   "places": {
     "metaTitle": "List of all Map place links",
     "metaDescription": "Copyright & License",
-    "title": "Linklist of all ",
+    "title": "Linklist of all",
     "h1": "Linklist",
+    "subtitle": "List of all Map place links",
+    "explanation": "A click on view-button will open the map in a new window and centers the city. Search for your country or city with <code>ctrl/cmd + f</code> in your browser.",
+    "view": "View",
     "dataDescription": "Sensor.Community is open data, licensed under the <a href='https://opendatacommons.org/licenses/dbcl/1-0/' target='_blank'>Open Data Commons Open Database License (ODbL)</a>. </br></br>You are free to copy, distribute, transmit and adapt our data, as long as you credit Sensor.Community and its contributors. If you alter or build upon our data, you may distribute the result only under the same licence. The full legal code explains your rights and responsibilities.</br></br>Our documentation is licensed under the <a href='https://creativecommons.org/licenses/by-sa/2.0/' target='_blank'>Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0)</a>.",
     "mediaDescription": "All photos can be downloaded and used for free. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. Our media is licensed under the <a href='https://creativecommons.org/publicdomain/zero/1.0/deed.en' target='_blank'>Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</a>  ",
     "creditTitle": "How to credit Sensor.Community",

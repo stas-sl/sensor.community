@@ -16,9 +16,6 @@
                 <span class="py-1 ml-2 font-semibold text-gray-500 tracking-wide uppercase">
                   Sensor.Community
                 </span>
-                <p class="mt-8 text-gray-500 text-base leading-6">
-                    {i18n.t('footer:missionStatement')}
-                </p>
                 <div class="mt-8 flex">
                     <a href="https://fosstodon.org/@SensorCommunity"
                        class="text-gray-400 hover:text-brand-funcRed">
@@ -46,8 +43,7 @@
                        class="ml-6 text-gray-400 hover:text-brand-funcRed">
                         <span class="sr-only">Mail</span>
                         <svg class="h-8 w-7" fill="currentColor" viewBox="0 0 512 512"
-                             xmlns="http://www.w3.org/2000/svg" stroke-width="1" height="40" width="40"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                             xmlns="http://www.w3.org/2000/svg" stroke-width="1" height="40" width="40" y="0px">
                             <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
              C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z
               M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
@@ -60,10 +56,22 @@
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
                         <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                            {i18n.t('footer:importantLinks')}
+                            {i18n.t('footer:links')}
                         </h4>
                         <ul class="mt-4">
                             <li>
+                                <a href="https://devices.sensor.community/" target="_blank"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                    Devices
+                                </a>
+                            </li>
+                            <li class="mt-4">
+                                <a href="https://archive.sensor.community/"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                    Archive
+                                </a>
+                            </li>
+                            <li class="mt-4">
                                 <a href="https://maps.sensor.community/" target="_blank"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     Maps
@@ -75,23 +83,11 @@
                                     API
                                 </a>
                             </li>
-                            <li class="mt-4">
-                                <a href="https://archive.sensor.community/"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Archive
-                                </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="https://devices.sensor.community/" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Devices
-                                </a>
-                            </li>
                         </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
                         <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                            Support
+                            {i18n.t('footer:support')}
                         </h4>
                         <ul class="mt-4">
                             <li class="mt-4">
@@ -103,7 +99,7 @@
                             <li class="mt-4">
                                 <a href="https://forum.sensor.community/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Forum
+                                    {i18n.t('footer:forum')}
                                 </a>
                             </li>
                             <li class="mt-4">
@@ -125,12 +121,6 @@
                                 <a href="{lang}/mission/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:mission')}
-                                </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="{lang}/dashboard/"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    {i18n.t('footer:dashboard')}
                                 </a>
                             </li>
                             <li class="mt-4">
@@ -158,21 +148,15 @@
                         </h4>
                         <ul class="mt-4">
                             <li class="mt-4">
+                                <a href="{lang}/copyrights/" target="_blank"
+                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
+                                    {i18n.t('footer:copyright-license')}
+                                </a>
+                            </li>
+                            <li class="mt-4">
                                 <a href="{lang}/privacy-terms/"
                                    class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
                                     {i18n.t('footer:privacy')}
-                                </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="{lang}/copyrights/" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Copyright & License
-                                </a>
-                            </li>
-                            <li class="mt-4">
-                                <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank"
-                                   class="text-base leading-6 text-gray-500 hover:text-brand-funcRed">
-                                    Photos License
                                 </a>
                             </li>
                         </ul>
