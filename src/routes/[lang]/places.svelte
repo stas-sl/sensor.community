@@ -116,8 +116,6 @@
     </div>
 </div>
 
-
-
 <style>
 .masonry {
     column-count: 1;
